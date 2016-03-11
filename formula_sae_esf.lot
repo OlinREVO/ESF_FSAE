@@ -1,0 +1,26 @@
+\select@language {english}
+\select@language {english}
+\contentsline {table}{\numberline {1}{\ignorespaces General parameters\relax }}{1}{table.caption.8}
+\contentsline {table}{\numberline {2}{\ignorespaces List of switches in the shutdown circuit\relax }}{4}{table.caption.9}
+\contentsline {table}{\numberline {3}{\ignorespaces Wiring--Shutdown Circuit\relax }}{4}{table.caption.11}
+\contentsline {table}{\numberline {4}{\ignorespaces Parameters of the IMD\relax }}{6}{table.caption.14}
+\contentsline {table}{\numberline {5}{\ignorespaces Parameters of the Inertia Switch\relax }}{8}{table.caption.16}
+\contentsline {table}{\numberline {6}{\ignorespaces Torque Encoder Data\relax }}{9}{table.caption.19}
+\contentsline {table}{\numberline {7}{\ignorespaces Parameters of the TSAL\relax }}{14}{table.caption.26}
+\contentsline {table}{\numberline {8}{\ignorespaces General data of pre-charge resistor \relax }}{18}{table.caption.31}
+\contentsline {table}{\numberline {9}{\ignorespaces General data of the pre-charge relay\relax }}{18}{table.caption.32}
+\contentsline {table}{\numberline {10}{\ignorespaces General data of the discharge circuit\relax }}{21}{table.caption.37}
+\contentsline {table}{\numberline {11}{\ignorespaces Main accumulator parameters\relax }}{25}{table.caption.42}
+\contentsline {table}{\numberline {12}{\ignorespaces Main cell specification\relax }}{25}{table.caption.43}
+\contentsline {table}{\numberline {13}{\ignorespaces Wire data of the company: CnC Tech, 0.326 mm$^{2}$\relax }}{32}{table.caption.55}
+\contentsline {table}{\numberline {14}{\ignorespaces Basic AIR Data\relax }}{33}{table.caption.57}
+\contentsline {table}{\numberline {15}{\ignorespaces GLV Main fuse, SPF type\relax }}{34}{table.caption.59}
+\contentsline {table}{\numberline {16}{\ignorespaces Fuse from 5V source to CAN nodes microcontrollers and the fuse to the IMD and light DC-DC converter, ABS Series\relax }}{35}{table.caption.60}
+\contentsline {table}{\numberline {17}{\ignorespaces Fuse to the keyswitch v+\relax }}{35}{table.caption.61}
+\contentsline {table}{\numberline {18}{\ignorespaces Tractive system main fuse, LPJ type\relax }}{35}{table.caption.62}
+\contentsline {table}{\numberline {19}{\ignorespaces Fuse Protection Table\relax }}{36}{table.caption.64}
+\contentsline {table}{\numberline {20}{\ignorespaces General Charger data\relax }}{37}{table.caption.65}
+\contentsline {table}{\numberline {21}{\ignorespaces General Motor Controller data\relax }}{41}{table.caption.71}
+\contentsline {table}{\numberline {22}{\ignorespaces Wire data of the company: Electric motor sport, 0.052 in$^{2}$\relax }}{41}{table.caption.72}
+\contentsline {table}{\numberline {23}{\ignorespaces General motor data\relax }}{46}{table.caption.78}
+\contentsline {table}{\numberline {24}{\ignorespaces Torque Encoder data\relax }}{49}{table.caption.83}
