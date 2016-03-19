@@ -1,73 +1,87 @@
 \select@language {english}
 \select@language {english}
-\contentsline {figure}{\numberline {1}{\ignorespaces \texthl {Tractive system block diagram}\relax }}{2}{figure.caption.7}
-\contentsline {figure}{\numberline {2}{\ignorespaces \texthl {Shutdown Circuit Switches}\relax }}{4}{figure.caption.10}
+\contentsline {figure}{\numberline {1}{\ignorespaces \hlr {Tractive system block diagram}\relax }}{2}{figure.caption.7}
+\contentsline {figure}{\numberline {2}{\ignorespaces \hlr {Shutdown Circuit Switches}\relax }}{4}{figure.caption.10}
 \contentsline {figure}{\numberline {3}{\ignorespaces Shutdown Circuit Enclosure Vehicle Location\relax }}{5}{figure.caption.12}
 \contentsline {figure}{\numberline {4}{\ignorespaces Waterproof Enclosure for TS MS, GLV MS, TSMP, GLVMP, \& Shutdown Circuit\relax }}{5}{figure.caption.13}
-\contentsline {figure}{\numberline {5}{\ignorespaces \texthl {Schematic of the IMD and its connections}\relax }}{7}{figure.caption.15}
-\contentsline {figure}{\numberline {6}{\ignorespaces Schematic of the inertia switch and references to where it is in the shutdown circuit\relax }}{8}{figure.caption.17}
-\contentsline {figure}{\numberline {7}{\ignorespaces Wiring example for the Inertia switch, see appendix for full datasheet\relax }}{9}{figure.caption.18}
-\contentsline {figure}{\numberline {8}{\ignorespaces Schematic of the BSPD\relax }}{10}{figure.caption.20}
-\contentsline {figure}{\numberline {9}{\ignorespaces View of BSPD Pressure Switch and T-Fitting\relax }}{11}{figure.caption.21}
-\contentsline {figure}{\numberline {10}{\ignorespaces Approximate Location of BSPD Pressure Switch in Vehicle\relax }}{11}{figure.caption.22}
-\contentsline {figure}{\numberline {11}{\ignorespaces \texthl {Interlocks contained in the shutdown circuit}\relax }}{12}{figure.caption.23}
-\contentsline {figure}{\numberline {12}{\ignorespaces MSDs in the accumulator, indicated by the red arros\relax }}{13}{figure.caption.24}
-\contentsline {figure}{\numberline {13}{\ignorespaces Product picture of the TSAL, from Super Bright LEDs part no. M9-R4\relax }}{13}{figure.caption.25}
-\contentsline {figure}{\numberline {14}{\ignorespaces Schematic for the TSAL\relax }}{14}{figure.caption.27}
-\contentsline {figure}{\numberline {15}{\ignorespaces Tractive System Measuring Points\relax }}{15}{figure.caption.28}
-\contentsline {figure}{\numberline {17}{\ignorespaces Voltage vs time, measured in a test setup. \relax }}{16}{figure.caption.30}
-\contentsline {figure}{\numberline {16}{\ignorespaces Precharge system schematic, including the AIR economizers\relax }}{17}{figure.caption.29}
-\contentsline {figure}{\numberline {18}{\ignorespaces Schematic of the discharge system\relax }}{19}{figure.caption.33}
-\contentsline {figure}{\numberline {19}{\ignorespaces A single motor controller being discharged across a known resistor.\relax }}{19}{figure.caption.34}
-\contentsline {figure}{\numberline {20}{\ignorespaces The theoretical discharge of both motor controllers across the resistor specified in table \ref {dctable}. This calculation shows that we should able to discharge to well under 60V DC in 5 seconds. \relax }}{20}{figure.caption.35}
-\contentsline {figure}{\numberline {21}{\ignorespaces The current of the theoretical discharge.\relax }}{21}{figure.caption.36}
-\contentsline {figure}{\numberline {22}{\ignorespaces Anderson Power Products SB Smart VEH-G12 HVD\relax }}{22}{figure.caption.38}
-\contentsline {figure}{\numberline {23}{\ignorespaces Schematic of primary tractive system connections\relax }}{22}{figure.caption.39}
-\contentsline {figure}{\numberline {24}{\ignorespaces \texthl {Position of the HVD in the vehicle. It is located in line with TS+, and is attached to the accumulator in the back of the vehicle. }\relax }}{23}{figure.caption.40}
-\contentsline {figure}{\numberline {25}{\ignorespaces Schematic for the Ready to Drive Sound Buzzer\relax }}{24}{figure.caption.41}
-\contentsline {figure}{\numberline {26}{\ignorespaces Schematic of a Nissan Leaf Battery Module\relax }}{26}{figure.caption.44}
-\contentsline {figure}{\numberline {27}{\ignorespaces Inside view of a module\relax }}{26}{figure.caption.45}
-\contentsline {figure}{\numberline {28}{\ignorespaces Busbar Routing with MSD Wire Leads\relax }}{27}{figure.caption.46}
-\contentsline {figure}{\numberline {29}{\ignorespaces Schematic, (1) Module Cell Temperature Monitoring\relax }}{28}{figure.caption.47}
-\contentsline {figure}{\numberline {30}{\ignorespaces CAD of 1 AMS board (all identical). Cyan polygon indicates GLV voltage, and the \delta x measurement is the distance between TS and GLV.\relax }}{29}{figure.caption.48}
-\contentsline {figure}{\numberline {31}{\ignorespaces Detail of BMS PCB where the minimum over surface distance (6.4 mm) are met. Distance between TS and GLV is shown to be 6.57 mm \relax }}{30}{figure.caption.49}
-\contentsline {figure}{\numberline {32}{\ignorespaces Schematic of Cell Breakout Board Connecting to the AMS\relax }}{30}{figure.caption.50}
-\contentsline {figure}{\numberline {33}{\ignorespaces \texthl {Cell Breakout Board PCB Layout for the left hand side Note the fuses labeled with "F" and then a number. There is only TS voltage on this PCB.}\relax }}{31}{figure.caption.51}
-\contentsline {figure}{\numberline {34}{\ignorespaces \texthl {Cell Breakout Board PCB Layout for the right hand side Note the fuses labeled with "F" and then a number. There is only TS voltage on this PCB.}\relax }}{31}{figure.caption.52}
-\contentsline {figure}{\numberline {35}{\ignorespaces CAD of the location of the cell-top boards in the accumulator\relax }}{31}{figure.caption.53}
-\contentsline {figure}{\numberline {36}{\ignorespaces Detail of the Accumulator Indicator PCB\relax }}{32}{figure.caption.54}
-\contentsline {figure}{\numberline {37}{\ignorespaces Manual Service Disconnect (Maintenance Plug)\relax }}{33}{figure.caption.56}
-\contentsline {figure}{\numberline {38}{\ignorespaces Load Switching detail from Accumulator Indicator Relay datasheet\relax }}{34}{figure.caption.58}
-\contentsline {figure}{\numberline {39}{\ignorespaces TS main fuse (175A) Time-Current information\relax }}{36}{figure.caption.63}
-\contentsline {figure}{\numberline {40}{\ignorespaces DeltaQ 96V QUIQ ICON charger\relax }}{37}{figure.caption.66}
-\contentsline {figure}{\numberline {41}{\ignorespaces Accumulator Frame\relax }}{38}{figure.caption.67}
-\contentsline {figure}{\numberline {42}{\ignorespaces Cell Mounting Cutaway\relax }}{38}{figure.caption.68}
-\contentsline {figure}{\numberline {43}{\ignorespaces Cell Mounting Exploded\relax }}{39}{figure.caption.69}
-\contentsline {figure}{\numberline {44}{\ignorespaces Sevcon Gen 4 Size 4 motor controllers\relax }}{41}{figure.caption.70}
-\contentsline {figure}{\numberline {45}{\ignorespaces Schematic of the motor and motor controllers, in the tractive system\relax }}{42}{figure.caption.73}
-\contentsline {figure}{\numberline {46}{\ignorespaces Side view of the motor controllers, mounted\relax }}{43}{figure.caption.74}
-\contentsline {figure}{\numberline {47}{\ignorespaces Isometric view of the motor controllers, mounted\relax }}{43}{figure.caption.75}
-\contentsline {figure}{\numberline {48}{\ignorespaces Rear view of the motor controllers, mounted\relax }}{44}{figure.caption.76}
-\contentsline {figure}{\numberline {49}{\ignorespaces Isometric view of the 75-5 Z-force motor\relax }}{45}{figure.caption.77}
-\contentsline {figure}{\numberline {50}{\ignorespaces \relax }}{46}{figure.caption.79}
-\contentsline {figure}{\numberline {51}{\ignorespaces Side view of the motor mount\relax }}{47}{figure.caption.80}
-\contentsline {figure}{\numberline {52}{\ignorespaces Rear view of the motor mount\relax }}{47}{figure.caption.81}
-\contentsline {figure}{\numberline {53}{\ignorespaces Isometric view of the motor mount\relax }}{48}{figure.caption.82}
-\contentsline {figure}{\numberline {54}{\ignorespaces Schematic for the CAN node on the torque encoders\relax }}{49}{figure.caption.84}
-\contentsline {figure}{\numberline {55}{\ignorespaces Schematic of the torque encoder plausibility check\relax }}{50}{figure.caption.85}
-\contentsline {figure}{\numberline {56}{\ignorespaces Mechanical fastening and connection to the throttle pedal. Note that the torque encoders are two encoders housed in one package\relax }}{51}{figure.caption.86}
-\contentsline {figure}{\numberline {57}{\ignorespaces Side view of how the torque encoder connects to the pedal and measures the throttle\relax }}{51}{figure.caption.87}
-\contentsline {figure}{\numberline {58}{\ignorespaces Overall view of the torque encoder's position in the car, top down view\relax }}{52}{figure.caption.88}
-\contentsline {figure}{\numberline {59}{\ignorespaces DC-DC converter and its attachment to the GLV and then CAN node systems through a module\relax }}{53}{figure.caption.89}
-\contentsline {figure}{\numberline {60}{\ignorespaces CAD model of the DC-DC converter for the GLV system\relax }}{54}{figure.caption.90}
-\contentsline {figure}{\numberline {61}{\ignorespaces Dashboard node schematic\relax }}{55}{figure.caption.91}
-\contentsline {figure}{\numberline {62}{\ignorespaces Render of the Dashboard, the location of the dashboard node. \relax }}{56}{figure.caption.92}
-\contentsline {figure}{\numberline {63}{\ignorespaces Schematic for the node on the ready to drive sound, watchdog, and side e-stops and IMD\relax }}{56}{figure.caption.93}
-\contentsline {figure}{\numberline {64}{\ignorespaces Exploded view of the firewall\relax }}{59}{figure.caption.94}
-\contentsline {figure}{\numberline {65}{\ignorespaces CAD render of the firewall's position in the car\relax }}{60}{figure.caption.95}
-\contentsline {figure}{\numberline {66}{\ignorespaces Response value information from IMD datasheet\relax }}{62}{figure.caption.98}
-\contentsline {figure}{\numberline {67}{\ignorespaces Power overload graph of the 100W discharge resistor\relax }}{63}{figure.caption.105}
-\contentsline {figure}{\numberline {68}{\ignorespaces Schematic of one of the accumulator monitoring boards\relax }}{65}{figure.caption.111}
-\contentsline {figure}{\numberline {69}{\ignorespaces Power Stream Wire Gauge Chart Reference. Reffered from section \ref {fusing}\relax }}{66}{figure.caption.114}
-\contentsline {figure}{\numberline {70}{\ignorespaces Important data of the 96V charger, from datasheet\relax }}{67}{figure.caption.116}
-\contentsline {figure}{\numberline {71}{\ignorespaces Important parameters of the MHR5621 Active Sensors Torque Encoder\relax }}{68}{figure.caption.119}
+\contentsline {figure}{\numberline {5}{\ignorespaces \hlr {Schematic of the IMD and its connections}\relax }}{6}{figure.caption.15}
+\contentsline {figure}{\numberline {6}{\ignorespaces \hlr {Schematic of the inertia switch and references to where it is in the shutdown circuit}\relax }}{7}{figure.caption.17}
+\contentsline {figure}{\numberline {7}{\ignorespaces Schematic of the BSPD\relax }}{8}{figure.caption.19}
+\contentsline {figure}{\numberline {8}{\ignorespaces View of BSPD Pressure Switch and T-Fitting\relax }}{9}{figure.caption.20}
+\contentsline {figure}{\numberline {9}{\ignorespaces Approximate Location of BSPD Pressure Switch in Vehicle\relax }}{9}{figure.caption.21}
+\contentsline {figure}{\numberline {10}{\ignorespaces \hlr {Interlocks contained in the shutdown circuit}\relax }}{10}{figure.caption.22}
+\contentsline {figure}{\numberline {11}{\ignorespaces MSDs in the accumulator, indicated by the red arros\relax }}{11}{figure.caption.23}
+\contentsline {figure}{\numberline {12}{\ignorespaces Product picture of the TSAL, from Super Bright LEDs part no. M9-R4\relax }}{11}{figure.caption.24}
+\contentsline {figure}{\numberline {13}{\ignorespaces Schematic for the TSAL\relax }}{12}{figure.caption.26}
+\contentsline {figure}{\numberline {14}{\ignorespaces Tractive System Measuring Points\relax }}{13}{figure.caption.27}
+\contentsline {figure}{\numberline {15}{\ignorespaces Precharge system schematic, including the AIR economizers\relax }}{15}{figure.caption.28}
+\contentsline {figure}{\numberline {16}{\ignorespaces Voltage vs time, measured in a test setup. \relax }}{16}{figure.caption.29}
+\contentsline {figure}{\numberline {17}{\ignorespaces Schematic of the discharge system\relax }}{17}{figure.caption.32}
+\contentsline {figure}{\numberline {18}{\ignorespaces A single motor controller being discharged across a known resistor.\relax }}{18}{figure.caption.33}
+\contentsline {figure}{\numberline {19}{\ignorespaces The theoretical discharge of both motor controllers across the resistor specified in table \ref {dctable}. This calculation shows that we should able to discharge to well under 60V DC in 5 seconds. \relax }}{19}{figure.caption.34}
+\contentsline {figure}{\numberline {20}{\ignorespaces The current of the theoretical discharge.\relax }}{19}{figure.caption.35}
+\contentsline {figure}{\numberline {21}{\ignorespaces \hlr {The discharge relay is pointed out in the red box, on the PCB containing most of the accumulator wiring (called AIR control board). The resistor will be located right next to the PCB, at the same height of the accumulator.} \relax }}{20}{figure.caption.37}
+\contentsline {figure}{\numberline {22}{\ignorespaces Anderson Power Products SB Smart VEH-G12 HVD\relax }}{21}{figure.caption.38}
+\contentsline {figure}{\numberline {23}{\ignorespaces Schematic of primary tractive system connections\relax }}{21}{figure.caption.39}
+\contentsline {figure}{\numberline {24}{\ignorespaces \hlr {Position of the HVD in the vehicle. It is located in line with TS+, and is attached to the accumulator in the back of the vehicle. }\relax }}{22}{figure.caption.40}
+\contentsline {figure}{\numberline {25}{\ignorespaces Schematic for the Ready to Drive Sound Buzzer\relax }}{23}{figure.caption.41}
+\contentsline {figure}{\numberline {26}{\ignorespaces \hlr {Locations of all major parts within the accumulator. }\relax }}{24}{figure.caption.43}
+\contentsline {figure}{\numberline {27}{\ignorespaces Schematic of a Nissan Leaf Battery Module\relax }}{25}{figure.caption.45}
+\contentsline {figure}{\numberline {28}{\ignorespaces Inside view of a module\relax }}{26}{figure.caption.46}
+\contentsline {figure}{\numberline {29}{\ignorespaces Busbar Routing with MSD Wire Leads\relax }}{26}{figure.caption.47}
+\contentsline {figure}{\numberline {30}{\ignorespaces Schematic, (1) Module Cell Temperature Monitoring\relax }}{27}{figure.caption.48}
+\contentsline {figure}{\numberline {31}{\ignorespaces CAD of 1 AMS board (all identical). Cyan polygon indicates GLV voltage, and the $\delta x$ measurement is the distance between TS and GLV.\relax }}{28}{figure.caption.49}
+\contentsline {figure}{\numberline {32}{\ignorespaces \hlr {Detail of BMS PCB where the minimum over surface distance (6.4 mm) are met. Distance between TS and GLV is shown to be $6.57$ mm (over surface)}\relax }}{29}{figure.caption.50}
+\contentsline {figure}{\numberline {33}{\ignorespaces Schematic of Cell Breakout Board Connecting to the AMS\relax }}{29}{figure.caption.51}
+\contentsline {figure}{\numberline {34}{\ignorespaces \hlr {Cell Breakout Board PCB Layout for the left hand side Note the fuses labeled with "F" and then a number. There is only TS voltage on this PCB.}\relax }}{30}{figure.caption.52}
+\contentsline {figure}{\numberline {35}{\ignorespaces \hlr {Cell Breakout Board PCB Layout for the right hand side Note the fuses labeled with "F" and then a number. There is only TS voltage on this PCB.}\relax }}{30}{figure.caption.53}
+\contentsline {figure}{\numberline {36}{\ignorespaces CAD of the location of the cell-top boards in the accumulator\relax }}{31}{figure.caption.54}
+\contentsline {figure}{\numberline {37}{\ignorespaces Detail of the Accumulator Indicator PCB\relax }}{31}{figure.caption.55}
+\contentsline {figure}{\numberline {38}{\ignorespaces Manual Service Disconnect (Maintenance Plug)\relax }}{32}{figure.caption.57}
+\contentsline {figure}{\numberline {39}{\ignorespaces Load Switching detail from Accumulator Indicator Relay datasheet\relax }}{33}{figure.caption.59}
+\contentsline {figure}{\numberline {40}{\ignorespaces TS main fuse (175A) Time-Current information\relax }}{35}{figure.caption.66}
+\contentsline {figure}{\numberline {41}{\ignorespaces DeltaQ 96V QUIQ ICON charger\relax }}{37}{figure.caption.69}
+\contentsline {figure}{\numberline {42}{\ignorespaces Accumulator Frame\relax }}{38}{figure.caption.70}
+\contentsline {figure}{\numberline {43}{\ignorespaces Cell Mounting Cutaway\relax }}{38}{figure.caption.71}
+\contentsline {figure}{\numberline {44}{\ignorespaces Cell Mounting Exploded\relax }}{39}{figure.caption.72}
+\contentsline {figure}{\numberline {45}{\ignorespaces Sevcon Gen 4 Size 4 motor controllers\relax }}{41}{figure.caption.73}
+\contentsline {figure}{\numberline {46}{\ignorespaces Schematic of the motor and motor controllers, in the tractive system\relax }}{42}{figure.caption.76}
+\contentsline {figure}{\numberline {47}{\ignorespaces Side view of the motor controllers, mounted\relax }}{43}{figure.caption.77}
+\contentsline {figure}{\numberline {48}{\ignorespaces Isometric view of the motor controllers, mounted\relax }}{43}{figure.caption.78}
+\contentsline {figure}{\numberline {49}{\ignorespaces Rear view of the motor controllers, mounted\relax }}{44}{figure.caption.79}
+\contentsline {figure}{\numberline {50}{\ignorespaces Isometric view of the 75-5 Z-force motor\relax }}{45}{figure.caption.80}
+\contentsline {figure}{\numberline {51}{\ignorespaces \relax }}{46}{figure.caption.82}
+\contentsline {figure}{\numberline {52}{\ignorespaces Side view of the motor mount\relax }}{47}{figure.caption.83}
+\contentsline {figure}{\numberline {53}{\ignorespaces Rear view of the motor mount\relax }}{47}{figure.caption.84}
+\contentsline {figure}{\numberline {54}{\ignorespaces Isometric view of the motor mount\relax }}{48}{figure.caption.85}
+\contentsline {figure}{\numberline {55}{\ignorespaces Schematic for the CAN node on the torque encoders\relax }}{49}{figure.caption.87}
+\contentsline {figure}{\numberline {56}{\ignorespaces Schematic of the torque encoder plausibility check\relax }}{50}{figure.caption.88}
+\contentsline {figure}{\numberline {57}{\ignorespaces Mechanical fastening and connection to the throttle pedal. Note that the torque encoders are two encoders housed in one package\relax }}{51}{figure.caption.89}
+\contentsline {figure}{\numberline {58}{\ignorespaces Side view of how the torque encoder connects to the pedal and measures the throttle\relax }}{51}{figure.caption.90}
+\contentsline {figure}{\numberline {59}{\ignorespaces Overall view of the torque encoder's position in the car, top down view\relax }}{52}{figure.caption.91}
+\contentsline {figure}{\numberline {60}{\ignorespaces DC-DC converter and its attachment to the GLV and then CAN node systems through a module\relax }}{53}{figure.caption.92}
+\contentsline {figure}{\numberline {61}{\ignorespaces CAD model of the DC-DC converter for the GLV system\relax }}{54}{figure.caption.93}
+\contentsline {figure}{\numberline {62}{\ignorespaces Dashboard node schematic\relax }}{55}{figure.caption.94}
+\contentsline {figure}{\numberline {63}{\ignorespaces Render of the Dashboard, the location of the dashboard node. \relax }}{56}{figure.caption.95}
+\contentsline {figure}{\numberline {64}{\ignorespaces Schematic for the node on the ready to drive sound, watchdog, and side e-stops and IMD\relax }}{56}{figure.caption.96}
+\contentsline {figure}{\numberline {65}{\ignorespaces Exploded view of the firewall\relax }}{59}{figure.caption.97}
+\contentsline {figure}{\numberline {66}{\ignorespaces CAD render of the firewall's position in the car\relax }}{60}{figure.caption.98}
+\contentsline {figure}{\numberline {67}{\ignorespaces Response value information from IMD datasheet\relax }}{62}{figure.caption.101}
+\contentsline {figure}{\numberline {68}{\ignorespaces Power overload graph of the 100W discharge resistor\relax }}{63}{figure.caption.108}
+\contentsline {figure}{\numberline {69}{\ignorespaces Schematic of one of the accumulator monitoring boards\relax }}{64}{figure.caption.114}
+\contentsline {figure}{\numberline {70}{\ignorespaces \hlr {Ratings for the Bussman LPJ series 175A main TS fuse}\relax }}{65}{figure.caption.117}
+\contentsline {figure}{\numberline {71}{\ignorespaces \hlr {Time-current curve for Bussman LPJ series 175 A main TS fuse}\relax }}{66}{figure.caption.118}
+\contentsline {figure}{\numberline {73}{\ignorespaces \hlr {Time-Current curve for A15QS, 7A Keyswitch fuse}\relax }}{67}{figure.caption.120}
+\contentsline {figure}{\numberline {72}{\ignorespaces \hlr {Ratings taken from the A15QS, 7A Keyswitch fuse}\relax }}{67}{figure.caption.119}
+\contentsline {figure}{\numberline {74}{\ignorespaces \hlr {251/253 series, 1A TS low current fuse}\relax }}{68}{figure.caption.121}
+\contentsline {figure}{\numberline {75}{\ignorespaces \hlr {Time-Current curve for 251/253 series 1A TS low current fuse}\relax }}{68}{figure.caption.122}
+\contentsline {figure}{\numberline {76}{\ignorespaces \hlr {SPF Series, 4A Main GLV fuse}\relax }}{69}{figure.caption.123}
+\contentsline {figure}{\numberline {77}{\ignorespaces \hlr {Time-current curve for SPF series 4A GLV main fuse}\relax }}{69}{figure.caption.124}
+\contentsline {figure}{\numberline {78}{\ignorespaces \hlr {Ratings for C1Q 3A Cell series to AMS fuse}\relax }}{69}{figure.caption.125}
+\contentsline {figure}{\numberline {79}{\ignorespaces \hlr {Approved Ratings of C1Q series 3A Cell to AMS fuse}\relax }}{70}{figure.caption.126}
+\contentsline {figure}{\numberline {80}{\ignorespaces \hlr {Time-current curve for C1Q series, 3A Cell to AMS fuse}\relax }}{70}{figure.caption.127}
+\contentsline {figure}{\numberline {81}{\ignorespaces \hlr {Ratings for MINI series, 2A Shutdown circuit and GLV 12V fuses}\relax }}{71}{figure.caption.128}
+\contentsline {figure}{\numberline {82}{\ignorespaces \hlr {Time-current curve for MINI series, 2A Shutdown and GLV 12V fuses}\relax }}{71}{figure.caption.129}
+\contentsline {figure}{\numberline {83}{\ignorespaces Power Stream Wire Gauge Chart Reference. Reffered from section \ref {fusing}\relax }}{72}{figure.caption.130}
+\contentsline {figure}{\numberline {84}{\ignorespaces Important data of the 96V charger, from datasheet\relax }}{73}{figure.caption.132}
+\contentsline {figure}{\numberline {85}{\ignorespaces Important parameters of the MHR5621 Active Sensors Torque Encoder\relax }}{74}{figure.caption.135}

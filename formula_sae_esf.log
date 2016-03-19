@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  10 MAR 2016 22:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  19 MAR 2016 16:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -848,38 +848,38 @@ Package: helvet 2005/04/12 PSNFSS-v9.2a (WaS)
 (./formula_sae_esf.aux)
 \openout1 = `formula_sae_esf.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 45.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 45.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 46.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 46.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
 \symgns@font=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
-(Font)                  TS1/cmr/m/n --> TS1/cmr/bx/n on input line 45.
-Package gensymb Info: Math companion symbols declared on input line 45.
-LaTeX Info: Redefining \degree on input line 45.
-LaTeX Info: Redefining \celsius on input line 45.
+(Font)                  TS1/cmr/m/n --> TS1/cmr/bx/n on input line 46.
+Package gensymb Info: Math companion symbols declared on input line 46.
+LaTeX Info: Redefining \degree on input line 46.
+LaTeX Info: Redefining \celsius on input line 46.
 Package gensymb Info: Using text companion symbols for \degree, \celsius and \p
-erthousand on input line 45.
-LaTeX Info: Redefining \ohm on input line 45.
-Package gensymb Info: Using \textohm for \ohm on input line 45.
-Package gensymb Info: Using \textmu for \micro on input line 45.
+erthousand on input line 46.
+LaTeX Info: Redefining \ohm on input line 46.
+Package gensymb Info: Using \textohm for \ohm on input line 46.
+Package gensymb Info: Using \textmu for \micro on input line 46.
 
 (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -902,7 +902,7 @@ Package caption Info: rotating package is loaded.
 Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \AtBeginShipoutBox=\box37
-Package hyperref Info: Link coloring OFF on input line 45.
+Package hyperref Info: Link coloring OFF on input line 46.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
@@ -912,15 +912,15 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 \c@section@level=\count140
 LaTeX Info: Redefining \Ref on input line 513.
 )
-LaTeX Info: Redefining \ref on input line 45.
-LaTeX Info: Redefining \pageref on input line 45.
-LaTeX Info: Redefining \nameref on input line 45.
+LaTeX Info: Redefining \ref on input line 46.
+LaTeX Info: Redefining \pageref on input line 46.
+LaTeX Info: Redefining \nameref on input line 46.
 
 (./formula_sae_esf.out) (./formula_sae_esf.out)
 \@outlinefile=\write4
 \openout4 = `formula_sae_esf.out'.
 
-LaTeX Info: Redefining \Ref on input line 45.
+LaTeX Info: Redefining \Ref on input line 46.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -960,14 +960,14 @@ LaTeX Info: Redefining \Ref on input line 45.
 <revo.png, id=454, 843.15pt x 276.03125pt>
 File: revo.png Graphic file (type png)
  <use revo.png>
-Package pdftex.def Info: revo.png used on input line 60.
+Package pdftex.def Info: revo.png used on input line 61.
 (pdftex.def)             Requested size: 284.52756pt x 93.15019pt.
-LaTeX Font Info:    Try loading font information for U+msa on input line 72.
+LaTeX Font Info:    Try loading font information for U+msa on input line 73.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 72.
+LaTeX Font Info:    Try loading font information for U+msb on input line 73.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -975,7 +975,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 <teamPhoto.jpg, id=456, 2055.68pt x 1467.4825pt>
 File: teamPhoto.jpg Graphic file (type jpg)
  <use teamPhoto.jpg>
-Package pdftex.def Info: teamPhoto.jpg used on input line 84.
+Package pdftex.def Info: teamPhoto.jpg used on input line 85.
 (pdftex.def)             Requested size: 422.77664pt x 301.7987pt.
  [1
 
@@ -989,7 +989,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.52 ...Position in Car}{16}{subsubsection.2.11.3}
+l.52 ...Position in Car}{21}{subsubsection.2.11.3}
                                                    [1]
 File: revo.png Graphic file (type png)
  <use revo.png>
@@ -1002,82 +1002,12 @@ Package pdftex.def Info: revo.png used on input line 101.
 File: revo.png Graphic file (type png)
 
 <use revo.png>
-Package pdftex.def Info: revo.png used on input line 93.
+Package pdftex.def Info: revo.png used on input line 94.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
  [3] (./formula_sae_esf.lof
-! Missing $ inserted.
-<inserted text> 
-                $
-l.32 ...S and GLV.\relax }}{20}{figure.caption.48}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-<argument> ...distance between TS and GLV.\relax }
-                                                  }\hyper@linkend 
-l.32 ...S and GLV.\relax }}{20}{figure.caption.48}
-                                                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten $.
-<argument> ...istance between TS and GLV.\relax }}
-                                                  \hyper@linkend 
-l.32 ...S and GLV.\relax }}{20}{figure.caption.48}
-                                                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.32 ...S and GLV.\relax }}{20}{figure.caption.48}
-                                                  
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.32 ...S and GLV.\relax }}{20}{figure.caption.48}
-                                                  
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.32 ...S and GLV.\relax }}{20}{figure.caption.48}
-                                                  
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-
-Overfull \hbox (159.03506pt too wide) in paragraph at lines 32--32
- [][] [][]\OT1/cmr/m/n/10 CAD of 1 AMS board (all iden-ti-cal). Cyan poly-gon i
-n-di-cates GLV volt-age, and the $\OML/cmm/m/it/10 ^^Nxmeasurementisthedistance
-betweenTSandGLV:$[] [][]  
- []
-
 File: revo.png Graphic file (type png)
-<use revo.png>
-Package pdftex.def Info: revo.png used on input line 51.
+ <use revo.png>
+Package pdftex.def Info: revo.png used on input line 48.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
  [4])
 \tf@lof=\write6
@@ -1085,230 +1015,200 @@ Package pdftex.def Info: revo.png used on input line 51.
 
 File: revo.png Graphic file (type png)
  <use revo.png>
-Package pdftex.def Info: revo.png used on input line 97.
+Package pdftex.def Info: revo.png used on input line 98.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [5] (./formula_sae_esf.lot)
+
+[5] (./formula_sae_esf.lot)
 \tf@lot=\write7
 \openout7 = `formula_sae_esf.lot'.
 
 File: revo.png Graphic file (type png)
  <use revo.png>
-Package pdftex.def Info: revo.png used on input line 101.
+Package pdftex.def Info: revo.png used on input line 102.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
-
-[6]
+ [6]
 File: revo.png Graphic file (type png)
  <use revo.png>
-Package pdftex.def Info: revo.png used on input line 115.
+Package pdftex.def Info: revo.png used on input line 116.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
  [7]
-Underfull \hbox (badness 10000) in paragraph at lines 121--122
+Underfull \hbox (badness 10000) in paragraph at lines 122--123
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 123--124
+Underfull \hbox (badness 10000) in paragraph at lines 124--125
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 125--126
+Underfull \hbox (badness 10000) in paragraph at lines 126--127
 
  []
 
-<tractiveblock.png, id=813, 798.77368pt x 486.11084pt>
+<tractiveblock.png, id=847, 798.77368pt x 486.11084pt>
 File: tractiveblock.png Graphic file (type png)
  <use tractiveblock.png>
-Package pdftex.def Info: tractiveblock.png used on input line 130.
+Package pdftex.def Info: tractiveblock.png used on input line 131.
 (pdftex.def)             Requested size: 650.43001pt x 395.83932pt.
 File: revo.png Graphic file (type png)
 
 <use revo.png>
-Package pdftex.def Info: revo.png used on input line 152.
+Package pdftex.def Info: revo.png used on input line 153.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
  [1]
 File: revo.png Graphic file (type png)
  <use revo.png>
-Package pdftex.def Info: revo.png used on input line 152.
+Package pdftex.def Info: revo.png used on input line 153.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
  [2 <./tractiveblock.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 160--161
+Underfull \hbox (badness 10000) in paragraph at lines 161--162
 
  []
 
-! Undefined control sequence.
-l.188 ...     Brake over travel switch (BOTS) & \h
-                                                  {Push-pull button} \\ \hline
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
 File: revo.png Graphic file (type png)
 <use revo.png>
-Package pdftex.def Info: revo.png used on input line 200.
+Package pdftex.def Info: revo.png used on input line 201.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [3] <shutdownswitches.png, id=827, 835.047pt x 321.273pt>
+ [3] <shutdownswitches.png, id=862, 835.047pt x 321.273pt>
 File: shutdownswitches.png Graphic file (type png)
 
 <use shutdownswitches.png>
-Package pdftex.def Info: shutdownswitches.png used on input line 207.
+Package pdftex.def Info: shutdownswitches.png used on input line 208.
 (pdftex.def)             Requested size: 469.75502pt x 180.73032pt.
 File: revo.png Graphic file (type png)
  <use revo.png>
-Package pdftex.def Info: revo.png used on input line 233.
+Package pdftex.def Info: revo.png used on input line 234.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
  [4 <./shutdownswitches.png>]
-<CONTROLPANEL_1.png, id=836, 604.50844pt x 484.05844pt>
+<CONTROLPANEL_1.png, id=871, 604.50844pt x 484.05844pt>
 File: CONTROLPANEL_1.png Graphic file (type png)
 
 <use CONTROLPANEL_1.png>
-Package pdftex.def Info: CONTROLPANEL_1.png used on input line 236.
+Package pdftex.def Info: CONTROLPANEL_1.png used on input line 237.
 (pdftex.def)             Requested size: 281.85587pt x 225.6905pt.
 
-<CONTROLPANEL_2.png, id=837, 892.08281pt x 464.4853pt>
+<CONTROLPANEL_2.png, id=872, 892.08281pt x 464.4853pt>
 File: CONTROLPANEL_2.png Graphic file (type png)
 
 <use CONTROLPANEL_2.png>
-Package pdftex.def Info: CONTROLPANEL_2.png used on input line 243.
+Package pdftex.def Info: CONTROLPANEL_2.png used on input line 244.
 (pdftex.def)             Requested size: 281.85587pt x 146.75307pt.
 File: revo.png Graphic file (type png)
  <use revo.png>
-Package pdftex.def Info: revo.png used on input line 255.
+Package pdftex.def Info: revo.png used on input line 256.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [5 <./CONTROLPANEL_1.png> <./CONTROLPANEL_2.png>] <Only_IMD.png, id=846, 234.5
-49pt x 325.872pt>
+ [5 <./CONTROLPANEL_1.png> <./CONTROLPANEL_2.png>]
+
+LaTeX Warning: Reference `imdappendix' on page 6 undefined on input line 276.
+
+<Only_IMD.png, id=880, 234.549pt x 325.872pt>
 File: Only_IMD.png Graphic file (type png)
  <use Only_IMD.png>
-Package pdftex.def Info: Only_IMD.png used on input line 279.
-(pdftex.def)             Requested size: 469.75502pt x 652.70204pt.
+Package pdftex.def Info: Only_IMD.png used on input line 280.
+(pdftex.def)             Requested size: 187.89914pt x 261.05595pt.
 File: revo.png Graphic file (type png)
 
 <use revo.png>
-Package pdftex.def Info: revo.png used on input line 283.
+Package pdftex.def Info: revo.png used on input line 287.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [6]
-Overfull \vbox (24.27203pt too high) has occurred while \output is active []
-
-File: revo.png Graphic file (type png)
-
-<use revo.png>
-Package pdftex.def Info: revo.png used on input line 283.
-(pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [7 <./Only_IMD.png>]
-<inertia.png, id=859, 139.81465pt x 39.7485pt>
+ [6 <./Only_IMD.png>]
+<inertia.png, id=888, 139.81465pt x 39.7485pt>
 File: inertia.png Graphic file (type png)
  <use inertia.png>
-Package pdftex.def Info: inertia.png used on input line 323.
+Package pdftex.def Info: inertia.png used on input line 324.
 (pdftex.def)             Requested size: 139.8143pt x 39.7484pt.
-
-<sensatawiring.png, id=860, 410.53375pt x 339.2675pt>
-File: sensatawiring.png Graphic file (type png)
- <use sensatawiring.png>
-Package pdftex.def Info: sensatawiring.png used on input line 330.
-(pdftex.def)             Requested size: 234.8775pt x 194.10405pt.
 File: revo.png Graphic file (type png)
 
 <use revo.png>
-Package pdftex.def Info: revo.png used on input line 334.
+Package pdftex.def Info: revo.png used on input line 361.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [8 <./inertia.png>] <BSPD.png, id=867, 500.1084pt x 300.1614pt>
+ [7 <./inertia.png>] <BSPD.png, id=895, 500.1084pt x 300.1614pt>
 File: BSPD.png Graphic file (type png)
 
 <use BSPD.png>
-Package pdftex.def Info: BSPD.png used on input line 365.
+Package pdftex.def Info: BSPD.png used on input line 366.
 (pdftex.def)             Requested size: 422.77664pt x 253.75063pt.
-File: revo.png Graphic file (type png)
- <use revo.png>
-Package pdftex.def Info: revo.png used on input line 369.
-(pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [9 <./sensatawiring.png>]
-<brakeincar.jpg, id=873, 1154.3125pt x 560.0925pt>
+ <brakeincar.jpg, id=897, 1154.3125pt x 560.0925pt>
 File: brakeincar.jpg Graphic file (type jpg)
- <use brakeincar.jpg>
-Package pdftex.def Info: brakeincar.jpg used on input line 381.
+
+<use brakeincar.jpg>
+Package pdftex.def Info: brakeincar.jpg used on input line 382.
 (pdftex.def)             Requested size: 422.77664pt x 205.13713pt.
 File: revo.png Graphic file (type png)
-
-<use revo.png>
-Package pdftex.def Info: revo.png used on input line 385.
+ <use revo.png>
+Package pdftex.def Info: revo.png used on input line 386.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [10 <./BSPD.png>]
-<brakesensor.jpg, id=879, 887.315pt x 560.0925pt>
+ [8 <./BSPD.png>]
+<brakesensor.jpg, id=903, 887.315pt x 560.0925pt>
 File: brakesensor.jpg Graphic file (type jpg)
  <use brakesensor.jpg>
-Package pdftex.def Info: brakesensor.jpg used on input line 388.
+Package pdftex.def Info: brakesensor.jpg used on input line 389.
 (pdftex.def)             Requested size: 422.77664pt x 266.8586pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 399--400
+Underfull \hbox (badness 10000) in paragraph at lines 400--401
 
  []
 
 File: revo.png Graphic file (type png)
 <use revo.png>
-Package pdftex.def Info: revo.png used on input line 402.
+Package pdftex.def Info: revo.png used on input line 403.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [11 <./brakeincar.jpg> <./brakesensor.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 406--407
+ [9 <./brakeincar.jpg> <./brakesensor.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 407--408
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 409--410
+Underfull \hbox (badness 10000) in paragraph at lines 410--411
 
  []
 
-<interlocks.png, id=888, 171.42444pt x 63.30852pt>
+<interlocks.png, id=911, 171.42444pt x 63.30852pt>
 File: interlocks.png Graphic file (type png)
  <use interlocks.png>
-Package pdftex.def Info: interlocks.png used on input line 431.
+Package pdftex.def Info: interlocks.png used on input line 432.
 (pdftex.def)             Requested size: 171.42401pt x 63.30835pt.
 
-<MSD.png, id=889, 390.45876pt x 416.55624pt>
+<MSD.png, id=912, 390.45876pt x 416.55624pt>
 File: MSD.png Graphic file (type png)
  <use MSD.png>
-Package pdftex.def Info: MSD.png used on input line 438.
+Package pdftex.def Info: MSD.png used on input line 439.
 (pdftex.def)             Requested size: 140.92793pt x 150.34785pt.
 File: revo.png Graphic file (type png)
  <use revo.png>
-Package pdftex.def Info: revo.png used on input line 442.
+Package pdftex.def Info: revo.png used on input line 443.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
 
-[12 <./interlocks.png>] <TSALshining.png, id=896, 396.48125pt x 273.02pt>
+[10 <./interlocks.png>] <TSALshining.png, id=919, 396.48125pt x 273.02pt>
 File: TSALshining.png Graphic file (type png)
 
 <use TSALshining.png>
-Package pdftex.def Info: TSALshining.png used on input line 455.
+Package pdftex.def Info: TSALshining.png used on input line 456.
 (pdftex.def)             Requested size: 234.8775pt x 161.74278pt.
 File: revo.png Graphic file (type png)
  <use revo.png>
-Package pdftex.def Info: revo.png used on input line 477.
+Package pdftex.def Info: revo.png used on input line 478.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [13 <./MSD.png> <./TSALshining.png>]
-<TSAL_FSAE.png, id=901, 422.88274pt x 342.35332pt>
+ [11 <./MSD.png> <./TSALshining.png>]
+<TSAL_FSAE.png, id=925, 422.88274pt x 342.35332pt>
 File: TSAL_FSAE.png Graphic file (type png)
  <use TSAL_FSAE.png>
-Package pdftex.def Info: TSAL_FSAE.png used on input line 487.
+Package pdftex.def Info: TSAL_FSAE.png used on input line 488.
 (pdftex.def)             Requested size: 328.82707pt x 266.20914pt.
 File: revo.png Graphic file (type png)
 
 <use revo.png>
-Package pdftex.def Info: revo.png used on input line 513.
+Package pdftex.def Info: revo.png used on input line 507.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [14 <./TSAL_FSAE.png>]
-<TSMP.png, id=908, 177.61742pt x 234.59953pt>
+ [12 <./TSAL_FSAE.png>]
+<TSMP.png, id=932, 177.61742pt x 234.59953pt>
 File: TSMP.png Graphic file (type png)
  <use TSMP.png>
-Package pdftex.def Info: TSMP.png used on input line 518.
+Package pdftex.def Info: TSMP.png used on input line 521.
 (pdftex.def)             Requested size: 177.61697pt x 234.59895pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 523--524
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 539--540
+Underfull \hbox (badness 10000) in paragraph at lines 526--527
 
  []
 
@@ -1316,1185 +1216,871 @@ File: revo.png Graphic file (type png)
 <use revo.png>
 Package pdftex.def Info: revo.png used on input line 540.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [15 <./TSMP.png>]
-<precharge.png, id=923, 886.41934pt x 552.8655pt>
+ [13 <./TSMP.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 542--543
+
+ []
+
+<precharge.png, id=945, 886.41934pt x 552.8655pt>
 File: precharge.png Graphic file (type png)
  <use precharge.png>
-Package pdftex.def Info: precharge.png used on input line 563.
+Package pdftex.def Info: precharge.png used on input line 568.
 (pdftex.def)             Requested size: 650.43001pt x 405.68903pt.
 
-<PrechargeVoltage.png, id=924, 956.1321pt x 469.755pt>
+<PrechargeVoltage.png, id=946, 956.1321pt x 469.755pt>
 File: PrechargeVoltage.png Graphic file (type png)
 
 <use PrechargeVoltage.png>
-Package pdftex.def Info: PrechargeVoltage.png used on input line 570.
+Package pdftex.def Info: PrechargeVoltage.png used on input line 575.
 (pdftex.def)             Requested size: 375.80544pt x 184.63011pt.
 File: revo.png Graphic file (type png)
  <use revo.png>
-Package pdftex.def Info: revo.png used on input line 576.
+Package pdftex.def Info: revo.png used on input line 579.
+(pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
+ [14]
+File: revo.png Graphic file (type png)
+ <use revo.png>
+Package pdftex.def Info: revo.png used on input line 579.
+(pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
+ [15 <./precharge.png>]
+File: revo.png Graphic file (type png)
+ <use revo.png>
+Package pdftex.def Info: revo.png used on input line 625.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
  [16 <./PrechargeVoltage.png>]
-File: revo.png Graphic file (type png)
-
-<use revo.png>
-Package pdftex.def Info: revo.png used on input line 576.
-(pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [17 <./precharge.png>]
-<discharge.png, id=939, 641.7576pt x 302.0886pt>
+<discharge.png, id=968, 641.7576pt x 302.0886pt>
 File: discharge.png Graphic file (type png)
  <use discharge.png>
-Package pdftex.def Info: discharge.png used on input line 626.
+Package pdftex.def Info: discharge.png used on input line 632.
 (pdftex.def)             Requested size: 641.75603pt x 302.08784pt.
 
-Overfull \hbox (172.001pt too wide) in paragraph at lines 626--627
+Overfull \hbox (172.001pt too wide) in paragraph at lines 632--633
  [][] 
  []
 
-File: revo.png Graphic file (type png)
-<use revo.png>
-Package pdftex.def Info: revo.png used on input line 630.
-(pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [18]
 Package epstopdf Info: Source file: <experimental_discharge.eps>
 (epstopdf)                    date: 2016-03-10 21:58:57
 (epstopdf)                    size: 14560 bytes
 (epstopdf)             Output file: <experimental_discharge-eps-converted-to.pd
 f>
+(epstopdf)                    date: 2016-03-10 22:05:59
+(epstopdf)                    size: 8326 bytes
 (epstopdf)             Command: <repstopdf --outfile=experimental_discharge-eps
 -converted-to.pdf experimental_discharge.eps>
-(epstopdf)             \includegraphics on input line 635.
-runsystem(repstopdf --outfile=experimental_discharge-eps-converted-to.pdf exper
-imental_discharge.eps)...executed safely (allowed).
+(epstopdf)             \includegraphics on input line 641.
+Package epstopdf Info: Output file is already uptodate.
 
-Package epstopdf Info: Result file: <experimental_discharge-eps-converted-to.pd
-f>
-(epstopdf)                    date: 2016-03-10 22:05:59
-(epstopdf)                    size: 8326 bytes.
-
-<experimental_discharge-eps-converted-to.pdf, id=944, 571.13374pt x 311.1625pt>
+<experimental_discharge-eps-converted-to.pdf, id=969, 571.13374pt x 311.1625pt>
 File: experimental_discharge-eps-converted-to.pdf Graphic file (type pdf)
 <use experimental_discharge-eps-converted-to.pdf>
 Package pdftex.def Info: experimental_discharge-eps-converted-to.pdf used on in
-put line 635.
+put line 641.
 (pdftex.def)             Requested size: 375.80544pt x 204.7459pt.
 File: revo.png Graphic file (type png)
  <use revo.png>
-Package pdftex.def Info: revo.png used on input line 641.
+Package pdftex.def Info: revo.png used on input line 645.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [19 <./discharge.png> <./experimental_discharge-eps-converted-to.pdf>]
+ [17 <./discharge.png>]
 Package epstopdf Info: Source file: <voltage.eps>
 (epstopdf)                    date: 2016-03-10 22:03:26
 (epstopdf)                    size: 17541 bytes
 (epstopdf)             Output file: <voltage-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-03-10 22:06:02
+(epstopdf)                    size: 9049 bytes
 (epstopdf)             Command: <repstopdf --outfile=voltage-eps-converted-to.p
 df voltage.eps>
-(epstopdf)             \includegraphics on input line 658.
-runsystem(repstopdf --outfile=voltage-eps-converted-to.pdf voltage.eps)...execu
-ted safely (allowed).
-
-Package epstopdf Info: Result file: <voltage-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-03-10 22:06:02
-(epstopdf)                    size: 9049 bytes.
-
-<voltage-eps-converted-to.pdf, id=959, 578.16pt x 348.30125pt>
+(epstopdf)             \includegraphics on input line 664.
+Package epstopdf Info: Output file is already uptodate.
+ <voltage-eps-converted-to.pdf, id=977, 578.16pt x 348.30125pt>
 File: voltage-eps-converted-to.pdf Graphic file (type pdf)
 
 <use voltage-eps-converted-to.pdf>
-Package pdftex.def Info: voltage-eps-converted-to.pdf used on input line 658.
+Package pdftex.def Info: voltage-eps-converted-to.pdf used on input line 664.
 (pdftex.def)             Requested size: 375.80544pt x 226.39313pt.
+File: revo.png Graphic file (type png)
+ <use revo.png>
+Package pdftex.def Info: revo.png used on input line 668.
+(pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
+ [18 <./experimental_discharge-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <current.eps>
 (epstopdf)                    date: 2016-03-10 21:58:14
 (epstopdf)                    size: 17478 bytes
 (epstopdf)             Output file: <current-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-03-10 22:06:04
+(epstopdf)                    size: 8525 bytes
 (epstopdf)             Command: <repstopdf --outfile=current-eps-converted-to.p
 df current.eps>
-(epstopdf)             \includegraphics on input line 665.
-runsystem(repstopdf --outfile=current-eps-converted-to.pdf current.eps)...execu
-ted safely (allowed).
+(epstopdf)             \includegraphics on input line 671.
+Package epstopdf Info: Output file is already uptodate.
 
-Package epstopdf Info: Result file: <current-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-03-10 22:06:04
-(epstopdf)                    size: 8525 bytes.
-
-<current-eps-converted-to.pdf, id=962, 576.1525pt x 345.29pt>
+<current-eps-converted-to.pdf, id=998, 576.1525pt x 345.29pt>
 File: current-eps-converted-to.pdf Graphic file (type pdf)
 
 <use current-eps-converted-to.pdf>
-Package pdftex.def Info: current-eps-converted-to.pdf used on input line 665.
+Package pdftex.def Info: current-eps-converted-to.pdf used on input line 671.
 (pdftex.def)             Requested size: 375.80544pt x 225.2314pt.
 File: revo.png Graphic file (type png)
  <use revo.png>
-Package pdftex.def Info: revo.png used on input line 669.
+Package pdftex.def Info: revo.png used on input line 693.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [20 <./voltage-eps-converted-to.pdf>] <anderson_hvd_interlock.png, id=982, 739
-.26187pt x 501.37312pt>
+ [19 <./voltage-eps-converted-to.pdf> <./current-eps-converted-to.pdf>]
+<Discharge_PCB.png, id=1020, 395.4775pt x 326.21875pt>
+File: Discharge_PCB.png Graphic file (type png)
+ <use Discharge_PCB.png>
+Package pdftex.def Info: Discharge_PCB.png used on input line 702.
+(pdftex.def)             Requested size: 281.85587pt x 232.49797pt.
+
+<anderson_hvd_interlock.png, id=1022, 739.26187pt x 501.37312pt>
 File: anderson_hvd_interlock.png Graphic file (type png)
 
 <use anderson_hvd_interlock.png>
-Package pdftex.def Info: anderson_hvd_interlock.png used on input line 704.
+Package pdftex.def Info: anderson_hvd_interlock.png used on input line 717.
 (pdftex.def)             Requested size: 117.43875pt x 79.64755pt.
 File: revo.png Graphic file (type png)
  <use revo.png>
-Package pdftex.def Info: revo.png used on input line 708.
+Package pdftex.def Info: revo.png used on input line 721.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [21 <./current-eps-converted-to.pdf>] <HVD.png, id=995, 287.69019pt x 198.4645
-4pt>
+ [20 <./Discharge_PCB.png>]
+<HVD.png, id=1029, 287.69019pt x 198.46454pt>
 File: HVD.png Graphic file (type png)
  <use HVD.png>
-Package pdftex.def Info: HVD.png used on input line 715.
+Package pdftex.def Info: HVD.png used on input line 728.
 (pdftex.def)             Requested size: 352.31625pt x 243.04698pt.
 
-<hvd_position.jpg, id=996, 475.7775pt x 349.90726pt>
+<hvd_position.jpg, id=1031, 475.7775pt x 349.90726pt>
 File: hvd_position.jpg Graphic file (type jpg)
  <use hvd_position.jpg>
-Package pdftex.def Info: hvd_position.jpg used on input line 727.
+Package pdftex.def Info: hvd_position.jpg used on input line 740.
 (pdftex.def)             Requested size: 281.85587pt x 207.29774pt.
 File: revo.png Graphic file (type png)
 
 <use revo.png>
-Package pdftex.def Info: revo.png used on input line 731.
+Package pdftex.def Info: revo.png used on input line 744.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [22 <./anderson_hvd_interlock.png> <./HVD.png>]
-<R2Dsoundbuzzerschem.png, id=1005, 368.93835pt x 202.71735pt>
+ [21 <./anderson_hvd_interlock.png> <./HVD.png>]
+<R2Dsoundbuzzerschem.png, id=1040, 368.93835pt x 202.71735pt>
 File: R2Dsoundbuzzerschem.png Graphic file (type png)
 
 <use R2Dsoundbuzzerschem.png>
-Package pdftex.def Info: R2Dsoundbuzzerschem.png used on input line 744.
+Package pdftex.def Info: R2Dsoundbuzzerschem.png used on input line 757.
 (pdftex.def)             Requested size: 422.77664pt x 232.3189pt.
 File: revo.png Graphic file (type png)
  <use revo.png>
-Package pdftex.def Info: revo.png used on input line 748.
+Package pdftex.def Info: revo.png used on input line 761.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [23 <./hvd_position.jpg>]
+ [22 <./hvd_position.jpg>]
 File: revo.png Graphic file (type png)
 
 <use revo.png>
-Package pdftex.def Info: revo.png used on input line 767.
+Package pdftex.def Info: revo.png used on input line 780.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [24 <./R2Dsoundbuzzerschem.png>]
-! Undefined control sequence.
-l.787             Maximum nominal current & \h
-                                              {NDA} \\ \hline
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+ [23 <./R2Dsoundbuzzerschem.png>]
+<accumulatorlocation.png, id=1061, 1114.1625pt x 614.295pt>
+File: accumulatorlocation.png Graphic file (type png)
 
-<moduleschem.png, id=1025, 139.2402pt x 134.6631pt>
-File: moduleschem.png Graphic file (type png)
- <use moduleschem.png>
-Package pdftex.def Info: moduleschem.png used on input line 831.
-(pdftex.def)             Requested size: 139.23985pt x 134.66277pt.
-File: revo.png Graphic file (type png)
-
-<use revo.png>
-Package pdftex.def Info: revo.png used on input line 835.
-(pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [25]
-
-LaTeX Warning: Reference `{module}' on page 0 undefined on input line 836.
-
-! Argument of \T@ref has an extra }.
-<inserted text> 
-                \par 
-l.836 ... point, as shown in figure \ref{module}.}
-                                                  
-I've run across a `}' that doesn't seem to match anything.
-For example, `\def\a#1{...}' and `\a}' would produce
-this error. If you simply proceed now, the `\par' that
-I've just inserted will cause me to report a runaway
-argument that might be the root of the problem. But if
-your `}' was spurious, just type `2' and it will go away.
-
-Runaway argument?
-! Paragraph ended before \T@ref was complete.
-<to be read again> 
-                   \par 
-l.836 ... point, as shown in figure \ref{module}.}
-                                                  
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-! You can't use `\endcsname' after \the.
-\NR@setref ... \NR@@setref \csname r@#1\endcsname 
-                                                  
-l.836 ... point, as shown in figure \ref{module}.}
-                                                  
-I'm forgetting what you said and using zero instead.
-
-! Argument of \@firstoffive has an extra }.
-<inserted text> 
-                \par 
-l.836 ... point, as shown in figure \ref{module}.}
-                                                  
-I've run across a `}' that doesn't seem to match anything.
-For example, `\def\a#1{...}' and `\a}' would produce
-this error. If you simply proceed now, the `\par' that
-I've just inserted will cause me to report a runaway
-argument that might be the root of the problem. But if
-your `}' was spurious, just type `2' and it will go away.
-
-Runaway argument?
-! Paragraph ended before \@firstoffive was complete.
-<to be read again> 
-                   \par 
-l.836 ... point, as shown in figure \ref{module}.}
-                                                  
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-! Missing \endcsname inserted.
-<to be read again> 
-                   \par 
-l.836 ... point, as shown in figure \ref{module}.}
-                                                  
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
-
-Runaway argument?
-! Paragraph ended before \@setref was complete.
-<to be read again> 
-                   \par 
-l.836 ... point, as shown in figure \ref{module}.}
-                                                  
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-! Missing \endcsname inserted.
-<to be read again> 
-                   \hbox 
-l.836 ... point, as shown in figure \ref{module}.}
-                                                  
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
-
-
-LaTeX Warning: Reference `' on page 0 undefined on input line 836.
-
-! Extra \endcsname.
-\NR@setref ... \NR@@setref \csname r@#1\endcsname 
-                                                  
-l.836 ... point, as shown in figure \ref{module}.}
-                                                  
-I'm ignoring this, since I wasn't doing a \csname.
-
-! Argument of \@firstoffive has an extra }.
-<inserted text> 
-                \par 
-l.836 ... point, as shown in figure \ref{module}.}
-                                                  
-I've run across a `}' that doesn't seem to match anything.
-For example, `\def\a#1{...}' and `\a}' would produce
-this error. If you simply proceed now, the `\par' that
-I've just inserted will cause me to report a runaway
-argument that might be the root of the problem. But if
-your `}' was spurious, just type `2' and it will go away.
-
-Runaway argument?
-! Paragraph ended before \@firstoffive was complete.
-<to be read again> 
-                   \par 
-l.836 ... point, as shown in figure \ref{module}.}
-                                                  
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-
-! Package soul Error: Reconstruction failed.
-
-See the soul package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.836 ... point, as shown in figure \ref{module}.}
-                                                  
-I came across hyphenatable material enclosed in group braces,
-which I can't handle. Either drop the braces or make the material
-unbreakable using an \mbox (\hbox). Note that a space
-also counts as possible hyphenation point. See page 4 of the manual.
-I'm leaving a black square so that you can see where I am right now.
-
-<OpenModule.jpg, id=1032, 3613.5pt x 2409.0pt>
-File: OpenModule.jpg Graphic file (type jpg)
- <use OpenModule.jpg>
-Package pdftex.def Info: OpenModule.jpg used on input line 840.
-(pdftex.def)             Requested size: 281.85587pt x 187.87184pt.
-
-<busbar_routing.png, id=1034, 758.08218pt x 478.03593pt>
-File: busbar_routing.png Graphic file (type png)
-
-<use busbar_routing.png>
-Package pdftex.def Info: busbar_routing.png used on input line 849.
-(pdftex.def)             Requested size: 281.85587pt x 177.73123pt.
+<use accumulatorlocation.png>
+Package pdftex.def Info: accumulatorlocation.png used on input line 815.
+(pdftex.def)             Requested size: 328.82707pt x 181.2998pt.
 File: revo.png Graphic file (type png)
  <use revo.png>
-Package pdftex.def Info: revo.png used on input line 853.
+Package pdftex.def Info: revo.png used on input line 844.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [26 <./moduleschem.png> <./OpenModule.jpg>] <celltemp.png, id=1040, 262.11774p
-t x 393.59354pt>
-File: celltemp.png Graphic file (type png)
- <use celltemp.png>
-Package pdftex.def Info: celltemp.png used on input line 862.
-(pdftex.def)             Requested size: 234.8775pt x 352.69943pt.
+ [24 <./accumulatorlocation.png>]
+<moduleschem.png, id=1066, 139.2402pt x 134.6631pt>
+File: moduleschem.png Graphic file (type png)
+ <use moduleschem.png>
+Package pdftex.def Info: moduleschem.png used on input line 853.
+(pdftex.def)             Requested size: 139.23985pt x 134.66277pt.
+
+<OpenModule.jpg, id=1070, 3613.5pt x 2409.0pt>
+File: OpenModule.jpg Graphic file (type jpg)
+ <use OpenModule.jpg>
+Package pdftex.def Info: OpenModule.jpg used on input line 862.
+(pdftex.def)             Requested size: 281.85587pt x 187.87184pt.
 File: revo.png Graphic file (type png)
 
 <use revo.png>
 Package pdftex.def Info: revo.png used on input line 866.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [27 <./busbar_routing.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 879--880
+ [25 <./moduleschem.png>]
+<busbar_routing.png, id=1076, 758.08218pt x 478.03593pt>
+File: busbar_routing.png Graphic file (type png)
+
+<use busbar_routing.png>
+Package pdftex.def Info: busbar_routing.png used on input line 871.
+(pdftex.def)             Requested size: 281.85587pt x 177.73123pt.
+ <celltemp.png, id=1079, 262.11774pt x 393.59354pt>
+File: celltemp.png Graphic file (type png)
+
+<use celltemp.png>
+Package pdftex.def Info: celltemp.png used on input line 886.
+(pdftex.def)             Requested size: 234.8775pt x 352.69943pt.
+File: revo.png Graphic file (type png)
+ <use revo.png>
+Package pdftex.def Info: revo.png used on input line 889.
+(pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
+ [26 <./OpenModule.jpg> <./busbar_routing.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 903--904
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 881--882
+Underfull \hbox (badness 10000) in paragraph at lines 905--906
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 883--884
+Underfull \hbox (badness 10000) in paragraph at lines 907--908
 
  []
 
 File: revo.png Graphic file (type png)
 <use revo.png>
-Package pdftex.def Info: revo.png used on input line 888.
+Package pdftex.def Info: revo.png used on input line 908.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [28 <./celltemp.png>]
-<bms_final1_PCBCAD.png, id=1056, 550.055pt x 539.01375pt>
+ [27 <./celltemp.png>]
+<bms_final1_PCBCAD.png, id=1095, 550.055pt x 539.01375pt>
 File: bms_final1_PCBCAD.png Graphic file (type png)
 
 <use bms_final1_PCBCAD.png>
-Package pdftex.def Info: bms_final1_PCBCAD.png used on input line 891.
+Package pdftex.def Info: bms_final1_PCBCAD.png used on input line 915.
 (pdftex.def)             Requested size: 328.82707pt x 322.2346pt.
 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.892 ...ment is the distance between TS and GLV.}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.892 ...ment is the distance between TS and GLV.}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.892 ...ment is the distance between TS and GLV.}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.892 ...ment is the distance between TS and GLV.}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-<bms_separation_detail.png, id=1057, 744.7825pt x 612.2875pt>
+<bms_separation_detail.png, id=1096, 744.7825pt x 612.2875pt>
 File: bms_separation_detail.png Graphic file (type png)
 
 <use bms_separation_detail.png>
-Package pdftex.def Info: bms_separation_detail.png used on input line 899.
+Package pdftex.def Info: bms_separation_detail.png used on input line 923.
 (pdftex.def)             Requested size: 375.80544pt x 308.95517pt.
 File: revo.png Graphic file (type png)
  <use revo.png>
-Package pdftex.def Info: revo.png used on input line 903.
+Package pdftex.def Info: revo.png used on input line 927.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [29 <./bms_final1_PCBCAD.png>]
-
-LaTeX Warning: Reference `{celltopLH}' on page 0 undefined on input line 904.
-
-! Argument of \T@ref has an extra }.
-<inserted text> 
-                \par 
-l.904 ...ght hand side, figure \ref{celltopRH}.  }
-                                                   The cell breakout board c...
-I've run across a `}' that doesn't seem to match anything.
-For example, `\def\a#1{...}' and `\a}' would produce
-this error. If you simply proceed now, the `\par' that
-I've just inserted will cause me to report a runaway
-argument that might be the root of the problem. But if
-your `}' was spurious, just type `2' and it will go away.
-
-Runaway argument?
-! Paragraph ended before \T@ref was complete.
-<to be read again> 
-                   \par 
-l.904 ...ght hand side, figure \ref{celltopRH}.  }
-                                                   The cell breakout board c...
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-! You can't use `\endcsname' after \the.
-\NR@setref ... \NR@@setref \csname r@#1\endcsname 
-                                                  
-l.904 ...ght hand side, figure \ref{celltopRH}.  }
-                                                   The cell breakout board c...
-I'm forgetting what you said and using zero instead.
-
-! Argument of \@firstoffive has an extra }.
-<inserted text> 
-                \par 
-l.904 ...ght hand side, figure \ref{celltopRH}.  }
-                                                   The cell breakout board c...
-I've run across a `}' that doesn't seem to match anything.
-For example, `\def\a#1{...}' and `\a}' would produce
-this error. If you simply proceed now, the `\par' that
-I've just inserted will cause me to report a runaway
-argument that might be the root of the problem. But if
-your `}' was spurious, just type `2' and it will go away.
-
-Runaway argument?
-! Paragraph ended before \@firstoffive was complete.
-<to be read again> 
-                   \par 
-l.904 ...ght hand side, figure \ref{celltopRH}.  }
-                                                   The cell breakout board c...
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-! Missing \endcsname inserted.
-<to be read again> 
-                   \par 
-l.904 ...ght hand side, figure \ref{celltopRH}.  }
-                                                   The cell breakout board c...
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
-
-Runaway argument?
-! Paragraph ended before \@setref was complete.
-<to be read again> 
-                   \par 
-l.904 ...ght hand side, figure \ref{celltopRH}.  }
-                                                   The cell breakout board c...
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-! Missing \endcsname inserted.
-<to be read again> 
-                   \hbox 
-l.904 ...ght hand side, figure \ref{celltopRH}.  }
-                                                   The cell breakout board c...
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
-
-
-LaTeX Warning: Reference `' on page 0 undefined on input line 904.
-
-! Extra \endcsname.
-\NR@setref ... \NR@@setref \csname r@#1\endcsname 
-                                                  
-l.904 ...ght hand side, figure \ref{celltopRH}.  }
-                                                   The cell breakout board c...
-I'm ignoring this, since I wasn't doing a \csname.
-
-! Argument of \@firstoffive has an extra }.
-<inserted text> 
-                \par 
-l.904 ...ght hand side, figure \ref{celltopRH}.  }
-                                                   The cell breakout board c...
-I've run across a `}' that doesn't seem to match anything.
-For example, `\def\a#1{...}' and `\a}' would produce
-this error. If you simply proceed now, the `\par' that
-I've just inserted will cause me to report a runaway
-argument that might be the root of the problem. But if
-your `}' was spurious, just type `2' and it will go away.
-
-Runaway argument?
-! Paragraph ended before \@firstoffive was complete.
-<to be read again> 
-                   \par 
-l.904 ...ght hand side, figure \ref{celltopRH}.  }
-                                                   The cell breakout board c...
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-
-! Package soul Error: Reconstruction failed.
-
-See the soul package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.904 ...ght hand side, figure \ref{celltopRH}.  }
-                                                   The cell breakout board c...
-
-I came across hyphenatable material enclosed in group braces,
-which I can't handle. Either drop the braces or make the material
-unbreakable using an \mbox (\hbox). Note that a space
-also counts as possible hyphenation point. See page 4 of the manual.
-I'm leaving a black square so that you can see where I am right now.
-
-
-LaTeX Warning: Reference `{celltopRH}' on page 0 undefined on input line 904.
-
-! Argument of \T@ref has an extra }.
-<inserted text> 
-                \par 
-l.904 ...ght hand side, figure \ref{celltopRH}.  }
-                                                   The cell breakout board c...
-I've run across a `}' that doesn't seem to match anything.
-For example, `\def\a#1{...}' and `\a}' would produce
-this error. If you simply proceed now, the `\par' that
-I've just inserted will cause me to report a runaway
-argument that might be the root of the problem. But if
-your `}' was spurious, just type `2' and it will go away.
-
-Runaway argument?
-! Paragraph ended before \T@ref was complete.
-<to be read again> 
-                   \par 
-l.904 ...ght hand side, figure \ref{celltopRH}.  }
-                                                   The cell breakout board c...
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-! You can't use `\endcsname' after \the.
-\NR@setref ... \NR@@setref \csname r@#1\endcsname 
-                                                  
-l.904 ...ght hand side, figure \ref{celltopRH}.  }
-                                                   The cell breakout board c...
-I'm forgetting what you said and using zero instead.
-
-! Argument of \@firstoffive has an extra }.
-<inserted text> 
-                \par 
-l.904 ...ght hand side, figure \ref{celltopRH}.  }
-                                                   The cell breakout board c...
-I've run across a `}' that doesn't seem to match anything.
-For example, `\def\a#1{...}' and `\a}' would produce
-this error. If you simply proceed now, the `\par' that
-I've just inserted will cause me to report a runaway
-argument that might be the root of the problem. But if
-your `}' was spurious, just type `2' and it will go away.
-
-Runaway argument?
-! Paragraph ended before \@firstoffive was complete.
-<to be read again> 
-                   \par 
-l.904 ...ght hand side, figure \ref{celltopRH}.  }
-                                                   The cell breakout board c...
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-! Missing \endcsname inserted.
-<to be read again> 
-                   \par 
-l.904 ...ght hand side, figure \ref{celltopRH}.  }
-                                                   The cell breakout board c...
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
-
-Runaway argument?
-! Paragraph ended before \@setref was complete.
-<to be read again> 
-                   \par 
-l.904 ...ght hand side, figure \ref{celltopRH}.  }
-                                                   The cell breakout board c...
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-! Missing \endcsname inserted.
-<to be read again> 
-                   \hbox 
-l.904 ...ght hand side, figure \ref{celltopRH}.  }
-                                                   The cell breakout board c...
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
-
-
-LaTeX Warning: Reference `' on page 0 undefined on input line 904.
-
-! Extra \endcsname.
-\NR@setref ... \NR@@setref \csname r@#1\endcsname 
-                                                  
-l.904 ...ght hand side, figure \ref{celltopRH}.  }
-                                                   The cell breakout board c...
-I'm ignoring this, since I wasn't doing a \csname.
-
-! Argument of \@firstoffive has an extra }.
-<inserted text> 
-                \par 
-l.904 ...ght hand side, figure \ref{celltopRH}.  }
-                                                   The cell breakout board c...
-I've run across a `}' that doesn't seem to match anything.
-For example, `\def\a#1{...}' and `\a}' would produce
-this error. If you simply proceed now, the `\par' that
-I've just inserted will cause me to report a runaway
-argument that might be the root of the problem. But if
-your `}' was spurious, just type `2' and it will go away.
-
-Runaway argument?
-! Paragraph ended before \@firstoffive was complete.
-<to be read again> 
-                   \par 
-l.904 ...ght hand side, figure \ref{celltopRH}.  }
-                                                   The cell breakout board c...
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-
-! Package soul Error: Reconstruction failed.
-
-See the soul package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.904 ...ght hand side, figure \ref{celltopRH}.  }
-                                                   The cell breakout board c...
-
-I came across hyphenatable material enclosed in group braces,
-which I can't handle. Either drop the braces or make the material
-unbreakable using an \mbox (\hbox). Note that a space
-also counts as possible hyphenation point. See page 4 of the manual.
-I'm leaving a black square so that you can see where I am right now.
-
-<CellTopSchem.png, id=1065, 624.3325pt x 603.25375pt>
+ [28 <./bms_final1_PCBCAD.png>]
+<CellTopSchem.png, id=1105, 624.3325pt x 603.25375pt>
 File: CellTopSchem.png Graphic file (type png)
  <use CellTopSchem.png>
-Package pdftex.def Info: CellTopSchem.png used on input line 908.
+Package pdftex.def Info: CellTopSchem.png used on input line 932.
 (pdftex.def)             Requested size: 187.89914pt x 181.54822pt.
 
-
-! LaTeX Error: File `CellTopLH' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.917 ...aphics[width = 0.4 \textwidth]{CellTopLH}
-                                                  
-I could not locate the file with any of these extensions:
-.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+<CellTopLH.png, id=1106, 627.34375pt x 617.30624pt>
+File: CellTopLH.png Graphic file (type png)
+ <use CellTopLH.png>
+Package pdftex.def Info: CellTopLH.png used on input line 941.
+(pdftex.def)             Requested size: 187.89914pt x 184.89188pt.
 File: revo.png Graphic file (type png)
+
 <use revo.png>
-Package pdftex.def Info: revo.png used on input line 921.
+Package pdftex.def Info: revo.png used on input line 945.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [30 <./bms_separation_detail.png> <./CellTopSchem.png>]
-<CellTopRH.png, id=1071, 616.3025pt x 616.3025pt>
+ [29 <./bms_separation_detail.png> <./CellTopSchem.png>]
+<CellTopRH.png, id=1113, 616.3025pt x 616.3025pt>
 File: CellTopRH.png Graphic file (type png)
  <use CellTopRH.png>
-Package pdftex.def Info: CellTopRH.png used on input line 924.
+Package pdftex.def Info: CellTopRH.png used on input line 948.
 (pdftex.def)             Requested size: 187.89914pt x 187.89204pt.
 
-<batterybox_topview.png, id=1072, 658.71094pt x 521.69907pt>
+<batterybox_topview.png, id=1114, 658.71094pt x 521.69907pt>
 File: batterybox_topview.png Graphic file (type png)
 
 <use batterybox_topview.png>
-Package pdftex.def Info: batterybox_topview.png used on input line 931.
+Package pdftex.def Info: batterybox_topview.png used on input line 955.
 (pdftex.def)             Requested size: 281.85587pt x 223.23563pt.
- <ai.png, id=1073, 520.94624pt x 718.685pt>
+File: revo.png Graphic file (type png)
+ <use revo.png>
+Package pdftex.def Info: revo.png used on input line 959.
+(pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
+ [30 <./CellTopLH.png> <./CellTopRH.png>] <ai.png, id=1119, 520.94624pt x 718.6
+85pt>
 File: ai.png Graphic file (type png)
-
-<use ai.png>
-Package pdftex.def Info: ai.png used on input line 943.
+ <use ai.png>
+Package pdftex.def Info: ai.png used on input line 969.
 (pdftex.def)             Requested size: 140.92793pt x 194.4204pt.
 File: revo.png Graphic file (type png)
  <use revo.png>
-Package pdftex.def Info: revo.png used on input line 947.
+Package pdftex.def Info: revo.png used on input line 1000.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [31 <./CellTopRH.png> <./batterybox_topview.png>]
+
+[31 <./batterybox_topview.png> <./ai.png (PNG copy)>]
+<msd_highres.jpg, id=1132, 1604.99625pt x 1606.0pt>
+File: msd_highres.jpg Graphic file (type jpg)
+ <use msd_highres.jpg>
+Package pdftex.def Info: msd_highres.jpg used on input line 1010.
+(pdftex.def)             Requested size: 234.8775pt x 235.00827pt.
 File: revo.png Graphic file (type png)
 
 <use revo.png>
-Package pdftex.def Info: revo.png used on input line 980.
+Package pdftex.def Info: revo.png used on input line 1037.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [32 <./ai.png (PNG copy)>]
-<msd_highres.jpg, id=1090, 1604.99625pt x 1606.0pt>
-File: msd_highres.jpg Graphic file (type jpg)
- <use msd_highres.jpg>
-Package pdftex.def Info: msd_highres.jpg used on input line 984.
-(pdftex.def)             Requested size: 234.8775pt x 235.00827pt.
-
-<AIRswitching.png, id=1092, 585.18625pt x 575.14874pt>
+ [32 <./msd_highres.jpg>]
+<AIRswitching.png, id=1138, 585.18625pt x 575.14874pt>
 File: AIRswitching.png Graphic file (type png)
  <use AIRswitching.png>
-Package pdftex.def Info: AIRswitching.png used on input line 1014.
+Package pdftex.def Info: AIRswitching.png used on input line 1040.
 (pdftex.def)             Requested size: 328.82707pt x 323.19566pt.
 File: revo.png Graphic file (type png)
 
 <use revo.png>
-Package pdftex.def Info: revo.png used on input line 1018.
+Package pdftex.def Info: revo.png used on input line 1063.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [33 <./msd_highres.jpg>]
+ [33 <./AIRswitching.png>]
 File: revo.png Graphic file (type png)
  <use revo.png>
-Package pdftex.def Info: revo.png used on input line 1055.
+Package pdftex.def Info: revo.png used on input line 1123.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [34 <./AIRswitching.png>] <TSfuseT-Agraph.png, id=1102, 399.4925pt x 771.88374
-pt>
+ [34]
+<TSfuseT-Agraph.png, id=1148, 399.4925pt x 771.88374pt>
 File: TSfuseT-Agraph.png Graphic file (type png)
 
 <use TSfuseT-Agraph.png>
-Package pdftex.def Info: TSfuseT-Agraph.png used on input line 1089.
+Package pdftex.def Info: TSfuseT-Agraph.png used on input line 1142.
 (pdftex.def)             Requested size: 162.6075pt x 314.17767pt.
 File: revo.png Graphic file (type png)
  <use revo.png>
-Package pdftex.def Info: revo.png used on input line 1093.
+Package pdftex.def Info: revo.png used on input line 1167.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [35]
-Overfull \hbox (16.07932pt too wide) in paragraph at lines 1100--1111
- [][] 
- []
-
-File: revo.png Graphic file (type png)
-<use revo.png>
-Package pdftex.def Info: revo.png used on input line 1136.
-(pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [36 <./TSfuseT-Agraph.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1137--1138
+ [35 <./TSfuseT-Agraph.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1189--1190
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1139--1140
+Underfull \hbox (badness 10000) in paragraph at lines 1191--1192
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1141--1142
+Underfull \hbox (badness 10000) in paragraph at lines 1193--1194
 
  []
 
-<chargepic.png, id=1115, 393.47pt x 388.45125pt>
+<chargepic.png, id=1156, 393.47pt x 388.45125pt>
 File: chargepic.png Graphic file (type png)
  <use chargepic.png>
-Package pdftex.def Info: chargepic.png used on input line 1148.
+Package pdftex.def Info: chargepic.png used on input line 1200.
 (pdftex.def)             Requested size: 234.8775pt x 231.88115pt.
+File: revo.png Graphic file (type png)
 
-Underfull \hbox (badness 10000) in paragraph at lines 1157--1158
+<use revo.png>
+Package pdftex.def Info: revo.png used on input line 1204.
+(pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
+ [36]
+Underfull \hbox (badness 10000) in paragraph at lines 1209--1210
 
  []
 
-File: revo.png Graphic file (type png)
-<use revo.png>
-Package pdftex.def Info: revo.png used on input line 1158.
-(pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [37 <./chargepic.png>]
-<accumulator_frame.png, id=1123, 617.30624pt x 602.25pt>
+<accumulator_frame.png, id=1164, 617.30624pt x 602.25pt>
 File: accumulator_frame.png Graphic file (type png)
 
 <use accumulator_frame.png>
-Package pdftex.def Info: accumulator_frame.png used on input line 1163.
+Package pdftex.def Info: accumulator_frame.png used on input line 1215.
 (pdftex.def)             Requested size: 234.8775pt x 229.15144pt.
-
-<cellmount_cutaway.png, id=1124, 1134.2375pt x 645.41125pt>
+File: revo.png Graphic file (type png)
+ <use revo.png>
+Package pdftex.def Info: revo.png used on input line 1219.
+(pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
+ [37 <./chargepic.png>]
+<cellmount_cutaway.png, id=1169, 1134.2375pt x 645.41125pt>
 File: cellmount_cutaway.png Graphic file (type png)
 
 <use cellmount_cutaway.png>
-Package pdftex.def Info: cellmount_cutaway.png used on input line 1170.
+Package pdftex.def Info: cellmount_cutaway.png used on input line 1222.
 (pdftex.def)             Requested size: 234.8775pt x 133.6495pt.
 
-<cellmount_exploded.png, id=1125, 963.6pt x 744.53156pt>
+<cellmount_exploded.png, id=1170, 963.6pt x 744.53156pt>
 File: cellmount_exploded.png Graphic file (type png)
 
 <use cellmount_exploded.png>
-Package pdftex.def Info: cellmount_exploded.png used on input line 1177.
+Package pdftex.def Info: cellmount_exploded.png used on input line 1229.
 (pdftex.def)             Requested size: 234.8775pt x 181.47458pt.
 File: revo.png Graphic file (type png)
  <use revo.png>
-Package pdftex.def Info: revo.png used on input line 1181.
+Package pdftex.def Info: revo.png used on input line 1233.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
  [38 <./accumulator_frame.png> <./cellmount_cutaway.png>]
 File: revo.png Graphic file (type png)
  <use revo.png>
-Package pdftex.def Info: revo.png used on input line 1189.
+Package pdftex.def Info: revo.png used on input line 1241.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
  [39 <./cellmount_exploded.png>]
 File: revo.png Graphic file (type png)
 
 <use revo.png>
-Package pdftex.def Info: revo.png used on input line 1209.
+Package pdftex.def Info: revo.png used on input line 1261.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
  [40]
-<motorcontrollers_separate.png, id=1143, 1005.00468pt x 525.46312pt>
+<motorcontrollers_separate.png, id=1187, 1005.00468pt x 525.46312pt>
 File: motorcontrollers_separate.png Graphic file (type png)
 
 <use motorcontrollers_separate.png>
-Package pdftex.def Info: motorcontrollers_separate.png used on input line 1221.
+Package pdftex.def Info: motorcontrollers_separate.png used on input line 1273.
 
 (pdftex.def)             Requested size: 328.82707pt x 171.92004pt.
 
-<motorcontroller.png, id=1145, 278.51746pt x 299.9205pt>
+<motorcontroller.png, id=1189, 278.51746pt x 299.9205pt>
 File: motorcontroller.png Graphic file (type png)
 
 <use motorcontroller.png>
-Package pdftex.def Info: motorcontroller.png used on input line 1267.
+Package pdftex.def Info: motorcontroller.png used on input line 1319.
 (pdftex.def)             Requested size: 352.31625pt x 379.41203pt.
 File: revo.png Graphic file (type png)
  <use revo.png>
-Package pdftex.def Info: revo.png used on input line 1271.
+Package pdftex.def Info: revo.png used on input line 1323.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [41 <./motorcontrollers_separate.png>] <motorcontroller_sideview.png, id=1157,
+ [41 <./motorcontrollers_separate.png>] <motorcontroller_sideview.png, id=1201,
  543.53062pt x 517.935pt>
 File: motorcontroller_sideview.png Graphic file (type png)
 
 <use motorcontroller_sideview.png>
-Package pdftex.def Info: motorcontroller_sideview.png used on input line 1283.
+Package pdftex.def Info: motorcontroller_sideview.png used on input line 1335.
 (pdftex.def)             Requested size: 281.85587pt x 268.59276pt.
 File: revo.png Graphic file (type png)
  <use revo.png>
-Package pdftex.def Info: revo.png used on input line 1287.
+Package pdftex.def Info: revo.png used on input line 1339.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
  [42 <./motorcontroller.png>]
-<motorcontroller_isoview.png, id=1163, 812.28468pt x 504.38437pt>
+<motorcontroller_isoview.png, id=1207, 812.28468pt x 504.38437pt>
 File: motorcontroller_isoview.png Graphic file (type png)
 
 <use motorcontroller_isoview.png>
-Package pdftex.def Info: motorcontroller_isoview.png used on input line 1290.
+Package pdftex.def Info: motorcontroller_isoview.png used on input line 1342.
 (pdftex.def)             Requested size: 281.85587pt x 175.0133pt.
 
-<motorcontroller_rearview.png, id=1164, 755.82375pt x 453.94594pt>
+<motorcontroller_rearview.png, id=1208, 755.82375pt x 453.94594pt>
 File: motorcontroller_rearview.png Graphic file (type png)
 
 <use motorcontroller_rearview.png>
-Package pdftex.def Info: motorcontroller_rearview.png used on input line 1297.
+Package pdftex.def Info: motorcontroller_rearview.png used on input line 1349.
 (pdftex.def)             Requested size: 281.85587pt x 169.28035pt.
 File: revo.png Graphic file (type png)
  <use revo.png>
-Package pdftex.def Info: revo.png used on input line 1301.
+Package pdftex.def Info: revo.png used on input line 1353.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
  [43 <./motorcontroller_sideview.png> <./motorcontroller_isoview.png>]
 File: revo.png Graphic file (type png)
  <use revo.png>
-Package pdftex.def Info: revo.png used on input line 1306.
+Package pdftex.def Info: revo.png used on input line 1358.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [44 <./motorcontroller_rearview.png>] <motor_isorear.png, id=1178, 505.13719pt
+ [44 <./motorcontroller_rearview.png>] <motor_isorear.png, id=1222, 505.13719pt
  x 518.6878pt>
 File: motor_isorear.png Graphic file (type png)
 
 <use motor_isorear.png>
-Package pdftex.def Info: motor_isorear.png used on input line 1318.
+Package pdftex.def Info: motor_isorear.png used on input line 1370.
 (pdftex.def)             Requested size: 375.80544pt x 385.88866pt.
 File: revo.png Graphic file (type png)
  <use revo.png>
-Package pdftex.def Info: revo.png used on input line 1343.
+Package pdftex.def Info: revo.png used on input line 1395.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
  [45 <./motor_isorear.png>]
-<fx-motor-power-torque.png, id=1186, 580.1675pt x 307.1475pt>
+<fx-motor-power-torque.png, id=1230, 580.1675pt x 307.1475pt>
 File: fx-motor-power-torque.png Graphic file (type png)
 
 <use fx-motor-power-torque.png>
-Package pdftex.def Info: fx-motor-power-torque.png used on input line 1351.
+Package pdftex.def Info: fx-motor-power-torque.png used on input line 1403.
 (pdftex.def)             Requested size: 352.31625pt x 186.52078pt.
 
-<motormount_sideview.png, id=1192, 717.43031pt x 493.0922pt>
+<motormount_sideview.png, id=1236, 717.43031pt x 493.0922pt>
 File: motormount_sideview.png Graphic file (type png)
 
 <use motormount_sideview.png>
-Package pdftex.def Info: motormount_sideview.png used on input line 1370.
+Package pdftex.def Info: motormount_sideview.png used on input line 1422.
 (pdftex.def)             Requested size: 281.85587pt x 193.71968pt.
 File: revo.png Graphic file (type png)
  <use revo.png>
-Package pdftex.def Info: revo.png used on input line 1374.
+Package pdftex.def Info: revo.png used on input line 1426.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [46 <./fx-motor-power-torque.png>] <motormount_rearview.png, id=1198, 610.5309
+ [46 <./fx-motor-power-torque.png>] <motormount_rearview.png, id=1242, 610.5309
 4pt x 476.53032pt>
 File: motormount_rearview.png Graphic file (type png)
 
 <use motormount_rearview.png>
-Package pdftex.def Info: motormount_rearview.png used on input line 1377.
+Package pdftex.def Info: motormount_rearview.png used on input line 1429.
 (pdftex.def)             Requested size: 281.85587pt x 219.99918pt.
 
-<motormount_isoview.png, id=1199, 750.55406pt x 472.01344pt>
+<motormount_isoview.png, id=1243, 750.55406pt x 472.01344pt>
 File: motormount_isoview.png Graphic file (type png)
 
 <use motormount_isoview.png>
-Package pdftex.def Info: motormount_isoview.png used on input line 1384.
+Package pdftex.def Info: motormount_isoview.png used on input line 1436.
 (pdftex.def)             Requested size: 281.85587pt x 177.25668pt.
 File: revo.png Graphic file (type png)
  <use revo.png>
-Package pdftex.def Info: revo.png used on input line 1388.
+Package pdftex.def Info: revo.png used on input line 1440.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
  [47 <./motormount_sideview.png> <./motormount_rearview.png>]
 File: revo.png Graphic file (type png)
  <use revo.png>
-Package pdftex.def Info: revo.png used on input line 1393.
+Package pdftex.def Info: revo.png used on input line 1445.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
  [48 <./motormount_isoview.png>]
-<CANtorque.png, id=1214, 251.27724pt x 278.2395pt>
+<CANtorque.png, id=1259, 251.27724pt x 278.2395pt>
 File: CANtorque.png Graphic file (type png)
  <use CANtorque.png>
-Package pdftex.def Info: CANtorque.png used on input line 1418.
+Package pdftex.def Info: CANtorque.png used on input line 1470.
 (pdftex.def)             Requested size: 251.27663pt x 278.23882pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1427--1428
+Underfull \hbox (badness 10000) in paragraph at lines 1479--1480
 
  []
 
 File: revo.png Graphic file (type png)
 <use revo.png>
-Package pdftex.def Info: revo.png used on input line 1430.
+Package pdftex.def Info: revo.png used on input line 1482.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
  [49 <./CANtorque.png>]
-<torquebrakecheck.png, id=1220, 267.98497pt x 271.50081pt>
+<torquebrakecheck.png, id=1265, 267.98497pt x 271.50081pt>
 File: torquebrakecheck.png Graphic file (type png)
 
 <use torquebrakecheck.png>
-Package pdftex.def Info: torquebrakecheck.png used on input line 1437.
+Package pdftex.def Info: torquebrakecheck.png used on input line 1489.
 (pdftex.def)             Requested size: 267.9843pt x 271.50014pt.
 
-<torqueencoder.png, id=1221, 475.7775pt x 564.60938pt>
+<torqueencoder.png, id=1266, 475.7775pt x 564.60938pt>
 File: torqueencoder.png Graphic file (type png)
  <use torqueencoder.png>
-Package pdftex.def Info: torqueencoder.png used on input line 1452.
+Package pdftex.def Info: torqueencoder.png used on input line 1504.
 (pdftex.def)             Requested size: 234.8775pt x 278.73727pt.
 File: revo.png Graphic file (type png)
 
 <use revo.png>
-Package pdftex.def Info: revo.png used on input line 1456.
+Package pdftex.def Info: revo.png used on input line 1508.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
  [50 <./torquebrakecheck.png>]
-<torqueside.png, id=1227, 657.2053pt x 465.23813pt>
+<torqueside.png, id=1272, 657.2053pt x 465.23813pt>
 File: torqueside.png Graphic file (type png)
  <use torqueside.png>
-Package pdftex.def Info: torqueside.png used on input line 1459.
+Package pdftex.def Info: torqueside.png used on input line 1511.
 (pdftex.def)             Requested size: 328.82707pt x 232.78175pt.
 
-<torquefullcar.png, id=1228, 855.195pt x 394.47375pt>
+<torquefullcar.png, id=1273, 855.195pt x 394.47375pt>
 File: torquefullcar.png Graphic file (type png)
  <use torquefullcar.png>
-Package pdftex.def Info: torquefullcar.png used on input line 1466.
+Package pdftex.def Info: torquefullcar.png used on input line 1518.
 (pdftex.def)             Requested size: 328.82707pt x 151.67723pt.
 File: revo.png Graphic file (type png)
 
 <use revo.png>
-Package pdftex.def Info: revo.png used on input line 1470.
+Package pdftex.def Info: revo.png used on input line 1522.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
  [51 <./torqueencoder.png> <./torqueside.png>]
 File: revo.png Graphic file (type png)
  <use revo.png>
-Package pdftex.def Info: revo.png used on input line 1471.
+Package pdftex.def Info: revo.png used on input line 1523.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
 
 [52 <./torquefullcar.png>]
-<CANnodepower.png, id=1237, 410.18108pt x 300.01816pt>
+<CANnodepower.png, id=1282, 410.18108pt x 300.01816pt>
 File: CANnodepower.png Graphic file (type png)
  <use CANnodepower.png>
-Package pdftex.def Info: CANnodepower.png used on input line 1486.
+Package pdftex.def Info: CANnodepower.png used on input line 1538.
 (pdftex.def)             Requested size: 410.18007pt x 300.01741pt.
 
-<GLV_DCDC.png, id=1240, 915.42pt x 432.86719pt>
+<GLV_DCDC.png, id=1285, 915.42pt x 432.86719pt>
 File: GLV_DCDC.png Graphic file (type png)
  <use GLV_DCDC.png>
-Package pdftex.def Info: GLV_DCDC.png used on input line 1500.
+Package pdftex.def Info: GLV_DCDC.png used on input line 1552.
 (pdftex.def)             Requested size: 281.85587pt x 133.27594pt.
 File: revo.png Graphic file (type png)
 
 <use revo.png>
-Package pdftex.def Info: revo.png used on input line 1504.
+Package pdftex.def Info: revo.png used on input line 1556.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
  [53 <./CANnodepower.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1509--1510
+Underfull \hbox (badness 10000) in paragraph at lines 1561--1562
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1511--1512
+Underfull \hbox (badness 10000) in paragraph at lines 1563--1564
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1513--1514
+Underfull \hbox (badness 10000) in paragraph at lines 1565--1566
 
  []
 
-<CANdashboard.png, id=1248, 314.86281pt x 291.03325pt>
+<CANdashboard.png, id=1292, 314.86281pt x 291.03325pt>
 File: CANdashboard.png Graphic file (type png)
  <use CANdashboard.png>
-Package pdftex.def Info: CANdashboard.png used on input line 1521.
+Package pdftex.def Info: CANdashboard.png used on input line 1573.
 (pdftex.def)             Requested size: 375.80544pt x 347.38187pt.
 File: revo.png Graphic file (type png)
 
 <use revo.png>
-Package pdftex.def Info: revo.png used on input line 1525.
+Package pdftex.def Info: revo.png used on input line 1577.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
  [54 <./GLV_DCDC.png>]
-<Dashboard.jpg, id=1255, 1923.185pt x 904.37875pt>
+<Dashboard.jpg, id=1299, 1923.185pt x 904.37875pt>
 File: Dashboard.jpg Graphic file (type jpg)
  <use Dashboard.jpg>
-Package pdftex.def Info: Dashboard.jpg used on input line 1534.
+Package pdftex.def Info: Dashboard.jpg used on input line 1586.
 (pdftex.def)             Requested size: 328.82707pt x 154.62553pt.
 File: revo.png Graphic file (type png)
 
 <use revo.png>
-Package pdftex.def Info: revo.png used on input line 1538.
+Package pdftex.def Info: revo.png used on input line 1590.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
  [55 <./CANdashboard.png>]
-<IMDandCANschem.png, id=1261, 502.76482pt x 341.42693pt>
+<IMDandCANschem.png, id=1305, 502.76482pt x 341.42693pt>
 File: IMDandCANschem.png Graphic file (type png)
 
 <use IMDandCANschem.png>
-Package pdftex.def Info: IMDandCANschem.png used on input line 1549.
+Package pdftex.def Info: IMDandCANschem.png used on input line 1601.
 (pdftex.def)             Requested size: 375.80544pt x 255.21516pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1554--1555
+Underfull \hbox (badness 10000) in paragraph at lines 1606--1607
 
  []
 
 File: revo.png Graphic file (type png)
 <use revo.png>
-Package pdftex.def Info: revo.png used on input line 1555.
+Package pdftex.def Info: revo.png used on input line 1607.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
  [56 <./Dashboard.jpg> <./IMDandCANschem.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1556--1557
+Underfull \hbox (badness 10000) in paragraph at lines 1608--1609
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1558--1559
+Underfull \hbox (badness 10000) in paragraph at lines 1610--1611
 
  []
 
 File: revo.png Graphic file (type png)
 <use revo.png>
-Package pdftex.def Info: revo.png used on input line 1566.
+Package pdftex.def Info: revo.png used on input line 1618.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
  [57]
-Underfull \hbox (badness 10000) in paragraph at lines 1580--1581
+Underfull \hbox (badness 10000) in paragraph at lines 1632--1633
 
  []
 
 File: revo.png Graphic file (type png)
 <use revo.png>
-Package pdftex.def Info: revo.png used on input line 1584.
+Package pdftex.def Info: revo.png used on input line 1636.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [58]
-Underfull \hbox (badness 10000) in paragraph at lines 1593--1594
-
- []
-
-<ExplodedView.png, id=1277, 479.391pt x 383.5128pt>
+ [58] <ExplodedView.png, id=1321, 479.391pt x 383.5128pt>
 File: ExplodedView.png Graphic file (type png)
- <use ExplodedView.png>
-Package pdftex.def Info: ExplodedView.png used on input line 1599.
+
+<use ExplodedView.png>
+Package pdftex.def Info: ExplodedView.png used on input line 1651.
 (pdftex.def)             Requested size: 281.85587pt x 225.48642pt.
 
-<FirewallFullCarView.png, id=1279, 479.391pt x 383.5128pt>
+<FirewallFullCarView.png, id=1323, 479.391pt x 383.5128pt>
 File: FirewallFullCarView.png Graphic file (type png)
 
 <use FirewallFullCarView.png>
-Package pdftex.def Info: FirewallFullCarView.png used on input line 1610.
+Package pdftex.def Info: FirewallFullCarView.png used on input line 1662.
 (pdftex.def)             Requested size: 375.80544pt x 300.64857pt.
 File: revo.png Graphic file (type png)
  <use revo.png>
-Package pdftex.def Info: revo.png used on input line 1614.
+Package pdftex.def Info: revo.png used on input line 1666.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
  [59 <./ExplodedView.png>]
 File: revo.png Graphic file (type png)
 
 <use revo.png>
-Package pdftex.def Info: revo.png used on input line 1618.
+Package pdftex.def Info: revo.png used on input line 1670.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
  [60 <./FirewallFullCarView.png>]
-<IMD_datasheet_snip.png, id=1299, 387.4475pt x 616.3025pt>
+<IMD_datasheet_snip.png, id=1343, 387.4475pt x 616.3025pt>
 File: IMD_datasheet_snip.png Graphic file (type png)
 
 <use IMD_datasheet_snip.png>
-Package pdftex.def Info: IMD_datasheet_snip.png used on input line 1640.
+Package pdftex.def Info: IMD_datasheet_snip.png used on input line 1692.
 (pdftex.def)             Requested size: 292.69151pt x 465.58296pt.
 File: revo.png Graphic file (type png)
  <use revo.png>
-Package pdftex.def Info: revo.png used on input line 1644.
+Package pdftex.def Info: revo.png used on input line 1696.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
  [61]
 File: revo.png Graphic file (type png)
  <use revo.png>
-Package pdftex.def Info: revo.png used on input line 1656.
+Package pdftex.def Info: revo.png used on input line 1710.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [62 <./IMD_datasheet_snip.png>] <Dischargeres.png, id=1331, 907.39pt x 463.732
+ [62 <./IMD_datasheet_snip.png>] <Dischargeres.png, id=1377, 907.39pt x 463.732
 5pt>
 File: Dischargeres.png Graphic file (type png)
 
 <use Dischargeres.png>
-Package pdftex.def Info: Dischargeres.png used on input line 1683.
+Package pdftex.def Info: Dischargeres.png used on input line 1738.
 (pdftex.def)             Requested size: 375.80544pt x 192.05621pt.
 File: revo.png Graphic file (type png)
  <use revo.png>
-Package pdftex.def Info: revo.png used on input line 1698.
+Package pdftex.def Info: revo.png used on input line 1757.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
  [63 <./Dischargeres.png>]
-<BMS_Schem.png, id=1350, 1773.62625pt x 1135.24126pt>
+<BMS_Schem.png, id=1395, 1773.62625pt x 1135.24126pt>
 File: BMS_Schem.png Graphic file (type png)
  <use BMS_Schem.png>
-Package pdftex.def Info: BMS_Schem.png used on input line 1709.
-(pdftex.def)             Requested size: 650.43001pt x 416.3257pt.
+Package pdftex.def Info: BMS_Schem.png used on input line 1770.
+(pdftex.def)             Requested size: 469.75502pt x 300.66428pt.
+File: revo.png Graphic file (type png)
 
-<WireGaugeChart.png, id=1363, 1150.2975pt x 693.59125pt>
+<use revo.png>
+Package pdftex.def Info: revo.png used on input line 1784.
+(pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
+ [64 <./BMS_Schem.png>]
+<TSmainratings.png, id=1409, 347.2975pt x 204.765pt>
+File: TSmainratings.png Graphic file (type png)
+ <use TSmainratings.png>
+Package pdftex.def Info: TSmainratings.png used on input line 1790.
+(pdftex.def)             Requested size: 347.29665pt x 204.76448pt.
+File: TSfuseT-Agraph.png Graphic file (type png)
+
+<use TSfuseT-Agraph.png>
+Package pdftex.def Info: TSfuseT-Agraph.png used on input line 1797.
+(pdftex.def)             Requested size: 328.82707pt x 635.37503pt.
+File: revo.png Graphic file (type png)
+ <use revo.png>
+Package pdftex.def Info: revo.png used on input line 1801.
+(pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
+ [65 <./TSmainratings.png>]
+Overfull \vbox (6.94502pt too high) has occurred while \output is active []
+
+File: revo.png Graphic file (type png)
+
+<use revo.png>
+Package pdftex.def Info: revo.png used on input line 1801.
+(pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
+ [66] <Keyswitchratings.png, id=1422, 691.58376pt x 177.66376pt>
+File: Keyswitchratings.png Graphic file (type png)
+
+<use Keyswitchratings.png>
+Package pdftex.def Info: Keyswitchratings.png used on input line 1809.
+(pdftex.def)             Requested size: 281.85587pt x 72.40886pt.
+
+<Keyswitchmeltingtime.png, id=1423, 586.19pt x 687.56876pt>
+File: Keyswitchmeltingtime.png Graphic file (type png)
+
+<use Keyswitchmeltingtime.png>
+Package pdftex.def Info: Keyswitchmeltingtime.png used on input line 1816.
+(pdftex.def)             Requested size: 328.82707pt x 385.68634pt.
+
+<TSsmallratings.png, id=1425, 1027.84pt x 507.8975pt>
+File: TSsmallratings.png Graphic file (type png)
+ <use TSsmallratings.png>
+Package pdftex.def Info: TSsmallratings.png used on input line 1826.
+(pdftex.def)             Requested size: 281.85587pt x 139.27312pt.
+File: revo.png Graphic file (type png)
+
+<use revo.png>
+Package pdftex.def Info: revo.png used on input line 1830.
+(pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
+ [67 <./Keyswitchmeltingtime.png> <./Keyswitchratings.png>]
+<TSsmallmeltingtime.png, id=1430, 496.85625pt x 653.44125pt>
+File: TSsmallmeltingtime.png Graphic file (type png)
+
+<use TSsmallmeltingtime.png>
+Package pdftex.def Info: TSsmallmeltingtime.png used on input line 1833.
+(pdftex.def)             Requested size: 281.85587pt x 370.6906pt.
+
+<GLVmainratings.png, id=1432, 1328.965pt x 421.575pt>
+File: GLVmainratings.png Graphic file (type png)
+ <use GLVmainratings.png>
+Package pdftex.def Info: GLVmainratings.png used on input line 1843.
+(pdftex.def)             Requested size: 281.85587pt x 89.4082pt.
+File: revo.png Graphic file (type png)
+
+<use revo.png>
+Package pdftex.def Info: revo.png used on input line 1847.
+(pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
+ [68 <./TSsmallratings.png> <./TSsmallmeltingtime.png>]
+<glvmainmeltingtime.png, id=1438, 921.4425pt x 761.84625pt>
+File: glvmainmeltingtime.png Graphic file (type png)
+
+<use glvmainmeltingtime.png>
+Package pdftex.def Info: glvmainmeltingtime.png used on input line 1850.
+(pdftex.def)             Requested size: 281.85587pt x 233.03119pt.
+
+<AMSfuseratings.png, id=1440, 992.70876pt x 462.72874pt>
+File: AMSfuseratings.png Graphic file (type png)
+
+<use AMSfuseratings.png>
+Package pdftex.def Info: AMSfuseratings.png used on input line 1860.
+(pdftex.def)             Requested size: 281.85587pt x 131.37775pt.
+
+<amsfuseapprovals.png, id=1441, 585.18625pt x 244.915pt>
+File: amsfuseapprovals.png Graphic file (type png)
+
+<use amsfuseapprovals.png>
+Package pdftex.def Info: amsfuseapprovals.png used on input line 1867.
+(pdftex.def)             Requested size: 281.85587pt x 117.96893pt.
+File: revo.png Graphic file (type png)
+ <use revo.png>
+Package pdftex.def Info: revo.png used on input line 1871.
+(pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
+ [69 <./GLVmainratings.png> <./glvmainmeltingtime.png> <./AMSfuseratings.png>]
+<amsfusecurve.png, id=1446, 491.8375pt x 547.04375pt>
+File: amsfusecurve.png Graphic file (type png)
+ <use amsfusecurve.png>
+Package pdftex.def Info: amsfusecurve.png used on input line 1874.
+(pdftex.def)             Requested size: 281.85587pt x 313.5043pt.
+
+<shutdownfuseratings.png, id=1448, 479.7925pt x 210.7875pt>
+File: shutdownfuseratings.png Graphic file (type png)
+
+<use shutdownfuseratings.png>
+Package pdftex.def Info: shutdownfuseratings.png used on input line 1884.
+(pdftex.def)             Requested size: 281.85587pt x 123.82964pt.
+File: revo.png Graphic file (type png)
+ <use revo.png>
+Package pdftex.def Info: revo.png used on input line 1888.
+(pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
+ [70 <./amsfuseapprovals.png> <./amsfusecurve.png>] <shutdownfusecurve.png, id=
+1453, 446.66875pt x 701.62125pt>
+File: shutdownfusecurve.png Graphic file (type png)
+
+<use shutdownfusecurve.png>
+Package pdftex.def Info: shutdownfusecurve.png used on input line 1891.
+(pdftex.def)             Requested size: 281.85587pt x 442.74101pt.
+
+<WireGaugeChart.png, id=1455, 1150.2975pt x 693.59125pt>
 File: WireGaugeChart.png Graphic file (type png)
 
 <use WireGaugeChart.png>
-Package pdftex.def Info: WireGaugeChart.png used on input line 1736.
-(pdftex.def)             Requested size: 647.25139pt x 390.26196pt.
- <chargerdata.png, id=1366, 560.0925pt x 712.6625pt>
+Package pdftex.def Info: WireGaugeChart.png used on input line 1901.
+(pdftex.def)             Requested size: 469.75502pt x 283.24184pt.
+File: revo.png Graphic file (type png)
+ <use revo.png>
+Package pdftex.def Info: revo.png used on input line 1904.
+(pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
+ [71 <./shutdownfuseratings.png> <./shutdownfusecurve.png>] <chargerdata.png, i
+d=1463, 560.0925pt x 712.6625pt>
 File: chargerdata.png Graphic file (type png)
 
 <use chargerdata.png>
-Package pdftex.def Info: chargerdata.png used on input line 1745.
+Package pdftex.def Info: chargerdata.png used on input line 1910.
 (pdftex.def)             Requested size: 375.80544pt x 478.19911pt.
 File: revo.png Graphic file (type png)
  <use revo.png>
-Package pdftex.def Info: revo.png used on input line 1749.
+Package pdftex.def Info: revo.png used on input line 1914.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [64]
-File: revo.png Graphic file (type png)
- <use revo.png>
-Package pdftex.def Info: revo.png used on input line 1749.
-(pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [65 <./BMS_Schem.png>]
-File: revo.png Graphic file (type png)
-<use revo.png>
-Package pdftex.def Info: revo.png used on input line 1749.
-(pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [66 <./WireGaugeChart.png>]
-<activesensorsnip.png, id=1389, 694.595pt x 360.34625pt>
+ [72 <./WireGaugeChart.png>]
+<activesensorsnip.png, id=1474, 694.595pt x 360.34625pt>
 File: activesensorsnip.png Graphic file (type png)
 
 <use activesensorsnip.png>
-Package pdftex.def Info: activesensorsnip.png used on input line 1763.
+Package pdftex.def Info: activesensorsnip.png used on input line 1929.
 (pdftex.def)             Requested size: 281.85587pt x 146.22534pt.
 File: revo.png Graphic file (type png)
  <use revo.png>
-Package pdftex.def Info: revo.png used on input line 1766.
+Package pdftex.def Info: revo.png used on input line 1932.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [67 <./chargerdata.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1788.
+ [73 <./chargerdata.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1954.
 File: revo.png Graphic file (type png)
 
 <use revo.png>
-Package pdftex.def Info: revo.png used on input line 1788.
+Package pdftex.def Info: revo.png used on input line 1954.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [68 <./activesensorsnip.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1788.
+ [74 <./activesensorsnip.png>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1954.
  (./formula_sae_esf.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1788.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1788.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1954.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1954.
 
 Package rerunfilecheck Info: File `formula_sae_esf.out' has not changed.
 (rerunfilecheck)             Checksum: EDA4BF043A96F414F9FEADB207A1BB53;8571.
@@ -2502,19 +2088,16 @@ Package rerunfilecheck Info: File `formula_sae_esf.out' has not changed.
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1788.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1954.
  ) 
 Here is how much of TeX's memory you used:
- 13144 strings out of 493089
- 195146 string characters out of 6134842
- 322191 words of memory out of 5000000
- 16031 multiletter control sequences out of 15000+600000
+ 13239 strings out of 493089
+ 197333 string characters out of 6134842
+ 337818 words of memory out of 5000000
+ 16101 multiletter control sequences out of 15000+600000
  8183 words of font info for 31 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,15n,43p,1168b,546s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 37i,15n,43p,1057b,618s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 }</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><
@@ -2525,10 +2108,10 @@ local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/loc
 al/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/loca
 l/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/
 texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on formula_sae_esf.pdf (76 pages, 13012039 bytes).
+Output written on formula_sae_esf.pdf (82 pages, 14660217 bytes).
 PDF statistics:
- 1510 PDF objects out of 1728 (max. 8388607)
- 1288 compressed objects within 13 object streams
- 323 named destinations out of 1000 (max. 500000)
- 1257 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1600 PDF objects out of 1728 (max. 8388607)
+ 1356 compressed objects within 14 object streams
+ 345 named destinations out of 1000 (max. 500000)
+ 1327 words of extra memory for PDF output out of 10000 (max. 10000000)
 
