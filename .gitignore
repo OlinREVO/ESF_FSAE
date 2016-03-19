@@ -6,4 +6,5 @@
 *.lot
 *.synctex.gz
 *.toc
+*..fdb_latexmk
 formula_sae_esf.pdf
