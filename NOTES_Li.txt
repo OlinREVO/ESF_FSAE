@@ -1,0 +1,20 @@
+Notes: 
+
+Don't need to NDA: 
+-battery capacity
+-nominal voltage
+-size
+-weight
+-energy density
+
+Every resubmit should be within two weeks! 
+Next resubmit: by Mar 22
+
+\\
+
+To do based on: 
+March 19, 2016
+
+-Change ESF per Riley's edits
+-Finish ESF Feedback questions
+-Add in John's material/updates
