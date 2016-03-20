@@ -8,3 +8,6 @@
 *.toc
 *..fdb_latexmk
 formula_sae_esf.pdf
+
+# Vim swap files
+*.swp
