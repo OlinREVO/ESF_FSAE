@@ -45,70 +45,70 @@
 \contentsline {subsection}{\numberline {2.10}Discharge Circuitry}{16}{subsection.2.10}
 \contentsline {subsubsection}{\numberline {2.10.1}Description}{16}{subsubsection.2.10.1}
 \contentsline {subsubsection}{\numberline {2.10.2}Wiring, Cables, Current Calculations, Connectors}{17}{subsubsection.2.10.2}
-\contentsline {subsubsection}{\numberline {2.10.3}Position in Car}{20}{subsubsection.2.10.3}
-\contentsline {subsection}{\numberline {2.11}HV Disconnect (HVD)}{20}{subsection.2.11}
-\contentsline {subsubsection}{\numberline {2.11.1}Description}{20}{subsubsection.2.11.1}
-\contentsline {subsubsection}{\numberline {2.11.2}Wiring, Cables, Current Calculations, Connectors}{21}{subsubsection.2.11.2}
-\contentsline {subsubsection}{\numberline {2.11.3}Position in Car}{21}{subsubsection.2.11.3}
-\contentsline {subsection}{\numberline {2.12}Ready To Drive Sound (RTDS)}{22}{subsection.2.12}
-\contentsline {subsubsection}{\numberline {2.12.1}Description}{22}{subsubsection.2.12.1}
-\contentsline {subsubsection}{\numberline {2.12.2}Wiring, Cables, Current Calculations, Connectors}{22}{subsubsection.2.12.2}
-\contentsline {subsubsection}{\numberline {2.12.3}Position in Car}{23}{subsubsection.2.12.3}
-\contentsline {section}{\numberline {3}Accumulator}{24}{section.3}
-\contentsline {subsection}{\numberline {3.1}Accumulator Pack 1}{24}{subsection.3.1}
-\contentsline {subsubsection}{\numberline {3.1.1}Overview/Description/Parameters}{24}{subsubsection.3.1.1}
-\contentsline {subsubsection}{\numberline {3.1.2}Cell Description}{24}{subsubsection.3.1.2}
-\contentsline {subsubsection}{\numberline {3.1.3}Cell Configuration}{25}{subsubsection.3.1.3}
-\contentsline {subsubsection}{\numberline {3.1.4}Cell Temperature Monitoring}{26}{subsubsection.3.1.4}
-\contentsline {subsubsection}{\numberline {3.1.5}Battery Management System}{27}{subsubsection.3.1.5}
-\contentsline {subsubsection}{\numberline {3.1.6}Accumulator Indicator}{31}{subsubsection.3.1.6}
-\contentsline {subsubsection}{\numberline {3.1.7}Wiring, Cables, Current Calculations, Connectors}{32}{subsubsection.3.1.7}
-\contentsline {subsubsection}{\numberline {3.1.8}Accumulator Insulation Relays (AIR)}{32}{subsubsection.3.1.8}
-\contentsline {subsubsection}{\numberline {3.1.9}Fusing}{34}{subsubsection.3.1.9}
-\contentsline {subsubsection}{\numberline {3.1.10}Charging}{36}{subsubsection.3.1.10}
-\contentsline {subsubsection}{\numberline {3.1.11}Mechanical Configuration/Materials}{37}{subsubsection.3.1.11}
-\contentsline {subsubsection}{\numberline {3.1.12}Position in Car}{39}{subsubsection.3.1.12}
-\contentsline {subsection}{\numberline {3.2}Accumulator Pack 2}{39}{subsection.3.2}
-\contentsline {section}{\numberline {4}Energy Meter Mounting}{40}{section.4}
-\contentsline {subsection}{\numberline {4.1}Description}{40}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Wiring, Cables, Current Calculations, Connectors}{40}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}Position in Car}{40}{subsection.4.3}
-\contentsline {section}{\numberline {5}Motor Controller}{41}{section.5}
-\contentsline {subsection}{\numberline {5.1}Motor Controller 1}{41}{subsection.5.1}
-\contentsline {subsubsection}{\numberline {5.1.1}Description, Type, Operation Parameters}{41}{subsubsection.5.1.1}
-\contentsline {subsubsection}{\numberline {5.1.2}Wiring, Cables, Current Calculations, Connectors}{41}{subsubsection.5.1.2}
-\contentsline {subsubsection}{\numberline {5.1.3}Position in Car}{42}{subsubsection.5.1.3}
-\contentsline {subsection}{\numberline {5.2}Motor Controller 2}{44}{subsection.5.2}
-\contentsline {section}{\numberline {6}Motors}{45}{section.6}
-\contentsline {subsection}{\numberline {6.1}Motor 1}{45}{subsection.6.1}
-\contentsline {subsubsection}{\numberline {6.1.1}Description, Type, Operating Parameters}{45}{subsubsection.6.1.1}
-\contentsline {subsubsection}{\numberline {6.1.2}Wiring, Cables, Current Calculations, Connectors}{46}{subsubsection.6.1.2}
-\contentsline {subsubsection}{\numberline {6.1.3}Position in Car}{46}{subsubsection.6.1.3}
-\contentsline {subsection}{\numberline {6.2}Motor 2}{48}{subsection.6.2}
-\contentsline {section}{\numberline {7}Torque Encoder}{49}{section.7}
-\contentsline {subsection}{\numberline {7.1}Description/Additional Circuitry}{49}{subsection.7.1}
-\contentsline {subsection}{\numberline {7.2}Torque Encoder Plausibility Check}{49}{subsection.7.2}
-\contentsline {subsection}{\numberline {7.3}Wiring}{50}{subsection.7.3}
-\contentsline {subsection}{\numberline {7.4}Position in Car/Mechanical Fastening/Mechanical Connection}{50}{subsection.7.4}
-\contentsline {section}{\numberline {8}Additional LV-parts Interfering with the Tractive System}{53}{section.8}
-\contentsline {subsection}{\numberline {8.1}LV Part 1: DC-DC converter}{53}{subsection.8.1}
-\contentsline {subsubsection}{\numberline {8.1.1}Description}{53}{subsubsection.8.1.1}
-\contentsline {subsubsection}{\numberline {8.1.2}Wiring, Cables}{53}{subsubsection.8.1.2}
-\contentsline {subsubsection}{\numberline {8.1.3}Position in Car}{53}{subsubsection.8.1.3}
-\contentsline {subsection}{\numberline {8.2}LV Part 2: Dashboard Node}{54}{subsection.8.2}
-\contentsline {subsubsection}{\numberline {8.2.1}Description}{54}{subsubsection.8.2.1}
-\contentsline {subsubsection}{\numberline {8.2.2}Wiring, cables}{55}{subsubsection.8.2.2}
-\contentsline {subsubsection}{\numberline {8.2.3}Position in Car}{55}{subsubsection.8.2.3}
-\contentsline {subsection}{\numberline {8.3}LV Part 3: IMD, Ready to Drive Sound, and Watchdog Node}{56}{subsection.8.3}
-\contentsline {subsubsection}{\numberline {8.3.1}Description}{56}{subsubsection.8.3.1}
-\contentsline {subsubsection}{\numberline {8.3.2}Wiring, Cables}{56}{subsubsection.8.3.2}
-\contentsline {subsubsection}{\numberline {8.3.3}Position in Car}{57}{subsubsection.8.3.3}
-\contentsline {section}{\numberline {9}Overall Grounding Concept}{58}{section.9}
-\contentsline {subsection}{\numberline {9.1}Description of the Grounding Concept}{58}{subsection.9.1}
-\contentsline {subsection}{\numberline {9.2}Grounding Measurements}{58}{subsection.9.2}
-\contentsline {section}{\numberline {10}Firewall}{59}{section.10}
-\contentsline {subsection}{\numberline {10.1}Firewall 1}{59}{subsection.10.1}
-\contentsline {subsubsection}{\numberline {10.1.1}Description/Materials}{59}{subsubsection.10.1.1}
-\contentsline {subsubsection}{\numberline {10.1.2}Position in Car}{59}{subsubsection.10.1.2}
-\contentsline {subsection}{\numberline {10.2}Firewall 2}{60}{subsection.10.2}
-\contentsline {section}{\numberline {11}Appendix}{61}{section.11}
+\contentsline {subsubsection}{\numberline {2.10.3}Position in Car}{19}{subsubsection.2.10.3}
+\contentsline {subsection}{\numberline {2.11}HV Disconnect (HVD)}{19}{subsection.2.11}
+\contentsline {subsubsection}{\numberline {2.11.1}Description}{19}{subsubsection.2.11.1}
+\contentsline {subsubsection}{\numberline {2.11.2}Wiring, Cables, Current Calculations, Connectors}{20}{subsubsection.2.11.2}
+\contentsline {subsubsection}{\numberline {2.11.3}Position in Car}{20}{subsubsection.2.11.3}
+\contentsline {subsection}{\numberline {2.12}Ready To Drive Sound (RTDS)}{21}{subsection.2.12}
+\contentsline {subsubsection}{\numberline {2.12.1}Description}{21}{subsubsection.2.12.1}
+\contentsline {subsubsection}{\numberline {2.12.2}Wiring, Cables, Current Calculations, Connectors}{21}{subsubsection.2.12.2}
+\contentsline {subsubsection}{\numberline {2.12.3}Position in Car}{22}{subsubsection.2.12.3}
+\contentsline {section}{\numberline {3}Accumulator}{23}{section.3}
+\contentsline {subsection}{\numberline {3.1}Accumulator Pack 1}{23}{subsection.3.1}
+\contentsline {subsubsection}{\numberline {3.1.1}Overview/Description/Parameters}{23}{subsubsection.3.1.1}
+\contentsline {subsubsection}{\numberline {3.1.2}Cell Description}{23}{subsubsection.3.1.2}
+\contentsline {subsubsection}{\numberline {3.1.3}Cell Configuration}{24}{subsubsection.3.1.3}
+\contentsline {subsubsection}{\numberline {3.1.4}Cell Temperature Monitoring}{25}{subsubsection.3.1.4}
+\contentsline {subsubsection}{\numberline {3.1.5}Battery Management System}{26}{subsubsection.3.1.5}
+\contentsline {subsubsection}{\numberline {3.1.6}Accumulator Indicator}{30}{subsubsection.3.1.6}
+\contentsline {subsubsection}{\numberline {3.1.7}Wiring, Cables, Current Calculations, Connectors}{31}{subsubsection.3.1.7}
+\contentsline {subsubsection}{\numberline {3.1.8}Accumulator Insulation Relays (AIR)}{31}{subsubsection.3.1.8}
+\contentsline {subsubsection}{\numberline {3.1.9}Fusing}{33}{subsubsection.3.1.9}
+\contentsline {subsubsection}{\numberline {3.1.10}Charging}{35}{subsubsection.3.1.10}
+\contentsline {subsubsection}{\numberline {3.1.11}Mechanical Configuration/Materials}{36}{subsubsection.3.1.11}
+\contentsline {subsubsection}{\numberline {3.1.12}Position in Car}{38}{subsubsection.3.1.12}
+\contentsline {subsection}{\numberline {3.2}Accumulator Pack 2}{38}{subsection.3.2}
+\contentsline {section}{\numberline {4}Energy Meter Mounting}{39}{section.4}
+\contentsline {subsection}{\numberline {4.1}Description}{39}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Wiring, Cables, Current Calculations, Connectors}{39}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Position in Car}{39}{subsection.4.3}
+\contentsline {section}{\numberline {5}Motor Controller}{40}{section.5}
+\contentsline {subsection}{\numberline {5.1}Motor Controller 1}{40}{subsection.5.1}
+\contentsline {subsubsection}{\numberline {5.1.1}Description, Type, Operation Parameters}{40}{subsubsection.5.1.1}
+\contentsline {subsubsection}{\numberline {5.1.2}Wiring, Cables, Current Calculations, Connectors}{40}{subsubsection.5.1.2}
+\contentsline {subsubsection}{\numberline {5.1.3}Position in Car}{41}{subsubsection.5.1.3}
+\contentsline {subsection}{\numberline {5.2}Motor Controller 2}{43}{subsection.5.2}
+\contentsline {section}{\numberline {6}Motors}{44}{section.6}
+\contentsline {subsection}{\numberline {6.1}Motor 1}{44}{subsection.6.1}
+\contentsline {subsubsection}{\numberline {6.1.1}Description, Type, Operating Parameters}{44}{subsubsection.6.1.1}
+\contentsline {subsubsection}{\numberline {6.1.2}Wiring, Cables, Current Calculations, Connectors}{45}{subsubsection.6.1.2}
+\contentsline {subsubsection}{\numberline {6.1.3}Position in Car}{45}{subsubsection.6.1.3}
+\contentsline {subsection}{\numberline {6.2}Motor 2}{47}{subsection.6.2}
+\contentsline {section}{\numberline {7}Torque Encoder}{48}{section.7}
+\contentsline {subsection}{\numberline {7.1}Description/Additional Circuitry}{48}{subsection.7.1}
+\contentsline {subsection}{\numberline {7.2}Torque Encoder Plausibility Check}{48}{subsection.7.2}
+\contentsline {subsection}{\numberline {7.3}Wiring}{49}{subsection.7.3}
+\contentsline {subsection}{\numberline {7.4}Position in Car/Mechanical Fastening/Mechanical Connection}{49}{subsection.7.4}
+\contentsline {section}{\numberline {8}Additional LV-parts Interfering with the Tractive System}{52}{section.8}
+\contentsline {subsection}{\numberline {8.1}LV Part 1: DC-DC converter}{52}{subsection.8.1}
+\contentsline {subsubsection}{\numberline {8.1.1}Description}{52}{subsubsection.8.1.1}
+\contentsline {subsubsection}{\numberline {8.1.2}Wiring, Cables}{52}{subsubsection.8.1.2}
+\contentsline {subsubsection}{\numberline {8.1.3}Position in Car}{52}{subsubsection.8.1.3}
+\contentsline {subsection}{\numberline {8.2}LV Part 2: Dashboard Node}{53}{subsection.8.2}
+\contentsline {subsubsection}{\numberline {8.2.1}Description}{53}{subsubsection.8.2.1}
+\contentsline {subsubsection}{\numberline {8.2.2}Wiring, cables}{54}{subsubsection.8.2.2}
+\contentsline {subsubsection}{\numberline {8.2.3}Position in Car}{54}{subsubsection.8.2.3}
+\contentsline {subsection}{\numberline {8.3}LV Part 3: IMD, Ready to Drive Sound, and Watchdog Node}{55}{subsection.8.3}
+\contentsline {subsubsection}{\numberline {8.3.1}Description}{55}{subsubsection.8.3.1}
+\contentsline {subsubsection}{\numberline {8.3.2}Wiring, Cables}{55}{subsubsection.8.3.2}
+\contentsline {subsubsection}{\numberline {8.3.3}Position in Car}{56}{subsubsection.8.3.3}
+\contentsline {section}{\numberline {9}Overall Grounding Concept}{57}{section.9}
+\contentsline {subsection}{\numberline {9.1}Description of the Grounding Concept}{57}{subsection.9.1}
+\contentsline {subsection}{\numberline {9.2}Grounding Measurements}{57}{subsection.9.2}
+\contentsline {section}{\numberline {10}Firewall}{58}{section.10}
+\contentsline {subsection}{\numberline {10.1}Firewall 1}{58}{subsection.10.1}
+\contentsline {subsubsection}{\numberline {10.1.1}Description/Materials}{58}{subsubsection.10.1.1}
+\contentsline {subsubsection}{\numberline {10.1.2}Position in Car}{58}{subsubsection.10.1.2}
+\contentsline {subsection}{\numberline {10.2}Firewall 2}{59}{subsection.10.2}
+\contentsline {section}{\numberline {11}Appendix}{60}{section.11}
