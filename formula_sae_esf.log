@@ -1,15 +1,15 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  19 MAR 2016 16:29
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.3.20)  20 MAR 2016 23:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **formula_sae_esf.tex
 (./formula_sae_esf.tex
-LaTeX2e <2015/01/01>
-Babel <3.9l> and hyphenation patterns for 79 languages loaded.
-(/usr/local/texlive/2015/texmf-dist/tex/latex/base/article.cls
-Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
-(/usr/local/texlive/2015/texmf-dist/tex/latex/base/size10.clo
-File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+LaTeX2e <2011/06/27>
+Babel <3.9h> and hyphenation patterns for 2 languages loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
 \c@section=\count80
@@ -23,20 +23,20 @@ File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/base/inputenc.sty
-Package: inputenc 2015/03/17 v1.2c Input encoding file
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2008/03/30 v1.1d Input encoding file
 \inpenc@prehook=\toks14
 \inpenc@posthook=\toks15
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/base/utf8.def
-File: utf8.def 2014/09/29 v1.1m UTF-8 support for inputenc
+(/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 Now handling font encoding OML ...
 ... no UTF-8 mapping file for font encoding OML
 Now handling font encoding T1 ...
 ... processing UTF-8 mapping file for font encoding T1
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/base/t1enc.dfu
-File: t1enc.dfu 2014/09/29 v1.1m UTF-8 support for inputenc
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.dfu
+File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
    defining Unicode char U+00AB (decimal 171)
@@ -185,8 +185,8 @@ File: t1enc.dfu 2014/09/29 v1.1m UTF-8 support for inputenc
 Now handling font encoding OT1 ...
 ... processing UTF-8 mapping file for font encoding OT1
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/base/ot1enc.dfu
-File: ot1enc.dfu 2014/09/29 v1.1m UTF-8 support for inputenc
+(/usr/share/texlive/texmf-dist/tex/latex/base/ot1enc.dfu
+File: ot1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
    defining Unicode char U+00B8 (decimal 184)
@@ -216,8 +216,8 @@ File: ot1enc.dfu 2014/09/29 v1.1m UTF-8 support for inputenc
 Now handling font encoding OMS ...
 ... processing UTF-8 mapping file for font encoding OMS
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/base/omsenc.dfu
-File: omsenc.dfu 2014/09/29 v1.1m UTF-8 support for inputenc
+(/usr/share/texlive/texmf-dist/tex/latex/base/omsenc.dfu
+File: omsenc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A7 (decimal 167)
    defining Unicode char U+00B6 (decimal 182)
    defining Unicode char U+00B7 (decimal 183)
@@ -240,62 +240,64 @@ Now handling font encoding U ...
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
 ))
-(/usr/local/texlive/2015/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2014/09/25 3.9l The Babel package
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2013/12/03 3.9h The Babel package
 
-(/usr/local/texlive/2015/texmf-dist/tex/generic/babel-english/english.ldf
+(/usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf
 Language: english 2012/08/20 v3.3p English support from the babel system
 
-(/usr/local/texlive/2015/texmf-dist/tex/generic/babel/babel.def
-File: babel.def 2014/09/25 3.9l Babel common definitions
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2013/12/03 3.9h Babel common definitions
 \babel@savecnt=\count87
 \U@D=\dimen103
 )
+\l@british = a dialect from \language\l@english 
+\l@UKenglish = a dialect from \language\l@english 
 \l@canadian = a dialect from \language\l@american 
 \l@australian = a dialect from \language\l@british 
 \l@newzealand = a dialect from \language\l@british 
 ))
-(/usr/local/texlive/2015/texmf-dist/tex/latex/mathtools/mathtools.sty
-Package: mathtools 2015/05/11 v1.16 mathematical typesetting tools
+(/usr/share/texlive/texmf-dist/tex/latex/mh/mathtools.sty
+Package: mathtools 2013/02/12 v1.13 mathematical typesetting tools
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks16
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/tools/calc.sty
-Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count88
 \calc@Bcount=\count89
 \calc@Adimen=\dimen104
 \calc@Bdimen=\dimen105
 \calc@Askip=\skip43
 \calc@Bskip=\skip44
-LaTeX Info: Redefining \setlength on input line 80.
-LaTeX Info: Redefining \addtolength on input line 81.
+LaTeX Info: Redefining \setlength on input line 76.
+LaTeX Info: Redefining \addtolength on input line 77.
 \calc@Ccount=\count90
 \calc@Cskip=\skip45
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/mathtools/mhsetup.sty
+(/usr/share/texlive/texmf-dist/tex/latex/mh/mhsetup.sty
 Package: mhsetup 2010/01/21 v1.2a programming setup (MH)
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsmath.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2013/01/14 v2.14 AMS math features
 \@mathmargin=\skip46
 
 For additional information on amsmath, use the `?' option.
-(/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsgen.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks17
 \ex@=\dimen106
 ))
-(/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsbsy.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d
 \pmbraise@=\dimen107
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsopn.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
 \inf@bad=\count91
@@ -336,8 +338,6 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 LaTeX Info: Redefining \[ on input line 2665.
 LaTeX Info: Redefining \] on input line 2666.
 )
-LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
-LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
 \g_MT_multlinerow_int=\count103
@@ -350,30 +350,30 @@ LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
 \l_MT_above_shortintertext_sep=\dimen120
 \l_MT_below_shortintertext_sep=\dimen121
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/was/gensymb.sty
+(/usr/share/texlive/texmf-dist/tex/latex/was/gensymb.sty
 Package: gensymb 2003/07/02 v1.0 (WaS)
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/trig.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/graphics.cfg
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
 File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
-Package graphics Info: Driver file: pdftex.def on input line 94.
+Package graphics Info: Driver file: pdftex.def on input line 91.
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/pdftex-def/pdftex.def
+(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 
-(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
 Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 )
-(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count104
@@ -381,7 +381,7 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen122
 \Gin@req@width=\dimen123
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/base/textcomp.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
 Package: textcomp 2005/09/27 v1.99g Standard LaTeX package
 Package textcomp Info: Sub-encoding information:
 (textcomp)               5 = only ISO-Adobe without \textcurrency
@@ -394,15 +394,15 @@ Package textcomp Info: Sub-encoding information:
 (textcomp)             only a restricted character set as indicated.
 (textcomp)             Family '?' is the default used for unknown fonts.
 (textcomp)             See the documentation for details.
-Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 79.
+Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 71.
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/base/ts1enc.def
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1enc.def
 File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
 Now handling font encoding TS1 ...
 ... processing UTF-8 mapping file for font encoding TS1
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/base/ts1enc.dfu
-File: ts1enc.dfu 2014/09/29 v1.1m UTF-8 support for inputenc
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1enc.dfu
+File: ts1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A2 (decimal 162)
    defining Unicode char U+00A3 (decimal 163)
    defining Unicode char U+00A4 (decimal 164)
@@ -473,71 +473,70 @@ File: ts1enc.dfu 2014/09/29 v1.1m UTF-8 support for inputenc
    defining Unicode char U+25EF (decimal 9711)
    defining Unicode char U+266A (decimal 9834)
 ))
-LaTeX Info: Redefining \oldstylenums on input line 334.
-Package textcomp Info: Setting cmr sub-encoding to TS1/0 on input line 349.
-Package textcomp Info: Setting cmss sub-encoding to TS1/0 on input line 350.
-Package textcomp Info: Setting cmtt sub-encoding to TS1/0 on input line 351.
-Package textcomp Info: Setting cmvtt sub-encoding to TS1/0 on input line 352.
-Package textcomp Info: Setting cmbr sub-encoding to TS1/0 on input line 353.
-Package textcomp Info: Setting cmtl sub-encoding to TS1/0 on input line 354.
-Package textcomp Info: Setting ccr sub-encoding to TS1/0 on input line 355.
-Package textcomp Info: Setting ptm sub-encoding to TS1/4 on input line 356.
-Package textcomp Info: Setting pcr sub-encoding to TS1/4 on input line 357.
-Package textcomp Info: Setting phv sub-encoding to TS1/4 on input line 358.
-Package textcomp Info: Setting ppl sub-encoding to TS1/3 on input line 359.
-Package textcomp Info: Setting pag sub-encoding to TS1/4 on input line 360.
-Package textcomp Info: Setting pbk sub-encoding to TS1/4 on input line 361.
-Package textcomp Info: Setting pnc sub-encoding to TS1/4 on input line 362.
-Package textcomp Info: Setting pzc sub-encoding to TS1/4 on input line 363.
-Package textcomp Info: Setting bch sub-encoding to TS1/4 on input line 364.
-Package textcomp Info: Setting put sub-encoding to TS1/5 on input line 365.
-Package textcomp Info: Setting uag sub-encoding to TS1/5 on input line 366.
-Package textcomp Info: Setting ugq sub-encoding to TS1/5 on input line 367.
-Package textcomp Info: Setting ul8 sub-encoding to TS1/4 on input line 368.
-Package textcomp Info: Setting ul9 sub-encoding to TS1/4 on input line 369.
-Package textcomp Info: Setting augie sub-encoding to TS1/5 on input line 370.
-Package textcomp Info: Setting dayrom sub-encoding to TS1/3 on input line 371.
-Package textcomp Info: Setting dayroms sub-encoding to TS1/3 on input line 372.
+LaTeX Info: Redefining \oldstylenums on input line 266.
+Package textcomp Info: Setting cmr sub-encoding to TS1/0 on input line 281.
+Package textcomp Info: Setting cmss sub-encoding to TS1/0 on input line 282.
+Package textcomp Info: Setting cmtt sub-encoding to TS1/0 on input line 283.
+Package textcomp Info: Setting cmvtt sub-encoding to TS1/0 on input line 284.
+Package textcomp Info: Setting cmbr sub-encoding to TS1/0 on input line 285.
+Package textcomp Info: Setting cmtl sub-encoding to TS1/0 on input line 286.
+Package textcomp Info: Setting ccr sub-encoding to TS1/0 on input line 287.
+Package textcomp Info: Setting ptm sub-encoding to TS1/4 on input line 288.
+Package textcomp Info: Setting pcr sub-encoding to TS1/4 on input line 289.
+Package textcomp Info: Setting phv sub-encoding to TS1/4 on input line 290.
+Package textcomp Info: Setting ppl sub-encoding to TS1/3 on input line 291.
+Package textcomp Info: Setting pag sub-encoding to TS1/4 on input line 292.
+Package textcomp Info: Setting pbk sub-encoding to TS1/4 on input line 293.
+Package textcomp Info: Setting pnc sub-encoding to TS1/4 on input line 294.
+Package textcomp Info: Setting pzc sub-encoding to TS1/4 on input line 295.
+Package textcomp Info: Setting bch sub-encoding to TS1/4 on input line 296.
+Package textcomp Info: Setting put sub-encoding to TS1/5 on input line 297.
+Package textcomp Info: Setting uag sub-encoding to TS1/5 on input line 298.
+Package textcomp Info: Setting ugq sub-encoding to TS1/5 on input line 299.
+Package textcomp Info: Setting ul8 sub-encoding to TS1/4 on input line 300.
+Package textcomp Info: Setting ul9 sub-encoding to TS1/4 on input line 301.
+Package textcomp Info: Setting augie sub-encoding to TS1/5 on input line 302.
+Package textcomp Info: Setting dayrom sub-encoding to TS1/3 on input line 303.
+Package textcomp Info: Setting dayroms sub-encoding to TS1/3 on input line 304.
 
-Package textcomp Info: Setting pxr sub-encoding to TS1/0 on input line 373.
-Package textcomp Info: Setting pxss sub-encoding to TS1/0 on input line 374.
-Package textcomp Info: Setting pxtt sub-encoding to TS1/0 on input line 375.
-Package textcomp Info: Setting txr sub-encoding to TS1/0 on input line 376.
-Package textcomp Info: Setting txss sub-encoding to TS1/0 on input line 377.
-Package textcomp Info: Setting txtt sub-encoding to TS1/0 on input line 378.
-Package textcomp Info: Setting lmr sub-encoding to TS1/0 on input line 379.
-Package textcomp Info: Setting lmdh sub-encoding to TS1/0 on input line 380.
-Package textcomp Info: Setting lmss sub-encoding to TS1/0 on input line 381.
-Package textcomp Info: Setting lmssq sub-encoding to TS1/0 on input line 382.
-Package textcomp Info: Setting lmvtt sub-encoding to TS1/0 on input line 383.
-Package textcomp Info: Setting lmtt sub-encoding to TS1/0 on input line 384.
-Package textcomp Info: Setting qhv sub-encoding to TS1/0 on input line 385.
-Package textcomp Info: Setting qag sub-encoding to TS1/0 on input line 386.
-Package textcomp Info: Setting qbk sub-encoding to TS1/0 on input line 387.
-Package textcomp Info: Setting qcr sub-encoding to TS1/0 on input line 388.
-Package textcomp Info: Setting qcs sub-encoding to TS1/0 on input line 389.
-Package textcomp Info: Setting qpl sub-encoding to TS1/0 on input line 390.
-Package textcomp Info: Setting qtm sub-encoding to TS1/0 on input line 391.
-Package textcomp Info: Setting qzc sub-encoding to TS1/0 on input line 392.
-Package textcomp Info: Setting qhvc sub-encoding to TS1/0 on input line 393.
-Package textcomp Info: Setting futs sub-encoding to TS1/4 on input line 394.
-Package textcomp Info: Setting futx sub-encoding to TS1/4 on input line 395.
-Package textcomp Info: Setting futj sub-encoding to TS1/4 on input line 396.
-Package textcomp Info: Setting hlh sub-encoding to TS1/3 on input line 397.
-Package textcomp Info: Setting hls sub-encoding to TS1/3 on input line 398.
-Package textcomp Info: Setting hlst sub-encoding to TS1/3 on input line 399.
-Package textcomp Info: Setting hlct sub-encoding to TS1/5 on input line 400.
-Package textcomp Info: Setting hlx sub-encoding to TS1/5 on input line 401.
-Package textcomp Info: Setting hlce sub-encoding to TS1/5 on input line 402.
-Package textcomp Info: Setting hlcn sub-encoding to TS1/5 on input line 403.
-Package textcomp Info: Setting hlcw sub-encoding to TS1/5 on input line 404.
-Package textcomp Info: Setting hlcf sub-encoding to TS1/5 on input line 405.
-Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 406.
-Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
-Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
-Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
+Package textcomp Info: Setting pxr sub-encoding to TS1/0 on input line 305.
+Package textcomp Info: Setting pxss sub-encoding to TS1/0 on input line 306.
+Package textcomp Info: Setting pxtt sub-encoding to TS1/0 on input line 307.
+Package textcomp Info: Setting txr sub-encoding to TS1/0 on input line 308.
+Package textcomp Info: Setting txss sub-encoding to TS1/0 on input line 309.
+Package textcomp Info: Setting txtt sub-encoding to TS1/0 on input line 310.
+Package textcomp Info: Setting lmr sub-encoding to TS1/0 on input line 311.
+Package textcomp Info: Setting lmdh sub-encoding to TS1/0 on input line 312.
+Package textcomp Info: Setting lmss sub-encoding to TS1/0 on input line 313.
+Package textcomp Info: Setting lmssq sub-encoding to TS1/0 on input line 314.
+Package textcomp Info: Setting lmvtt sub-encoding to TS1/0 on input line 315.
+Package textcomp Info: Setting qhv sub-encoding to TS1/0 on input line 316.
+Package textcomp Info: Setting qag sub-encoding to TS1/0 on input line 317.
+Package textcomp Info: Setting qbk sub-encoding to TS1/0 on input line 318.
+Package textcomp Info: Setting qcr sub-encoding to TS1/0 on input line 319.
+Package textcomp Info: Setting qcs sub-encoding to TS1/0 on input line 320.
+Package textcomp Info: Setting qpl sub-encoding to TS1/0 on input line 321.
+Package textcomp Info: Setting qtm sub-encoding to TS1/0 on input line 322.
+Package textcomp Info: Setting qzc sub-encoding to TS1/0 on input line 323.
+Package textcomp Info: Setting qhvc sub-encoding to TS1/0 on input line 324.
+Package textcomp Info: Setting futs sub-encoding to TS1/4 on input line 325.
+Package textcomp Info: Setting futx sub-encoding to TS1/4 on input line 326.
+Package textcomp Info: Setting futj sub-encoding to TS1/4 on input line 327.
+Package textcomp Info: Setting hlh sub-encoding to TS1/3 on input line 328.
+Package textcomp Info: Setting hls sub-encoding to TS1/3 on input line 329.
+Package textcomp Info: Setting hlst sub-encoding to TS1/3 on input line 330.
+Package textcomp Info: Setting hlct sub-encoding to TS1/5 on input line 331.
+Package textcomp Info: Setting hlx sub-encoding to TS1/5 on input line 332.
+Package textcomp Info: Setting hlce sub-encoding to TS1/5 on input line 333.
+Package textcomp Info: Setting hlcn sub-encoding to TS1/5 on input line 334.
+Package textcomp Info: Setting hlcw sub-encoding to TS1/5 on input line 335.
+Package textcomp Info: Setting hlcf sub-encoding to TS1/5 on input line 336.
+Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 337.
+Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 338.
+Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 339.
+Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 340.
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/float/float.sty
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count105
 \float@exts=\toks22
@@ -545,17 +544,17 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks23
 \@floatcapt=\box29
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/tools/varioref.sty
-Package: varioref 2014/10/28 v1.5a package for extended references (FMi)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/varioref.sty
+Package: varioref 2011/10/02 v1.4z package for extended references (FMi)
 \c@vrcnt=\count106
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/fancyref/fancyref.sty
+(/usr/share/texlive/texmf-dist/tex/latex/fancyref/fancyref.sty
 Package: fancyref 1999/02/03 v0.9c Fancy cross-referencing
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/caption/caption.sty
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/caption/caption3.sty
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 57.
 \captionmargin=\dimen124
@@ -569,23 +568,23 @@ Package caption3 Info: TeX engine: e-TeX on input line 57.
 \c@ContinuedFloat=\count107
 Package caption Info: float package is loaded.
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/caption/subcaption.sty
+(/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
 Package: subcaption 2013/02/03 v1.1-62 Sub-captions (AR)
 \c@subfigure=\count108
 \c@subtable=\count109
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/comment/comment.sty
+(/usr/share/texlive/texmf-dist/tex/latex/comment/comment.sty
 \CommentStream=\write3
 
 Excluding comment 'comment')
-(/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/hyperref.sty
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
 
-(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
 Package: hobsub-hyperref 2012/05/28 v1.13 Bundle oberdiek, subset hyperref (HO)
 
 
-(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
 Package: hobsub-generic 2012/05/28 v1.13 Bundle oberdiek, subset generic (HO)
 Package: hobsub 2012/05/28 v1.13 Construct package bundles (HO)
 Package hobsub Info: Skipping package `infwarerr' (already loaded).
@@ -626,27 +625,27 @@ Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
 Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
 Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
 )
-(/usr/local/texlive/2015/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/auxhook.sty
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/auxhook.sty
 Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 )
 \@linkdim=\dimen131
 \Hy@linkcounter=\count110
 \Hy@pagecounter=\count111
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/pd1enc.def
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
 \Hy@SavedSpaceFactor=\count112
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
 Package hyperref Info: Hyper figures OFF on input line 4443.
@@ -658,7 +657,7 @@ Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4688.
 \c@Hy@tempcnt=\count113
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/url/url.sty
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
@@ -683,25 +682,25 @@ LaTeX Info: Redefining \pageref on input line 6369.
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/hpdftex.def
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
 \Fld@listcount=\count118
 \c@bookmark@seq@number=\count119
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
 \Hy@SectionHShift=\skip50
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/epstopdf.sty
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf.sty
 Package: epstopdf 2010/02/09 v2.5 Conversion with epstopdf on the fly (HO)
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/grfext.sty
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
 Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
 )
 Package grfext Info: Graphics extension search list:
@@ -709,11 +708,11 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 452.
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 )))
-(/usr/local/texlive/2015/texmf-dist/tex/latex/geometry/geometry.sty
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
 \Gm@cnth=\count120
 \Gm@cntv=\count121
@@ -728,7 +727,7 @@ Package: geometry 2010/09/12 v5.6 Page Geometry
 \Gm@layoutvoffset=\dimen142
 \Gm@dimlist=\toks24
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/listings/listings.sty
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
 \lst@mode=\count123
 \lst@gtempboxa=\box30
 \lst@token=\toks25
@@ -742,21 +741,21 @@ Package: geometry 2010/09/12 v5.6 Page Geometry
 \lst@lineno=\count128
 \lst@maxwidth=\dimen146
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/listings/lstmisc.sty
-File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2013/08/26 1.5b (Carsten Heinz)
 \c@lstnumber=\count129
 \lst@skipnumbers=\count130
 \lst@framebox=\box31
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/listings/listings.cfg
-File: listings.cfg 2014/09/06 1.5e listings configuration
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2013/08/26 1.5b listings configuration
 ))
-Package: listings 2014/09/06 1.5e (Carsten Heinz)
+Package: listings 2013/08/26 1.5b (Carsten Heinz)
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/xcolor/xcolor.sty
+(/usr/share/texmf/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/color.cfg
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
@@ -770,38 +769,35 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/pdfpages/pdfpages.sty
-Package: pdfpages 2015/05/11 v0.4x Insert pages of external PDF documents (AM)
+(/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+Package: pdfpages 2013/08/25 v0.4v Insert pages of external PDF documents (AM)
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/base/ifthen.sty
-Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/eso-pic/eso-pic.sty
-Package: eso-pic 2015/04/20 v2.0e eso-pic (RN)
+(/usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2013/10/06 v2.0d eso-pic (RN)
 )
-\AM@pagewidth=\dimen147
-\AM@pageheight=\dimen148
-
-(/usr/local/texlive/2015/texmf-dist/tex/latex/pdfpages/pppdftex.def
-File: pppdftex.def 2015/05/11 v0.4x Pdfpages driver for pdfTeX (AM)
+(/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pppdftex.def
+File: pppdftex.def 2013/08/25 v0.4v Pdfpages driver for pdfTeX (AM)
 )
 \AM@pagebox=\box32
 \AM@toc@title=\toks26
 \c@AM@survey=\count131
 \AM@templatesizebox=\box33
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/wrapfig/wrapfig.sty
-\wrapoverhang=\dimen149
-\WF@size=\dimen150
+(/usr/share/texlive/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+\wrapoverhang=\dimen147
+\WF@size=\dimen148
 \c@WF@wrappedlines=\count132
 \WF@box=\box34
 \WF@everypar=\toks27
 Package: wrapfig 2003/01/31  v 3.6
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/lscape.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
 Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/rotating/rotating.sty
+(/usr/share/texlive/texmf-dist/tex/latex/rotating/rotating.sty
 Package: rotating 2009/03/28 v2.16a rotated objects in LaTeX
 \c@r@tfl@t=\count133
 \rotFPtop=\skip51
@@ -809,7 +805,7 @@ Package: rotating 2009/03/28 v2.16a rotated objects in LaTeX
 \rot@float@box=\box35
 \rot@mess@toks=\toks28
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+(/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 \fancy@headwidth=\skip53
 \f@ncyO@elh=\skip54
 \f@ncyO@erh=\skip55
@@ -820,17 +816,17 @@ Package: rotating 2009/03/28 v2.16a rotated objects in LaTeX
 \f@ncyO@olf=\skip60
 \f@ncyO@orf=\skip61
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-(/usr/local/texlive/2015/texmf-dist/tex/latex/soul/soul.sty
+(/usr/share/texlive/texmf-dist/tex/latex/soul/soul.sty
 Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
 \SOUL@word=\toks29
 \SOUL@lasttoken=\toks30
@@ -838,11 +834,11 @@ Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
 \SOUL@buffer=\toks32
 \SOUL@token=\toks33
 \SOUL@spaceskip=\skip62
-\SOUL@ttwidth=\dimen151
-\SOUL@uldp=\dimen152
-\SOUL@ulht=\dimen153
+\SOUL@ttwidth=\dimen149
+\SOUL@uldp=\dimen150
+\SOUL@ulht=\dimen151
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/helvet.sty
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/helvet.sty
 Package: helvet 2005/04/12 PSNFSS-v9.2a (WaS) 
 )
 (./formula_sae_esf.aux)
@@ -862,9 +858,8 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 46.
 LaTeX Font Info:    ... okay on input line 46.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 46.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 46.
-
-(/usr/local/texlive/2015/texmf-dist/tex/latex/base/ts1cmr.fd
-File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+ (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
+File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 46.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 46.
@@ -880,17 +875,16 @@ erthousand on input line 46.
 LaTeX Info: Redefining \ohm on input line 46.
 Package gensymb Info: Using \textohm for \ohm on input line 46.
 Package gensymb Info: Using \textmu for \micro on input line 46.
-
-(/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
+ (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count134
-\scratchdimen=\dimen154
+\scratchdimen=\dimen152
 \scratchbox=\box36
 \nofMPsegments=\count135
 \nofMParguments=\count136
 \everyMPshowfont=\toks34
 \MPscratchCnt=\count137
-\MPscratchDim=\dimen155
+\MPscratchDim=\dimen153
 \MPnumerator=\count138
 \makeMPintoPDFobject=\count139
 \everyMPtoPDFconversion=\toks35
@@ -903,10 +897,10 @@ Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \AtBeginShipoutBox=\box37
 Package hyperref Info: Link coloring OFF on input line 46.
- (/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/nameref.sty
+ (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
-(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count140
@@ -957,59 +951,44 @@ LaTeX Info: Redefining \Ref on input line 46.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \c@lstlisting=\count141
-<revo.png, id=454, 843.15pt x 276.03125pt>
+<revo.png, id=44, 843.15pt x 276.03125pt>
 File: revo.png Graphic file (type png)
  <use revo.png>
 Package pdftex.def Info: revo.png used on input line 61.
 (pdftex.def)             Requested size: 284.52756pt x 93.15019pt.
 LaTeX Font Info:    Try loading font information for U+msa on input line 73.
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 73.
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<teamPhoto.jpg, id=456, 2055.68pt x 1467.4825pt>
+<teamPhoto.jpg, id=46, 2055.68pt x 1467.4825pt>
 File: teamPhoto.jpg Graphic file (type jpg)
  <use teamPhoto.jpg>
 Package pdftex.def Info: teamPhoto.jpg used on input line 85.
 (pdftex.def)             Requested size: 422.77664pt x 301.7987pt.
  [1
 
-{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./revo.
-png> <./teamPhoto.jpg>] (./formula_sae_esf.toc
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./revo.png> <./teamPhoto.j
+pg>]
+(./formula_sae_esf.toc)
+\tf@toc=\write5
+\openout5 = `formula_sae_esf.toc'.
+
 File: revo.png Graphic file (type png)
  <use revo.png>
-Package pdftex.def Info: revo.png used on input line 52.
+Package pdftex.def Info: revo.png used on input line 94.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
 pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.52 ...Position in Car}{21}{subsubsection.2.11.3}
-                                                   [1]
-File: revo.png Graphic file (type png)
- <use revo.png>
-Package pdftex.def Info: revo.png used on input line 101.
-(pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [2])
-\tf@toc=\write5
-\openout5 = `formula_sae_esf.toc'.
-
-File: revo.png Graphic file (type png)
-
-<use revo.png>
-Package pdftex.def Info: revo.png used on input line 94.
-(pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [3] (./formula_sae_esf.lof
-File: revo.png Graphic file (type png)
- <use revo.png>
-Package pdftex.def Info: revo.png used on input line 48.
-(pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [4])
+l.94 \newpage
+              [1] (./formula_sae_esf.lof)
 \tf@lof=\write6
 \openout6 = `formula_sae_esf.lof'.
 
@@ -1017,8 +996,8 @@ File: revo.png Graphic file (type png)
  <use revo.png>
 Package pdftex.def Info: revo.png used on input line 98.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
-
-[5] (./formula_sae_esf.lot)
+ [2]
+(./formula_sae_esf.lot)
 \tf@lot=\write7
 \openout7 = `formula_sae_esf.lot'.
 
@@ -1026,83 +1005,83 @@ File: revo.png Graphic file (type png)
  <use revo.png>
 Package pdftex.def Info: revo.png used on input line 102.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [6]
+ [3]
 File: revo.png Graphic file (type png)
  <use revo.png>
-Package pdftex.def Info: revo.png used on input line 116.
+Package pdftex.def Info: revo.png used on input line 117.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [7]
-Underfull \hbox (badness 10000) in paragraph at lines 122--123
+ [4]
+Underfull \hbox (badness 10000) in paragraph at lines 123--124
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 124--125
+Underfull \hbox (badness 10000) in paragraph at lines 125--126
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 126--127
+Underfull \hbox (badness 10000) in paragraph at lines 127--128
 
  []
 
-<tractiveblock.png, id=847, 798.77368pt x 486.11084pt>
+<tractiveblock.png, id=74, 798.77368pt x 486.11084pt>
 File: tractiveblock.png Graphic file (type png)
  <use tractiveblock.png>
-Package pdftex.def Info: tractiveblock.png used on input line 131.
+Package pdftex.def Info: tractiveblock.png used on input line 132.
 (pdftex.def)             Requested size: 650.43001pt x 395.83932pt.
 File: revo.png Graphic file (type png)
 
 <use revo.png>
-Package pdftex.def Info: revo.png used on input line 153.
+Package pdftex.def Info: revo.png used on input line 154.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
  [1]
 File: revo.png Graphic file (type png)
  <use revo.png>
-Package pdftex.def Info: revo.png used on input line 153.
+Package pdftex.def Info: revo.png used on input line 154.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
  [2 <./tractiveblock.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 161--162
+Underfull \hbox (badness 10000) in paragraph at lines 162--163
 
  []
 
 File: revo.png Graphic file (type png)
 <use revo.png>
-Package pdftex.def Info: revo.png used on input line 201.
+Package pdftex.def Info: revo.png used on input line 202.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [3] <shutdownswitches.png, id=862, 835.047pt x 321.273pt>
+ [3] <shutdownswitches.png, id=92, 835.047pt x 321.273pt>
 File: shutdownswitches.png Graphic file (type png)
 
 <use shutdownswitches.png>
-Package pdftex.def Info: shutdownswitches.png used on input line 208.
+Package pdftex.def Info: shutdownswitches.png used on input line 209.
 (pdftex.def)             Requested size: 469.75502pt x 180.73032pt.
 File: revo.png Graphic file (type png)
  <use revo.png>
-Package pdftex.def Info: revo.png used on input line 234.
+Package pdftex.def Info: revo.png used on input line 235.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
  [4 <./shutdownswitches.png>]
-<CONTROLPANEL_1.png, id=871, 604.50844pt x 484.05844pt>
-File: CONTROLPANEL_1.png Graphic file (type png)
+<CONTROLPANEL_1.PNG, id=105, 604.50844pt x 484.05844pt>
+File: CONTROLPANEL_1.PNG Graphic file (type png)
 
-<use CONTROLPANEL_1.png>
-Package pdftex.def Info: CONTROLPANEL_1.png used on input line 237.
+<use CONTROLPANEL_1.PNG>
+Package pdftex.def Info: CONTROLPANEL_1.PNG used on input line 238.
 (pdftex.def)             Requested size: 281.85587pt x 225.6905pt.
 
-<CONTROLPANEL_2.png, id=872, 892.08281pt x 464.4853pt>
-File: CONTROLPANEL_2.png Graphic file (type png)
+<CONTROLPANEL_2.PNG, id=106, 892.08281pt x 464.4853pt>
+File: CONTROLPANEL_2.PNG Graphic file (type png)
 
-<use CONTROLPANEL_2.png>
-Package pdftex.def Info: CONTROLPANEL_2.png used on input line 244.
+<use CONTROLPANEL_2.PNG>
+Package pdftex.def Info: CONTROLPANEL_2.PNG used on input line 245.
 (pdftex.def)             Requested size: 281.85587pt x 146.75307pt.
 File: revo.png Graphic file (type png)
  <use revo.png>
 Package pdftex.def Info: revo.png used on input line 256.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [5 <./CONTROLPANEL_1.png> <./CONTROLPANEL_2.png>]
+ [5 <./CONTROLPANEL_1.PNG> <./CONTROLPANEL_2.PNG>]
 
 LaTeX Warning: Reference `imdappendix' on page 6 undefined on input line 276.
 
-<Only_IMD.png, id=880, 234.549pt x 325.872pt>
+<Only_IMD.png, id=115, 234.549pt x 325.872pt>
 File: Only_IMD.png Graphic file (type png)
  <use Only_IMD.png>
 Package pdftex.def Info: Only_IMD.png used on input line 280.
@@ -1110,741 +1089,1025 @@ Package pdftex.def Info: Only_IMD.png used on input line 280.
 File: revo.png Graphic file (type png)
 
 <use revo.png>
-Package pdftex.def Info: revo.png used on input line 287.
+Package pdftex.def Info: revo.png used on input line 290.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [6 <./Only_IMD.png>]
-<inertia.png, id=888, 139.81465pt x 39.7485pt>
+ [0 <./Only_IMD.png>]
+<inertia.png, id=128, 139.81465pt x 39.7485pt>
 File: inertia.png Graphic file (type png)
  <use inertia.png>
-Package pdftex.def Info: inertia.png used on input line 324.
+Package pdftex.def Info: inertia.png used on input line 329.
 (pdftex.def)             Requested size: 139.8143pt x 39.7484pt.
 File: revo.png Graphic file (type png)
 
 <use revo.png>
-Package pdftex.def Info: revo.png used on input line 361.
+Package pdftex.def Info: revo.png used on input line 350.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [7 <./inertia.png>] <BSPD.png, id=895, 500.1084pt x 300.1614pt>
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.350 
+       [1 <./inertia.png>] <BSPD.png, id=143, 500.1084pt x 300.1614pt>
 File: BSPD.png Graphic file (type png)
 
 <use BSPD.png>
-Package pdftex.def Info: BSPD.png used on input line 366.
+Package pdftex.def Info: BSPD.png used on input line 371.
 (pdftex.def)             Requested size: 422.77664pt x 253.75063pt.
- <brakeincar.jpg, id=897, 1154.3125pt x 560.0925pt>
+
+
+LaTeX Warning: Reference `BSPDmech1' on page 2 undefined on input line 383.
+
+
+LaTeX Warning: Reference `BSPDmech2' on page 2 undefined on input line 383.
+
+File: revo.png Graphic file (type png)
+<use revo.png>
+Package pdftex.def Info: revo.png used on input line 384.
+(pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
+pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.384 
+       [2 <./BSPD.png>] <brakeincar.jpg, id=154, 1154.3125pt x 560.0925pt>
 File: brakeincar.jpg Graphic file (type jpg)
 
 <use brakeincar.jpg>
-Package pdftex.def Info: brakeincar.jpg used on input line 382.
+Package pdftex.def Info: brakeincar.jpg used on input line 387.
 (pdftex.def)             Requested size: 422.77664pt x 205.13713pt.
-File: revo.png Graphic file (type png)
- <use revo.png>
-Package pdftex.def Info: revo.png used on input line 386.
-(pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [8 <./BSPD.png>]
-<brakesensor.jpg, id=903, 887.315pt x 560.0925pt>
+ <brakesensor.jpg, id=155, 887.315pt x 560.0925pt>
 File: brakesensor.jpg Graphic file (type jpg)
- <use brakesensor.jpg>
-Package pdftex.def Info: brakesensor.jpg used on input line 389.
+
+<use brakesensor.jpg>
+Package pdftex.def Info: brakesensor.jpg used on input line 394.
 (pdftex.def)             Requested size: 422.77664pt x 266.8586pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 400--401
+Underfull \hbox (badness 10000) in paragraph at lines 405--406
 
  []
 
 File: revo.png Graphic file (type png)
 <use revo.png>
-Package pdftex.def Info: revo.png used on input line 403.
+Package pdftex.def Info: revo.png used on input line 406.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [9 <./brakeincar.jpg> <./brakesensor.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 407--408
+pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.406 
+       [3 <./brakeincar.jpg> <./brakesensor.jpg>]
+
+LaTeX Warning: Reference `IMD' on page 4 undefined on input line 412.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 412--413
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 410--411
+LaTeX Warning: Reference `imdnode' on page 4 undefined on input line 415.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 415--416
 
  []
 
-<interlocks.png, id=911, 171.42444pt x 63.30852pt>
+<interlocks.png, id=162, 171.42444pt x 63.30852pt>
 File: interlocks.png Graphic file (type png)
  <use interlocks.png>
-Package pdftex.def Info: interlocks.png used on input line 432.
+Package pdftex.def Info: interlocks.png used on input line 437.
 (pdftex.def)             Requested size: 171.42401pt x 63.30835pt.
 
-<MSD.png, id=912, 390.45876pt x 416.55624pt>
-File: MSD.png Graphic file (type png)
- <use MSD.png>
-Package pdftex.def Info: MSD.png used on input line 439.
-(pdftex.def)             Requested size: 140.92793pt x 150.34785pt.
-File: revo.png Graphic file (type png)
- <use revo.png>
-Package pdftex.def Info: revo.png used on input line 443.
-(pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
 
-[10 <./interlocks.png>] <TSALshining.png, id=919, 396.48125pt x 273.02pt>
+LaTeX Warning: Reference `hvdsection' on page 4 undefined on input line 451.
+
+File: revo.png Graphic file (type png)
+<use revo.png>
+Package pdftex.def Info: revo.png used on input line 452.
+(pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
+pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.452 
+       [4 <./interlocks.png>]
+<TSALshining.png, id=175, 396.48125pt x 273.02pt>
 File: TSALshining.png Graphic file (type png)
-
-<use TSALshining.png>
-Package pdftex.def Info: TSALshining.png used on input line 456.
+ <use TSALshining.png>
+Package pdftex.def Info: TSALshining.png used on input line 461.
 (pdftex.def)             Requested size: 234.8775pt x 161.74278pt.
-File: revo.png Graphic file (type png)
- <use revo.png>
-Package pdftex.def Info: revo.png used on input line 478.
-(pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [11 <./MSD.png> <./TSALshining.png>]
-<TSAL_FSAE.png, id=925, 422.88274pt x 342.35332pt>
+
+<TSAL_FSAE.png, id=176, 422.88274pt x 342.35332pt>
 File: TSAL_FSAE.png Graphic file (type png)
  <use TSAL_FSAE.png>
-Package pdftex.def Info: TSAL_FSAE.png used on input line 488.
+Package pdftex.def Info: TSAL_FSAE.png used on input line 493.
 (pdftex.def)             Requested size: 328.82707pt x 266.20914pt.
 File: revo.png Graphic file (type png)
 
 <use revo.png>
-Package pdftex.def Info: revo.png used on input line 507.
+Package pdftex.def Info: revo.png used on input line 497.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [12 <./TSAL_FSAE.png>]
-<TSMP.png, id=932, 177.61742pt x 234.59953pt>
+pdfTeX warning (ext4): destination with the same identifier (name{page.5}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.497 
+       [5 <./TSALshining.png>]
+
+LaTeX Warning: Reference `TSALschem' on page 6 undefined on input line 498.
+
+<TSMP.png, id=186, 177.61742pt x 234.59953pt>
 File: TSMP.png Graphic file (type png)
  <use TSMP.png>
-Package pdftex.def Info: TSMP.png used on input line 521.
+Package pdftex.def Info: TSMP.png used on input line 526.
 (pdftex.def)             Requested size: 177.61697pt x 234.59895pt.
+File: revo.png Graphic file (type png)
+ <use revo.png>
+Package pdftex.def Info: revo.png used on input line 530.
+(pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 526--527
+[6 <./TSAL_FSAE.png>]
+
+LaTeX Warning: Reference `fig:TSMPschematic' on page 7 undefined on input line 
+531.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 531--532
 
  []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 547--548
+
+ []
+
+
+LaTeX Warning: Reference `tsmpappendix' on page 7 undefined on input line 551.
 
 File: revo.png Graphic file (type png)
 <use revo.png>
-Package pdftex.def Info: revo.png used on input line 540.
+Package pdftex.def Info: revo.png used on input line 552.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [13 <./TSMP.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 542--543
+ [7 <./TSMP.png>]
 
- []
+LaTeX Warning: Reference `prechargeschem' on page 8 undefined on input line 571
+.
 
-<precharge.png, id=945, 886.41934pt x 552.8655pt>
+<precharge.png, id=211, 886.41934pt x 552.8655pt>
 File: precharge.png Graphic file (type png)
  <use precharge.png>
-Package pdftex.def Info: precharge.png used on input line 568.
+Package pdftex.def Info: precharge.png used on input line 574.
 (pdftex.def)             Requested size: 650.43001pt x 405.68903pt.
 
-<PrechargeVoltage.png, id=946, 956.1321pt x 469.755pt>
+<PrechargeVoltage.png, id=212, 956.1321pt x 469.755pt>
 File: PrechargeVoltage.png Graphic file (type png)
 
 <use PrechargeVoltage.png>
-Package pdftex.def Info: PrechargeVoltage.png used on input line 575.
+Package pdftex.def Info: PrechargeVoltage.png used on input line 581.
 (pdftex.def)             Requested size: 375.80544pt x 184.63011pt.
-File: revo.png Graphic file (type png)
- <use revo.png>
-Package pdftex.def Info: revo.png used on input line 579.
-(pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [14]
-File: revo.png Graphic file (type png)
- <use revo.png>
-Package pdftex.def Info: revo.png used on input line 579.
-(pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [15 <./precharge.png>]
-File: revo.png Graphic file (type png)
- <use revo.png>
-Package pdftex.def Info: revo.png used on input line 625.
-(pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [16 <./PrechargeVoltage.png>]
-<discharge.png, id=968, 641.7576pt x 302.0886pt>
-File: discharge.png Graphic file (type png)
- <use discharge.png>
-Package pdftex.def Info: discharge.png used on input line 632.
-(pdftex.def)             Requested size: 641.75603pt x 302.08784pt.
 
-Overfull \hbox (172.001pt too wide) in paragraph at lines 632--633
- [][] 
- []
 
+LaTeX Warning: Reference `PCvoltage' on page 8 undefined on input line 586.
+
+File: revo.png Graphic file (type png)
+<use revo.png>
+Package pdftex.def Info: revo.png used on input line 601.
+(pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
+ [8 <./PrechargeVoltage.png>]
+File: revo.png Graphic file (type png)
+ <use revo.png>
+Package pdftex.def Info: revo.png used on input line 601.
+(pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
+ [9 <./precharge.png>]
+
+LaTeX Warning: Reference `mcsideview' on page 10 undefined on input line 621.
+
+
+! LaTeX Error: File `discharge' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.638                 \includegraphics{discharge}
+                                                 
+? 
 Package epstopdf Info: Source file: <experimental_discharge.eps>
-(epstopdf)                    date: 2016-03-10 21:58:57
+(epstopdf)                    date: 2016-03-19 17:41:50
 (epstopdf)                    size: 14560 bytes
 (epstopdf)             Output file: <experimental_discharge-eps-converted-to.pd
 f>
-(epstopdf)                    date: 2016-03-10 22:05:59
+(epstopdf)                    date: 2016-03-19 17:41:50
 (epstopdf)                    size: 8326 bytes
 (epstopdf)             Command: <repstopdf --outfile=experimental_discharge-eps
 -converted-to.pdf experimental_discharge.eps>
-(epstopdf)             \includegraphics on input line 641.
+(epstopdf)             \includegraphics on input line 647.
 Package epstopdf Info: Output file is already uptodate.
 
-<experimental_discharge-eps-converted-to.pdf, id=969, 571.13374pt x 311.1625pt>
+<experimental_discharge-eps-converted-to.pdf, id=230, 571.13374pt x 311.1625pt>
 File: experimental_discharge-eps-converted-to.pdf Graphic file (type pdf)
 <use experimental_discharge-eps-converted-to.pdf>
 Package pdftex.def Info: experimental_discharge-eps-converted-to.pdf used on in
-put line 641.
+put line 647.
 (pdftex.def)             Requested size: 375.80544pt x 204.7459pt.
 File: revo.png Graphic file (type png)
  <use revo.png>
-Package pdftex.def Info: revo.png used on input line 645.
+Package pdftex.def Info: revo.png used on input line 651.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [17 <./discharge.png>]
+ [10]
+
+LaTeX Warning: Reference `discharge' on page 11 undefined on input line 652.
+
 Package epstopdf Info: Source file: <voltage.eps>
-(epstopdf)                    date: 2016-03-10 22:03:26
+(epstopdf)                    date: 2016-03-19 17:41:50
 (epstopdf)                    size: 17541 bytes
 (epstopdf)             Output file: <voltage-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-03-10 22:06:02
+(epstopdf)                    date: 2016-03-19 17:41:50
 (epstopdf)                    size: 9049 bytes
 (epstopdf)             Command: <repstopdf --outfile=voltage-eps-converted-to.p
 df voltage.eps>
-(epstopdf)             \includegraphics on input line 664.
+(epstopdf)             \includegraphics on input line 670.
 Package epstopdf Info: Output file is already uptodate.
- <voltage-eps-converted-to.pdf, id=977, 578.16pt x 348.30125pt>
+<voltage-eps-converted-to.pdf, id=242, 578.16pt x 348.30125pt>
 File: voltage-eps-converted-to.pdf Graphic file (type pdf)
 
 <use voltage-eps-converted-to.pdf>
-Package pdftex.def Info: voltage-eps-converted-to.pdf used on input line 664.
+Package pdftex.def Info: voltage-eps-converted-to.pdf used on input line 670.
 (pdftex.def)             Requested size: 375.80544pt x 226.39313pt.
+
+
+LaTeX Warning: Reference `dctable' on page 11 undefined on input line 671.
+
+
+LaTeX Warning: Reference `dctable' on page 11 undefined on input line 671.
+
 File: revo.png Graphic file (type png)
- <use revo.png>
-Package pdftex.def Info: revo.png used on input line 668.
+<use revo.png>
+Package pdftex.def Info: revo.png used on input line 674.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [18 <./experimental_discharge-eps-converted-to.pdf>]
+ [11 <./experimental_discharge-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <current.eps>
-(epstopdf)                    date: 2016-03-10 21:58:14
+(epstopdf)                    date: 2016-03-19 17:41:50
 (epstopdf)                    size: 17478 bytes
 (epstopdf)             Output file: <current-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-03-10 22:06:04
+(epstopdf)                    date: 2016-03-19 17:41:50
 (epstopdf)                    size: 8525 bytes
 (epstopdf)             Command: <repstopdf --outfile=current-eps-converted-to.p
 df current.eps>
-(epstopdf)             \includegraphics on input line 671.
+(epstopdf)             \includegraphics on input line 677.
 Package epstopdf Info: Output file is already uptodate.
 
-<current-eps-converted-to.pdf, id=998, 576.1525pt x 345.29pt>
+<current-eps-converted-to.pdf, id=262, 576.1525pt x 345.29pt>
 File: current-eps-converted-to.pdf Graphic file (type pdf)
 
 <use current-eps-converted-to.pdf>
-Package pdftex.def Info: current-eps-converted-to.pdf used on input line 671.
+Package pdftex.def Info: current-eps-converted-to.pdf used on input line 677.
 (pdftex.def)             Requested size: 375.80544pt x 225.2314pt.
 File: revo.png Graphic file (type png)
  <use revo.png>
-Package pdftex.def Info: revo.png used on input line 693.
+Package pdftex.def Info: revo.png used on input line 699.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [19 <./voltage-eps-converted-to.pdf> <./current-eps-converted-to.pdf>]
-<Discharge_PCB.png, id=1020, 395.4775pt x 326.21875pt>
+ [12 <./voltage-eps-converted-to.pdf> <./current-eps-converted-to.pdf>]
+
+LaTeX Warning: Reference `dischargeappendix' on page 13 undefined on input line
+ 700.
+
+<Discharge_PCB.png, id=285, 395.4775pt x 326.21875pt>
 File: Discharge_PCB.png Graphic file (type png)
  <use Discharge_PCB.png>
-Package pdftex.def Info: Discharge_PCB.png used on input line 702.
+Package pdftex.def Info: Discharge_PCB.png used on input line 708.
 (pdftex.def)             Requested size: 281.85587pt x 232.49797pt.
 
-<anderson_hvd_interlock.png, id=1022, 739.26187pt x 501.37312pt>
-File: anderson_hvd_interlock.png Graphic file (type png)
 
-<use anderson_hvd_interlock.png>
-Package pdftex.def Info: anderson_hvd_interlock.png used on input line 717.
+LaTeX Warning: Reference `HVDoneside' on page 13 undefined on input line 717.
+
+<anderson_hvd_interlock.PNG, id=286, 739.26187pt x 501.37312pt>
+File: anderson_hvd_interlock.PNG Graphic file (type png)
+
+<use anderson_hvd_interlock.PNG>
+Package pdftex.def Info: anderson_hvd_interlock.PNG used on input line 723.
 (pdftex.def)             Requested size: 117.43875pt x 79.64755pt.
 File: revo.png Graphic file (type png)
  <use revo.png>
-Package pdftex.def Info: revo.png used on input line 721.
+Package pdftex.def Info: revo.png used on input line 727.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [20 <./Discharge_PCB.png>]
-<HVD.png, id=1029, 287.69019pt x 198.46454pt>
+ [13 <./Discharge_PCB.png>]
+<HVD.png, id=298, 287.69019pt x 198.46454pt>
 File: HVD.png Graphic file (type png)
  <use HVD.png>
-Package pdftex.def Info: HVD.png used on input line 728.
+Package pdftex.def Info: HVD.png used on input line 734.
 (pdftex.def)             Requested size: 352.31625pt x 243.04698pt.
 
-<hvd_position.jpg, id=1031, 475.7775pt x 349.90726pt>
+
+LaTeX Warning: Reference `hvdlocation' on page 14 undefined on input line 741.
+
+<hvd_position.jpg, id=299, 475.7775pt x 349.90726pt>
 File: hvd_position.jpg Graphic file (type jpg)
  <use hvd_position.jpg>
-Package pdftex.def Info: hvd_position.jpg used on input line 740.
+Package pdftex.def Info: hvd_position.jpg used on input line 746.
 (pdftex.def)             Requested size: 281.85587pt x 207.29774pt.
 File: revo.png Graphic file (type png)
 
 <use revo.png>
-Package pdftex.def Info: revo.png used on input line 744.
+Package pdftex.def Info: revo.png used on input line 750.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [21 <./anderson_hvd_interlock.png> <./HVD.png>]
-<R2Dsoundbuzzerschem.png, id=1040, 368.93835pt x 202.71735pt>
+ [14 <./anderson_hvd_interlock.PNG> <./HVD.png>]
+
+LaTeX Warning: Reference `IMD' on page 15 undefined on input line 759.
+
+<R2Dsoundbuzzerschem.png, id=312, 368.93835pt x 202.71735pt>
 File: R2Dsoundbuzzerschem.png Graphic file (type png)
 
 <use R2Dsoundbuzzerschem.png>
-Package pdftex.def Info: R2Dsoundbuzzerschem.png used on input line 757.
+Package pdftex.def Info: R2Dsoundbuzzerschem.png used on input line 763.
 (pdftex.def)             Requested size: 422.77664pt x 232.3189pt.
 File: revo.png Graphic file (type png)
  <use revo.png>
-Package pdftex.def Info: revo.png used on input line 761.
+Package pdftex.def Info: revo.png used on input line 767.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [22 <./hvd_position.jpg>]
+ [15 <./hvd_position.jpg>]
 File: revo.png Graphic file (type png)
 
 <use revo.png>
-Package pdftex.def Info: revo.png used on input line 780.
+Package pdftex.def Info: revo.png used on input line 786.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [23 <./R2Dsoundbuzzerschem.png>]
-<accumulatorlocation.png, id=1061, 1114.1625pt x 614.295pt>
+ [16 <./R2Dsoundbuzzerschem.png>]
+
+LaTeX Warning: Reference `module' on page 17 undefined on input line 796.
+
+
+LaTeX Warning: Reference `cellconfiguration' on page 17 undefined on input line
+ 796.
+
+<accumulatorlocation.png, id=335, 1114.1625pt x 614.295pt>
 File: accumulatorlocation.png Graphic file (type png)
 
 <use accumulatorlocation.png>
-Package pdftex.def Info: accumulatorlocation.png used on input line 815.
+Package pdftex.def Info: accumulatorlocation.png used on input line 821.
 (pdftex.def)             Requested size: 328.82707pt x 181.2998pt.
 File: revo.png Graphic file (type png)
  <use revo.png>
-Package pdftex.def Info: revo.png used on input line 844.
+Package pdftex.def Info: revo.png used on input line 850.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [24 <./accumulatorlocation.png>]
-<moduleschem.png, id=1066, 139.2402pt x 134.6631pt>
+ [17 <./accumulatorlocation.png>]
+<moduleschem.png, id=346, 139.2402pt x 134.6631pt>
 File: moduleschem.png Graphic file (type png)
  <use moduleschem.png>
-Package pdftex.def Info: moduleschem.png used on input line 853.
+Package pdftex.def Info: moduleschem.png used on input line 859.
 (pdftex.def)             Requested size: 139.23985pt x 134.66277pt.
 
-<OpenModule.jpg, id=1070, 3613.5pt x 2409.0pt>
+
+LaTeX Warning: Reference `batteryoverview' on page 18 undefined on input line 8
+64.
+
+
+LaTeX Warning: Reference `canopener' on page 18 undefined on input line 864.
+
+
+LaTeX Warning: Reference `module' on page 18 undefined on input line 864.
+
+<OpenModule.jpg, id=347, 3613.5pt x 2409.0pt>
 File: OpenModule.jpg Graphic file (type jpg)
  <use OpenModule.jpg>
-Package pdftex.def Info: OpenModule.jpg used on input line 862.
+Package pdftex.def Info: OpenModule.jpg used on input line 868.
 (pdftex.def)             Requested size: 281.85587pt x 187.87184pt.
 File: revo.png Graphic file (type png)
 
 <use revo.png>
-Package pdftex.def Info: revo.png used on input line 866.
+Package pdftex.def Info: revo.png used on input line 872.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [25 <./moduleschem.png>]
-<busbar_routing.png, id=1076, 758.08218pt x 478.03593pt>
-File: busbar_routing.png Graphic file (type png)
+ [18 <./moduleschem.png>]
 
-<use busbar_routing.png>
-Package pdftex.def Info: busbar_routing.png used on input line 871.
+LaTeX Warning: Reference `busbar' on page 19 undefined on input line 873.
+
+<busbar_routing.PNG, id=355, 758.08218pt x 478.03593pt>
+File: busbar_routing.PNG Graphic file (type png)
+
+<use busbar_routing.PNG>
+Package pdftex.def Info: busbar_routing.PNG used on input line 877.
 (pdftex.def)             Requested size: 281.85587pt x 177.73123pt.
- <celltemp.png, id=1079, 262.11774pt x 393.59354pt>
-File: celltemp.png Graphic file (type png)
 
-<use celltemp.png>
-Package pdftex.def Info: celltemp.png used on input line 886.
+
+LaTeX Warning: Reference `accumlocations' on page 19 undefined on input line 88
+2.
+
+
+LaTeX Warning: Reference `batteryconnectors' on page 19 undefined on input line
+ 882.
+
+<celltemp.png, id=356, 262.11774pt x 393.59354pt>
+File: celltemp.png Graphic file (type png)
+ <use celltemp.png>
+Package pdftex.def Info: celltemp.png used on input line 896.
 (pdftex.def)             Requested size: 234.8775pt x 352.69943pt.
 File: revo.png Graphic file (type png)
- <use revo.png>
-Package pdftex.def Info: revo.png used on input line 889.
+
+<use revo.png>
+Package pdftex.def Info: revo.png used on input line 899.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [26 <./OpenModule.jpg> <./busbar_routing.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 903--904
+ [19 <./OpenModule.jpg> <./busbar_routing.PNG>]
+
+LaTeX Warning: Reference `busbar' on page 20 undefined on input line 913.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 913--914
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 905--906
+Underfull \hbox (badness 10000) in paragraph at lines 915--916
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 907--908
+LaTeX Warning: Reference `amsschem' on page 20 undefined on input line 917.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 917--918
 
  []
 
 File: revo.png Graphic file (type png)
 <use revo.png>
-Package pdftex.def Info: revo.png used on input line 908.
+Package pdftex.def Info: revo.png used on input line 918.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [27 <./celltemp.png>]
-<bms_final1_PCBCAD.png, id=1095, 550.055pt x 539.01375pt>
+ [20 <./celltemp.png>]
+
+LaTeX Warning: Reference `bmspcb' on page 21 undefined on input line 921.
+
+
+LaTeX Warning: Reference `creepage' on page 21 undefined on input line 921.
+
+
+LaTeX Warning: Reference `amsschem' on page 21 undefined on input line 921.
+
+<bms_final1_PCBCAD.png, id=373, 550.055pt x 539.01375pt>
 File: bms_final1_PCBCAD.png Graphic file (type png)
 
 <use bms_final1_PCBCAD.png>
-Package pdftex.def Info: bms_final1_PCBCAD.png used on input line 915.
+Package pdftex.def Info: bms_final1_PCBCAD.png used on input line 925.
 (pdftex.def)             Requested size: 328.82707pt x 322.2346pt.
 
-<bms_separation_detail.png, id=1096, 744.7825pt x 612.2875pt>
+! Undefined control sequence.
+<argument> ...s GLV voltage, and the $\triangleup 
+                                                  x$ measurement is the dist...
+l.926 ...ment is the distance between TS and GLV.}
+                                                  
+? 
+! Undefined control sequence.
+<recently read> \triangleup 
+                            
+l.926 ...ment is the distance between TS and GLV.}
+                                                  
+? 
+! Undefined control sequence.
+<recently read> \triangleup 
+                            
+l.926 ...ment is the distance between TS and GLV.}
+                                                  
+? 
+<bms_separation_detail.png, id=374, 744.7825pt x 612.2875pt>
 File: bms_separation_detail.png Graphic file (type png)
 
 <use bms_separation_detail.png>
-Package pdftex.def Info: bms_separation_detail.png used on input line 923.
+Package pdftex.def Info: bms_separation_detail.png used on input line 933.
 (pdftex.def)             Requested size: 375.80544pt x 308.95517pt.
 File: revo.png Graphic file (type png)
  <use revo.png>
-Package pdftex.def Info: revo.png used on input line 927.
+Package pdftex.def Info: revo.png used on input line 937.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [28 <./bms_final1_PCBCAD.png>]
-<CellTopSchem.png, id=1105, 624.3325pt x 603.25375pt>
+ [21 <./bms_final1_PCBCAD.png>]
+
+LaTeX Warning: Reference `celltopLH' on page 22 undefined on input line 938.
+
+
+LaTeX Warning: Reference `celltopRH' on page 22 undefined on input line 938.
+
+
+LaTeX Warning: Reference `celltopschem' on page 22 undefined on input line 938.
+
+
+
+LaTeX Warning: Reference `celltopLH' on page 22 undefined on input line 938.
+
+<CellTopSchem.png, id=380, 624.3325pt x 603.25375pt>
 File: CellTopSchem.png Graphic file (type png)
  <use CellTopSchem.png>
-Package pdftex.def Info: CellTopSchem.png used on input line 932.
+Package pdftex.def Info: CellTopSchem.png used on input line 942.
 (pdftex.def)             Requested size: 187.89914pt x 181.54822pt.
 
-<CellTopLH.png, id=1106, 627.34375pt x 617.30624pt>
+<CellTopLH.png, id=381, 627.34375pt x 617.30624pt>
 File: CellTopLH.png Graphic file (type png)
  <use CellTopLH.png>
-Package pdftex.def Info: CellTopLH.png used on input line 941.
+Package pdftex.def Info: CellTopLH.png used on input line 951.
 (pdftex.def)             Requested size: 187.89914pt x 184.89188pt.
 File: revo.png Graphic file (type png)
 
 <use revo.png>
-Package pdftex.def Info: revo.png used on input line 945.
+Package pdftex.def Info: revo.png used on input line 955.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [29 <./bms_separation_detail.png> <./CellTopSchem.png>]
-<CellTopRH.png, id=1113, 616.3025pt x 616.3025pt>
+ [22 <./bms_separation_detail.png> <./CellTopSchem.png>]
+<CellTopRH.png, id=389, 616.3025pt x 616.3025pt>
 File: CellTopRH.png Graphic file (type png)
  <use CellTopRH.png>
-Package pdftex.def Info: CellTopRH.png used on input line 948.
+Package pdftex.def Info: CellTopRH.png used on input line 958.
 (pdftex.def)             Requested size: 187.89914pt x 187.89204pt.
 
-<batterybox_topview.png, id=1114, 658.71094pt x 521.69907pt>
-File: batterybox_topview.png Graphic file (type png)
+<batterybox_topview.PNG, id=390, 658.71094pt x 521.69907pt>
+File: batterybox_topview.PNG Graphic file (type png)
 
-<use batterybox_topview.png>
-Package pdftex.def Info: batterybox_topview.png used on input line 955.
+<use batterybox_topview.PNG>
+Package pdftex.def Info: batterybox_topview.PNG used on input line 965.
 (pdftex.def)             Requested size: 281.85587pt x 223.23563pt.
 File: revo.png Graphic file (type png)
  <use revo.png>
-Package pdftex.def Info: revo.png used on input line 959.
+Package pdftex.def Info: revo.png used on input line 969.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [30 <./CellTopLH.png> <./CellTopRH.png>] <ai.png, id=1119, 520.94624pt x 718.6
-85pt>
+ [23 <./CellTopLH.png> <./CellTopRH.png>] <ai.png, id=397, 520.94624pt x 718.68
+5pt>
 File: ai.png Graphic file (type png)
  <use ai.png>
-Package pdftex.def Info: ai.png used on input line 969.
+Package pdftex.def Info: ai.png used on input line 979.
 (pdftex.def)             Requested size: 140.92793pt x 194.4204pt.
-File: revo.png Graphic file (type png)
- <use revo.png>
-Package pdftex.def Info: revo.png used on input line 1000.
-(pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
 
-[31 <./batterybox_topview.png> <./ai.png (PNG copy)>]
-<msd_highres.jpg, id=1132, 1604.99625pt x 1606.0pt>
+
+LaTeX Warning: Reference `indicator' on page 24 undefined on input line 984.
+
+! Incompatible list can't be unboxed.
+\SOUL@ulunderline ...hskip \dimen@ }}\unhcopy \z@ 
+                                                  }
+l.989             \end{align}
+                             
+? 
+! Incompatible list can't be unboxed.
+\SOUL@ulunderline ...hskip \dimen@ }}\unhcopy \z@ 
+                                                  }
+l.989             \end{align}
+                             
+? 
+! Incompatible list can't be unboxed.
+\SOUL@ulunderline ...hskip \dimen@ }}\unhcopy \z@ 
+                                                  }
+l.989             \end{align}
+                             
+? 
+! Incompatible list can't be unboxed.
+\SOUL@ulunderline ...hskip \dimen@ }}\unhcopy \z@ 
+                                                  }
+l.989             \end{align}
+                             
+? 
+! Incompatible list can't be unboxed.
+\SOUL@ulunderline ...hskip \dimen@ }}\unhcopy \z@ 
+                                                  }
+l.989             \end{align}
+                             
+? 
+! Incompatible list can't be unboxed.
+\SOUL@ulunderline ...hskip \dimen@ }}\unhcopy \z@ 
+                                                  }
+l.989             \end{align}
+                             
+? 
+
+LaTeX Warning: Reference `motorwire' on page 24 undefined on input line 995.
+
+
+LaTeX Warning: Reference `tslowcurrentwire' on page 24 undefined on input line 
+996.
+
+File: revo.png Graphic file (type png)
+<use revo.png>
+Package pdftex.def Info: revo.png used on input line 997.
+(pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
+ [24 <./batterybox_topview.PNG> <./ai.png (PNG copy)>]
+
+LaTeX Warning: Reference `msd03' on page 25 undefined on input line 1016.
+
+
+LaTeX Warning: Reference `interlocks' on page 25 undefined on input line 1016.
+
+<msd_highres.jpg, id=408, 1604.99625pt x 1606.0pt>
 File: msd_highres.jpg Graphic file (type jpg)
  <use msd_highres.jpg>
-Package pdftex.def Info: msd_highres.jpg used on input line 1010.
+Package pdftex.def Info: msd_highres.jpg used on input line 1021.
 (pdftex.def)             Requested size: 234.8775pt x 235.00827pt.
-File: revo.png Graphic file (type png)
 
+
+LaTeX Warning: Reference `prechargeschem' on page 25 undefined on input line 10
+30.
+
+File: revo.png Graphic file (type png)
 <use revo.png>
-Package pdftex.def Info: revo.png used on input line 1037.
+Package pdftex.def Info: revo.png used on input line 1048.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [32 <./msd_highres.jpg>]
-<AIRswitching.png, id=1138, 585.18625pt x 575.14874pt>
+ [25 <./msd_highres.jpg>]
+<AIRswitching.png, id=417, 585.18625pt x 575.14874pt>
 File: AIRswitching.png Graphic file (type png)
  <use AIRswitching.png>
-Package pdftex.def Info: AIRswitching.png used on input line 1040.
+Package pdftex.def Info: AIRswitching.png used on input line 1051.
 (pdftex.def)             Requested size: 328.82707pt x 323.19566pt.
 File: revo.png Graphic file (type png)
 
 <use revo.png>
-Package pdftex.def Info: revo.png used on input line 1063.
+Package pdftex.def Info: revo.png used on input line 1074.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [33 <./AIRswitching.png>]
+ [26 <./AIRswitching.png>]
 File: revo.png Graphic file (type png)
  <use revo.png>
-Package pdftex.def Info: revo.png used on input line 1123.
+Package pdftex.def Info: revo.png used on input line 1134.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [34]
-<TSfuseT-Agraph.png, id=1148, 399.4925pt x 771.88374pt>
+ [27]
+
+LaTeX Warning: Reference `TSi2t' on page 28 undefined on input line 1144.
+
+<TSfuseT-Agraph.png, id=434, 399.4925pt x 771.88374pt>
 File: TSfuseT-Agraph.png Graphic file (type png)
 
 <use TSfuseT-Agraph.png>
-Package pdftex.def Info: TSfuseT-Agraph.png used on input line 1142.
+Package pdftex.def Info: TSfuseT-Agraph.png used on input line 1153.
 (pdftex.def)             Requested size: 162.6075pt x 314.17767pt.
+
+
+LaTeX Warning: Reference `AWGchart' on page 28 undefined on input line 1160.
+
 File: revo.png Graphic file (type png)
- <use revo.png>
-Package pdftex.def Info: revo.png used on input line 1167.
+<use revo.png>
+Package pdftex.def Info: revo.png used on input line 1178.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [35 <./TSfuseT-Agraph.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1189--1190
+ [28 <./TSfuseT-Agraph.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1200--1201
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1191--1192
+Underfull \hbox (badness 10000) in paragraph at lines 1202--1203
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1193--1194
+Underfull \hbox (badness 10000) in paragraph at lines 1204--1205
 
  []
 
-<chargepic.png, id=1156, 393.47pt x 388.45125pt>
+<chargepic.png, id=443, 393.47pt x 388.45125pt>
 File: chargepic.png Graphic file (type png)
  <use chargepic.png>
-Package pdftex.def Info: chargepic.png used on input line 1200.
+Package pdftex.def Info: chargepic.png used on input line 1211.
 (pdftex.def)             Requested size: 234.8775pt x 231.88115pt.
 File: revo.png Graphic file (type png)
 
 <use revo.png>
-Package pdftex.def Info: revo.png used on input line 1204.
+Package pdftex.def Info: revo.png used on input line 1215.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [36]
-Underfull \hbox (badness 10000) in paragraph at lines 1209--1210
+ [29]
+Underfull \hbox (badness 10000) in paragraph at lines 1220--1221
 
  []
 
-<accumulator_frame.png, id=1164, 617.30624pt x 602.25pt>
+
+LaTeX Warning: Reference `accframe' on page 30 undefined on input line 1222.
+
+
+LaTeX Warning: Reference `cellexp' on page 30 undefined on input line 1222.
+
+
+LaTeX Warning: Reference `cellcut' on page 30 undefined on input line 1222.
+
+<accumulator_frame.png, id=451, 617.30624pt x 602.25pt>
 File: accumulator_frame.png Graphic file (type png)
 
 <use accumulator_frame.png>
-Package pdftex.def Info: accumulator_frame.png used on input line 1215.
+Package pdftex.def Info: accumulator_frame.png used on input line 1226.
 (pdftex.def)             Requested size: 234.8775pt x 229.15144pt.
 File: revo.png Graphic file (type png)
  <use revo.png>
-Package pdftex.def Info: revo.png used on input line 1219.
+Package pdftex.def Info: revo.png used on input line 1230.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [37 <./chargepic.png>]
-<cellmount_cutaway.png, id=1169, 1134.2375pt x 645.41125pt>
+ [30 <./chargepic.png>]
+<cellmount_cutaway.png, id=458, 1134.2375pt x 645.41125pt>
 File: cellmount_cutaway.png Graphic file (type png)
 
 <use cellmount_cutaway.png>
-Package pdftex.def Info: cellmount_cutaway.png used on input line 1222.
+Package pdftex.def Info: cellmount_cutaway.png used on input line 1233.
 (pdftex.def)             Requested size: 234.8775pt x 133.6495pt.
 
-<cellmount_exploded.png, id=1170, 963.6pt x 744.53156pt>
+<cellmount_exploded.png, id=459, 963.6pt x 744.53156pt>
 File: cellmount_exploded.png Graphic file (type png)
 
 <use cellmount_exploded.png>
-Package pdftex.def Info: cellmount_exploded.png used on input line 1229.
+Package pdftex.def Info: cellmount_exploded.png used on input line 1240.
 (pdftex.def)             Requested size: 234.8775pt x 181.47458pt.
 File: revo.png Graphic file (type png)
  <use revo.png>
-Package pdftex.def Info: revo.png used on input line 1233.
+Package pdftex.def Info: revo.png used on input line 1244.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [38 <./accumulator_frame.png> <./cellmount_cutaway.png>]
-File: revo.png Graphic file (type png)
- <use revo.png>
-Package pdftex.def Info: revo.png used on input line 1241.
-(pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [39 <./cellmount_exploded.png>]
-File: revo.png Graphic file (type png)
+ [31 <./accumulator_frame.png> <./cellmount_cutaway.png>]
 
+LaTeX Warning: Reference `Battery1' on page 32 undefined on input line 1250.
+
+File: revo.png Graphic file (type png)
 <use revo.png>
-Package pdftex.def Info: revo.png used on input line 1261.
+Package pdftex.def Info: revo.png used on input line 1252.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [40]
-<motorcontrollers_separate.png, id=1187, 1005.00468pt x 525.46312pt>
-File: motorcontrollers_separate.png Graphic file (type png)
+ [32 <./cellmount_exploded.png>]
 
-<use motorcontrollers_separate.png>
-Package pdftex.def Info: motorcontrollers_separate.png used on input line 1273.
+LaTeX Warning: Reference `hvdsection' on page 33 undefined on input line 1270.
+
+File: revo.png Graphic file (type png)
+<use revo.png>
+Package pdftex.def Info: revo.png used on input line 1272.
+(pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
+ [33]
+<motorcontrollers_separate.PNG, id=484, 1005.00468pt x 525.46312pt>
+File: motorcontrollers_separate.PNG Graphic file (type png)
+
+<use motorcontrollers_separate.PNG>
+Package pdftex.def Info: motorcontrollers_separate.PNG used on input line 1284.
 
 (pdftex.def)             Requested size: 328.82707pt x 171.92004pt.
 
-<motorcontroller.png, id=1189, 278.51746pt x 299.9205pt>
+
+LaTeX Warning: Reference `MC' on page 34 undefined on input line 1289.
+
+<motorcontroller.png, id=485, 278.51746pt x 299.9205pt>
 File: motorcontroller.png Graphic file (type png)
 
 <use motorcontroller.png>
-Package pdftex.def Info: motorcontroller.png used on input line 1319.
+Package pdftex.def Info: motorcontroller.png used on input line 1330.
 (pdftex.def)             Requested size: 352.31625pt x 379.41203pt.
 File: revo.png Graphic file (type png)
  <use revo.png>
-Package pdftex.def Info: revo.png used on input line 1323.
+Package pdftex.def Info: revo.png used on input line 1334.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [41 <./motorcontrollers_separate.png>] <motorcontroller_sideview.png, id=1201,
- 543.53062pt x 517.935pt>
-File: motorcontroller_sideview.png Graphic file (type png)
+ [34 <./motorcontrollers_separate.PNG>]
 
-<use motorcontroller_sideview.png>
-Package pdftex.def Info: motorcontroller_sideview.png used on input line 1335.
+LaTeX Warning: Reference `mcschem' on page 35 undefined on input line 1337.
+
+
+LaTeX Warning: Reference `AWGchart' on page 35 undefined on input line 1337.
+
+
+LaTeX Warning: Reference `mcsideview' on page 35 undefined on input line 1342.
+
+
+LaTeX Warning: Reference `mciso' on page 35 undefined on input line 1342.
+
+
+LaTeX Warning: Reference `mcrearview' on page 35 undefined on input line 1342.
+
+<motorcontroller_sideview.PNG, id=498, 543.53062pt x 517.935pt>
+File: motorcontroller_sideview.PNG Graphic file (type png)
+
+<use motorcontroller_sideview.PNG>
+Package pdftex.def Info: motorcontroller_sideview.PNG used on input line 1346.
 (pdftex.def)             Requested size: 281.85587pt x 268.59276pt.
 File: revo.png Graphic file (type png)
  <use revo.png>
-Package pdftex.def Info: revo.png used on input line 1339.
+Package pdftex.def Info: revo.png used on input line 1350.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [42 <./motorcontroller.png>]
-<motorcontroller_isoview.png, id=1207, 812.28468pt x 504.38437pt>
-File: motorcontroller_isoview.png Graphic file (type png)
+ [35 <./motorcontroller.png>]
+<motorcontroller_isoview.PNG, id=506, 812.28468pt x 504.38437pt>
+File: motorcontroller_isoview.PNG Graphic file (type png)
 
-<use motorcontroller_isoview.png>
-Package pdftex.def Info: motorcontroller_isoview.png used on input line 1342.
+<use motorcontroller_isoview.PNG>
+Package pdftex.def Info: motorcontroller_isoview.PNG used on input line 1353.
 (pdftex.def)             Requested size: 281.85587pt x 175.0133pt.
 
-<motorcontroller_rearview.png, id=1208, 755.82375pt x 453.94594pt>
-File: motorcontroller_rearview.png Graphic file (type png)
+<motorcontroller_rearview.PNG, id=507, 755.82375pt x 453.94594pt>
+File: motorcontroller_rearview.PNG Graphic file (type png)
 
-<use motorcontroller_rearview.png>
-Package pdftex.def Info: motorcontroller_rearview.png used on input line 1349.
+<use motorcontroller_rearview.PNG>
+Package pdftex.def Info: motorcontroller_rearview.PNG used on input line 1360.
 (pdftex.def)             Requested size: 281.85587pt x 169.28035pt.
 File: revo.png Graphic file (type png)
  <use revo.png>
-Package pdftex.def Info: revo.png used on input line 1353.
+Package pdftex.def Info: revo.png used on input line 1364.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [43 <./motorcontroller_sideview.png> <./motorcontroller_isoview.png>]
-File: revo.png Graphic file (type png)
- <use revo.png>
-Package pdftex.def Info: revo.png used on input line 1358.
-(pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [44 <./motorcontroller_rearview.png>] <motor_isorear.png, id=1222, 505.13719pt
- x 518.6878pt>
-File: motor_isorear.png Graphic file (type png)
+ [36 <./motorcontroller_sideview.PNG> <./motorcontroller_isoview.PNG>]
 
-<use motor_isorear.png>
-Package pdftex.def Info: motor_isorear.png used on input line 1370.
+LaTeX Warning: Reference `MC1' on page 37 undefined on input line 1367.
+
+
+LaTeX Warning: Reference `mcschem' on page 37 undefined on input line 1367.
+
+File: revo.png Graphic file (type png)
+<use revo.png>
+Package pdftex.def Info: revo.png used on input line 1369.
+(pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
+ [37 <./motorcontroller_rearview.PNG>]
+<motor_isorear.PNG, id=523, 505.13719pt x 518.6878pt>
+File: motor_isorear.PNG Graphic file (type png)
+ <use motor_isorear.PNG>
+Package pdftex.def Info: motor_isorear.PNG used on input line 1381.
 (pdftex.def)             Requested size: 375.80544pt x 385.88866pt.
-File: revo.png Graphic file (type png)
- <use revo.png>
-Package pdftex.def Info: revo.png used on input line 1395.
-(pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [45 <./motor_isorear.png>]
-<fx-motor-power-torque.png, id=1230, 580.1675pt x 307.1475pt>
-File: fx-motor-power-torque.png Graphic file (type png)
 
-<use fx-motor-power-torque.png>
-Package pdftex.def Info: fx-motor-power-torque.png used on input line 1403.
+
+LaTeX Warning: Reference `motoriso' on page 38 undefined on input line 1386.
+
+
+LaTeX Warning: Reference `MC1' on page 38 undefined on input line 1386.
+
+File: revo.png Graphic file (type png)
+<use revo.png>
+Package pdftex.def Info: revo.png used on input line 1406.
+(pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
+ [38 <./motor_isorear.PNG>]
+<fx-motor-power-torque.PNG, id=534, 580.1675pt x 307.1475pt>
+File: fx-motor-power-torque.PNG Graphic file (type png)
+
+<use fx-motor-power-torque.PNG>
+Package pdftex.def Info: fx-motor-power-torque.PNG used on input line 1414.
 (pdftex.def)             Requested size: 352.31625pt x 186.52078pt.
 
-<motormount_sideview.png, id=1236, 717.43031pt x 493.0922pt>
-File: motormount_sideview.png Graphic file (type png)
 
-<use motormount_sideview.png>
-Package pdftex.def Info: motormount_sideview.png used on input line 1422.
+LaTeX Warning: Reference `motorplot' on page 39 undefined on input line 1419.
+
+
+LaTeX Warning: Reference `mcschem' on page 39 undefined on input line 1425.
+
+
+LaTeX Warning: Reference `mcwire' on page 39 undefined on input line 1425.
+
+
+LaTeX Warning: Reference `motormountrear' on page 39 undefined on input line 14
+29.
+
+
+LaTeX Warning: Reference `motormountiso' on page 39 undefined on input line 142
+9.
+
+<motormount_sideview.PNG, id=535, 717.43031pt x 493.0922pt>
+File: motormount_sideview.PNG Graphic file (type png)
+
+<use motormount_sideview.PNG>
+Package pdftex.def Info: motormount_sideview.PNG used on input line 1433.
 (pdftex.def)             Requested size: 281.85587pt x 193.71968pt.
 File: revo.png Graphic file (type png)
  <use revo.png>
-Package pdftex.def Info: revo.png used on input line 1426.
+Package pdftex.def Info: revo.png used on input line 1437.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [46 <./fx-motor-power-torque.png>] <motormount_rearview.png, id=1242, 610.5309
-4pt x 476.53032pt>
-File: motormount_rearview.png Graphic file (type png)
+ [39 <./fx-motor-power-torque.PNG>] <motormount_rearview.PNG, id=545, 610.53094
+pt x 476.53032pt>
+File: motormount_rearview.PNG Graphic file (type png)
 
-<use motormount_rearview.png>
-Package pdftex.def Info: motormount_rearview.png used on input line 1429.
+<use motormount_rearview.PNG>
+Package pdftex.def Info: motormount_rearview.PNG used on input line 1440.
 (pdftex.def)             Requested size: 281.85587pt x 219.99918pt.
 
-<motormount_isoview.png, id=1243, 750.55406pt x 472.01344pt>
-File: motormount_isoview.png Graphic file (type png)
+<motormount_isoview.PNG, id=546, 750.55406pt x 472.01344pt>
+File: motormount_isoview.PNG Graphic file (type png)
 
-<use motormount_isoview.png>
-Package pdftex.def Info: motormount_isoview.png used on input line 1436.
+<use motormount_isoview.PNG>
+Package pdftex.def Info: motormount_isoview.PNG used on input line 1447.
 (pdftex.def)             Requested size: 281.85587pt x 177.25668pt.
 File: revo.png Graphic file (type png)
  <use revo.png>
-Package pdftex.def Info: revo.png used on input line 1440.
+Package pdftex.def Info: revo.png used on input line 1451.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [47 <./motormount_sideview.png> <./motormount_rearview.png>]
+ [40 <./motormount_sideview.PNG> <./motormount_rearview.PNG>]
+
+LaTeX Warning: Reference `M1' on page 41 undefined on input line 1454.
+
+
+LaTeX Warning: Reference `mcschem' on page 41 undefined on input line 1454.
+
 File: revo.png Graphic file (type png)
- <use revo.png>
-Package pdftex.def Info: revo.png used on input line 1445.
+<use revo.png>
+Package pdftex.def Info: revo.png used on input line 1456.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [48 <./motormount_isoview.png>]
-<CANtorque.png, id=1259, 251.27724pt x 278.2395pt>
+ [41 <./motormount_isoview.PNG>]
+<CANtorque.png, id=562, 251.27724pt x 278.2395pt>
 File: CANtorque.png Graphic file (type png)
  <use CANtorque.png>
-Package pdftex.def Info: CANtorque.png used on input line 1470.
+Package pdftex.def Info: CANtorque.png used on input line 1481.
 (pdftex.def)             Requested size: 251.27663pt x 278.23882pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1479--1480
+Underfull \hbox (badness 10000) in paragraph at lines 1490--1491
 
  []
 
 File: revo.png Graphic file (type png)
 <use revo.png>
-Package pdftex.def Info: revo.png used on input line 1482.
+Package pdftex.def Info: revo.png used on input line 1493.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [49 <./CANtorque.png>]
-<torquebrakecheck.png, id=1265, 267.98497pt x 271.50081pt>
+ [42 <./CANtorque.png>]
+<torquebrakecheck.png, id=573, 267.98497pt x 271.50081pt>
 File: torquebrakecheck.png Graphic file (type png)
 
 <use torquebrakecheck.png>
-Package pdftex.def Info: torquebrakecheck.png used on input line 1489.
+Package pdftex.def Info: torquebrakecheck.png used on input line 1500.
 (pdftex.def)             Requested size: 267.9843pt x 271.50014pt.
 
-<torqueencoder.png, id=1266, 475.7775pt x 564.60938pt>
+<torqueencoder.png, id=574, 475.7775pt x 564.60938pt>
 File: torqueencoder.png Graphic file (type png)
  <use torqueencoder.png>
-Package pdftex.def Info: torqueencoder.png used on input line 1504.
+Package pdftex.def Info: torqueencoder.png used on input line 1515.
 (pdftex.def)             Requested size: 234.8775pt x 278.73727pt.
 File: revo.png Graphic file (type png)
 
 <use revo.png>
-Package pdftex.def Info: revo.png used on input line 1508.
+Package pdftex.def Info: revo.png used on input line 1519.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [50 <./torquebrakecheck.png>]
-<torqueside.png, id=1272, 657.2053pt x 465.23813pt>
+ [43 <./torquebrakecheck.png>]
+<torqueside.png, id=583, 657.2053pt x 465.23813pt>
 File: torqueside.png Graphic file (type png)
  <use torqueside.png>
-Package pdftex.def Info: torqueside.png used on input line 1511.
+Package pdftex.def Info: torqueside.png used on input line 1522.
 (pdftex.def)             Requested size: 328.82707pt x 232.78175pt.
 
-<torquefullcar.png, id=1273, 855.195pt x 394.47375pt>
+<torquefullcar.png, id=584, 855.195pt x 394.47375pt>
 File: torquefullcar.png Graphic file (type png)
  <use torquefullcar.png>
-Package pdftex.def Info: torquefullcar.png used on input line 1518.
+Package pdftex.def Info: torquefullcar.png used on input line 1529.
 (pdftex.def)             Requested size: 328.82707pt x 151.67723pt.
 File: revo.png Graphic file (type png)
 
 <use revo.png>
-Package pdftex.def Info: revo.png used on input line 1522.
+Package pdftex.def Info: revo.png used on input line 1533.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [51 <./torqueencoder.png> <./torqueside.png>]
+ [44 <./torqueencoder.png> <./torqueside.png>]
 File: revo.png Graphic file (type png)
  <use revo.png>
-Package pdftex.def Info: revo.png used on input line 1523.
+Package pdftex.def Info: revo.png used on input line 1534.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
 
-[52 <./torquefullcar.png>]
-<CANnodepower.png, id=1282, 410.18108pt x 300.01816pt>
+[45 <./torquefullcar.png>]
+<CANnodepower.png, id=598, 410.18108pt x 300.01816pt>
 File: CANnodepower.png Graphic file (type png)
  <use CANnodepower.png>
-Package pdftex.def Info: CANnodepower.png used on input line 1538.
+Package pdftex.def Info: CANnodepower.png used on input line 1549.
 (pdftex.def)             Requested size: 410.18007pt x 300.01741pt.
 
-<GLV_DCDC.png, id=1285, 915.42pt x 432.86719pt>
-File: GLV_DCDC.png Graphic file (type png)
- <use GLV_DCDC.png>
-Package pdftex.def Info: GLV_DCDC.png used on input line 1552.
+
+LaTeX Warning: Reference `dcdc_cad' on page 46 undefined on input line 1559.
+
+
+LaTeX Warning: Reference `accumtopcad' on page 46 undefined on input line 1559.
+
+
+<GLV_DCDC.PNG, id=599, 915.42pt x 432.86719pt>
+File: GLV_DCDC.PNG Graphic file (type png)
+ <use GLV_DCDC.PNG>
+Package pdftex.def Info: GLV_DCDC.PNG used on input line 1563.
 (pdftex.def)             Requested size: 281.85587pt x 133.27594pt.
 File: revo.png Graphic file (type png)
 
 <use revo.png>
-Package pdftex.def Info: revo.png used on input line 1556.
+Package pdftex.def Info: revo.png used on input line 1567.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [53 <./CANnodepower.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1561--1562
+ [46 <./CANnodepower.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1572--1573
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1563--1564
+Underfull \hbox (badness 10000) in paragraph at lines 1574--1575
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1565--1566
+Underfull \hbox (badness 10000) in paragraph at lines 1576--1577
 
  []
 
-<CANdashboard.png, id=1292, 314.86281pt x 291.03325pt>
+<CANdashboard.png, id=611, 314.86281pt x 291.03325pt>
 File: CANdashboard.png Graphic file (type png)
  <use CANdashboard.png>
-Package pdftex.def Info: CANdashboard.png used on input line 1573.
+Package pdftex.def Info: CANdashboard.png used on input line 1584.
 (pdftex.def)             Requested size: 375.80544pt x 347.38187pt.
 File: revo.png Graphic file (type png)
 
 <use revo.png>
-Package pdftex.def Info: revo.png used on input line 1577.
+Package pdftex.def Info: revo.png used on input line 1588.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [54 <./GLV_DCDC.png>]
-<Dashboard.jpg, id=1299, 1923.185pt x 904.37875pt>
-File: Dashboard.jpg Graphic file (type jpg)
- <use Dashboard.jpg>
-Package pdftex.def Info: Dashboard.jpg used on input line 1586.
+ [47 <./GLV_DCDC.PNG>]
+
+LaTeX Warning: Reference `dashboard' on page 48 undefined on input line 1593.
+
+<Dashboard.JPG, id=620, 1923.185pt x 904.37875pt>
+File: Dashboard.JPG Graphic file (type jpg)
+ <use Dashboard.JPG>
+Package pdftex.def Info: Dashboard.JPG used on input line 1597.
 (pdftex.def)             Requested size: 328.82707pt x 154.62553pt.
 File: revo.png Graphic file (type png)
 
 <use revo.png>
-Package pdftex.def Info: revo.png used on input line 1590.
+Package pdftex.def Info: revo.png used on input line 1601.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [55 <./CANdashboard.png>]
-<IMDandCANschem.png, id=1305, 502.76482pt x 341.42693pt>
+ [48 <./CANdashboard.png>]
+<IMDandCANschem.png, id=629, 502.76482pt x 341.42693pt>
 File: IMDandCANschem.png Graphic file (type png)
 
 <use IMDandCANschem.png>
-Package pdftex.def Info: IMDandCANschem.png used on input line 1601.
+Package pdftex.def Info: IMDandCANschem.png used on input line 1612.
 (pdftex.def)             Requested size: 375.80544pt x 255.21516pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1606--1607
 
- []
-
-File: revo.png Graphic file (type png)
-<use revo.png>
-Package pdftex.def Info: revo.png used on input line 1607.
-(pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [56 <./Dashboard.jpg> <./IMDandCANschem.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1608--1609
-
- []
+LaTeX Warning: Reference `panelnode' on page 49 undefined on input line 1617.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1610--1611
+Underfull \hbox (badness 10000) in paragraph at lines 1617--1618
 
  []
 
@@ -1852,266 +2115,379 @@ File: revo.png Graphic file (type png)
 <use revo.png>
 Package pdftex.def Info: revo.png used on input line 1618.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [57]
-Underfull \hbox (badness 10000) in paragraph at lines 1632--1633
+ [49 <./Dashboard.JPG> <./IMDandCANschem.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1619--1620
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1621--1622
 
  []
 
 File: revo.png Graphic file (type png)
 <use revo.png>
-Package pdftex.def Info: revo.png used on input line 1636.
+Package pdftex.def Info: revo.png used on input line 1629.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [58] <ExplodedView.png, id=1321, 479.391pt x 383.5128pt>
+ [50]
+Underfull \hbox (badness 10000) in paragraph at lines 1643--1644
+
+ []
+
+File: revo.png Graphic file (type png)
+<use revo.png>
+Package pdftex.def Info: revo.png used on input line 1647.
+(pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
+ [51] <ExplodedView.png, id=654, 479.391pt x 383.5128pt>
 File: ExplodedView.png Graphic file (type png)
 
 <use ExplodedView.png>
-Package pdftex.def Info: ExplodedView.png used on input line 1651.
+Package pdftex.def Info: ExplodedView.png used on input line 1662.
 (pdftex.def)             Requested size: 281.85587pt x 225.48642pt.
 
-<FirewallFullCarView.png, id=1323, 479.391pt x 383.5128pt>
+
+LaTeX Warning: Reference `firewallposition' on page 52 undefined on input line 
+1669.
+
+<FirewallFullCarView.png, id=655, 479.391pt x 383.5128pt>
 File: FirewallFullCarView.png Graphic file (type png)
 
 <use FirewallFullCarView.png>
-Package pdftex.def Info: FirewallFullCarView.png used on input line 1662.
+Package pdftex.def Info: FirewallFullCarView.png used on input line 1673.
 (pdftex.def)             Requested size: 375.80544pt x 300.64857pt.
 File: revo.png Graphic file (type png)
  <use revo.png>
-Package pdftex.def Info: revo.png used on input line 1666.
+Package pdftex.def Info: revo.png used on input line 1677.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [59 <./ExplodedView.png>]
+ [52 <./ExplodedView.png>]
 File: revo.png Graphic file (type png)
 
 <use revo.png>
-Package pdftex.def Info: revo.png used on input line 1670.
+Package pdftex.def Info: revo.png used on input line 1681.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [60 <./FirewallFullCarView.png>]
-<IMD_datasheet_snip.png, id=1343, 387.4475pt x 616.3025pt>
+ [53 <./FirewallFullCarView.png>]
+
+LaTeX Warning: Reference `bspdappendix' on page 54 undefined on input line 1694
+.
+
+
+LaTeX Warning: Reference `IMDRepTime' on page 54 undefined on input line 1696.
+
+
+LaTeX Warning: Reference `hvdappendix' on page 54 undefined on input line 1697.
+
+
+
+LaTeX Warning: Reference `inertiaappendix' on page 54 undefined on input line 1
+698.
+
+<IMD_datasheet_snip.png, id=677, 387.4475pt x 616.3025pt>
 File: IMD_datasheet_snip.png Graphic file (type png)
 
 <use IMD_datasheet_snip.png>
-Package pdftex.def Info: IMD_datasheet_snip.png used on input line 1692.
+Package pdftex.def Info: IMD_datasheet_snip.png used on input line 1703.
 (pdftex.def)             Requested size: 292.69151pt x 465.58296pt.
 File: revo.png Graphic file (type png)
  <use revo.png>
-Package pdftex.def Info: revo.png used on input line 1696.
+Package pdftex.def Info: revo.png used on input line 1707.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [61]
-File: revo.png Graphic file (type png)
- <use revo.png>
-Package pdftex.def Info: revo.png used on input line 1710.
-(pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [62 <./IMD_datasheet_snip.png>] <Dischargeres.png, id=1377, 907.39pt x 463.732
-5pt>
-File: Dischargeres.png Graphic file (type png)
+ [54]
 
-<use Dischargeres.png>
-Package pdftex.def Info: Dischargeres.png used on input line 1738.
-(pdftex.def)             Requested size: 375.80544pt x 192.05621pt.
+LaTeX Warning: Reference `shutdownappendix' on page 55 undefined on input line 
+1710.
+
+
+LaTeX Warning: Reference `shutdownappendix' on page 55 undefined on input line 
+1716.
+
+
+LaTeX Warning: Reference `shutdownappendix' on page 55 undefined on input line 
+1720.
+
+
+LaTeX Warning: Reference `r2dappendix' on page 55 undefined on input line 1720.
+
+
+
+LaTeX Warning: Reference `prechargeappendix' on page 55 undefined on input line
+ 1720.
+
+
+LaTeX Warning: Reference `amsappendix' on page 55 undefined on input line 1720.
+
+
 File: revo.png Graphic file (type png)
- <use revo.png>
-Package pdftex.def Info: revo.png used on input line 1757.
+<use revo.png>
+Package pdftex.def Info: revo.png used on input line 1721.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [63 <./Dischargeres.png>]
-<BMS_Schem.png, id=1395, 1773.62625pt x 1135.24126pt>
+ [55 <./IMD_datasheet_snip.png>]
+
+LaTeX Warning: Reference `torqueappendix' on page 56 undefined on input line 17
+22.
+
+
+LaTeX Warning: Reference `bspdappendix' on page 56 undefined on input line 1743
+.
+
+<Dischargeres.png, id=702, 907.39pt x 463.7325pt>
+File: Dischargeres.png Graphic file (type png)
+ <use Dischargeres.png>
+Package pdftex.def Info: Dischargeres.png used on input line 1749.
+(pdftex.def)             Requested size: 375.80544pt x 192.05621pt.
+
+
+LaTeX Warning: Reference `dischargesection' on page 56 undefined on input line 
+1758.
+
+
+LaTeX Warning: Reference `shutdownappendix' on page 56 undefined on input line 
+1762.
+
+File: revo.png Graphic file (type png)
+<use revo.png>
+Package pdftex.def Info: revo.png used on input line 1768.
+(pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
+ [56 <./Dischargeres.png>]
+
+LaTeX Warning: Reference `bspdappendix' on page 57 undefined on input line 1768
+.
+
+<BMS_Schem.png, id=720, 1773.62625pt x 1135.24126pt>
 File: BMS_Schem.png Graphic file (type png)
  <use BMS_Schem.png>
-Package pdftex.def Info: BMS_Schem.png used on input line 1770.
+Package pdftex.def Info: BMS_Schem.png used on input line 1781.
 (pdftex.def)             Requested size: 469.75502pt x 300.66428pt.
-File: revo.png Graphic file (type png)
 
+
+LaTeX Warning: Reference `amsschem' on page 57 undefined on input line 1787.
+
+
+LaTeX Warning: Reference `bms' on page 57 undefined on input line 1787.
+
+
+LaTeX Warning: Reference `celltopschem' on page 57 undefined on input line 1787
+.
+
+
+LaTeX Warning: Reference `bspdappendix' on page 57 undefined on input line 1789
+.
+
+File: revo.png Graphic file (type png)
 <use revo.png>
-Package pdftex.def Info: revo.png used on input line 1784.
+Package pdftex.def Info: revo.png used on input line 1795.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [64 <./BMS_Schem.png>]
-<TSmainratings.png, id=1409, 347.2975pt x 204.765pt>
+ [57 <./BMS_Schem.png>]
+
+LaTeX Warning: Reference `fusing' on page 58 undefined on input line 1797.
+
+<TSmainratings.png, id=733, 347.2975pt x 204.765pt>
 File: TSmainratings.png Graphic file (type png)
  <use TSmainratings.png>
-Package pdftex.def Info: TSmainratings.png used on input line 1790.
+Package pdftex.def Info: TSmainratings.png used on input line 1801.
 (pdftex.def)             Requested size: 347.29665pt x 204.76448pt.
 File: TSfuseT-Agraph.png Graphic file (type png)
 
 <use TSfuseT-Agraph.png>
-Package pdftex.def Info: TSfuseT-Agraph.png used on input line 1797.
+Package pdftex.def Info: TSfuseT-Agraph.png used on input line 1808.
 (pdftex.def)             Requested size: 328.82707pt x 635.37503pt.
 File: revo.png Graphic file (type png)
  <use revo.png>
-Package pdftex.def Info: revo.png used on input line 1801.
+Package pdftex.def Info: revo.png used on input line 1812.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [65 <./TSmainratings.png>]
+ [58 <./TSmainratings.png>]
 Overfull \vbox (6.94502pt too high) has occurred while \output is active []
 
 File: revo.png Graphic file (type png)
 
 <use revo.png>
-Package pdftex.def Info: revo.png used on input line 1801.
+Package pdftex.def Info: revo.png used on input line 1812.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [66] <Keyswitchratings.png, id=1422, 691.58376pt x 177.66376pt>
+ [59] <Keyswitchratings.png, id=747, 691.58376pt x 177.66376pt>
 File: Keyswitchratings.png Graphic file (type png)
 
 <use Keyswitchratings.png>
-Package pdftex.def Info: Keyswitchratings.png used on input line 1809.
+Package pdftex.def Info: Keyswitchratings.png used on input line 1820.
 (pdftex.def)             Requested size: 281.85587pt x 72.40886pt.
 
-<Keyswitchmeltingtime.png, id=1423, 586.19pt x 687.56876pt>
+<Keyswitchmeltingtime.png, id=748, 586.19pt x 687.56876pt>
 File: Keyswitchmeltingtime.png Graphic file (type png)
 
 <use Keyswitchmeltingtime.png>
-Package pdftex.def Info: Keyswitchmeltingtime.png used on input line 1816.
+Package pdftex.def Info: Keyswitchmeltingtime.png used on input line 1827.
 (pdftex.def)             Requested size: 328.82707pt x 385.68634pt.
 
-<TSsmallratings.png, id=1425, 1027.84pt x 507.8975pt>
+<TSsmallratings.png, id=750, 1027.84pt x 507.8975pt>
 File: TSsmallratings.png Graphic file (type png)
  <use TSsmallratings.png>
-Package pdftex.def Info: TSsmallratings.png used on input line 1826.
+Package pdftex.def Info: TSsmallratings.png used on input line 1837.
 (pdftex.def)             Requested size: 281.85587pt x 139.27312pt.
 File: revo.png Graphic file (type png)
 
 <use revo.png>
-Package pdftex.def Info: revo.png used on input line 1830.
+Package pdftex.def Info: revo.png used on input line 1841.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [67 <./Keyswitchmeltingtime.png> <./Keyswitchratings.png>]
-<TSsmallmeltingtime.png, id=1430, 496.85625pt x 653.44125pt>
+ [60 <./Keyswitchmeltingtime.png> <./Keyswitchratings.png>]
+<TSsmallmeltingtime.png, id=757, 496.85625pt x 653.44125pt>
 File: TSsmallmeltingtime.png Graphic file (type png)
 
 <use TSsmallmeltingtime.png>
-Package pdftex.def Info: TSsmallmeltingtime.png used on input line 1833.
+Package pdftex.def Info: TSsmallmeltingtime.png used on input line 1844.
 (pdftex.def)             Requested size: 281.85587pt x 370.6906pt.
 
-<GLVmainratings.png, id=1432, 1328.965pt x 421.575pt>
+<GLVmainratings.png, id=759, 1328.965pt x 421.575pt>
 File: GLVmainratings.png Graphic file (type png)
  <use GLVmainratings.png>
-Package pdftex.def Info: GLVmainratings.png used on input line 1843.
+Package pdftex.def Info: GLVmainratings.png used on input line 1854.
 (pdftex.def)             Requested size: 281.85587pt x 89.4082pt.
 File: revo.png Graphic file (type png)
 
 <use revo.png>
-Package pdftex.def Info: revo.png used on input line 1847.
+Package pdftex.def Info: revo.png used on input line 1858.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [68 <./TSsmallratings.png> <./TSsmallmeltingtime.png>]
-<glvmainmeltingtime.png, id=1438, 921.4425pt x 761.84625pt>
+ [61 <./TSsmallratings.png> <./TSsmallmeltingtime.png>]
+<glvmainmeltingtime.png, id=767, 921.4425pt x 761.84625pt>
 File: glvmainmeltingtime.png Graphic file (type png)
 
 <use glvmainmeltingtime.png>
-Package pdftex.def Info: glvmainmeltingtime.png used on input line 1850.
+Package pdftex.def Info: glvmainmeltingtime.png used on input line 1861.
 (pdftex.def)             Requested size: 281.85587pt x 233.03119pt.
 
-<AMSfuseratings.png, id=1440, 992.70876pt x 462.72874pt>
+<AMSfuseratings.png, id=769, 992.70876pt x 462.72874pt>
 File: AMSfuseratings.png Graphic file (type png)
 
 <use AMSfuseratings.png>
-Package pdftex.def Info: AMSfuseratings.png used on input line 1860.
+Package pdftex.def Info: AMSfuseratings.png used on input line 1871.
 (pdftex.def)             Requested size: 281.85587pt x 131.37775pt.
 
-<amsfuseapprovals.png, id=1441, 585.18625pt x 244.915pt>
+<amsfuseapprovals.png, id=770, 585.18625pt x 244.915pt>
 File: amsfuseapprovals.png Graphic file (type png)
 
 <use amsfuseapprovals.png>
-Package pdftex.def Info: amsfuseapprovals.png used on input line 1867.
+Package pdftex.def Info: amsfuseapprovals.png used on input line 1878.
 (pdftex.def)             Requested size: 281.85587pt x 117.96893pt.
 File: revo.png Graphic file (type png)
  <use revo.png>
-Package pdftex.def Info: revo.png used on input line 1871.
+Package pdftex.def Info: revo.png used on input line 1882.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [69 <./GLVmainratings.png> <./glvmainmeltingtime.png> <./AMSfuseratings.png>]
-<amsfusecurve.png, id=1446, 491.8375pt x 547.04375pt>
+ [62 <./GLVmainratings.png> <./glvmainmeltingtime.png> <./AMSfuseratings.png>]
+<amsfusecurve.png, id=779, 491.8375pt x 547.04375pt>
 File: amsfusecurve.png Graphic file (type png)
  <use amsfusecurve.png>
-Package pdftex.def Info: amsfusecurve.png used on input line 1874.
+Package pdftex.def Info: amsfusecurve.png used on input line 1885.
 (pdftex.def)             Requested size: 281.85587pt x 313.5043pt.
 
-<shutdownfuseratings.png, id=1448, 479.7925pt x 210.7875pt>
+<shutdownfuseratings.png, id=781, 479.7925pt x 210.7875pt>
 File: shutdownfuseratings.png Graphic file (type png)
 
 <use shutdownfuseratings.png>
-Package pdftex.def Info: shutdownfuseratings.png used on input line 1884.
+Package pdftex.def Info: shutdownfuseratings.png used on input line 1895.
 (pdftex.def)             Requested size: 281.85587pt x 123.82964pt.
 File: revo.png Graphic file (type png)
  <use revo.png>
-Package pdftex.def Info: revo.png used on input line 1888.
+Package pdftex.def Info: revo.png used on input line 1899.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [70 <./amsfuseapprovals.png> <./amsfusecurve.png>] <shutdownfusecurve.png, id=
-1453, 446.66875pt x 701.62125pt>
+ [63 <./amsfuseapprovals.png> <./amsfusecurve.png>] <shutdownfusecurve.png, id=
+788, 446.66875pt x 701.62125pt>
 File: shutdownfusecurve.png Graphic file (type png)
 
 <use shutdownfusecurve.png>
-Package pdftex.def Info: shutdownfusecurve.png used on input line 1891.
+Package pdftex.def Info: shutdownfusecurve.png used on input line 1902.
 (pdftex.def)             Requested size: 281.85587pt x 442.74101pt.
 
-<WireGaugeChart.png, id=1455, 1150.2975pt x 693.59125pt>
+<WireGaugeChart.png, id=790, 1150.2975pt x 693.59125pt>
 File: WireGaugeChart.png Graphic file (type png)
 
 <use WireGaugeChart.png>
-Package pdftex.def Info: WireGaugeChart.png used on input line 1901.
+Package pdftex.def Info: WireGaugeChart.png used on input line 1912.
 (pdftex.def)             Requested size: 469.75502pt x 283.24184pt.
+
+
+LaTeX Warning: Reference `fusing' on page 64 undefined on input line 1913.
+
+
+LaTeX Warning: Reference `fusing' on page 64 undefined on input line 1913.
+
 File: revo.png Graphic file (type png)
- <use revo.png>
-Package pdftex.def Info: revo.png used on input line 1904.
+<use revo.png>
+Package pdftex.def Info: revo.png used on input line 1915.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [71 <./shutdownfuseratings.png> <./shutdownfusecurve.png>] <chargerdata.png, i
-d=1463, 560.0925pt x 712.6625pt>
+ [64 <./shutdownfuseratings.png> <./shutdownfusecurve.png>]
+<chargerdata.png, id=797, 560.0925pt x 712.6625pt>
 File: chargerdata.png Graphic file (type png)
-
-<use chargerdata.png>
-Package pdftex.def Info: chargerdata.png used on input line 1910.
+ <use chargerdata.png>
+Package pdftex.def Info: chargerdata.png used on input line 1921.
 (pdftex.def)             Requested size: 375.80544pt x 478.19911pt.
-File: revo.png Graphic file (type png)
- <use revo.png>
-Package pdftex.def Info: revo.png used on input line 1914.
-(pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [72 <./WireGaugeChart.png>]
-<activesensorsnip.png, id=1474, 694.595pt x 360.34625pt>
-File: activesensorsnip.png Graphic file (type png)
-
-<use activesensorsnip.png>
-Package pdftex.def Info: activesensorsnip.png used on input line 1929.
-(pdftex.def)             Requested size: 281.85587pt x 146.22534pt.
-File: revo.png Graphic file (type png)
- <use revo.png>
-Package pdftex.def Info: revo.png used on input line 1932.
-(pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [73 <./chargerdata.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1954.
 File: revo.png Graphic file (type png)
 
 <use revo.png>
-Package pdftex.def Info: revo.png used on input line 1954.
+Package pdftex.def Info: revo.png used on input line 1925.
 (pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
- [74 <./activesensorsnip.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1954.
+ [65 <./WireGaugeChart.png>]
+
+LaTeX Warning: Reference `bspdappendix' on page 66 undefined on input line 1936
+.
+
+<activesensorsnip.png, id=807, 694.595pt x 360.34625pt>
+File: activesensorsnip.png Graphic file (type png)
+
+<use activesensorsnip.png>
+Package pdftex.def Info: activesensorsnip.png used on input line 1940.
+(pdftex.def)             Requested size: 281.85587pt x 146.22534pt.
+File: revo.png Graphic file (type png)
+ <use revo.png>
+Package pdftex.def Info: revo.png used on input line 1943.
+(pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
+ [66 <./chargerdata.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1965.
+File: revo.png Graphic file (type png)
+
+<use revo.png>
+Package pdftex.def Info: revo.png used on input line 1965.
+(pdftex.def)             Requested size: 56.9055pt x 18.6292pt.
+ [67 <./activesensorsnip.png>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1965.
  (./formula_sae_esf.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1954.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1954.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1965.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1965.
 
-Package rerunfilecheck Info: File `formula_sae_esf.out' has not changed.
-(rerunfilecheck)             Checksum: EDA4BF043A96F414F9FEADB207A1BB53;8571.
 
+
+Package rerunfilecheck Warning: File `formula_sae_esf.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `formula_sae_esf.out':
+(rerunfilecheck)             Before: 9366FC830878B6F3034206600891FDB9;618
+(rerunfilecheck)             After:  EDA4BF043A96F414F9FEADB207A1BB53;8571.
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1954.
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1965.
  ) 
 Here is how much of TeX's memory you used:
- 13239 strings out of 493089
- 197333 string characters out of 6134842
- 337818 words of memory out of 5000000
- 16101 multiletter control sequences out of 15000+600000
+ 13102 strings out of 495028
+ 193837 string characters out of 6181497
+ 297216 words of memory out of 5000000
+ 15690 multiletter control sequences out of 15000+600000
  8183 words of font info for 31 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 37i,15n,43p,1057b,618s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
-}</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
-</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><
-/usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
-usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></us
-r/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/
-local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/loc
-al/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/loca
-l/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/
-texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on formula_sae_esf.pdf (82 pages, 14660217 bytes).
+ 14 hyphenation exceptions out of 8191
+ 37i,14n,43p,1057b,618s stack positions out of 5000i,500n,10000p,200000b,80000s
+ </home/li/.texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk></usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmsy7.pfb>
+Output written on formula_sae_esf.pdf (78 pages, 14371266 bytes).
 PDF statistics:
- 1600 PDF objects out of 1728 (max. 8388607)
- 1356 compressed objects within 14 object streams
- 345 named destinations out of 1000 (max. 500000)
- 1327 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 937 PDF objects out of 1000 (max. 8388607)
+ 705 compressed objects within 8 object streams
+ 335 named destinations out of 1000 (max. 500000)
+ 501 words of extra memory for PDF output out of 10000 (max. 10000000)
 
