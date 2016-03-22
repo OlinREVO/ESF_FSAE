@@ -978,12 +978,13 @@ A Hall effect current sensor, wired before the current splits to the motor contr
             \label{indicator}
             \end{figure}
 
-            As shown in Figure \ref{indicator}, J2 connects the accumulator indicator, D14, \hlr{to a zener diode running of TS voltage. The zener diode allows TS voltage to pass through the accumulator indicator LED and a resistor after TS voltage is over 60 VDC.  R13 is a 220 Ohm resistor to limit current. The calculations are as follows, assuming a forward voltage drop of the LED to be 2V:}
+            As shown in Figure \ref{indicator}, J2 connects the accumulator indicator, D14, \hlr{to a zener diode running of TS voltage. The zener diode allows TS voltage to pass through the accumulator indicator LED and a resistor after TS voltage is over 60 VDC.  R13 is a 220$\ohm$ resistor to limit current. The calculations are as follows, assuming a forward voltage drop of the LED to be 2V:}
 
-            %\begin{align}
-            %    \hlr{100-2} V = I * 220 \ohm \\
-            %    I = 45 mA
-            %\end{align}
+            \begin{align}
+                100-2 V &= I * 220 \ohm \\
+                I &= 45 mA
+            \end{align}
+            %figure out a way to add higlight in an align 
 
             \hlr{The accumulator indicator is located on the AIR control board PCB, and has traces of 20 mil, which are rated for 1.4A. }
 
