@@ -282,9 +282,9 @@
                 \label{IMD}
             \end{figure}
 
-            The IMD output powers a four pole double throw relay. However, for the relay to become powered,\hlr{at the start of each driving/operable session (not when there is a fault in the shutdown system)}, a person must press the IMD reset button, which closes the circuit and allows the coil to power itself through the first pole. \hlr{The other two poles close the shutdown circuit and the input pin to the CAN node. The fourth pole is not connected. The can input will inform the CAN system about the status of the IMD (pull up resistor is controlled with software on the input pin). The 
+            The IMD output powers a four pole double throw relay. However, for the relay to become powered,\hlr{at the start of each driving/operable session (not when there is a fault in the shutdown system)}, a person must press the IMD reset button, which closes the circuit and allows the coil to power itself through the first pole. \hlr{The other two poles close the shutdown circuit and the input pin to the CAN node. The fourth pole is not connected. The can input will inform the CAN system about the status of the IMD (pull up resistor is controlled with software on the input pin). The
 
-%\hlr{Atmega16M1} 
+%\hlr{Atmega16M1}
 Atmega16M1
 
 controls the IMD light in the cockpit through the CAN system. With the coil powered from the IMD's positive output, the shutdown circuit will close. }
@@ -340,7 +340,7 @@ controls the IMD light in the cockpit through the CAN system. With the coil powe
 
         \subsubsection{Position in Car}
 
-        The inertia switch will also be located in the enclosure shown in Figure \ref{cpanel2} to keep wire paths short and provide an easy access point to reset the switch if triggered.
+        The inertia switch will \hlr{be located on the dashboard, in reach of the driver as to fit EV5.7.4.}
 
     \subsection{Brake Plausibility Device (BSPD)} \label{BSPD}
 
@@ -992,6 +992,8 @@ A Hall effect current sensor, wired before the current splits to the motor contr
 
         \subsubsection{Wiring, Cables, Current Calculations, Connectors} \label{batteryconnectors}
 
+            \hlr{There are 4 cells (in a 2s2p configuration) in each module, and there are 12 modules in series. The accumulator has them separated into 4 stacks of 3 to comply with the segment energy limit. Between 3 out of 4 segments, there are MSDs for safely separating the segments while working on the accumulator. After the fourth section, there is an HVD in series with the positive pole, coming out of the accumulator. There will be two main connectors to the accumulator, each having connections of TS+ and TS-. This is so each motor controller can be individually connected to. Before the HVD and main connectors, there is an AIR on both the positive and negative poles of TS. }
+
             The high current (motor, motor controller) wires used for the tractive system will be as described in table \ref{motorwire}.
             The low current (IMD, Lights DC-DC, GLV DC-DC and ready to drive sound) TS connections will be made with the wire described in table \ref{tslowcurrentwire}.
 
@@ -1203,7 +1205,7 @@ A Hall effect current sensor, wired before the current splits to the motor contr
 
             The accumulator will only be charged on the charging cart. This cart has not yet been specified or designed. It will be able to support the full weight of the accumulator and only move when a dead man's switch is activated.\\
 
-            The accumulator cart will contain a specialized shutdown circuit that allows the accumulator to be charged through the main pack connector. The AMS will be active during charging and have the ability to open the AIRs and stop charging in the event of dangerous battery conditions. This shut down circuit will contain a separate IMD, an emergency stop, and an interlocking connection between the charger and accumulator. \hlr{ The separate IMD used is also the IR155-3204 from Bender, the same IMD used on the car.}
+            The accumulator cart will contain a specialized shutdown circuit that allows the accumulator to be charged through the main pack connector. The AMS will be active during charging and have the ability to open the AIRs and stop charging in the event of dangerous battery conditions. This shut down circuit will contain a separate IMD, an emergency stop, and an interlocking connection between the charger and accumulator. \hlr{ The separate IMD used is also the IR155-3204 from Bender, the same model of IMD used on the car.}
 
 
             \begin{figure}[H]
