@@ -124,7 +124,7 @@
 
     The system will support all requirements for vehicular movement while guaranteeing driver and maintenance safety. There will be two primary electrical systems, galvanically isolated from each other: a 100V high power tractive system and a 12V low power sense and communication system.\\
 
-    The low power system will include a shutdown circuit, a series of sensors and switches that ensures the vehicle is safe to drive before engaging the tractive system. \hlr{There is a low voltage battery and DC-DC converter, because the 12V battery will start up the car and the DC-DC converter will take over and continue powering the system (the DC-DC converter being before the AIRs).} The shutdown circuit will monitor the vehicle for dangerous conditions, such as a collision or ground fault in the tractive system, and will disengage the tractive system in case of emergency. Finally, the low power system will power a CAN communication network using Atmega16M1 microcontrollers that will be used to operate several rules required functions, such as the ready to drive sound, but will also serve as a debugging tool for both electrical systems.\\
+    The low power system will include a shutdown circuit, a series of sensors and switches that ensures the vehicle is safe to drive before engaging the tractive system. \hlr{There is a low voltage battery and DC-DC converter, because the 12V battery will start up the car and the DC-DC converter will take over and continue powering the system (the DC-DC converter being before the AIRs).} The shutdown circuit will monitor the vehicle for dangerous conditions, such as a collision or ground fault in the tractive system, and will disengage the tractive system in case of emergency. Finally, the low power system will power a CAN communication network using ATmega16M1 microcontrollers that will be used to operate several rules required functions, such as the ready to drive sound, but will also serve as a debugging tool for both electrical systems.\\
 
     \hlr{The tractive system consists of a custom accumulator container, two Sevcon motor controllers, and two Zero Motorcycles brushless DC motors.} The accumulator comprises 12 Nissan Leaf battery modules. The motors are configured for rear wheel drive with independent control over the left and right wheels. Communication to the motor controllers is completed using \hlr{an analog signal from the isolated CAN system.}\\
 
@@ -284,12 +284,7 @@
                 \label{IMD}
             \end{figure}
 
-            The IMD output powers a four pole double throw relay. However, for the relay to become powered,\hlr{at the start of each driving/operable session (not when there is a fault in the shutdown system)}, a person must press the IMD reset button, which closes the circuit and allows the coil to power itself through the first pole. \hlr{The other two poles close the shutdown circuit and the input pin to the CAN node. The fourth pole is not connected. The can input will inform the CAN system about the status of the IMD (pull up resistor is controlled with software on the input pin). The 
-
-%\hlr{Atmega16M1} 
-Atmega16M1
-
-controls the IMD light in the cockpit through the CAN system. With the coil powered from the IMD's positive output, the shutdown circuit will close. }
+            The IMD output powers a four pole double throw relay. However, for the relay to become powered,\hlr{at the start of each driving/operable session (not when there is a fault in the shutdown system)}, a person must press the IMD reset button, which closes the circuit and allows the coil to power itself through the first pole. \hlr{The other two poles close the shutdown circuit and the input pin to the CAN node. The fourth pole is not connected. The can input will inform the CAN system about the status of the IMD (pull up resistor ensures IMD CAN pole input is not left floating). The ATmega16M1 controls the IMD light in the cockpit through the CAN system. With the coil powered from the IMD's positive output, the shutdown circuit will close. }
 
             The connectors used for the IMD are the TYCO-MICRO MATE-N-LOK 1 x 2-1445088-8 and its mate.
 
@@ -342,7 +337,7 @@ controls the IMD light in the cockpit through the CAN system. With the coil powe
 
         \subsubsection{Position in Car}
 
-        The inertia switch will also be located in the enclosure shown in Figure \ref{cpanel2} to keep wire paths short and provide an easy access point to reset the switch if triggered.
+        The inertia switch will \hlr{be located on the dashboard, in reach of the driver as to fit EV5.7.4.}
 
     \subsection{Brake Plausibility Device (BSPD)} \label{BSPD}
 
@@ -887,7 +882,7 @@ A Hall effect current sensor, wired before the current splits to the motor contr
 
             %Describe how the temperature of the cells is monitored, where the temperature sensors are placed, how many cells are monitored, etc. Show schematics, cover additional parts, etc.
 
-            The temperature of the cells is monitored using 10K\ohm thermistors attached to the \hlr{middle pole}. The middle pole of each module is considered the \hlr{negative terminal} of two cells. Each module’s midpoint is measured and one out of three module grounds is measured per accumulator segment. The thermistors are used to form three voltage dividers. When the temperature of the cells increases, the resistance decreases, resulting in less voltage drop across the thermistor. Three analog to digital converters attached to each of the voltage dividers is then used by the Atmega 16M1 used in the CAN system to determine whether the temperature is too high or low. If the temperature is out of range, the shutdown system activates. There is a pull up resistor that pushes the output voltage to 5V if the ADC is a past a certain threshold and 0V otherwise. Because we are monitoring the negative terminals of half of the cells in each module, we are monitoring 50\% of the total cells.
+            The temperature of the cells is monitored using 10K\ohm thermistors attached to the \hlr{middle pole}. The middle pole of each module is considered the \hlr{negative terminal} of two cells. Each module’s midpoint is measured and one out of three module grounds is measured per accumulator segment. The thermistors are used to form three voltage dividers. When the temperature of the cells increases, the resistance decreases, resulting in less voltage drop across the thermistor. Three analog to digital converters attached to each of the voltage dividers is then used by the ATmega16M1 used in the CAN system to determine whether the temperature is too high or low. If the temperature is out of range, the shutdown system activates. There is a pull up resistor that pushes the output voltage to 5V if the ADC is a past a certain threshold and 0V otherwise. Because we are monitoring the negative terminals of half of the cells in each module, we are monitoring 50\% of the total cells.
 
             %need to rewrite the part about the ADC
             %How are the thermistors attached to the cells? Explain module issues with placement.
@@ -916,7 +911,7 @@ A Hall effect current sensor, wired before the current splits to the motor contr
 
             The AMS shunts 3 A when the cell gets above \hlr{4.15 V}. The AMS opens a relay in line with the shutdown circuit if any cell drops below 2.5 V \hlr{or above 4.15V}. The AMS opens a relay in line with the shutdown circuit if any cell gets above 60 \degree C.\\
 
-            \hlr{CAN communication from the board is isolated via a TI ISO1050DUBR (isolated CAN transceiver)}. Only CAN communication is used to have the information from each AMS relayed to the rest of the system, and the boards are otherwise independent of each other. \hlr{Each board has an electrical connection with a normally-open relay on the AIR control board (ie. there are four AMS relays), and the Atmega16M1 of each can node can open its relay.} On each cell-top board, there are 7 surface mount Bel C1Q 3A fuses. (Lowest voltage reference and top voltage of each of 6 cells.) The relays which allow the AMS to control the shutdown circuit provide isolation between the AMS and the GLV system, as well as the isolated CAN transceivers. \hlr{Please see Figure} \ref{amsschem} \hlr{for the schematic of one of the battery management system boards.}\\
+            \hlr{CAN communication from the board is isolated via a TI ISO1050DUBR (isolated CAN transceiver)}. Only CAN communication is used to have the information from each AMS relayed to the rest of the system, and the boards are otherwise independent of each other. \hlr{Each board has an electrical connection with a normally-open relay on the AIR control board (ie. there are four AMS relays), and the ATmega16M1 of each CAN node can open its relay.} On each cell-top board, there are 7 surface mount Bel C1Q 3A fuses. (Lowest voltage reference and top voltage of each of 6 cells.) The relays which allow the AMS to control the shutdown circuit provide isolation between the AMS and the GLV system, as well as the isolated CAN transceivers. \hlr{Please see Figure} \ref{amsschem} \hlr{for the schematic of one of the battery management system boards.}\\
 
             %table of operation parameters
 
@@ -993,6 +988,8 @@ A Hall effect current sensor, wired before the current splits to the motor contr
             \hlr{The accumulator indicator is located on the AIR control board PCB, and has traces of 20 mil, which are rated for 1.4A. }
 
         \subsubsection{Wiring, Cables, Current Calculations, Connectors} \label{batteryconnectors}
+
+            \hlr{There are 4 cells (in a 2s2p configuration) in each module, and there are 12 modules in series. The accumulator has them separated into 4 stacks of 3 to comply with the segment energy limit. Between 3 out of 4 segments, there are MSDs for safely separating the segments while working on the accumulator. After the fourth section, there is an HVD in series with the positive pole, coming out of the accumulator. There will be two main connectors to the accumulator, each having connections of TS+ and TS-. This is so each motor controller can be individually connected to. Before the HVD and main connectors, there is an AIR on both the positive and negative poles of TS. }
 
             The high current (motor, motor controller) wires used for the tractive system will be as described in table \ref{motorwire}.
             The low current (IMD, Lights DC-DC, GLV DC-DC and ready to drive sound) TS connections will be made with the wire described in table \ref{tslowcurrentwire}.
@@ -1205,7 +1202,7 @@ A Hall effect current sensor, wired before the current splits to the motor contr
 
             The accumulator will only be charged on the charging cart. This cart has not yet been specified or designed. It will be able to support the full weight of the accumulator and only move when a dead man's switch is activated.\\
 
-            The accumulator cart will contain a specialized shutdown circuit that allows the accumulator to be charged through the main pack connector. The AMS will be active during charging and have the ability to open the AIRs and stop charging in the event of dangerous battery conditions. This shut down circuit will contain a separate IMD, an emergency stop, and an interlocking connection between the charger and accumulator. \hlr{ The separate IMD used is also the IR155-3204 from Bender, the same IMD used on the car.}
+            The accumulator cart will contain a specialized shutdown circuit that allows the accumulator to be charged through the main pack connector. The AMS will be active during charging and have the ability to open the AIRs and stop charging in the event of dangerous battery conditions. This shut down circuit will contain a separate IMD, an emergency stop, and an interlocking connection between the charger and accumulator. \hlr{ The separate IMD used is also the IR155-3204 from Bender, the same model of IMD used on the car.}
 
 
             \begin{figure}[H]
@@ -1461,7 +1458,7 @@ A Hall effect current sensor, wired before the current splits to the motor contr
 
     \subsection{Description/Additional Circuitry}
 
-        Two rotary potentiometers are mechanically housed in one unit from Active Sensors (P/N MHR5621) and mounted to the rotating shaft of the throttle pedal assembly. The use of a single housing eliminates concerns regarding mechanical backlash and misalignment. Each output from the potentiometers will go to a CAN connected atmega16M1, which will compare the two outputs and send a message via CAN bus to the motor controllers with the requested torque.
+        Two rotary potentiometers are mechanically housed in one unit from Active Sensors (P/N MHR5621) and mounted to the rotating shaft of the throttle pedal assembly. The use of a single housing eliminates concerns regarding mechanical backlash and misalignment. Each output from the potentiometers will go to a CAN connected ATmega16M1, which will compare the two outputs and send a message via CAN bus to the motor controllers with the requested torque.
 
         \begin{table}[H]
         \centering
@@ -1489,7 +1486,7 @@ A Hall effect current sensor, wired before the current splits to the motor contr
 
         %This is describing the BSPD, I think they are asking about comparing the two potentiometer values. The Active Sensors encoder is ONE PHYSICAL UNIT with two potentiometers built-in.
 
-        Two potentiometers are mounted on the torque pedal. A CAN node probes the voltage dividers. The Atmega will compare the two independent voltages and will only send non-zero torque commands if the sensors read a voltage within 10\% of each other. If a short circuit or wiring failure with either potentiometer occurs, the input will be outside the normal operating range, and the motor controllers will not be sent torque requests. The node will log the error in the CAN bus.\\
+        Two potentiometers are mounted on the torque pedal. A CAN node probes the voltage dividers. The ATmega will compare the two independent voltages and will only send non-zero torque commands if the sensors read a voltage within 10\% of each other. If a short circuit or wiring failure with either potentiometer occurs, the input will be outside the normal operating range, and the motor controllers will not be sent torque requests. The node will log the error in the CAN bus.\\
 
         There will also be a Pegasus Brake light pressure switch (part number 3601, recommended by Formula Hybrid) on the brakes, wired to a CAN node with 22 gauge wire. If the pressure switch indicates actuation of the brake and the potentiometers measure more than 25\% pedal travel, the power to the motors will be completely stopped until the torque pedal indicates less than 5\% pedal travel.
 
@@ -1554,7 +1551,7 @@ A Hall effect current sensor, wired before the current splits to the motor contr
             \end{figure}
 
             %need wire gauges
-            The DC-DC converter's power line is expected to carry less than 4A at all times. Its output will be fused to 4A, and then used for the GLV system as 12V. The GLV system voltage will be then regulated to 5V for the sake of the CAN Atmega. All of these wires, past the DC-DC converter, will be 22 AWG.
+            The DC-DC converter's power line is expected to carry less than 4A at all times. Its output will be fused to 4A, and then used for the GLV system as 12V. The GLV system voltage will be then regulated to 5V for the sake of the CAN ATmega. All of these wires, past the DC-DC converter, will be 22 AWG.
 
         \subsubsection{Position in Car}
 
@@ -1955,7 +1952,7 @@ All information found from the datasheet of:
 
 \section*{11.8.2 LV Part 2: Dashboard node}.
 
-\href{http://www.atmel.com/images/8209s.pdf}{CAN node microcontroller (Atmega16M1) datasheet here}.
+\href{http://www.atmel.com/images/8209s.pdf}{CAN node microcontroller (ATmega16M1) datasheet here}.
 
 %A datasheet for motor controller one for example has to have the numbering 11.10.5
 %Example appendix entry:
