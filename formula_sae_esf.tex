@@ -1284,7 +1284,7 @@ A Hall effect current sensor, wired before the current splits to the motor contr
                 \label{mcoffcar}
             \end{figure}
 
-            There are two of the same type (Sevcon Gen 4 Size 4, as described in Table \ref{MC}) of motor controller that will control the speed of the vehicle. The motor controller, which is used commercially in the motorcycles of Zero Motorcycles, responds to a CAN connection for throttle information and then delegates the power to the motor. The motor controller comes with extra capabilities that will be used for other systems, like the precharge system. \hlr{The motor controller does not provide isolation between its low and high voltage components, so all low voltage signals to the motor controller will be individually isolated.}
+            \hlr{The two motor controllers used are both model Sevcon Gen 4 Size 4 motor controllers. These motor controllers are used commercially in} the motorcycles of Zero Motorcycles,\hlr{and they delegate power to the motors in response to the input of an analog signal}. The motor controller comes with extra capabilities that will be used for other systems, like the precharge system. \hlr{The motor controller does not provide isolation between its low and high voltage components, so all low voltage signals to the motor controller will be individually isolated. The motor controller controller (MCC) PCB will contain a CAN node that outputs the throttle information relayed from the Bulkhead (Throttle/Brake) CAN node. The analog output will be isolated through an optoisolator.}
 
             \begin{table}[H]
             \centering
@@ -1376,7 +1376,7 @@ A Hall effect current sensor, wired before the current splits to the motor contr
 
             \begin{figure}[H]
                 \centering
-                \includegraphics[width = 0.8 \textwidth]{motor_isorear}
+                \includegraphics[width = 0.5 \textwidth]{motor_isorear}
                 \caption{Isometric view of the 75-5 Z-force motor}
                 \label{motoriso}
             \end{figure}
@@ -1414,13 +1414,14 @@ A Hall effect current sensor, wired before the current splits to the motor contr
                 \label{motorplot}
             \end{figure}
 
-            The motor's maximum power and torque were measured by Zero Motorcycles and graphed in figure \ref{motorplot}. The accumulator used in the motorcycle for this motor has a lower operating voltage. Assuming a linear relationship between voltage and torque, approximately 85-ft-lbs of peak torque in the flat linear range is expected.
+            The motor's maximum power and torque were measured by Zero Motorcycles and graphed in figure \ref{motorplot}. The accumulator used in the motorcycle for this motor has a lower operating voltage. \hlr{Assuming a linear relationship between voltage and current, and a linear relationship between current and torque}, approximately 85-ft-lbs of peak torque in the flat linear range is expected.
 
         \subsubsection{Wiring, Cables, Current Calculations, Connectors} \label{motorswiring}
 
             %wiring, schematics, calcs for currents and voltages and show data regarding the cables and connectors
 
             The wiring from the motor controllers will simply connect the M1, M2 and M3 outputs of the motor controllers to the motors' inputs. Refer to Figure \ref{mcschem} for the schematic of motor 1 and motor 2. All power wires will be 2 AWG, described in Section \ref{mcwire}.
+            \hlr{There will be a housing around the motor controllers so the TS connections cannot be touched, but it isn't currently designed. ESF will be updated when it is.}
 
         \subsubsection{Position in Car}
 
