@@ -231,7 +231,7 @@
 
         \subsubsection{Position in Car}
 
-            With the exception of the emergency shutdown buttons and tractive system interlocks, the components comprising the shutdown circuit are housed within a waterproof enclosure, located at the rear of the chassis, behind the main hoop, on the driver's right as shown in Figure \ref{cpanel}. This enclosure consists of a carbon fiber panel, where accessible switches, buttons, and measuring points will be mounted, and a 3D printed rear housing with integrated 18-pin Deutsch DT panel mount connector as shown in Figure \ref{cpanel2}. Actual components are not shown due to lack of CAD files at this point in time. Tractive system interlocks are located at each individual high voltage connection including the main two-way accumulator bus, HVD, \& three MSD's (manual service disconnects/maintenance plugs). The emergency shutdown buttons are located on the driver's dashboard (1) and on the right (2) \& left (3) sides of the car at driver's head level, attached to the main hoop with welded steel brackets.
+        With the exception of the emergency shutdown buttons and tractive system interlocks, the components comprising the shutdown circuit are housed within a waterproof enclosure, located at the rear of the chassis, behind the main hoop, on the driver's right.  This enclosure is bolted onto steel brackets which are welded to the main hoop.  This enclosure consists of an ABS panel where the TSMS, GLVMS, TSMPs, GLVMPs, AMS, and IMD reset will be mounted, and a 3D printed rear housing with integrated 23-pin Deutsch DT panel mount connector, \hlr{as seen in figure} \ref{cpanel1}. In addition to the buttons and measuring points, the housing also contains the IMD, IMD relay, a PCB, a DC-DC converter, and an SLA battery\hlr{, as seen in figure} \ref{cpanel2}.  The tractive system and low voltage systems are separated by at least two centimeters at all times.
 
             \begin{figure}[H]
                 \centering
@@ -315,16 +315,16 @@
 
         \subsubsection{Wiring/Cables/Connectors}
 
-            \hlr{The Inertia switch will be wired to be normally closed and open the shutdown circuit in the case that there is a crash. }
+            \hlr{The Inertia switch will be wired to be normally closed and open the shutdown circuit in the case that there is a crash. The inertia switch is wired in-line with the shutdown circuit to be normally closed. Please see figure} \ref{switchesonly} \hlr{for the position of the IMD in relative to the other shutdown system components. }
 
                 %connectors and cables, useful wiring data?
 
-            \begin{figure}[H]
-                \centering
-                \includegraphics{inertia}
-                \caption{\hlr{Schematic of the inertia switch and references to where it is in the shutdown circuit}}
-                \label{inertia}
-            \end{figure}
+            % \begin{figure}[H]
+            %     \centering
+            %     \includegraphics{inertia}
+            %     \caption{\hlr{Schematic of the inertia switch and references to where it is in the shutdown circuit}}
+            %     \label{inertia}
+            % \end{figure}
 
             % \begin{figure}[H]
             %     \centering
@@ -630,7 +630,7 @@ A Hall effect current sensor, wired before the current splits to the motor contr
 
             \begin{figure}[H]
                 \centering
-                \includegraphics{discharge}
+                \includegraphics{Discharge}
                 \caption{Schematic of the discharge system}
                 \label{dischargeschem}
             \end{figure}
@@ -982,7 +982,7 @@ A Hall effect current sensor, wired before the current splits to the motor contr
                 100-2 V &= I * 220 \ohm \\
                 I &= 45 mA
             \end{align}
-            %figure out a way to add higlight in an align 
+            %figure out a way to add higlight in an align
 
             \hlr{The accumulator indicator is located on the AIR control board PCB, and has traces of 20 mil, which are rated for 1.4A. }
 
@@ -1612,7 +1612,7 @@ A Hall effect current sensor, wired before the current splits to the motor contr
 
             As shown in Figure \ref{panelnode}, both the IMD and the ready to drive sound relay are wired to the CAN node located in the \hlr{side panel housing}.\\
 
-            The CAN node is wired to the \hlr{third} pole of the IMD relay, \hlr{and the node will always read low until the pole is no longer pulled because the IMD's output is low and the IMD has found a ground fault. \hlr{There is a pull up resistor and the pole, in its disconnected state the can input will read 5V instead.}\\
+            The CAN node is wired to the \hlr{third} pole of the IMD relay, \hlr{and the node will always read low }until the pole is no longer pulled because the IMD's output is low and the IMD has found a ground fault. \hlr{There is a pull up resistor and the pole, in its disconnected state the can input will read 5V instead.}\\
 
             As an output, the CAN node is also wired to a relay's coil controlling a switch in the tractive system parallel to the motors. When the CAN system knows it's in ready to drive mode, it'll send the message to send 5V to this coil, therefore closing the switch that will give the ready to drive sound buzzer power to make noise.\\
 
