@@ -178,8 +178,6 @@
                     \item Finally, the shutdown circuit contains a CAN Watchdog to shut down the TS in the event of a CAN error. The primary intent of this additional component is to monitor the health of the motor controllers and shutdown TS if necessary to protect them.
                 \end{itemize}
 
-            %DRIVER SWITCH? YES, NO?
-
             %Describe concept, the master switches, bots, and fill table
             %add additional switches in the table
 
@@ -920,7 +918,7 @@ A Hall effect current sensor, wired before the current splits to the motor contr
             \begin{figure}[H]
                 \centering
                 \includegraphics[width = 0.7 \textwidth]{bms_final1_PCBCAD}
-                \caption{CAD of 1 AMS board (all identical). Cyan polygon indicates GLV voltage, and the $\triangleup x$ measurement is the distance between TS and GLV.}
+                \caption{CAD of 1 AMS board (all identical). Cyan polygon indicates GLV voltage, and the $\Delta x$ measurement is the distance between TS and GLV.}
                 \label{bmspcb}
             \end{figure}
 
@@ -978,18 +976,19 @@ A Hall effect current sensor, wired before the current splits to the motor contr
             \label{indicator}
             \end{figure}
 
-            As shown in Figure \ref{indicator}, J2 connects the accumulator indicator, D14, \hlr{to a zener diode running of TS voltage. The zener diode allows TS voltage to pass through the accumulator indicator LED and a resistor after TS voltage is over 60 VDC.  R13 is a 220 Ohm resistor to limit current. The calculations are as follows, assuming a forward voltage drop of the LED to be 2V:}
+            As shown in Figure \ref{indicator}, J2 connects the accumulator indicator, D14, \hlr{to a zener diode running of TS voltage. The zener diode allows TS voltage to pass through the accumulator indicator LED and a resistor after TS voltage is over 60 VDC.  R13 is a 220$\ohm$ resistor to limit current. The calculations are as follows, assuming a forward voltage drop of the LED to be 2V:}
 
             \begin{align}
-                \hlr{100-2} V = I * 220 \ohm \\
-                I = 45 mA
+                100-2 V &= I * 220 \ohm \\
+                I &= 45 mA
             \end{align}
+            %figure out a way to add higlight in an align 
 
             \hlr{The accumulator indicator is located on the AIR control board PCB, and has traces of 20 mil, which are rated for 1.4A. }
 
         \subsubsection{Wiring, Cables, Current Calculations, Connectors} \label{batteryconnectors}
 
-            \hlr{There are 4 cells (in a 2s2p configuration) in each module, and there are 12 modules in series. The accumulator has them separated into 4 stacks of 3 to comply with the segment energy limit. Between 3 out of 4 segments, there are MSDs for safely separating the segments while working on the accumulator. After the fourth section, there is an HVD in series with the positive pole, coming out of the accumulator. There will be two main connectors to the accumulator, each having connections of TS+ and TS-. This is so each motor controller can be individually connected to. Before the HVD and main connectors, there is an AIR on both the positive and negative poles of TS. }
+            \hlr{There are 4 cells (in a 2s2p configuration) in each module, and there are 12 modules in series. The accumulator has them separated into 4 stacks of 3 to comply with the segment energy limit. Between each of the segments, there are MSDs for safely separating the segments while working on the accumulator. After the fourth section, there is an HVD in series with the positive pole, coming out of the accumulator. There will be two main connectors to the accumulator, each having connections of TS+ and TS-. This is so each motor controller can be individually connected to. Before the HVD and main connectors, there is an AIR on both the positive and negative poles of TS. }
 
             The high current (motor, motor controller) wires used for the tractive system will be as described in table \ref{motorwire}.
             The low current (IMD, Lights DC-DC, GLV DC-DC and ready to drive sound) TS connections will be made with the wire described in table \ref{tslowcurrentwire}.
@@ -1202,7 +1201,7 @@ A Hall effect current sensor, wired before the current splits to the motor contr
 
             The accumulator will only be charged on the charging cart. This cart has not yet been specified or designed. It will be able to support the full weight of the accumulator and only move when a dead man's switch is activated.\\
 
-            The accumulator cart will contain a specialized shutdown circuit that allows the accumulator to be charged through the main pack connector. The AMS will be active during charging and have the ability to open the AIRs and stop charging in the event of dangerous battery conditions. This shut down circuit will contain a separate IMD, an emergency stop, and an interlocking connection between the charger and accumulator. \hlr{ The separate IMD used is also the IR155-3204 from Bender, the same model of IMD used on the car.}
+            The accumulator cart will contain a specialized shutdown circuit that allows the accumulator to be charged through \hlr{the charging connector, and the shutdown circuit to close without the main accumulator connector interlocks engaged}. The AMS will be active during charging and have the ability to open the AIRs and stop charging in the event of dangerous battery conditions. This shut down circuit will contain a separate IMD, an emergency stop, and an interlocking connection between the charger and accumulator. \hlr{ The separate IMD used is also the IR155-3204 from Bender, the same model of IMD used on the car.}
 
 
             \begin{figure}[H]
@@ -1285,7 +1284,7 @@ A Hall effect current sensor, wired before the current splits to the motor contr
                 \label{mcoffcar}
             \end{figure}
 
-            \hlr{The two motor controllers used are both model Sevcon Gen 4 Size 4 motor controllers. These motor controllers are commercially in} the motorcycles of Zero Motorcycles,\hlr{and they delegate power to the motors in response to the input of an analog signal}. The motor controller comes with extra capabilities that will be used for other systems, like the precharge system. \hlr{The motor controller does not provide isolation between its low and high voltage components, so all low voltage signals to the motor controller will be individually isolated. The motor controller controller (MCC) PCB will contain a CAN node that outputs the throttle information relayed from the Bulkhead (Throttle/Brake) CAN node. The analog output will be isolated through an optoisolator.}
+            \hlr{The two motor controllers used are both model Sevcon Gen 4 Size 4 motor controllers. These motor controllers are used commercially in} the motorcycles of Zero Motorcycles,\hlr{and they delegate power to the motors in response to the input of an analog signal}. The motor controller comes with extra capabilities that will be used for other systems, like the precharge system. \hlr{The motor controller does not provide isolation between its low and high voltage components, so all low voltage signals to the motor controller will be individually isolated. The motor controller controller (MCC) PCB will contain a CAN node that outputs the throttle information relayed from the Bulkhead (Throttle/Brake) CAN node. The analog output will be isolated through an optoisolator.}
 
             \begin{table}[H]
             \centering
