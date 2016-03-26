@@ -231,19 +231,19 @@
 
         \subsubsection{Position in Car}
 
-            With the exception of the emergency shutdown buttons and tractive system interlocks, the components comprising the shutdown circuit are housed within a waterproof enclosure, located at the rear of the chassis, behind the main hoop, on the driver's right as shown in Figure \ref{cpanel}. This enclosure consists of a carbon fiber panel, where accessible switches, buttons, and measuring points will be mounted, and a 3D printed rear housing with integrated 18-pin Deutsch DT panel mount connector as shown in Figure \ref{cpanel2}. Actual components are not shown due to lack of CAD files at this point in time. Tractive system interlocks are located at each individual high voltage connection including the main two-way accumulator bus, HVD, \& three MSD's (manual service disconnects/maintenance plugs). The emergency shutdown buttons are located on the driver's dashboard (1) and on the right (2) \& left (3) sides of the car at driver's head level, attached to the main hoop with welded steel brackets.
+        \hlr{With the exception of the emergency shutdown buttons and tractive system interlocks, the components comprising the shutdown circuit are housed within a waterproof enclosure, located at the rear of the chassis, behind the main hoop, on the driver's right.  This enclosure is bolted onto steel brackets which are welded to the main hoop.  This enclosure consists of an ABS panel where the TSMS, GLVMS, TSMPs, GLVMPs, AMS, and IMD reset will be mounted, and a 3D printed rear housing with integrated 23-pin Deutsch DT panel mount connector, as seen in figure} \ref{cpanel1}. \hlr{In addition to the buttons and measuring points, the housing also contains the IMD, IMD relay, a PCB, a DC-DC converter, and an SLA battery, as seen in figure} \ref{cpanel2}.  \hlr{The tractive system and low voltage systems are separated by at least two centimeters at all times.}
 
             \begin{figure}[H]
                 \centering
                 \includegraphics[width = 0.6 \textwidth]{CONTROLPANEL_1}
-                \caption{Shutdown Circuit Enclosure Vehicle Location}
-                \label{cpanel}
+                \caption{\hlr{Shutdown Circuit Enclosure Vehicle Location}}
+                \label{cpanel1}
             \end{figure}
 
             \begin{figure}[H]
                 \centering
                 \includegraphics[width = 0.6 \textwidth]{CONTROLPANEL_2}
-                \caption{Waterproof Enclosure for TS MS, GLV MS, TSMP, GLVMP, \& Shutdown Circuit}
+                \caption{\hlr{Waterproof Enclosure for TS MS, GLV MS, TSMP, GLVMP, \& Shutdown Circuit}}
                 \label{cpanel2}
             \end{figure}
 
@@ -296,7 +296,7 @@
 
         \subsubsection{Description (Type, Operation Parameters)}
 
-            The Sensata Resettable crash sensor (6-11g version) will trigger due to an impact that decelerates the vehicle at between 6-11g. The normally closed switch will then open to protect both the driver and any operator from \hlr{damage caused from the impact}.
+            The Sensata Resettable crash sensor (6-11g version) will trigger due to an impact that decelerates the vehicle at between 6-11g.
 
     \begin{table}[H]
     \centering
@@ -315,16 +315,16 @@
 
         \subsubsection{Wiring/Cables/Connectors}
 
-            \hlr{The Inertia switch will be wired to be normally closed and open the shutdown circuit in the case that there is a crash. }
+            \hlr{The Inertia switch will be wired to be normally closed and open the shutdown circuit in the case that there is a crash. The inertia switch is wired in-line with the shutdown circuit to be normally closed. Please see figure} \ref{switchesonly} \hlr{for the position of the IMD in relative to the other shutdown system components. }
 
                 %connectors and cables, useful wiring data?
 
-            \begin{figure}[H]
-                \centering
-                \includegraphics{inertia}
-                \caption{\hlr{Schematic of the inertia switch and references to where it is in the shutdown circuit}}
-                \label{inertia}
-            \end{figure}
+            % \begin{figure}[H]
+            %     \centering
+            %     \includegraphics{inertia}
+            %     \caption{\hlr{Schematic of the inertia switch and references to where it is in the shutdown circuit}}
+            %     \label{inertia}
+            % \end{figure}
 
             % \begin{figure}[H]
             %     \centering
@@ -486,7 +486,7 @@ A Hall effect current sensor, wired before the current splits to the motor contr
             \begin{figure}[H]
             \centering
             \includegraphics[width = 0.7 \textwidth]{TSAL_FSAE}
-            \caption{Schematic for the TSAL}
+            \caption{\hlr{Schematic for the TSAL}}
             \label{TSALschem}
             \end{figure}
 
@@ -567,7 +567,7 @@ A Hall effect current sensor, wired before the current splits to the motor contr
 
         \begin{sidewaysfigure}[p]
             \includegraphics[width=\textheight]{precharge}
-            \caption{Precharge system schematic, including the AIR economizers}
+            \caption{\hlr{Precharge system schematic, including the AIR economizers}}
             \label{prechargeschem}
         \end{sidewaysfigure}
 
@@ -630,7 +630,7 @@ A Hall effect current sensor, wired before the current splits to the motor contr
 
             \begin{figure}[H]
                 \centering
-                \includegraphics{discharge}
+                \includegraphics{Discharge}
                 \caption{Schematic of the discharge system}
                 \label{dischargeschem}
             \end{figure}
@@ -727,7 +727,7 @@ A Hall effect current sensor, wired before the current splits to the motor contr
             \begin{figure}[H]
                 \centering
                 \includegraphics[width = 0.75 \textwidth]{HVD}
-                \caption{Schematic of primary tractive system connections}
+                \caption{\hlr{Schematic of primary tractive system connections}}
                 \label{HVDschem}
             \end{figure}
 
@@ -739,7 +739,7 @@ A Hall effect current sensor, wired before the current splits to the motor contr
         \begin{figure}[H]
             \centering
             \includegraphics[width = 0.6 \textwidth]{hvd_position}
-            \caption{\hlr{Position of the HVD in the vehicle. It is located in line with TS+, and is attached to the accumulator in the back of the vehicle. }}
+            \caption{\hlr{Position of the HVD in the vehicle. It is located in line with TS+, and is attached to the motor controller housing in the back of the vehicle. }}
             \label{hvdlocation}
         \end{figure}
 
@@ -852,7 +852,7 @@ A Hall effect current sensor, wired before the current splits to the motor contr
             \begin{figure}[H]
             \centering
             \includegraphics{moduleschem}
-            \caption{Schematic of a Nissan Leaf Battery Module}
+            \caption{\hlr{Schematic of a Nissan Leaf Battery Module}}
             \label{module}
             \end{figure}
 
@@ -870,7 +870,7 @@ A Hall effect current sensor, wired before the current splits to the motor contr
             \begin{figure}[H]
                 \centering
                 \includegraphics[width = 0.6 \textwidth]{busbar_routing}
-                \caption{Busbar Routing with MSD Wire Leads}
+                \caption{\hlr{Busbar Routing with MSD Wire Leads}}
                 \label{busbar}
             \end{figure}
 
@@ -918,14 +918,14 @@ A Hall effect current sensor, wired before the current splits to the motor contr
             \begin{figure}[H]
                 \centering
                 \includegraphics[width = 0.7 \textwidth]{bms_final1_PCBCAD}
-                \caption{CAD of 1 AMS board (all identical). Cyan polygon indicates GLV voltage, and the $\Delta x$ measurement is the distance between TS and GLV.}
+                \caption{\hlr{CAD of 1 AMS board (all identical). Cyan polygon indicates GLV voltage, and the $\Delta x$ measurement is the distance between TS and GLV ($6.57$ mm)}.}
                 \label{bmspcb}
             \end{figure}
 
 
             \begin{figure}[H]
                 \centering
-                \includegraphics[width=0.8 \textwidth]{bms_separation_detail}
+                \includegraphics[width=0.5 \textwidth]{bms_separation_detail}
                 \caption{\hlr{Detail of BMS PCB where the minimum over surface distance (6.4 mm) are met. Distance between TS and GLV is shown to be $6.57$ mm (over surface)}}
                 \label{creepage}
             \end{figure}
@@ -954,15 +954,7 @@ A Hall effect current sensor, wired before the current splits to the motor contr
                 \caption{\hlr{Cell Breakout Board PCB Layout for the right hand side Note the fuses labeled with "F" and then a number. There is only TS voltage on this PCB.}}
                 \label{celltopRH}
             \end{figure}
-
-            \begin{figure}[H]
-                \centering
-                \includegraphics[width = 0.6 \textwidth]{batterybox_topview}
-                \caption{CAD of the location of the cell-top boards in the accumulator}
-                \label{accumtopcad}
-            \end{figure}
-
-
+            \hlr{The location of the cell top boards can be seen in figure} \ref{busbar}.
 
         \subsubsection{Accumulator Indicator} \label{aindicator}
         %doesn't the accumulator indicator need to be run off of AIR control voltage? The pertinent rule is EV 3.3.9. The DC-DC can be powered without the AIR's being %closed.
@@ -976,15 +968,7 @@ A Hall effect current sensor, wired before the current splits to the motor contr
             \label{indicator}
             \end{figure}
 
-            As shown in Figure \ref{indicator}, J2 connects the accumulator indicator, D14, \hlr{to a zener diode running of TS voltage. The zener diode allows TS voltage to pass through the accumulator indicator LED and a resistor after TS voltage is over 60 VDC.  R13 is a 220$\ohm$ resistor to limit current. The calculations are as follows, assuming a forward voltage drop of the LED to be 2V:}
-
-            \begin{align}
-                100-2 V &= I * 220 \ohm \\
-                I &= 45 mA
-            \end{align}
-            %figure out a way to add higlight in an align 
-
-            \hlr{The accumulator indicator is located on the AIR control board PCB, and has traces of 20 mil, which are rated for 1.4A. }
+            As shown in Figure \ref{indicator}, J2 connects the accumulator indicator, D14, \hlr{to a zener diode running of TS voltage. The zener diode allows TS voltage to pass through the accumulator indicator LED and a resistor (to limit current)} after TS voltage is over 60 VDC. \hlr{The accumulator indicator is located on the AIR control board PCB, and has traces of 20 mil, which are rated for 1.4A, while the maximum current (using the current limiting resistor) will be 45mA. }
 
         \subsubsection{Wiring, Cables, Current Calculations, Connectors} \label{batteryconnectors}
 
@@ -1203,6 +1187,8 @@ A Hall effect current sensor, wired before the current splits to the motor contr
 
             The accumulator cart will contain a specialized shutdown circuit that allows the accumulator to be charged through \hlr{the charging connector, and the shutdown circuit to close without the main accumulator connector interlocks engaged}. The AMS will be active during charging and have the ability to open the AIRs and stop charging in the event of dangerous battery conditions. This shut down circuit will contain a separate IMD, an emergency stop, and an interlocking connection between the charger and accumulator. \hlr{ The separate IMD used is also the IR155-3204 from Bender, the same model of IMD used on the car.}
 
+            \hlr{The connectors used for charging will be the Molex Two-Pin Connector (interlock), integrated with Delphi Shield-Pack (see the next section for details).}
+
 
             \begin{figure}[H]
                 \centering
@@ -1239,6 +1225,22 @@ A Hall effect current sensor, wired before the current splits to the motor contr
                 \caption{Cell Mounting Exploded}
                 \label{cellexp}
             \end{figure}
+
+            \hlr{The connectors used will be:}
+            \hlr{Accumulator to MC Connections}
+            \hlr{Delphi Shield-Pack HV2000 Connectors}
+
+            \hlr{Accumulator to HVD:}
+            \hlr{Hardwired, double-shielded $35mm^2$ stranded wire}
+
+            \hlr{Charging Connector:}
+            \hlr{Deutsch HD10 6-Pin (P/N: HD10-6-12P, HD16-6-12S)}
+
+            \hlr{GLVS Connector:}
+            \hlr{AMPSEAL 23-Pin, (P/N: 770680-4, 776087-1)}
+
+            \hlr{TS Low-Current Connector:}
+            \hlr{AMPSEAL 8-Pin (P/N: 776286-1, 776280-1)}
 
         \subsubsection{Position in Car}
 
@@ -1538,8 +1540,7 @@ A Hall effect current sensor, wired before the current splits to the motor contr
 
         \subsubsection{Description}
 
-            The GLV system will be powered via a DC/DC converter which will convert the 100V system to a 13.5V line for powering CAN nodes and other LV devices. This voltage will be regulated down to 12V and 5V for the LV devices. Before the DC-DC converter, there is a fuse for the GLV system as a whole, with a rating of 4A.
-            %And will the 5V line be fused?
+            \hlr{The GLV system will be powered via a DC/DC converter which will convert the 100V system to a 13.5V low voltage system. Before the DC-DC converter, there is a fuse for the GLV system as a whole, with a rating of 4A.}
 
         \subsubsection{Wiring, Cables}
 
@@ -1551,15 +1552,15 @@ A Hall effect current sensor, wired before the current splits to the motor contr
             \end{figure}
 
             %need wire gauges
-            The DC-DC converter's power line is expected to carry less than 4A at all times. Its output will be fused to 4A, and then used for the GLV system as 12V. The GLV system voltage will be then regulated to 5V for the sake of the CAN ATmega. All of these wires, past the DC-DC converter, will be 22 AWG.
+            \hlr{Its output will be fused to 4A, and then used for the GLV system as 13.5V. After the two emergency shutdown buttons, the system is fused in parallel with two 2A fuses (the system voltage will be fused to 2A and the shutdown system will be fused to 2A). The GLV system voltage will be split in parallel again and then regulated to 5V for the sake of the CAN ATmega. All of these wires, past the DC-DC converter, will be 20 AWG.}
 
         \subsubsection{Position in Car}
 
-            The DC-DC converter will be located within the accumulator, so the output leads will go out of the accumulator. Figure \ref{dcdc_cad} shows the CAD model of the DC-DC converter, and its position in the car is on top of the cell boards shown in figure \ref{accumtopcad}.
+            The DC-DC converter will be located within the accumulator, so the output leads will go out of the accumulator. Figure \ref{dcdc_cad} shows the CAD model of the DC-DC converter, \hlr{which will be located in the side panel housing described in figure} \ref{cpanel1}.
 
             \begin{figure}[H]
                 \centering
-                \includegraphics[width = 0.6 \textwidth]{GLV_DCDC}
+                \includegraphics[width = 0.5 \textwidth]{GLV_DCDC}
                 \caption{CAD model of the DC-DC converter for the GLV system}
                 \label{dcdc_cad}
             \end{figure}
@@ -1568,13 +1569,11 @@ A Hall effect current sensor, wired before the current splits to the motor contr
 
         \subsubsection{Description}
 
-            The Dashboard node will have a variety of tasks. It will act as the Control Panel interface (for displaying information to the driver and receiving data from the driver), Emergency Button sensor, and steering sensor.\\
+            The Dashboard node will have a variety of tasks. It will act as the Control Panel interface (for displaying information to the driver and receiving data from the driver), Emergency Button sensor, \hlr{AMS light, IMD light and start button}.\\
 
-            The control panel interface is used for debugging. The CAN system has nodes all over circuits in the car, so it knows, for instance, what triggered a shutdown circuit opening. If the CAN system is still live (when an E-stop hasn't been pushed and the GLV master switch is on), then this CAN node will alert the driver.\\
+            The control panel interface is used for debugging. \hlr{The CAN system has nodes all over circuits in the car.} If the CAN system is still live (when an E-stop hasn't been pushed and the GLV master switch is on), then this CAN node will alert the driver.\\
 
-            The node is connected to a linear potentiometer on the steering rack. The potentiometer's value corresponds to the steering angle, so the CAN node can transmit the information on all of the turns. This node is used for driver training, practice, and team information in later years. If time permits, this data can be used to help in the development of a virtual differential.\\
-
-            Lastly, the emergency button sensing node has an input from right after the E-stop of the cockpit shutdown button. Therefore, the CAN system knows if it has been pushed or not by if it is a high value (not pushed, as the button is normally closed), or low value. The other E-stops around the car (right and left, on the back), will be wired to closer nodes.
+            The node is connected to a linear potentiometer on the steering rack. The potentiometer's value corresponds to the steering angle, so the CAN node can transmit the information on all of the turns. This node is used for driver training, practice, and team information in later years. If time permits, this data can be used to help in the development of \hlr{torque vectoring.}\\
 
         \subsubsection{Wiring, cables}
 
@@ -1585,7 +1584,7 @@ A Hall effect current sensor, wired before the current splits to the motor contr
                 \label{dashschem}
             \end{figure}
 
-            The dashboard node is wired to have the steering angle potentiometer and E-stops as input and the control panel interface (the LED) as an output. It listens to all CAN messages around the car. The interfacing LED will notify the driver of anything deemed important, such as the AMS detecting the temperature of the accumulator cells was getting too high. Therefore, the dashboard's interfacing light will mostly be telling the driver why the shutdown system shut down through a series of flashes. Only if one of the E-stops are pressed will the CAN system shut down and therefore the interfacing light will not tell the driver what has happened to the shutdown circuit.
+            The dashboard node is wired to have the \hlr{E-stops as input} and the control panel interface (the LED) as an output. It listens to all CAN messages around the car. The interfacing LED will notify the driver of anything deemed important, such as the AMS detecting the temperature of the accumulator cells was getting too high. Therefore, the dashboard's interfacing light will mostly be telling the driver why the shutdown system shut down through a series of flashes. Only if one of the E-stops are pressed will the CAN system shut down and therefore the interfacing light will not tell the driver what has happened to the shutdown circuit.
 
         \subsubsection{Position in Car}
 
@@ -1598,24 +1597,30 @@ A Hall effect current sensor, wired before the current splits to the motor contr
             \label{dashboard}
             \end{figure}
 
-    \subsection{LV Part 3: IMD, Ready to Drive Sound, and Watchdog Node} \label{imdnode}
+    \subsection{LV Part 3: Side Panel Node} \label{imdnode}
 
         \subsubsection{Description}
 
-            The node located next to the IMD and ready to drive sound monitors the IMD's output and will activate the ready to drive sound when the car is in ready mode. It will receive input from behind each of the two side e-stops, so if one is pushed, the CAN system knows and can tell the driver the reason for shutdwon circuit shutdown. It will also be connected to the rest of the CAN system around the car and listen to CAN messages for anomalies. If the Watchdog node receives a CAN error message that indicates danger to the driver or the vehicle it will open the watchdog switch in the shutdown circuit. This will be useful for maintaining the health of the motor controllers.
+            The node located next to the IMD and ready to drive sound monitors the IMD's output and will activate the ready to drive sound when the car is in ready mode. It will receive input from behind each of the two side e-stops, so if one is pushed, the CAN system knows and can tell the driver the reason for shutdown circuit shutdown. It will also be connected to the rest of the CAN system around the car and listen to CAN messages for anomalies. If the Watchdog node receives a CAN error message that indicates danger to the driver or the vehicle it will open the watchdog switch in the shutdown circuit. This will be useful for maintaining the health of the motor controllers.
 
         \subsubsection{Wiring, Cables}
 
-            \begin{figure}[H]
-            \centering
-            \includegraphics[width = 0.8 \textwidth]{IMDandCANschem}
-            \caption{Schematic for the node on the ready to drive sound, watchdog, and side e-stops and IMD}
+            % \begin{figure}[H]
+            % \centering
+            % \includegraphics[width = 0.8 \textwidth]{IMDandCANschem}
+            % \caption{Schematic for the node on the ready to drive sound, watchdog, and side e-stops and IMD}
+            % \label{panelnode}
+            % \end{figure}
+
+            \begin{sidewaysfigure}[p]
+            \includegraphics[width=\textheight]{Panel-Board}
+            \caption{\hlr{Side Panel node wiring. The PCB's schematic, shown here, includes TS wiring going to the TSMPs, IMD and R2D sound.}}
             \label{panelnode}
-            \end{figure}
+            \end{sidewaysfigure}
 
-            As shown in Figure \ref{panelnode}, both the IMD and the ready to drive sound relay are wired to the CAN node located in the back of the car.\\
+            As shown in Figure \ref{panelnode}, both the IMD and the ready to drive sound relay are wired to the CAN node located in the \hlr{side panel housing}.\\
 
-            The CAN node is wired to the fourth pole of the IMD relay, so the node will always read high until the pole is no longer pulled because the IMD's output is low and the IMD has found a ground fault.\\
+            The CAN node is wired to the \hlr{third} pole of the IMD relay, \hlr{and the node will always read low }until the pole is no longer pulled because the IMD's output is low and the IMD has found a ground fault. \hlr{There is a pull up resistor and the pole, in its disconnected state the can input will read 5V instead.}\\
 
             As an output, the CAN node is also wired to a relay's coil controlling a switch in the tractive system parallel to the motors. When the CAN system knows it's in ready to drive mode, it'll send the message to send 5V to this coil, therefore closing the switch that will give the ready to drive sound buzzer power to make noise.\\
 
@@ -1623,7 +1628,7 @@ A Hall effect current sensor, wired before the current splits to the motor contr
 
         \subsubsection{Position in Car}
 
-            The IMD/Ready to Drive sound/Watchdog node will be contained in the enclosure shown in Figure \ref{cpanel2}.
+            The \hlr{side panel} node will be contained in the enclosure shown in Figure \ref{cpanel2}.
 
 \newpage
 
@@ -1633,15 +1638,15 @@ A Hall effect current sensor, wired before the current splits to the motor contr
 
         %Describe how you intend to achieve the resistances between components at the required levels as defined in EV 4.3
 
-        The chassis is used as GLV ground. This ground is established at the panel mount holding many of the shutdown components and the TSMPs. All mechanical systems in the vehicle, such as the accumulator, drivers seat, and pedal box, achieve low resistance to ground because they are either welded directly to the chassis, or fastened using uncoated, conductive metal fasteners. Electrical systems that are satellite to the main panel mount that need to establish a connection to ground for sense purposes are grounded to the chassis using ring terminals. Ring terminals can be included in the bolt stack up of mechanical systems to ensure a secure connection to ground that is positively retained with a lock nut.
+        The chassis is used as GLV ground. This ground is established at the panel mount holding many of the shutdown components \hlr{the TSMPs, GLV DC-DC converter and GLV battery}. All mechanical systems in the vehicle, such as the accumulator, drivers seat, and pedal box, achieve low resistance to ground because they are either welded directly to the chassis, or fastened using uncoated, conductive metal fasteners. Electrical systems that are satellite to the main panel mount that need to establish a connection to ground for sense purposes are grounded to the chassis using ring terminals. Ring terminals can be included in the bolt stack up of mechanical systems to ensure a secure connection to ground that is positively retained with a lock nut.
 
 
     \subsection{Grounding Measurements}
 
         %Describe the measurements you'll take to make sure EV4.3 is achieved
-        The conductive components within 100mm of the tractive system or a GLV component will be measured with a multimeter to have less than 300 m\ohm resistance to ground. All fastened mechanical systems will be measured for a ground connection individually and exhaustively. Continuity will be checked during manufacture and assembly before the GLV system is in place.\\
+        The conductive components within 100mm of the tractive system or a GLV component will be measured with a multimeter \hlr{using in a 4pt technique}to have less than 300 m\ohm resistance to ground. All fastened mechanical systems will be measured for a ground connection individually and exhaustively. Continuity will be checked during manufacture and assembly before the GLV system is in place.\\
 
-        Carbon fiber will be used in body panels and floor close outs, but these designs are not yet complete. We will be measuring the resistance to chassis ground and inserting copper mesh as needed to achieve at minimum 5 \ohm resistance to ground.
+        \hlr{There will not be any carbon fiber on the vehicle.}
 
 \newpage
 
