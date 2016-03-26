@@ -1334,12 +1334,12 @@ A Hall effect current sensor, wired before the current splits to the motor contr
 
             %Referred from section \ref{accumwiring} (AMS wiring), \ref{motorswiring}
 
-            Both motors will follow the configuration in Figure \ref{mcschem}, parallel to the TS system. All high current wire gauges will be 2 AWG: the wire before the split to the motor controller, the wire to each controller, and the wire to each motor. There is a 175A fuse located before the AIRs, which is smaller than the ampacity of 2 AWG wire according to appendix section \ref{AWGchart}.
+            Both motors will follow the configuration in Figure \ref{mcschem}, \hlr{and are in parallel to the TS system. There is a 175A fuse located before the AIRs}, which is smaller than the ampacity of 2 AWG wire according to appendix section \ref{AWGchart} \hlr{The connections from the accumulator to the motor controllers are shielded dual-insulated 35mm^2 stranded wire pigtails from a Delphi Shield-Pack HV2000 connector, which will be strain relieved at the motor controller using wire glands.}
             %should i go into what we expect the motors to pull?
 
         \subsubsection{Position in Car}
 
-            The motor controllers are located in the rear of the car, mounted to the main hoop bracing via steel brackets. This configuration is shown in Figures \ref{mcsideview}, \ref{mciso}, and \ref{mcrearview}. The controllers are entirely contained within the envelope of the chassis such that in any rollover attitude, the controllers will not make contact with the ground. \hlr{The covers for the motor controllers are still being designed. They will protect the motor controllers from being touched and rain.}
+            The motor controllers are located in the rear of the car, mounted to the main hoop bracing via steel brackets. This configuration is shown in Figures \ref{mcsideview}, \ref{mciso}, and \ref{mcrearview}. The controllers are entirely contained within the envelope of the chassis such that in any rollover attitude, the controllers will not make contact with the ground. \hlr{The Sevcon Gen.4 controllers have no touch-protection from the TS terminals. Therefore, we will design a plastic enclosure with wire glands and conduit terminations where appropriate, which bolts to the rear of the motor controllers. }
 
             \begin{figure}[H]
                 \centering
