@@ -170,12 +170,12 @@
                     \item The TSMS is the last component in the shutdown circuit before the AIRs. This allows full testing of the GLV system without engaging the TS and only intentional use of the TS.
                     \item The BOTS is used to detect a mechanical failure in the brake system. If the brake \hlr{system} fails, the TS is disabled to allow the vehicle to roll to a stop and ensure the safety of the driver.
                     \item The SDBs are used for emergency shutdown of the TS. The cockpit SDB allows the driver to quickly shutdown the \hlr{tractive system} from the driver's seat. The left and right SDBs are intended for emergency shutdown in a crash or rollover scenario by first responders.
-                    \item The IMD is used to detect if the TS \hlr{has lost isolation with the GLV system}. Because the chassis is used to ground the GLVS, \hlr{lost isolation} presents a dangerous driver and maintenance scenario so the IMD disables the TS.
+                    \item The IMD is used to detect if the TS \hlr{has lost isolation with the GLV system}. Because the chassis is used to ground the GLVS, \hlr{lost isolation} presents a dangerous driver and maintenance scenario, \hlr{the IMD will disable the TS}.
                     \item The AMS monitors the \hlr{state} of the accumulator and triggers a TS shutdown if the modules enter a dangerous temperature or electrical condition.
                     \item The inertia switch triggers a TS shutdown if it experiences an acceleration indicative of a collision. This ensures the vehicle is electrically safe in an emergency situation.
                     \item Interlocks close the shutdown circuit when all high voltage connections are properly made. This ensures that high voltage is only present within the TS and disabled if connections are left open.
                     \item The BSPD detects if the motor controllers are drawing significant current from the accumulator while the brakes are engaged. To protect the driver and the vehicle, this scenario triggers a TS shutdown.
-                    \item Finally, the shutdown circuit contains a CAN Watchdog to shut down the TS in the event of a CAN error. The primary intent of this additional component is to monitor the health of the motor controllers and shutdown TS if necessary to protect them.
+                    \item Finally, the shutdown circuit contains a CAN Watchdog to shut down the TS in the event of a CAN error. \hlr{This functions as protection in the rare event of software failure.}
                 \end{itemize}
 
             %Describe concept, the master switches, bots, and fill table
@@ -196,7 +196,7 @@
                     Brake System Plausibility Device (BSPD) & Normally Open \\ \hline
                     CAN Watchdog & Normally closed \\ \hline
                 \end{tabular}
-                \caption{List of switches in the shutdown circuit}
+                \caption{\hlr{List of switches in the shutdown circuit}}
                 \label{switchlist}
             \end{table}
 
@@ -219,31 +219,31 @@
                 \hline
                     Total Number of AIRs: & 2 \\ \hline
                     Current per AIR & \hlr{ 3.8A until 150 ms passes, then 0.4 A} \\ \hline
-                    Additional parts consumption within the shutdown circuit: & \hlr{0.5 A }\\ \hline
+                    Additional parts consumption within the shutdown circuit: & \hlr{0.1 A }\\ \hline
                     Total current: & \hlr{4.3 A until 150 ms passes, then ~1A} \\ \hline
-                    Cross sectional area of the wiring used: & 0.000506 in$^{2}$ (22 AWG) \\ \hline
+                    Cross sectional area of the wiring used: & \hlr{0.00080384} in$^{2}$ \hlr{(20 AWG)} \\ \hline
                 \end{tabular}
-                \caption{Wiring--Shutdown Circuit}
+                \caption{\hlr{Wiring- Shutdown Circuit}}
                 \label{ShutdownCircuitTable}
             \end{table}
 
-            The GLV system also has 12V and 5V supply lines in parallel to the shutdown circuit. It supplies the 555 timers, CAN nodes, coils and lights, \hlr{ which are all in parallel with the AIRs, increasing the total current to 1A. }
+            The GLV system also has 12V and 5V supply lines in parallel to the shutdown circuit. It supplies the 555 timers, CAN nodes, coils and lights, \hlr{ which are all in parallel with the AIRs, increasing the total current to \hlr{2A.} }
 
         \subsubsection{Position in Car}
 
-        \hlr{With the exception of the emergency shutdown buttons and tractive system interlocks, the components comprising the shutdown circuit are housed within a waterproof enclosure, located at the rear of the chassis, behind the main hoop, on the driver's right.  This enclosure is bolted onto steel brackets which are welded to the main hoop.  This enclosure consists of an ABS panel where the TSMS, GLVMS, TSMPs, GLVMPs, AMS, and IMD reset will be mounted, and a 3D printed rear housing with integrated 23-pin Deutsch DT panel mount connector, as seen in figure} \ref{cpanel1}. \hlr{In addition to the buttons and measuring points, the housing also contains the IMD, IMD relay, a PCB, a DC-DC converter, and an SLA battery, as seen in figure} \ref{cpanel2}.  \hlr{The tractive system and low voltage systems are separated by at least two centimeters at all times.}
+        \hlr{There are many shutdown components are in or mouonted to a housing called side panel housing, which is a waterproof enclosure located at the rear of the chassis, behind the main hoop, on the driver's right.  This enclosure is bolted onto steel brackets which are welded to the main hoop.  This enclosure consists of an ABS panel where the TSMS, GLVMS, TSMPs, GLVMPs, AMS reset button, and IMD reset button will be mounted, and a 3D printed rear housing with integrated 23-pin Deutsch DT panel mount connector, as seen in figure} \ref{cpanel1}. \hlr{In addition to the buttons and measuring points, the housing also contains the IMD, IMD relay, a PCB (Side panel node, which includes the watchdog relay), the GLV DC-DC converter, and the GLV battery, as seen in figure} \ref{cpanel2}.  \hlr{Mounted to the outside of the box includes the GLVMS and TSMS. The tractive system and low voltage systems are separated by at least two centimeters at all times.}
 
             \begin{figure}[H]
                 \centering
                 \includegraphics[width = 0.6 \textwidth]{CONTROLPANEL_1}
-                \caption{\hlr{Shutdown Circuit Enclosure Vehicle Location}}
+                \caption{\hlr{Outside view of the side panel housing}}
                 \label{cpanel1}
             \end{figure}
 
             \begin{figure}[H]
                 \centering
                 \includegraphics[width = 0.6 \textwidth]{CONTROLPANEL_2}
-                \caption{\hlr{Waterproof Enclosure for TS MS, GLV MS, TSMP, GLVMP, \& Shutdown Circuit}}
+                \caption{\hlr{Inside view of the side panel housing}}
                 \label{cpanel2}
             \end{figure}
 
@@ -284,7 +284,7 @@
 
             The IMD output powers a four pole double throw relay. However, for the relay to become powered,\hlr{at the start of each driving/operable session (not when there is a fault in the shutdown system)}, a person must press the IMD reset button, which closes the circuit and allows the coil to power itself through the first pole. \hlr{The other two poles close the shutdown circuit and the input pin to the CAN node. The fourth pole is not connected. The can input will inform the CAN system about the status of the IMD (pull up resistor ensures IMD CAN pole input is not left floating). The ATmega16M1 controls the IMD light in the cockpit through the CAN system. With the coil powered from the IMD's positive output, the shutdown circuit will close. }
 
-            The connectors used for the IMD are the TYCO-MICRO MATE-N-LOK 1 x 2-1445088-8 and its mate.
+            The connectors used for the IMD are the TYCO-MICRO MATE-N-LOK 1 x 2-1445088-8 and its mate. \hlr{18 AWG wire will be used to connect the low voltage connections between the IMD and side panel PCB. The 18 AWG wire used is rated for 300V, 90 \degree C.}
 
             %connectors and cables used? Useful data regarding the wiring, including wire gauge/temp.voltage rating and fuses protecting the wiring
 
@@ -309,7 +309,7 @@
     Maximum operational current & \begin{tabular}[c]{@{}l@{}}20A for max. duration 30sec, \\ 10A max. continuous\end{tabular} \\ \hline
     Trigger charactersitics & \begin{tabular}[c]{@{}l@{}}Operate above 11g peak, 60ms duration\\ Not operate below 6g peak, 60ms duration\end{tabular} \\ \hline
     \end{tabular}
-    \caption{Parameters of the Inertia Switch}
+    \caption{\hlr{Parameters of the Inertia Switch}}
     \label{InertiaTable}
     \end{table}
 
@@ -341,7 +341,7 @@
 
         \subsubsection{Description/Additional Circuitry}
 
-The BSPD will constantly check if there is a substantial amount of current across the motor controllers and if the brakes are being pressed hard. If both are true, after 0.5 second of continuity, the relay will open the switch in the shutdown circuit. The circuitry consists of an AND gate with two hall effect sensors and the brake sensor as inputs and a 555 timer to check if the states of both the brakes and the motor controllers are continuous. Two hall effect sensors had to be used, as not once outside of the accumulator does the TS wiring all go through one wire.
+The BSPD will constantly check if there is a substantial amount of current across the motor controllers and if the brakes are being pressed hard. If both are true, after 0.5 second of continuity, the relay will open the switch in the shutdown circuit. The circuitry consists of an AND gate with two hall effect sensors and the brake sensor as inputs and a 555 timer to check if the states of both the brakes and the motor controllers are continuous. Two hall effect sensors had to be used, as not once outside of the accumulator does the TS wiring all go through one wire, \hlr{so the hall effect inputs are being summed to 50A. }
 
 
             \begin{table}[H]
@@ -368,14 +368,14 @@ The BSPD will constantly check if there is a substantial amount of current acros
                 \label{BSPDschem}
             \end{figure}
 
-A Hall effect current sensor, wired before the current splits to the motor controllers, will send a proportional signal to a comparator. If the current is above 50 Amps, the output will be positive, and a positive signal will be sent to the AND gate. If the brakes are actuated, a positive signal will come from the brake pressure switch, causing the AND gate to return positive. These signals will go to two 555 timers, causing a time delay of .5 seconds. If the signal is maintained over this time period, \hlr{the normally open relay will be opened}, shutting down the current to the AIRs.
+Two hall effect current sensors, each wired around the power lines of the motor controllers, will send a proportional signal to a comparator. If the (summed) current is above 50 Amps, the output will be positive, and a positive signal will be sent to the AND gate. If the brakes are actuated, a positive signal will come from the brake pressure switch, causing the AND gate to return positive. These signals will go to two 555 timers, causing a time delay of .5 seconds. If the signal is maintained over this time period, \hlr{the normally open relay will be opened}, shutting down the current to the AIRs.
 
             %INcluding the circuit board? Show data regarding the cables and connectors used, and how this opens the shutdown circuit
 
         \subsubsection{Position in Car/Mechanical Fastening/Mechanical Connection}
  The brake sensor is Pegasus Racing P/N 3601 pressure switch that activates between 60 and 120psi. It is attached to the brake line using a -3 AN T-fitting. The brake system is composed of a combination of hard and flexible brake line and will use a combination of SAE flare connections and AN fittings.
 
-            The circuit board controlling the BSPD is located \hlr{near the throttle and brake lines, in the bulkhead of the vehicle}. The board will be positively retained in the enclosure using standard hardware and stand-offs, \hlr{all external connections will be made using Ampseal connectors} and all internal enclosure connections will be made using Molex PCB connectors. \hlr{Figures} \ref{BSPDmech1} \hlr{and} \ref{BSPDmech2} \hlr{show how the brake sensor will be mounted and where it will be located. }
+            The circuit board controlling the BSPD is located \hlr{near the motor controllers, on a board called motor controller controller. The input line from the brake will be fed from the front bulkhead of the vehicle}. The board will be positively \hlr{retained using standard hardware and stand-offs, all external connections will be made using Ampseal connectors} and all internal enclosure connections will be made using Molex PCB connectors. \hlr{Figures} \ref{BSPDmech1} \hlr{and} \ref{BSPDmech2} \hlr{show how the brake sensor will be mounted and where it will be located. }
 
             \begin{figure}[H]
                 \centering
@@ -397,19 +397,17 @@ A Hall effect current sensor, wired before the current splits to the motor contr
 
             %Describe the concept and circuitry of the latching/reset system for a tripped IMD or BMS.  Describe the method for resetting the IMD and BMS.
 
-            If the AMS detects a fault. It opens the shutdown circuit, and latches into that state. When the AMS reset \hlr{button} is pressed, the nearby CAN node passes a "Reset" CAN message to the AMS boards. If the accumulator is within safe electrical and temperature operating limits the AMS closes the shutdown circuit.\\
+            If the AMS detects a fault, it opens the shutdown circuit, and latches into that state. When the AMS reset \hlr{button} is pressed, \hlr{the nearby CAN node passes a CAN message to the AMS boards}. If the accumulator is within safe electrical and temperature operating limits the AMS closes the shutdown circuit.\\
 
            To reset the IMD an operator other than the driver must push the IMD reset button located on the outside of the car on a panel next to the TSMPs, master switches and E-stops. If the output of the IMD is high because there is no ground fault, the reset button will activate the coil and close the shutdown circuit.
 
         \subsubsection{Wiring/Cables/Connectors}
 
             %Calcs for connectors and cables used and how they open the shutdown circuit
-            The IMD's output, as seen in figure \ref{IMD}, continuously closes the shutdown circuit as long as its output is high. The reset button closes the circuit to the coil to then allow the coil to power itself for as long as the output is high. Once low, the coil will open its four poles, thereby \hlr{not allowing power to the CAN node input, thereby activating the IMD light} or the switch in the shutdown circuit. The 4PDT relay is specified for 15A, while the GLV system it controls is fused for 4A. The wire gauge to the IMD relay is 22AWG.\\
+            The IMD's output, as seen in figure \ref{IMD}, continuously closes the shutdown circuit as long as its output is high. The reset button closes the circuit to the coil to then allow the coil to power itself for as long as the output is high. Once low, the coil will open its four poles, thereby \hlr{allowing power to the CAN node input, thereby activating the IMD light} or the switch in the shutdown circuit. The 4PDT relay is specified for 15A, while the GLV system it controls is fused for 4A. The wire gauge to the IMD relay is 20AWG.\\
 
             % BMS reset wiring
-            The BMS reset button is a button that connects 5V to a CAN input pin on the \hlr{side panel} node later mentioned in section \ref{imdnode}. When the CAN node receives a high signal it sends a message to the rest of the system, including the AMS nodes, and if the AMS detects the accumulator is safe, the AMS relay will close the shutdown circuit and allow normal operation. All wire gauges will be 22 AWG except for PCB traces. Because CAN communication requires very little current, the lines will not be fused.\\
-
-            The connectors used \hlr{for the IMD} will be Molex, LLC 0022013037 and its pair, Molex, LLC 0022232031, or other Molex products of the same series but with a different number of headers on each side of the connector.
+            The BMS reset button is a button that connects 5V to a CAN input pin on the \hlr{side panel} node later mentioned in section \ref{imdnode}. When the CAN node receives a high signal it sends a message to the rest of the system, including the AMS nodes, and if the AMS detects the accumulator is safe, the AMS relay will close the shutdown circuit and allow normal operation. All wire gauges will be 20 AWG except for PCB traces. Because CAN communication requires very little current, the lines will not be fused.\\
 
         \subsubsection{Position in Car}
 
@@ -421,11 +419,11 @@ A Hall effect current sensor, wired before the current splits to the motor contr
 
             %Concept and circuitry
             %Note: Interlocks are circuits used to open the shutdown circuit if a connector is disconnected or enclosure is opened.  This is not the entire shutdown circuit.
-            Interlocks are low voltage mechanically activated switches that close when a high voltage connection is made or a system is closed.  In the shutdown circuit, \hlr{the main accumulator connectors, and the HVD} have interlocks. The shutdown circuit will be open when any of these TS connections are opened. \hlr{There is also an interlock on the charger connector that bypasses the main battery connector interlocks.}
+            Interlocks are low voltage mechanically activated switches that close when a high voltage connection is made or a system is closed.  In the shutdown circuit, \hlr{the main accumulator connectors, and the HVD} have interlocks. The shutdown circuit will be open when any of these TS connections are opened. \hlr{There is also an interlock on the charger connector which bypasses the main battery connector interlocks.}
 
         \subsubsection{Wiring/Cables/Connectors}
 
-            Interlock wires are mechanically integrated with HV connectors such that they are simultaneously disconnected with the removal of a connector. The removal of a connector therefore breaks shutdown circuit continuity. \hlr{The interlock wires will be 22 AWG and be fused from the shutdown GLV fuse (2A).}
+            Interlock wires are mechanically integrated with HV connectors such that they are simultaneously disconnected with the removal of a connector. The removal of a connector therefore breaks shutdown circuit continuity. \hlr{The interlock wires will be 20 AWG and be fused from the shutdown GLV fuse (2A).}
 
             \begin{figure}[H]
                 \centering
@@ -451,12 +449,12 @@ A Hall effect current sensor, wired before the current splits to the motor contr
 
         \subsubsection{Description/Circuitry}
 
-            \begin{figure}[H]
-                \centering
-                \includegraphics[width = 0.5 \textwidth]{TSALshining}
-                \caption{Product picture of the TSAL, from Super Bright LEDs part no. M9-R4}
-                \label{tsalsuperbright}
-            \end{figure}
+            % \begin{figure}[H]
+            %     \centering
+            %     \includegraphics[width = 0.5 \textwidth]{TSALshining}
+            %     \caption{Product picture of the TSAL, from Super Bright LEDs part no. M9-R4}
+            %     \label{tsalsuperbright}
+            % \end{figure}
 
             The TSAL illuminates when the tractive system is active, which is defined as the tractive system voltage being over 60V or the AIRs being closed.
 
@@ -480,8 +478,7 @@ A Hall effect current sensor, wired before the current splits to the motor contr
 
             %Describe wiring, show schematics, describe connectors and cables used and show useful data regarding the wiring.  Include gauge, voltage and temperature rating of wiring used and any fuses or other overcurrent protection used.
 
-            There is a DC-DC (isolated) converter that converts TS 100V to 12V for the light. \hlr{The DC-DC converter accepts 16-166VDC as input voltage.} This will power a 555 timer astable circuit. When the TS is over 60V, zener diodes with a breakdown voltage of 56V and 3.6V respectably power one side of an optocoupler when the TS voltage is over 60V. The optocoupler closes the circuit on the other side for the timer's output to go to the light through an OR gate. The OR gate also accepts the GLV 12V as an input, which is only live when both AIRs are closed. In this way, the light will be powered when the tractive system is over 60V or the AIRs are closed. The light will blink at 2.4 Hz.
-            %Should we have a fuse before the OR gate?
+             \hlr{The circuitry designed has two optocouplers with the mosfet sides in parallel. If either optocoupler is powered, the TSAL will be powered. On the TS-controlled optocoupler, when the TS is over 60V, zener diodes with a breakdown voltage of 56V and 3.6V respectably power one side of an optocoupler when the TS voltage is over 60V. On the GLV-controlled optocoupler, the optocoupler is powered when there is shutdown voltage before the AIRs.} In this way, the light will be powered when the tractive system is over 60V or the AIRs are closed. \hlr{The power line for the TSAL is also interrupted by a mosfet that has its gate controlled by a 555 timer to allow it to blink at a rate of 2.4 Hz.}
 
             \begin{figure}[H]
             \centering
@@ -490,7 +487,7 @@ A Hall effect current sensor, wired before the current splits to the motor contr
             \label{TSALschem}
             \end{figure}
 
-            As shown in Figure \ref{TSALschem}, there is a 1A fuse protecting both the DC-DC converter and the light's optocoupler. There is a fuse not shown that is in the GLV system, which protects the GLV 12V shown before the AND gate. All connections made by wires will be 22 AWG rated for 600V, 125 \degree C and 7A, while all PCB traces will be a minimum of 10 mil, but nominally 20 mil in width.
+            \hlr{All connections made by wires will be 20 AWG rated for 600V, 125 \degree C and 7A, while all PCB traces will be a minimum of \hlr{12} mil, but nominally 20 mil in width. The TS voltage will have been fused to 1A on both power lines.}
 
             %highlight the caption of the replacement picture.
             % \begin{figure}[H]
@@ -502,9 +499,9 @@ A Hall effect current sensor, wired before the current splits to the motor contr
 
         \subsubsection{Position in Car}
 
-            The TSAL will be mounted to the underside of the highest point of the main roll hoop, per EV 4.12.4 using a robust 3D printed bracket integrating the light and necessary wiring. This enclosure has not been designed yet.
+            The TSAL will be mounted to the underside of the highest point of the main roll hoop, per EV 4.12.4 using a robust 3D printed \hlr{(Nylon/Kevlar material)} bracket integrating the light and necessary wiring. This enclosure has not been designed yet.
 
-            The PCB will be located in the side panel enclosure, also known as the TSMP housing.
+            The PCB will be located in the side panel enclosure, also known as the \hlr{side panel housing}.
 
     \subsection{Measurement Points}
 
@@ -525,7 +522,7 @@ A Hall effect current sensor, wired before the current splits to the motor contr
 
             Figure \ref{fig:TSMPschematic} shows the TSMP schematic. Left shows the schematic including the banana jacks. Right shows the multimeter measuring the tractive system, with the multimeter's expected resistance and the same resistors as before the TSMP's on the left side.\\
 
-            There will be four measuring points: TS+, TS-, GLV+, and GLV-. The TSMP connections will be secured with 5 k\ohm current limiting resistors. There will not be a fuse. The worst case scenario for the TSMPs occurs when there is a short between the TS+ and TS- banana jacks. This could occur as a result of operator error when measuring the TS  voltage and create a voltage over a human operator's hands. The current limiting resistors ensure that the current draw in this scenario will not harm a human.
+            There will be four measuring points: TS+, TS-, GLV+, and GLV-. The TSMP connections will be secured with 5 k\ohm current limiting resistors. \hlr{There is a 1A fuse at the beginning of the low current TS power lines, in the accumulator, only to protect the wiring.} The worst case scenario for the TSMPs occurs when there is a short between the TS+ and TS- banana jacks. This could occur as a result of operator error when measuring the TS  voltage and create a voltage over a human operator's hands. The current limiting resistors ensure that the current draw in this scenario will not harm a human.
 
             \begin{align}
                 V = I * R \\
@@ -539,7 +536,7 @@ A Hall effect current sensor, wired before the current splits to the motor contr
                 P = 1 W
             \end{align}
 
-            Therefore, a 1W, 5k\ohm resistor will be placed before each TSMP banana jack. The resistor will be on \hlr{the side panel PCB, which contains all of the low current TS circuitry and certain shutdown components. The TS line going to the side panel is fused, with a rating of 1A, within the accumulator, and then the 22 AWG shielded wire is connected to the side panel PCB for the TSMP resistors.} This PCB does not have a finished design yet, but will be housed such that it is insulated from all adjacent conductive materials.\\
+            Therefore, a 1W, 5k\ohm resistor will be placed before each TSMP banana jack. The resistor will be on \hlr{the side panel PCB, which contains all of the low current TS circuitry and certain shutdown components. The TS line going to the side panel is fused, with a rating of 1A, within the accumulator, and then the 20 AWG wire is connected to the side panel PCB for the TSMP resistors.} This PCB does not have a finished design yet, but will be housed such that it is insulated from all adjacent conductive materials.\\
 
             Another worst case scenario that could occur at the measuring points is a short between the TS and GLV systems over the banana jacks, again by operator error. In this scenario, the IMD will open the shutdown circuit.
 
@@ -549,7 +546,7 @@ A Hall effect current sensor, wired before the current splits to the motor contr
 
         \subsubsection{Position in Car}
 
-            The TSMP's will be located in the enclosure shown in Figure \ref{cpanel2} \hlr{along with the side panel circuitry}. Body panel removal will not be required for access, and any protective covers for the TSMP's will be removable without the use of tools. \hlr{The enclosure itself is bolted together using 1/4" hardware.} %, but we intend to provide additional banana jack measuring points to measure the TSMP resistors without removal of any vehicle components.
+            The TSMP's will be located in the enclosure shown in Figures \ref{cpanel1} and \ref{cpanel2} \hlr{along with the side panel circuitry}. Body panel removal will not be required for access, and any protective covers for the TSMP's will be removable without the use of tools. \hlr{The enclosure itself is bolted together using 1/4" hardware.} %, but we intend to provide additional banana jack measuring points to measure the TSMP resistors without removal of any vehicle components.
             %I wish we'd have that.
 
     \subsection{Pre-Charge Circuitry}
@@ -560,8 +557,8 @@ A Hall effect current sensor, wired before the current splits to the motor contr
 
         \subsubsection{Wiring, Cables, Current Calculations, Connectors}
 .
-            Once the shutdown circuit is closed, it will immediately power the coils of the normally closed discharge relay, the normally open precharge relay, and the normally open TS- AIR. This opens the discharge relay, and closes the precharge relay and TS- AIR. Instead of connecting Batt+ to TS+ through a current limiting resistor, the precharge relay connects B+ to the key switch terminal on each of the Sevcon motor controllers. When powered by their key switch terminals, the motor controllers charge their internal capacitors up to around 50V for 0.5 seconds, then up to 90V (or another specified voltage) for 0.1 seconds before signaling though the CAN system that the precharge is complete. This CAN message causes a node in the battery to allow the shutdown circuit to close the TS+ AIR.
-
+            Once the shutdown circuit is closed, it will immediately power the coils of the normally closed discharge relay, the normally open precharge relay, and the normally open TS- AIR. This opens the discharge relay, and closes the precharge relay and TS- AIR. Instead of connecting Batt+ to TS+ through a current limiting resistor, the precharge relay connects B+ to the key switch terminal on each of the Sevcon motor controllers. When powered by their key switch terminals, the motor controllers charge their internal capacitors up to around 50V for 0.5 seconds, then up to 90V (or another specified voltage) for 0.1 seconds. \hlr{The CAN system clocks this process with a timer in software, and then considers precharge to be finished and sends a CAN message.} This CAN message causes a node in the battery to allow the shutdown circuit to close the TS+ AIR.
+            %before signaling though the CAN system that the precharge is complete.
 
         Please note the schematic in figure \ref{prechargeschem}.
 
@@ -591,7 +588,7 @@ A Hall effect current sensor, wired before the current splits to the motor contr
                 Voltage rating & 150 VDC \\ \hline
                 Cross-sectional area of wire used & 0.001275 in\textasciicircum 2 (18 AWG) \\ \hline
                 \end{tabular}
-                \caption{General data of pre-charge resistor }
+                \caption{\hlr{General data of pre-charge resistor }}
                 \label{prechargeresistor}
             \end{table}
 
@@ -601,13 +598,13 @@ A Hall effect current sensor, wired before the current splits to the motor contr
                 \centering
                 \begin{tabular}{|l|l|}
                 \hline
-                Relay type & \hlr{Omron Electronics, G5CA series, G5LE-14-DC12 part no.} \\ \hline
+                Relay type & \hlr{Omron Electronics, G5CA series, part no. G5LE-14-DC12} \\ \hline
                 Contact arrangement & SPDT \\ \hline
                 Continous DC current & 10A \\ \hline
                 Voltage rating & \hlr{125VDC} \\ \hline
                 Cross-sectional area of wire used & 0.001275 in$^{2}$ (18 AWG) \\ \hline
                 \end{tabular}
-                \caption{General data of the pre-charge relay}
+                \caption{\hlr{General data of the pre-charge relay}}
                 \label{PCrelay}
             \end{table}
 
@@ -630,7 +627,7 @@ A Hall effect current sensor, wired before the current splits to the motor contr
 
             \begin{figure}[H]
                 \centering
-                \includegraphics{Discharge}
+                \includegraphics[width = 0.8 \textwidth]{Discharge}
                 \caption{Schematic of the discharge system}
                 \label{dischargeschem}
             \end{figure}
@@ -688,7 +685,7 @@ A Hall effect current sensor, wired before the current splits to the motor contr
             Average current & 0.1 A \\ \hline
             Cross-sectional area of the wire used & 0.001275 in$^{2}$ (18 AWG) \\ \hline
             \end{tabular}
-            \caption{General data of the discharge circuit}
+            \caption{\hlr{General data of the discharge circuit}}
             \label{dctable}
             \end{table}
 
@@ -698,7 +695,7 @@ A Hall effect current sensor, wired before the current splits to the motor contr
 
             The circuit board containing the discharge circuit \hlr{called the AIR control board} will be housed inside the accumulator, above and isolated from the battery cells.
 
-            \begin{figure}
+            \begin{figure}[H]
                 \centering
                 \includegraphics[width = 0.6 \textwidth]{Discharge_PCB}
                 \caption{\hlr{The discharge relay is pointed out in the red box, on the PCB containing most of the accumulator wiring (called AIR control board). The resistor will be located right next to the PCB, at the same height of the accumulator.} }
@@ -747,11 +744,11 @@ A Hall effect current sensor, wired before the current splits to the motor contr
 
         \subsubsection{Description}
 
-            The Ready to Drive sound includes a buzzer \href{http://www.mallory-sonalert.com/Specifications/SC648ANR.pdf}{\hlr{(Link: Mallory Sonalert Products Inc. SC648ANR)}}, a CAN node, and a relay. The buzzer automatically makes a noise when given power, with the loudness proportional to the voltage. The last step in the startup up sequence will notify the CAN system it is time for the ready to drive sound. Then the corresponding node on the buzzer will close a relay between TS+, after a 2.6 kOhm resistor (5 Watts), and the buzzer for two seconds. The resistor limits the voltage over the buzzer to 48V and the current to 20 mA. \hlr{The SC648ANR is rated to be 95 dB(A) at 2 ft.}
+            The Ready to Drive sound includes a buzzer \hlr{(Mallory Sonalert Products Inc. SC648ANR)}, a CAN node, and a relay. The buzzer automatically makes a noise when given power, with the loudness proportional to the voltage. The last step in the startup up sequence will notify the CAN system it is time for the ready to drive sound. Then the corresponding node on the buzzer will close a relay between TS+, after a 2.6 kOhm resistor (5 Watts), and the buzzer for two seconds. The resistor limits the voltage over the buzzer to 48V and the current to 20 mA. \hlr{The SC648ANR is rated to be 95 dB(A) at 2 ft.}
 
         \subsubsection{Wiring, Cables, Current Calculations, Connectors}
 
-            When the shutdown circuit closes and activates the AIRs \hlr{and the start button has been pushed (while the driver's foot is on the brake),} the car is in ready to drive mode. As soon as the car is in this mode, the CAN system will activate the ready to drive sound node to send a positive output that powers the relay for 2 seconds, thus letting the buzzer sound for 2 seconds. \hlr{This CAN node (called side panel)} is also connected to the IMD, and the full schematic can be found in figure \ref{IMD}. The resistor will be current-limiting and act in the place of a fuse.
+            When the shutdown circuit closes and activates the AIRs \hlr{and the start button has been pushed (while the driver's foot is on the brake),} the car is in ready to drive mode. As soon as the car is in this mode, the CAN system will activate the ready to drive sound node to send a positive output that powers the relay for 2 seconds, thus letting the buzzer sound for 2 seconds. \hlr{This CAN node (called side panel)} is also connected to the IMD, and the full schematic can be found in figure \ref{panelnode}. The resistor will be current-limiting and act in the place of a fuse.
 
                 \begin{figure}[H]
                     \centering
