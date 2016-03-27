@@ -982,7 +982,7 @@ A Hall effect current sensor, wired before the current splits to the motor contr
                 100-2 V &= I * 220 \ohm \\
                 I &= 45 mA
             \end{align}
-            %figure out a way to add higlight in an align 
+            %figure out a way to add higlight in an align
 
             \hlr{The accumulator indicator is located on the AIR control board PCB, and has traces of 20 mil, which are rated for 1.4A. }
 
@@ -1534,31 +1534,31 @@ A Hall effect current sensor, wired before the current splits to the motor contr
 
 \section{Additional LV-parts Interfering with the Tractive System}
 
-    \subsection{LV Part 1: DC-DC converter}
+    \subsection{LV Part 1: DC-DC converter and GLV battery}
 
         \subsubsection{Description}
 
-            \hlr{The GLV system will be powered via a DC/DC converter which will convert the 100V system to a 13.5V low voltage system. Before the DC-DC converter, there is a fuse for the GLV system as a whole, with a rating of 4A.}
+            \hlr{The GLV system will be powered via a DC/DC converter which will convert the 100V system to a 13.5V low voltage system. Because the DC-DC converter is located past the AIRs, a GLV battery (12V, 0.8Ah Lead acid) is in parallel with the DC-DC converter. Please see figure} \ref{glvfusing}\hlr{} for the fusing and electrical connections of the GLV battery and DC-DC converter.}
 
         \subsubsection{Wiring, Cables}
 
             \begin{figure}[H]
                 \centering
-                \includegraphics{CANnodepower}
-                \caption{DC-DC converter and its attachment to the GLV and then CAN node systems through a module}
-                \label{dc-dcglv}
+                \includegraphics{glvfusing}
+                \caption{\hlr{DC-DC converter and its attachment to TS, GLV system and GLV battery}}
+                \label{glvfusing}
             \end{figure}
 
             %need wire gauges
-            \hlr{Its output will be fused to 4A, and then used for the GLV system as 13.5V. After the two emergency shutdown buttons, the system is fused in parallel with two 2A fuses (the system voltage will be fused to 2A and the shutdown system will be fused to 2A). The GLV system voltage will be split in parallel again and then regulated to 5V for the sake of the CAN ATmega. All of these wires, past the DC-DC converter, will be 20 AWG.}
+            \hlr{Its output will be fused to 4A, and then used for the GLV system as 13.5V. After the two emergency shutdown buttons, the system is fused in parallel with two 2A fuses (the system voltage will be fused to 2A and the shutdown system will be fused to 2A). The GLV system voltage will be split in parallel again and then regulated to 5V for the sake of the CAN ATmega. All of these wires, past the DC-DC converter, will be 20 AWG. The wire going to the DC-DC from the accumulator is tractive system voltage and fused to 1A.}
 
         \subsubsection{Position in Car}
 
-            The DC-DC converter will be located within the accumulator, so the output leads will go out of the accumulator. Figure \ref{dcdc_cad} shows the CAD model of the DC-DC converter, \hlr{which will be located in the side panel housing described in figure} \ref{cpanel1}.
+            Figure \ref{dcdc_cad} shows the CAD model of the DC-DC converter, \hlr{which will be located in the side panel housing described in figure} \ref{cpanel1} along with the glv battery.
 
             \begin{figure}[H]
                 \centering
-                \includegraphics[width = 0.6 \textwidth]{GLV_DCDC}
+                \includegraphics[width = 0.4 \textwidth]{GLV_DCDC}
                 \caption{CAD model of the DC-DC converter for the GLV system}
                 \label{dcdc_cad}
             \end{figure}
