@@ -1670,18 +1670,49 @@ A Hall effect current sensor, wired before the current splits to the motor contr
 
         \subsubsection{Description}
 
-
+        \hlr{The motor controller controller (MCC) node is a CAN node that listens to the CAN system for throttle information and if the start button has been pressed and the vehicle is in a ready state, the node will pass on the information to the motor controllers via an isolated analog signal out. }
 
         \subsubsection{Wiring, Cables}
+
+        \begin{sidewaysfigure}[p]
+            \includegraphics[width=\textheight]{mccschem}
+            \caption{\hlr{Schematic for the motor controller controller node}}
+            \label{mccschem}
+        \end{sidewaysfigure}
 
         \begin{figure}[H]
         \centering
         \includegraphics[width = 0.8 \textwidth]{mccPCB}
         \caption{\hlr{PCB for the motor controller controller node. The separation is located around the cyan line, and the minimum distance is $6.73 mm$ in.}}
-        \label{panelPCB}
+        \label{mccPCB}
         \end{figure}
 
         \subsubsection{Position in Car}
+
+        \hlr{The motor controller controller does not yet have a designated housing, but it will be located near the motor controllers in order to minimize the length of wiring.}
+
+        \subsection{LV Part 5: Bulkhead Node}
+
+            \subsubsection{Description}
+
+            \hlr{The bulkhead CAN node is located in the very front of the vehicle in order to collect throttle and brake information. }
+
+            \subsubsection{Wiring, Cables}
+
+            \begin{sidewaysfigure}[p]
+                \includegraphics[width=\textheight]{throttleschem}
+                \caption{\hlr{Schematic for the bulkhead node}}
+                \label{throttleschem}
+            \end{sidewaysfigure}
+
+            \begin{figure}[H]
+            \centering
+            \includegraphics[width = 0.8 \textwidth]{throttlePCB}
+            \caption{\hlr{PCB for the bulkhead node. There is only low voltage circuitry on this PCB.}}
+            \label{throttlePCB}
+            \end{figure}
+
+            \subsubsection{Position in Car}
 
 \newpage
 
