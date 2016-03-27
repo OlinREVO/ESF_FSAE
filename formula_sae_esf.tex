@@ -632,7 +632,7 @@ A Hall effect current sensor, wired before the current splits to the motor contr
 
             \begin{figure}[H]
                 \centering
-                \includegraphics{discharge}
+                \includegraphics{discharge-2}
                 \caption{Schematic of the discharge system}
                 \label{dischargeschem}
             \end{figure}
@@ -867,7 +867,7 @@ A Hall effect current sensor, wired before the current splits to the motor contr
             \label{canopener}
             \end{figure}
 
-            Busbars connect the modules in series, as shown in Figure \ref{busbar}. The busbars connecting module to module are copper with a cross-section of 60.5 mm$^2$, which exceeds the required wire gauge for tractive system lines (2 gauge). \hlr{The blue squares seen in figure} \ref{busbar} \hlr{are the cell top boards.}
+            Busbars connect the modules in series, as shown in Figure \ref{busbar}. The busbars connecting module to module are copper with a cross-section of $60.5 mm^2$, which exceeds the required wire gauge for tractive system lines (2 gauge). \hlr{The blue squares seen in figure} \ref{busbar} \hlr{are the cell top boards.}
 
             \begin{figure}[H]
                 \centering
@@ -946,7 +946,7 @@ A Hall effect current sensor, wired before the current splits to the motor contr
             \begin{figure}[H]
                 \centering
                 \includegraphics[width = 0.4 \textwidth]{CellTopLH}
-                \caption{\hlr{Cell Breakout Board PCB Layout for the left hand side Note the fuses labeled with "F" and then a number. There is only TS voltage on this PCB.}} %The terminals left unconnected will be connecting to the other module stacks, with a fuse in the middle from the segment separator connectors.}
+                \caption{\hlr{Cell Breakout Board PCB Layout for the left hand side Note the fuses labeled with "F" and then a number. There is only TS voltage on this PCB.}}
                 \label{celltopLH}
             \end{figure}
 
@@ -972,7 +972,7 @@ A Hall effect current sensor, wired before the current splits to the motor contr
             \begin{figure}[H]
             \centering
             \includegraphics[width = 0.3 \textwidth]{ai}
-            \caption{Detail of the Accumulator Indicator PCB}
+            \caption{\hlr{Detail of the Accumulator Indicator PCB}}
             \label{indicator}
             \end{figure}
 
@@ -1012,7 +1012,6 @@ A Hall effect current sensor, wired before the current splits to the motor contr
             % Describe your maintenance plugs, provide pictures
             We will use OEM maintenance plugs provided by General Motors. As shown in Figure \ref{msd03}, these maintenance plugs, known internally as Manual Service Disconnects (MSD's), comprise a panel-mounted plastic housing (black) and a plastic plug (orange). The plug must be twisted and then pulled in two distinct steps, which disengages the copper bus-bar, contained in the orange plug, from spring-loaded contacts contained in the black housing. \hlr{There will not be any fuses in the MSDs.} General Motors will also be crimping custom length leads onto these MSD's for our vehicle. The leads are 40 mm$^2$ in cross-section, not including insulation. Each MSD also contains a two-pin interlock, as described in Section \ref{interlocks}. To the best of our knowledge, these MSD's comply with EV 3.3.3. Additionally, the spring-loaded contacts located in the black housing are encapsulated in plastic, providing protection from shorting and accidental contact.
 
-
             \begin{figure}[H]
                 \centering
                 \includegraphics[width = 0.5 \textwidth]{msd_highres}
@@ -1030,7 +1029,7 @@ A Hall effect current sensor, wired before the current splits to the motor contr
             \begin{figure}[H]
                 \centering
                 \includegraphics[width = 0.5 \textwidth]{TRACTIVE_DIAGRAM_3}
-                \caption{Diagram for the accumulator tractive system wiring top view }
+                \caption{\hlr{Diagram for the accumulator tractive system wiring top view }}
                 \label{tswiring_top}
             \end{figure}
 
@@ -1065,6 +1064,8 @@ A Hall effect current sensor, wired before the current splits to the motor contr
             \caption{Load Switching detail from Accumulator Indicator Relay datasheet}
             \label{airswitch}
             \end{figure}
+
+            \hlr{The AIRs and main fuse are in a separate compartment of the accumulator separated by two layers of insulating G10/FR4 fiberglass and a single layer of 0.035” 301 stainless steel, as shown in} \ref{accumlocations}.
 
         \subsubsection{Fusing} \label{fusing}
 
@@ -1126,7 +1127,7 @@ A Hall effect current sensor, wired before the current splits to the motor contr
             I2T rating & 0.011 at 150 VDC and 10ms \\ \hline
             \begin{tabular}[c]{@{}l@{}}Interrupt Current (max.,current\\ at which the fuse can interrupt\\ the circuit)\end{tabular} & 100kA \\ \hline
             \end{tabular}
-            \caption{Fuse to the keyswitch v+}
+            \caption{Fuse to the precharge keyswitch v+}
             \label{keyswitchfusetable}
             \end{table}
 
@@ -1167,7 +1168,7 @@ A Hall effect current sensor, wired before the current splits to the motor contr
 
             %Create a table with components and wires protected by the fuse(s) and the according continuous current rating, below is an example table with some potential entries.  Complete this table with information for your design and add/remove additional locations as applicable.  Ensure that the rating of all of the components is greater than the rating of the fuse such that none of the other components become the fuse.
             \hlr{The TS fuse mounting can be seen in figure} \ref{accumiso}.
-            All wire ampacity ratings are according to the Power Stream's Wire Gauge chart, located in the appendix, Figure \ref{AWGchart}.
+            All wire ampacity ratings are according to the Power Stream's Wire Gauge chart, located in the appendix, figure \ref{AWGchart}.
 
             \begin{table}[H]
             \centering
@@ -1230,9 +1231,11 @@ A Hall effect current sensor, wired before the current splits to the motor contr
 
             %how cells are mounted, data on materials used, and concept of the container
 
-            The accumulator mechanical configuration presented in this document was designed under the assumption that the Nissan module casings were not electrically isolated from the cells. However, after tearing down a module, we found that the casing is completely insulated from the cells and therefore, the design of the accumulator is likely to change.\\
+            \hlr{The accumulator is comprised of flanged 403 stainless steel sheet metal panels, meeting the material and fastener requirements set by Formula SAE Electric rule EV 3.4.6. This rule specifies that the minimum sheet thickness for the floor is 0.049” steel and 0.035” steel for vertical and internal walls. The panels are fastened together using a minimum of three 1/4” SAE Grade 5 at any joint, except at the intersection of internal walls. These intersections will be spot welded with weld area equivalent to a linear weld along the same length of joint. We will also be conducting a pull-test of test parts to ensure our spot welding settings are correct for full penetration. We have received a rules clarification #4795 stating that spot welding is regulation-compliant. The Nissan modules are additionally isolated by an additional layer of G10/FR4 Garolite, a fiberglass-cloth with a flame-retardant resin. G10/FR4 meets MIL-I-24768/27 and UL94-V0 for flame retardance (Mcmaster-Carr P/N 8667K55). These barriers do not create electrical insulation, which is performed internal to each module. We have insulation ratings between the Nissan module case and the cell terminals, but this information is under NDA.}
 
-            As shown in Figure \ref{accframe}, the accumulator frame comprises a 1/8" thick welded angle iron frame with panels meeting the minimum material requirement given in EV 3.4.6. Figure \ref{cellexp} shows an exploded view of a half-pack: six cells bolted into 3/4" polycarbonate brackets with 5/16" bolts. Two half-packs slide into the accumulator frame and are bolted into the frame with 5/16" SAE Grade 8 threaded rod and locknuts. Figure \ref{cellcut} shows a cutaway of the bolt stackup for the two half-packs. 4130 steel sleeves limit the compression of the threaded rods bolting the entire pack together. Finite element analysis allowed us to prove structural integrity in 20G vertical and 40G lateral load conditions.
+            \hlr{In this design the Nissan/AESC battery modules are laid flat relative to the car, and broken up into segments containing less than 6MJ of total stored energy. The accumulator has two covers, both lined with FR4 insulating material. The cover revealing the battery modules also serves as a structural vertical wall, and great care was taken in the design to ensure compliance with EV 3.4.6.}
+
+            \hlr{The accumulator is mounted to the chassis using 10 SAE Grade 5 5/16” bolts through welded, gusseted tabs.}
 
             % \begin{figure}[H]
             %     \centering
