@@ -907,7 +907,23 @@ A Hall effect current sensor, wired before the current splits to the motor contr
 
            \hlr{There are 4 AMS modules, and each AMS monitors 6 groups of cells in series}. Each module contains 4 cells, 2 series x 2 parallel, so each AMS monitors 3 modules, or 12 cells (6 series x 2 parallel). There are 4 AMS boards. Each AMS board is coupled to a cell breakout board, which includes 3 thermistors and bolts to the power terminals of three modules, as shown in Figure \ref{busbar} (blue circuit boards). The purpose of the cell breakout boards is to help manage wiring inside the accumulator. The cell breakout boards will have compression limiting copper pads at the terminal bolts and will be spaced above the bus bars using copper washers.\\
 
-            The AMS shunts 3 A when the cell gets above \hlr{4.15 V}. The AMS opens a relay in line with the shutdown circuit if any cell drops below 2.5 V \hlr{or above 4.15V}. The AMS opens a relay in line with the shutdown circuit if any cell gets above 60 \degree C.\\
+            The AMS shunts 3 A when the cell gets above \hlr{4.15 V}. The AMS opens a relay in line with the shutdown circuit if any cell drops below 2.5 V \hlr{or above 4.15V}. The AMS opens a relay in line with the shutdown circuit if any cell gets above 60 \degree C. \\
+
+            \hlr{Figure}\ref{fig:voltageCellvsTemp} \hlr{shows the voltage that will be read by the BMS at different temperature readings. The BMS has an ADC with 10 bit resolution meaning that voltage differences of less than 0.005V can be detected. As seen in Figure} \ref{fig:voltageCellvsTempZOOM} \hlr{the worst case scenario for over-temperature sensing is when the temperature is at 62 \degree C. For this reason we will choose to be safe and raise an error when the temperature is at 58 \degree C which has a worse case reading of 60 \degree C.}
+
+            \begin{figure}[H]
+            \centering
+            \includegraphics[width =\textwidth]{VoltageVSTemp.png}
+                \caption{\hlr{Voltage measured at BMS vs. temperature the cell is at.}}
+            \label{fig:voltageCellvsTemp}
+            \end{figure}
+
+            \begin{figure}[H]
+            \centering
+            \includegraphics[width =\textwidth]{VoltageVSTempZOOM.png}
+                \caption{\hlr{Voltage measured at BMS vs. temperature the cell is at. This just shows the voltage difference at different temperatures around 60 \degree C}}
+            \label{fig:voltageCellvsTempZOOM}
+            \end{figure}
 
             \hlr{CAN communication from the board is isolated via a TI ISO1050DUBR (isolated CAN transceiver)}. Only CAN communication is used to have the information from each AMS relayed to the rest of the system, and the boards are otherwise independent of each other. \hlr{Each board has an electrical connection with a normally-open relay on the AIR control board (ie. there are four AMS relays), and the ATmega16M1 of each CAN node can open its relay.} On each cell-top board, there are 7 surface mount Bel C1Q 3A fuses. (Lowest voltage reference and top voltage of each of 6 cells.) The relays which allow the AMS to control the shutdown circuit provide isolation between the AMS and the GLV system, as well as the isolated CAN transceivers. \hlr{Please see Figure} \ref{amsschem} \hlr{for the schematic of one of the battery management system boards.}\\
 
