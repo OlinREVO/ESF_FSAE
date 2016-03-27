@@ -341,7 +341,9 @@
 
         \subsubsection{Description/Additional Circuitry}
 
-The BSPD will constantly check if there is a substantial amount of current across the motor controllers and if the brakes are being pressed hard. If both are true, after 0.5 second of continuity, the relay will open the switch in the shutdown circuit. The circuitry consists of an AND gate with two hall effect sensors and the brake sensor as inputs and a 555 timer to check if the states of both the brakes and the motor controllers are continuous. Two hall effect sensors had to be used, as not once outside of the accumulator does the TS wiring all go through one wire, \hlr{so the hall effect inputs are being summed to 50A. }
+The BSPD will constantly check if there is a substantial amount of current across the motor controllers and if the brakes are being pressed hard. If both are true, after 0.5 second of continuity, the relay will open the switch in the shutdown circuit. \hlr{ The circuitry consists of a series of OpAmps and logic gates which detect when the combined current going to both motors is greater than 50A and the brake sensor is being activated. The output of this result then powers a 555 timer which will output a high pulse to the reset pin of a SR-latch which allows for the circuit to be latching. The driver is able to reset the BSPD through the CAN bus.}
+
+\hlr{There are two Hall Effect current sensors monitoring the current draw of the two individual motor controllers. The measured current draw of both sensors is then summed in order to get the total current.}
 
 
             \begin{table}[H]
@@ -368,7 +370,9 @@ The BSPD will constantly check if there is a substantial amount of current acros
                 \label{BSPDschem}
             \end{figure}
 
-Two hall effect current sensors, each wired around the power lines of the motor controllers, will send a proportional signal to a comparator. If the (summed) current is above 50 Amps, the output will be positive, and a positive signal will be sent to the AND gate. If the brakes are actuated, a positive signal will come from the brake pressure switch, causing the AND gate to return positive. These signals will go to two 555 timers, causing a time delay of .5 seconds. If the signal is maintained over this time period, \hlr{the normally open relay will be opened}, shutting down the current to the AIRs.
+Two hall effect current sensors, each wired around the power lines of the motor controllers, will send a proportional signal to a comparator. If the (summed) current is above 50 Amps, the output will be positive, and a positive signal will be sent to the AND gate. If the brakes are actuated, a positive signal will come from the brake pressure switch, causing the AND gate to return positive. \hlr{This output powers a 555 timer, which if it remains powered for 0.5 seconds will send out a high pulse to the reset pin of an RS-latch}. \hlr{The normally open relay will be opened because of the reset state of the RS-latch}, shutting down the current to the AIRs. \hlr{The BSPD can be reset through CAN which will send a high pulse to the set pin of the RS-latch}.
+
+
 
             %INcluding the circuit board? Show data regarding the cables and connectors used, and how this opens the shutdown circuit
 
