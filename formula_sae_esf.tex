@@ -1569,20 +1569,18 @@ A Hall effect current sensor, wired before the current splits to the motor contr
 
             The Dashboard node will have a variety of tasks. It will act as the Control Panel interface (for displaying information to the driver and receiving data from the driver), Emergency Button sensor, \hlr{AMS light, IMD light and start button}.\\
 
-            The control panel interface is used for debugging. \hlr{The CAN system has nodes all over circuits in the car.} If the CAN system is still live (when an E-stop hasn't been pushed and the GLV master switch is on), then this CAN node will alert the driver.\\
-
-            The node is connected to a linear potentiometer on the steering rack. The potentiometer's value corresponds to the steering angle, so the CAN node can transmit the information on all of the turns. This node is used for driver training, practice, and team information in later years. If time permits, this data can be used to help in the development of \hlr{torque vectoring.}\\
+            The control panel interface is used for debugging\hlr{and driver driver control of vehicle. The CAN system has nodes all over circuits in the car.} If the CAN system is still live (when an E-stop hasn't been pushed and the GLV master switch is on), then this CAN node will alert the driver \hlr{if there is an error and what it is}.\\
 
         \subsubsection{Wiring, cables}
 
-            \begin{figure}[H]
-                \centering
-                \includegraphics[width = 0.8 \textwidth]{CANdashboard}
-                \caption{Dashboard node schematic}
-                \label{dashschem}
-            \end{figure}
+            %\begin{figure}[H]
+            %    \centering
+            %    \includegraphics[width = 0.8 \textwidth]{CANdashboard}
+            %    \caption{Dashboard node schematic}
+            %    \label{dashschem}
+            %\end{figure}
 
-            The dashboard node is wired to have the \hlr{E-stops as input} and the control panel interface (the LED) as an output. It listens to all CAN messages around the car. The interfacing LED will notify the driver of anything deemed important, such as the AMS detecting the temperature of the accumulator cells was getting too high. Therefore, the dashboard's interfacing light will mostly be telling the driver why the shutdown system shut down through a series of flashes. Only if one of the E-stops are pressed will the CAN system shut down and therefore the interfacing light will not tell the driver what has happened to the shutdown circuit.
+            \hlr{The dashboard PCB includes a CAN node (ATmega16M1), start button, IMD light, AMS light, BSPD reset button, inertia switch, a linear potentiometer,LCD screen and the cockpit e-stop. The LCD screen is there for the driver to read the cause of vehicle shutdown in the event that a sensor with an input to the CAN system fails. The other controls are for the driver to be able to reset the vehicle and note any emergency situations. This PCB is still in progress, but it will include only low voltage circuitry.}
 
         \subsubsection{Position in Car}
 
@@ -1599,24 +1597,30 @@ A Hall effect current sensor, wired before the current splits to the motor contr
 
         \subsubsection{Description}
 
-            The node located next to the IMD and ready to drive sound monitors the IMD's output and will activate the ready to drive sound when the car is in ready mode. It will receive input from behind each of the two side e-stops, so if one is pushed, the CAN system knows and can tell the driver the reason for shutdown circuit shutdown. It will also be connected to the rest of the CAN system around the car and listen to CAN messages for anomalies. If the Watchdog node receives a CAN error message that indicates danger to the driver or the vehicle it will open the watchdog switch in the shutdown circuit. This will be useful for maintaining the health of the motor controllers.
+            The node located next to the IMD and ready to drive sound monitors the IMD's output and will activate the ready to drive sound when the car is in ready mode. It will also be connected to the rest of the CAN system around the car and listen to CAN messages for anomalies through its watchdog functionality. \hlr{If the watchdog node receives a CAN error message or doesn't receive a "heartbeat" from other CAN nodes, it will open the watchdog switch in the shutdown circuit}. This will be useful for maintaining the health of the motor controllers \hlr{and debugging software while on the vehicle. }
 
         \subsubsection{Wiring, Cables}
 
-            \begin{figure}[H]
-            \centering
-            \includegraphics[width = 0.8 \textwidth]{IMDandCANschem}
-            \caption{Schematic for the node on the ready to drive sound, watchdog, and side e-stops and IMD}
-            \label{panelnode}
-            \end{figure}
+            \begin{sidewaysfigure}[p]
+                \includegraphics[width=\textheight]{Panel-Board}
+                \caption{\hlr{Schematic for the side panel node, including TS wiring for TSMPs, IMD, and R2D sound}}
+                \label{panelnode}
+            \end{sidewaysfigure}
 
-            As shown in Figure \ref{panelnode}, both the IMD and the ready to drive sound relay are wired to the CAN node located in the \hlr{side panel housing}.\\
+            \hlr{Please see figure \ref{panelnode} for the PCB schematic (which includes TS wiring for the TSMPs, IMD and R2D sound)}.
 
             The CAN node is wired to the \hlr{third} pole of the IMD relay, \hlr{and the node will always read low until the pole is no longer pulled because the IMD's output is low and the IMD has found a ground fault. \hlr{There is a pull up resistor and the pole, in its disconnected state the can input will read 5V instead.}\\
 
             As an output, the CAN node is also wired to a relay's coil controlling a switch in the tractive system parallel to the motors. When the CAN system knows it's in ready to drive mode, it'll send the message to send 5V to this coil, therefore closing the switch that will give the ready to drive sound buzzer power to make noise.\\
 
             Also an output of the CAN node is the watchdog relay that controls a switch in the shutdown circuit. As watchdog of the CAN system, if a CAN node goes silent and suddenly stops messaging the rest of the system, this node will take notice and stop sending 5V to this coil, making it open the shutdown circuit. This will protect the motor controllers and offer redundancy for the rest of the shutdown circuit.
+
+            \begin{figure}[H]
+            \centering
+            \includegraphics[width = 0.8 \textwidth]{panelPCB}
+            \caption{\hlr{PCB for the side panel node. The separation is located around the cyan line, and the minimum distance is $1/4$ in.}}
+            \label{panelPCB}
+            \end{figure}
 
         \subsubsection{Position in Car}
 
