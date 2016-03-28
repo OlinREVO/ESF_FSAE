@@ -1538,7 +1538,7 @@ A Hall effect current sensor, wired before the current splits to the motor contr
 
         \subsubsection{Description}
 
-            \hlr{The GLV system will be powered via a DC/DC converter which will convert the 100V system to a 13.5V low voltage system. Because the DC-DC converter is located past the AIRs, a GLV battery (12V, 0.8Ah Lead acid) is in parallel with the DC-DC converter. Please see figure} \ref{glvfusing}\hlr{} for the fusing and electrical connections of the GLV battery and DC-DC converter.}
+            \hlr{The GLV system will be powered via a DC/DC converter which will convert the 100V system to a 13.5V low voltage system. Because the DC-DC converter is located past the AIRs, a GLV battery (12V, 0.8Ah Lead acid) is in parallel with the DC-DC converter. Please see figure} \ref{glvfusing}\hlr{ for the fusing and electrical connections of the GLV battery and DC-DC converter.}
 
         \subsubsection{Wiring, Cables}
 
@@ -1607,9 +1607,9 @@ A Hall effect current sensor, wired before the current splits to the motor contr
                 \label{panelnode}
             \end{sidewaysfigure}
 
-            \hlr{Please see figure \ref{panelnode} for the PCB schematic (which includes TS wiring for the TSMPs, IMD and R2D sound)}.
+            \hlr{Please see figure} \ref{panelnode} \hlr{for the PCB schematic (which includes TS wiring for the TSMPs, IMD and R2D sound)}.
 
-            The CAN node is wired to the \hlr{third} pole of the IMD relay, \hlr{and the node will always read low until the pole is no longer pulled because the IMD's output is low and the IMD has found a ground fault. \hlr{There is a pull up resistor and the pole, in its disconnected state the can input will read 5V instead.}\\
+            The CAN node is wired to the \hlr{third} pole of the IMD relay, \hlr{and the node will always read low until the pole is no longer pulled because the IMD's output is low and the IMD has found a ground fault. There is a pull up resistor and the pole, in its disconnected state the can input will read 5V instead.}\\
 
             As an output, the CAN node is also wired to a relay's coil controlling a switch in the tractive system parallel to the motors. When the CAN system knows it's in ready to drive mode, it'll send the message to send 5V to this coil, therefore closing the switch that will give the ready to drive sound buzzer power to make noise.\\
 
@@ -1638,7 +1638,7 @@ A Hall effect current sensor, wired before the current splits to the motor contr
         \centering
         \includegraphics[width = 0.8 \textwidth]{mccPCB}
         \caption{\hlr{PCB for the motor controller controller node. The separation is located around the cyan line, and the minimum distance is $6.73 mm$ in.}}
-        \label{panelPCB}
+        \label{mccPCB}
         \end{figure}
 
         \subsubsection{Position in Car}
