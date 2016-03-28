@@ -1575,31 +1575,67 @@ Two hall effect current sensors, each wired around the power lines of the motor 
 
 \section{Additional LV-parts Interfering with the Tractive System}
 
-    \subsection{LV Part 1: DC-DC converter}
+    \subsection{LV Part 1: DC-DC converter and GLV battery}
 
         \subsubsection{Description}
 
-            \hlr{The GLV system will be powered via a DC/DC converter which will convert the 100V system to a 13.5V low voltage system. Before the DC-DC converter, there is a fuse for the GLV system as a whole, with a rating of 4A.}
+            \hlr{The GLV system will be powered via a DC/DC converter which will convert the 100V system to a 13.5V low voltage system. Because the DC-DC converter is located past the AIRs, a GLV battery (12V, 0.8Ah Lead acid) is in parallel with the DC-DC converter. Please see figure} \ref{glvfusing}\hlr{for the fusing and electrical connections of the GLV battery and DC-DC converter.}
 
         \subsubsection{Wiring, Cables}
 
             \begin{figure}[H]
                 \centering
-                \includegraphics{CANnodepower}
-                \caption{DC-DC converter and its attachment to the GLV and then CAN node systems through a module}
-                \label{dc-dcglv}
+                \includegraphics{glvfusing}
+                \caption{\hlr{DC-DC converter and its attachment to TS, GLV system and GLV battery}}
+                \label{glvfusing}
             \end{figure}
 
             %need wire gauges
-            \hlr{Its output will be fused to 4A, and then used for the GLV system as 13.5V. After the two emergency shutdown buttons, the system is fused in parallel with two 2A fuses (the system voltage will be fused to 2A and the shutdown system will be fused to 2A). The GLV system voltage will be split in parallel again and then regulated to 5V for the sake of the CAN ATmega. All of these wires, past the DC-DC converter, will be 20 AWG.}
+            \hlr{Its output will be fused to 5A, and then used for the GLV system as 13.5V. After the two emergency shutdown buttons, the system is fused in parallel with two 2A fuses (the system voltage will be fused to 2A and the shutdown system will be fused to 2A). The GLV system voltage will be split in parallel again and then regulated to 5V for the sake of the CAN ATmega. All of these wires, past the DC-DC converter, will be 20 AWG. The wire going to the DC-DC from the accumulator is tractive system voltage and fused to 1A.}
+
+            \hlr{The fuses used for the GLV system is described in the tables below.}
+
+        \begin{table}[H]
+            \centering
+            \begin{tabular}{|l|l|}
+            \hline
+            Fuse manufacturer and type: & \hlr{Littledfuse, MINI Series (MIN2BP)} \\ \hline
+            Continuous current rating & 5A \\ \hline
+            Maximum operating voltage & \hlr{32V} \\ \hline
+            Type of fuse & Fast acting \\ \hline
+            I2t rating & \hlr{2.8 A2s} \\ \hline
+            \begin{tabular}[c]{@{}l@{}}
+            Interrupt Current (max. current\\ at which the fuse can interrupt\\ the circuit)
+                \end{tabular} & \hlr{$1000$A at $32$ VDC}\\ \hline
+            \end{tabular}
+            \caption{\hlr{GLV battery and GLV DC-DC fuses, MIN type}}
+            \label{glvfusetable}
+        \end{table}
+
+    \begin{table}[H]
+        \centering
+        \begin{tabular}{|l|l|}
+            \hline
+            Fuse manufacturer and type: & \hlr{Littledfuse, MINI Series (MIN2BP)} \\ \hline
+            Continuous current rating & \hlr{2}A \\ \hline
+            Maximum operating voltage & \hlr{32} V \\ \hline
+            Type of fuse & Fast acting \\ \hline
+            I2t rating & \hlr{2.8 A2s} \\ \hline
+            \begin{tabular}[c]{@{}l@{}}
+                Interrupt Current (max. current\\ at which the fuse can interrupt\\ the circuit)
+            \end{tabular} & \hlr{$1000$A at $32$ VDC}\\ \hline
+        \end{tabular}
+        \caption{\hlr{GLV 12V and Shutdown circuit fuses, MIN type}}
+        \label{glv12vfusetable}
+    \end{table}
 
         \subsubsection{Position in Car}
 
-            The DC-DC converter will be located within the accumulator, so the output leads will go out of the accumulator. Figure \ref{dcdc_cad} shows the CAD model of the DC-DC converter, \hlr{which will be located in the side panel housing described in figure} \ref{cpanel1}.
+            Figure \ref{dcdc_cad} shows the CAD model of the DC-DC converter, \hlr{which will be located in the side panel housing described in figure} \ref{cpanel2} along with the glv battery.
 
             \begin{figure}[H]
                 \centering
-                \includegraphics[width = 0.5 \textwidth]{GLV_DCDC}
+                \includegraphics[width = 0.4 \textwidth]{GLV_DCDC}
                 \caption{CAD model of the DC-DC converter for the GLV system}
                 \label{dcdc_cad}
             \end{figure}
@@ -1610,20 +1646,34 @@ Two hall effect current sensors, each wired around the power lines of the motor 
 
             The Dashboard node will have a variety of tasks. It will act as the Control Panel interface (for displaying information to the driver and receiving data from the driver), Emergency Button sensor, \hlr{AMS light, IMD light and start button}.\\
 
-            The control panel interface is used for debugging. \hlr{The CAN system has nodes all over circuits in the car.} If the CAN system is still live (when an E-stop hasn't been pushed and the GLV master switch is on), then this CAN node will alert the driver.\\
-
-            The node is connected to a linear potentiometer on the steering rack. The potentiometer's value corresponds to the steering angle, so the CAN node can transmit the information on all of the turns. This node is used for driver training, practice, and team information in later years. If time permits, this data can be used to help in the development of \hlr{torque vectoring.}\\
+            The control panel interface is used for debugging\hlr{and driver driver control of vehicle. The CAN system has nodes all over circuits in the car.} If the CAN system is still live (when an E-stop hasn't been pushed and the GLV master switch is on), then this CAN node will alert the driver \hlr{if there is an error and what it is}.\\
 
         \subsubsection{Wiring, cables}
 
-            \begin{figure}[H]
-                \centering
-                \includegraphics[width = 0.8 \textwidth]{CANdashboard}
-                \caption{Dashboard node schematic}
-                \label{dashschem}
-            \end{figure}
+            %\begin{figure}[H]
+            %    \centering
+            %    \includegraphics[width = 0.8 \textwidth]{CANdashboard}
+            %    \caption{Dashboard node schematic}
+            %    \label{dashschem}
+            %\end{figure}
 
-            The dashboard node is wired to have the \hlr{E-stops as input} and the control panel interface (the LED) as an output. It listens to all CAN messages around the car. The interfacing LED will notify the driver of anything deemed important, such as the AMS detecting the temperature of the accumulator cells was getting too high. Therefore, the dashboard's interfacing light will mostly be telling the driver why the shutdown system shut down through a series of flashes. Only if one of the E-stops are pressed will the CAN system shut down and therefore the interfacing light will not tell the driver what has happened to the shutdown circuit.
+            \hlr{The dashboard PCB includes a CAN node (ATmega16M1), start button, IMD light, AMS light, BSPD reset button, inertia switch, a linear potentiometer,LCD screen and the cockpit e-stop. The LCD screen is there for the driver to read the cause of vehicle shutdown in the event that a sensor with an input to the CAN system fails. The other controls are for the driver to be able to reset the vehicle and note any emergency situations. This PCB is still in progress, but it will include only low voltage circuitry.}
+
+            \hlr{The board will have a 1A resettable fuse on the 12V supply line. It is described in the table below.}
+
+            \begin{table}[H]
+                \centering
+                \begin{tabular}{|l|l|}
+                    \hline
+                    Fuse manufacturer and type: & bel Fuses, PTC resettable 0ZCK Series\\ \hline
+                    Continuous current rating & 1A \\ \hline
+                    Maximum operating voltage & 15V \\ \hline
+                    Type of fuse & Fast trip time, Resettable \\ \hline
+                    I2t rating & None listed, see figure \ref{glv1Afusemeltingtime} \\ \hline
+                    \end{tabular}
+                \caption{\hlr{Fuse on 5V line to PCB.}}
+                \label{5V1Afuse}
+            \end{table}
 
         \subsubsection{Position in Car}
 
@@ -1640,34 +1690,110 @@ Two hall effect current sensors, each wired around the power lines of the motor 
 
         \subsubsection{Description}
 
-            The node located next to the IMD and ready to drive sound monitors the IMD's output and will activate the ready to drive sound when the car is in ready mode. It will receive input from behind each of the two side e-stops, so if one is pushed, the CAN system knows and can tell the driver the reason for shutdown circuit shutdown. It will also be connected to the rest of the CAN system around the car and listen to CAN messages for anomalies. If the Watchdog node receives a CAN error message that indicates danger to the driver or the vehicle it will open the watchdog switch in the shutdown circuit. This will be useful for maintaining the health of the motor controllers.
+            The node located next to the IMD and ready to drive sound monitors the IMD's output and will activate the ready to drive sound when the car is in ready mode. It will also be connected to the rest of the CAN system around the car and listen to CAN messages for anomalies through its watchdog functionality. \hlr{If the watchdog node receives a CAN error message or doesn't receive a "heartbeat" from other CAN nodes, it will open the watchdog switch in the shutdown circuit}. This will be useful for maintaining the health of the motor controllers \hlr{and debugging software while on the vehicle. }
 
         \subsubsection{Wiring, Cables}
 
-            % \begin{figure}[H]
-            % \centering
-            % \includegraphics[width = 0.8 \textwidth]{IMDandCANschem}
-            % \caption{Schematic for the node on the ready to drive sound, watchdog, and side e-stops and IMD}
-            % \label{panelnode}
-            % \end{figure}
-
             \begin{sidewaysfigure}[p]
-            \includegraphics[width=\textheight]{Panel-Board}
-            \caption{\hlr{Side Panel node wiring. The PCB's schematic, shown here, includes TS wiring going to the TSMPs, IMD and R2D sound.}}
-            \label{panelnode}
+                \includegraphics[height= 0.7 \textheight]{Panel-Board}
+                \caption{\hlr{Schematic for the side panel node, including TS wiring for TSMPs, IMD, and R2D sound}}
+                \label{panelnode}
             \end{sidewaysfigure}
 
-            As shown in Figure \ref{panelnode}, both the IMD and the ready to drive sound relay are wired to the CAN node located in the \hlr{side panel housing}.\\
+            \hlr{Please see figure} \ref{panelnode} \hlr{for the PCB schematic (which includes TS wiring for the TSMPs, IMD and R2D sound)}.
 
-            The CAN node is wired to the \hlr{third} pole of the IMD relay, \hlr{and the node will always read low }until the pole is no longer pulled because the IMD's output is low and the IMD has found a ground fault. \hlr{There is a pull up resistor and the pole, in its disconnected state the can input will read 5V instead.}\\
+            The CAN node is wired to the \hlr{third} pole of the IMD relay, \hlr{and the node will always read low until the pole is no longer pulled because the IMD's output is low and the IMD has found a ground fault. There is a pull up resistor and the pole, in its disconnected state the can input will read 5V instead.}\\
 
             As an output, the CAN node is also wired to a relay's coil controlling a switch in the tractive system parallel to the motors. When the CAN system knows it's in ready to drive mode, it'll send the message to send 5V to this coil, therefore closing the switch that will give the ready to drive sound buzzer power to make noise.\\
 
             Also an output of the CAN node is the watchdog relay that controls a switch in the shutdown circuit. As watchdog of the CAN system, if a CAN node goes silent and suddenly stops messaging the rest of the system, this node will take notice and stop sending 5V to this coil, making it open the shutdown circuit. This will protect the motor controllers and offer redundancy for the rest of the shutdown circuit.
 
+            \begin{figure}[H]
+            \centering
+            \includegraphics[width = 0.8 \textwidth]{panelPCB}
+            \caption{\hlr{PCB for the side panel node. The separation is located around the cyan line, and the minimum distance is $1/4$ in.}}
+            \label{panelPCB}
+            \end{figure}
+
+            \hlr{The same resettable fuses will be used as in table} \ref{5V1Afuse}.
+
         \subsubsection{Position in Car}
 
             The \hlr{side panel} node will be contained in the enclosure shown in Figure \ref{cpanel2}.
+
+    \subsection{LV Part 4: Motor Controller Controller (MCC) Node}
+
+        \subsubsection{Description}
+            \hlr{The node is located right next to both motor controllers. It receives torque requests from the throttle node and sends torque information to the motor controllers. The motor controllers take in analog input which controls the torque output. The analog input to the motor controllers is opto-isolated from the GLV system using opto-couplers. The motor controllers also require a Forward Switch which is also provided by the MCC node using an opto-coupler.}
+            \hlr{The MCC node will handle all torque vectoring by lowering the torque request to one of the motor controllers. The MCC node will never increase the torque requested by the driver.}\\
+
+        \hlr{The motor controller controller (MCC) node is a CAN node that listens to the CAN system for throttle information and if the start button has been pressed and the vehicle is in a ready state, the node will pass on the information to the motor controllers via an isolated analog signal out. }\\
+
+            \hlr{Also on the board are the Brake System Plausibility Device (BSPD) as well as brake light wiring and other components necessary for the BSPD. This includes the hall effect sensors which have their power requirements supplied by the board.}\\
+
+
+        \subsubsection{Wiring, Cables}
+
+        \begin{sidewaysfigure}[p]
+            \includegraphics[width=\textheight]{mccschem}
+            \caption{\hlr{Schematic for the motor controller controller node}}
+            \label{mccschem}
+        \end{sidewaysfigure}
+
+        \hlr{Please see figure} \ref{mccschem} \hlr{for the PCB schematic which includes the TS vs. GLV wiring. }\\
+
+        \hlr{The CAN node is wired into the CAN bus in order to get information from different nodes about torque information. }\\
+
+        \hlr{The brake pressure switch line is connected to the analog input of the ATmega as well as the input to the BSPD. There is a pull-down resistor in order to ensure that the input is never floating.}\\
+
+        \hlr{The BSPD is connected to the shutdown circuit via a relay on the board.}\\
+
+        \hlr{The Hall Effect current sensors are given 12V, Ground and a reference 6V. The output of the Hall Effect current sensors goes to an analog input pin of the ATmega as well as to the BSPD.}\\
+
+        \hlr{The motor controllers are wired into the system with 4 connections. Motor controller 5V and motor controller ground are used to power the receiving side of the opto-coupler. There is a Forward Switch line, which is necessary for our motor controllers, and is either 5V or 0V. The last wire is the analog control for the motor controllers. All connections are isolated from GLV.}\\
+
+        \hlr{The ATmega microcontroller on the board is able to reset the BSPD as well as allow for testing of the BSPD. In order to reset, the microcontroller gives a high pulse to the "set" pin of an RS-latch which will reset the BSPD if it has tripped. In order to test the BSPD, the microcontroller has an output that goes into the BSPD and simulates high current to the motor controllers.}\\
+
+        \hlr{The brake light is controlled by this node and is activated by the microcontroller via a low-side drive MOSFET.}\\
+
+        \begin{figure}[H]
+        \centering
+        \includegraphics[width = 0.8 \textwidth]{mccPCB}
+        \caption{\hlr{PCB for the motor controller controller node. The separation is located around the cyan line, and the minimum distance is $6.73 mm$ in.}}
+        \label{mccPCB}
+        \end{figure}
+
+            \hlr{The same resettable fuses will be used as in table} \ref{5V1Afuse}.
+
+        \subsubsection{Position in Car}
+        \hlr{The MCC node will be contained in an enclosure right above the motor controllers.}\\
+
+        \hlr{The motor controller controller does not yet have a designated housing, but it will be located near the motor controllers in order to minimize the length of wiring.}
+
+        \subsection{LV Part 5: Bulkhead Node}
+
+            \subsubsection{Description}
+
+            \hlr{The bulkhead CAN node is located in the very front of the vehicle in order to collect throttle and brake information. }
+
+            \subsubsection{Wiring, Cables}
+
+            \begin{sidewaysfigure}[p]
+                \includegraphics[width=\textheight]{throttleschem}
+                \caption{\hlr{Schematic for the bulkhead node}}
+                \label{throttleschem}
+            \end{sidewaysfigure}
+
+            \begin{figure}[H]
+            \centering
+            \includegraphics[width = 0.8 \textwidth]{throttlePCB}
+            \caption{\hlr{PCB for the bulkhead node. There is only low voltage circuitry on this PCB.}}
+            \label{throttlePCB}
+            \end{figure}
+
+            \hlr{The same resettable fuses will be used as in table} \ref{5V1Afuse}.
+
+            \subsubsection{Position in Car}
 
 \newpage
 
