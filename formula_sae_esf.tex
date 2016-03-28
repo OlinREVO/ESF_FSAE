@@ -791,22 +791,22 @@ A Hall effect current sensor, wired before the current splits to the motor contr
             The accumulator comprises 12 Nissan Leaf battery modules, wired in series. Each module comprises four LiMnO2 pouch cells, in a 2S-2P configuration as shown in Figure \ref{module}. \hlr{Each cell has a shutdown separator and a nominal voltage of 3.75V}, resulting in 7.5V per module and 90V total. The modules have alternating positive and negative terminal locations to make bus bar routing more efficient.
 
             \begin{table}[H]
-            \centering
-            \begin{tabular}{|l|l|}
-            \hline
-            Maximum Voltage & \hlr{NDA} \\ \hline
-            Nominal Voltage & 90 VDC \\ \hline
-            Minimum Voltage & 60 VDC \\ \hline
-            Maximum output current & Unknown \\ \hline
-            Maximum nominal current & \hlr{NDA} \\ \hline
-            Maximum charging current & \hlr{NDA} \\ \hline
-            Total number of cells & 48 \\ \hline
-            Cell configuration & 12 2s2p in series \\ \hline
-            Total capacity & 65 Ah at 2C rate, 25 \degree C \\ \hline
-            Number of cell stacks & 4 \\ \hline
-            \end{tabular}
-            \caption{\hlr{Main accumulator parameters}}
-            \label{batterytable}
+                \centering
+                \begin{tabular}{|l|l|}
+                    \hline
+                    Maximum Voltage & \hlr{NDA} \\ \hline
+                    Nominal Voltage & 90 VDC \\ \hline
+                    Minimum Voltage & 60 VDC \\ \hline
+                    Maximum output current & Unknown \\ \hline
+                    Maximum nominal current & \hlr{NDA} \\ \hline
+                    Maximum charging current & \hlr{NDA} \\ \hline
+                    Total number of cells & 48 \\ \hline
+                    Cell configuration & 12 2s2p in series \\ \hline
+                    Total capacity & 65 Ah at 2C rate, 25 \degree C \\ \hline
+                    Number of cell stacks & 4 \\ \hline
+                \end{tabular}
+                \caption{\hlr{Main accumulator parameters}}
+                \label{batterytable}
             \end{table}
 
             \hlr{The maximum voltage is calculated from the maximum charging voltage, (4.15V per cell), and the maximum charging current is the maximum of the charger. Both are safe parameters for our cells.}
@@ -824,23 +824,31 @@ A Hall effect current sensor, wired before the current splits to the motor contr
             The cells are laminate type lithium ion cells (LiMnO2), packaged in modules for Nissan Leaf vehicles.
 
             \begin{table}[H]
-            \centering
-            \begin{tabular}{|l|l|}
-            \hline
-            Cell Manufacturer and Type & \begin{tabular}[c]{@{}l@{}}Automotive Energy Supply Corporation\\ Model E5\end{tabular} \\ \hline
-            Cell nominal capacity & \hlr{32.5} Ah \\ \hline
-            Maximum Voltage & \hlr{4.15V} \\ \hline
-            Nominal Voltage & 3.75V \\ \hline
-            Minimum Voltage & \hlr{NDA} \\ \hline
-            Maximum output current & Unknown \\ \hline
-            Maximum nominal output current & \hlr{NDA} \\ \hline
-            Maximum charging current & \hlr{NDA} \\ \hline
-            Maximum Cell Temperature (discharging) & \hlr{NDA, see below} \\ \hline
-            Maximum Cell Temperature (charging) & \hlr{NDA, see below}\\ \hline
-            Cell Chemistry & \begin{tabular}[c]{@{}l@{}}Lithium-ion - Laminate type\\ Cathode/Anode Material: LiMn2O4 with\\ LiNiO2/Graphite\end{tabular} \\ \hline
-            \end{tabular}
-            \caption{Main cell specification}
-            \label{cells}
+                \centering
+                \begin{tabular}{|l|l|}
+                    \hline
+                    Cell Manufacturer and Type & 
+                        \begin{tabular}[c]{@{}l@{}}
+                            Automotive Energy Supply Corporation\\ Model E5
+                        \end{tabular} \\ \hline
+                    Cell nominal capacity & \hlr{32.5} Ah \\ \hline
+                    Maximum Voltage & \hlr{4.15V} \\ \hline
+                    Nominal Voltage & 3.75V \\ \hline
+                    Minimum Voltage & \hlr{NDA} \\ \hline
+                    Maximum output current & Unknown \\ \hline
+                    Maximum nominal output current & \hlr{NDA} \\ \hline
+                    Maximum charging current & \hlr{NDA} \\ \hline
+                    Maximum Cell Temperature (discharging) & \hlr{NDA, see below} \\ \hline
+                    Maximum Cell Temperature (charging) & \hlr{NDA, see below}\\ \hline
+                    Cell Chemistry & 
+                        \begin{tabular}[c]{@{}l@{}}
+                            Lithium-ion - Laminate type\\
+                            Cathode/Anode Material: LiMn2O4 with\\
+                            LiNiO2/Graphite
+                        \end{tabular} \\ \hline
+                \end{tabular}
+                \caption{Main cell specification}
+                \label{cells}
             \end{table}
 
    In software, we are restricting the maximum cell temperature (charging) to 50 \degree C, and the maximum cell temperature (discharging) to 60 \degree C.
@@ -859,10 +867,10 @@ A Hall effect current sensor, wired before the current splits to the motor contr
             As stated in Section \ref{batteryoverview}, there are 12 modules in series. Each module holds 4 cells which are in a 2s-2p configuration. There is a shutdown separator between parallel cells, which acts as a fuse in over-current conditions. The terminal marked in white in Figure \ref{canopener} references the point between the two parallel cell strings. \hlr{The white terminal is the cell interconnection point, as shown in figure} \ref{module}.
 
             \begin{figure}[H]
-            \centering
-            \includegraphics[width = 0.6 \textwidth]{OpenModule}
-            \caption{Inside view of a module}
-            \label{canopener}
+                \centering
+                \includegraphics[width = 0.6 \textwidth]{OpenModule}
+                \caption{Inside view of a module}
+                \label{canopener}
             \end{figure}
 
             Busbars connect the modules in series, as shown in Figure \ref{busbar}. The busbars connecting module to module are copper with a cross-section of $60.5 mm^2$, which exceeds the required wire gauge for tractive system lines (2 gauge). \hlr{The blue squares seen in figure} \ref{busbar} \hlr{are the cell top boards.}
@@ -887,10 +895,10 @@ A Hall effect current sensor, wired before the current splits to the motor contr
             %How are the thermistors attached to the cells? Explain module issues with placement.
 
             \begin{figure}[H]
-            \centering
-            \includegraphics[width = 0.4 \textwidth]{celltemp}
-            \caption{Schematic, (1) Module Cell Temperature Monitoring}
-            \label{celltemp}
+                \centering
+                \includegraphics[width = 0.4 \textwidth]{celltemp}
+                \caption{Schematic, (1) Module Cell Temperature Monitoring}
+                \label{celltemp}
             \end{figure}
 
         \subsubsection{Battery Management System} \label{bms}
@@ -968,10 +976,10 @@ A Hall effect current sensor, wired before the current splits to the motor contr
             %describe the indicator %need table of operation, pcb design, etc.
 
             \begin{figure}[H]
-            \centering
-            \includegraphics[width = 0.3 \textwidth]{ai}
-            \caption{\hlr{Detail of the Accumulator Indicator PCB}}
-            \label{indicator}
+                \centering
+                \includegraphics[width = 0.3 \textwidth]{ai}
+                \caption{\hlr{Detail of the Accumulator Indicator PCB}}
+                \label{indicator}
             \end{figure}
 
             As shown in Figure \ref{indicator}, J2 connects the accumulator indicator, D14, \hlr{to a zener diode running of TS voltage. The zener diode allows TS voltage to pass through the accumulator indicator LED and a resistor after TS voltage is over 60 VDC.  R13 is a 220 Ohm resistor to limit current. The calculations are as follows, assuming a forward voltage drop of the LED to be 2V:}
@@ -991,18 +999,23 @@ A Hall effect current sensor, wired before the current splits to the motor contr
             The low current (IMD, Lights DC-DC, GLV DC-DC and ready to drive sound) TS connections will be made with the wire described in table \ref{tslowcurrentwire}. \hlr{The low current connections will be protected with a 1A fuse.}
 
             \begin{table}[H]
-            \centering
-            \begin{tabular}{|l|l|}
-            \hline
-            Wire type & \hlr{CnC Tech}, 20 AWG \\ \hline
-            Current rating & 7A \\ \hline
-            Cross sectional area & 0.326 mm\textasciicircum 2 \\ \hline
-            Maximum voltage & 600V \\ \hline
-            Temperature rating & 120 \degree C \\ \hline
-            \begin{tabular}[c]{@{}l@{}}Wire connects the\\ following components:\end{tabular} & \begin{tabular}[c]{@{}l@{}}TS V to GLV DC-DC converter, \\ TS V to IMD HV input, \\ TS V to ready to drive sound buzzer\end{tabular} \\ \hline
-            \end{tabular}
-            \caption{Wire data of the company: CnC Tech, 0.326 mm$^{2}$}
-            \label{tslowcurrentwire}
+                \centering
+                \begin{tabular}{|l|l|}
+                    \hline
+                    Wire type & \hlr{CnC Tech}, 20 AWG \\ \hline
+                    Current rating & 7A \\ \hline
+                    Cross sectional area & 0.326 mm\textasciicircum 2 \\ \hline
+                    Maximum voltage & 600V \\ \hline
+                    Temperature rating & 120 \degree C \\ \hline
+                    \begin{tabular}[c]{@{}l@{}}
+                        Wire connects the\\ following components:
+                    \end{tabular} & 
+                    \begin{tabular}[c]{@{}l@{}}
+                        TS V to GLV DC-DC converter, \\ TS V to IMD HV input, \\ TS V to ready to drive sound buzzer
+                    \end{tabular} \\ \hline
+                \end{tabular}
+                \caption{Wire data of the company: CnC Tech, 0.326 mm$^{2}$}
+                \label{tslowcurrentwire}
             \end{table}
 
             %ADD 18 AWG wire for IMD's connectors
@@ -1040,27 +1053,27 @@ A Hall effect current sensor, wired before the current splits to the motor contr
             We will use Kilovac EV200 relays as accumulator insulation relays. They will be paired with economizer circuits to draw less current during normal usage. The relay requires a 12 V control signal, and is rated for 500 A. Figure \ref{prechargeschem} shows the schematic location of the economizers and the AIR's.
 
             \begin{table}[H]
-            \centering
-            \begin{tabular}{|l|l|}
-            \hline
-            Relay Type: & Normally Open \\ \hline
-            Contact arrangement & SPST-NO-DM \\ \hline
-            Continuous DC current rating & 500A \\ \hline
-            Overload DC current rating & 2000A \\ \hline
-            Maximum operation voltage & 900VDC \\ \hline
-            Nominal coil voltage & 12VDC \\ \hline
-            Normal Load switching & See figure \\ \hline
-            Maximum Load switching & See figure \\ \hline
-            \end{tabular}
-            \caption{Basic AIR Data}
-            \label{air}
+                \centering
+                \begin{tabular}{|l|l|}
+                    \hline
+                    Relay Type: & Normally Open \\ \hline
+                    Contact arrangement & SPST-NO-DM \\ \hline
+                    Continuous DC current rating & 500A \\ \hline
+                    Overload DC current rating & 2000A \\ \hline
+                    Maximum operation voltage & 900VDC \\ \hline
+                    Nominal coil voltage & 12VDC \\ \hline
+                    Normal Load switching & See figure \\ \hline
+                    Maximum Load switching & See figure \\ \hline
+                \end{tabular}
+                \caption{Basic AIR Data}
+                \label{air}
             \end{table}
 
             \begin{figure}[H]
-            \centering
-            \includegraphics[width = 0.7 \textwidth]{AIRswitching}
-            \caption{Load Switching detail from Accumulator Indicator Relay datasheet}
-            \label{airswitch}
+                \centering
+                \includegraphics[width = 0.7 \textwidth]{AIRswitching}
+                \caption{Load Switching detail from Accumulator Indicator Relay datasheet}
+                \label{airswitch}
             \end{figure}
 
             \hlr{The AIRs and main fuse are in a separate compartment of the accumulator separated by two layers of insulating G10/FR4 fiberglass and a single layer of 0.035” 301 stainless steel, as shown in} \ref{accumlocations}.
@@ -1070,48 +1083,59 @@ A Hall effect current sensor, wired before the current splits to the motor contr
             %Describe the fuses used and their main operation parameters, use tables, etc.
 
             \begin{table}[H]
-            \centering
-            \begin{tabular}{|l|l|}
-            \hline
-            Fuse manufacturer and type: & \hlr{Littledfuse, MINI Series (MIN2BP)} \\ \hline
-            Continuous current rating & 4A \\ \hline
-            Maximum operating voltage & \hlr{32V} \\ \hline
-            Type of fuse & Fast acting \\ \hline
-            I2t rating & \hlr{2.8 A2s} \\ \hline
-            \begin{tabular}[c]{@{}l@{}}Interrupt Current (max. current\\ at which the fuse can interrupt\\ the circuit)\end{tabular} & \hlr{$1000$A at $32$ VDC}\\ \hline
-            \end{tabular}
-            \caption{\hlr{GLV battery and GLV DC-DC fuses, MIN type}}
-            \label{glvfusetable}
-            \end{table}
+                \centering
+                \begin{tabular}{|l|l|}
+                    \begin{table}
+                        \begin{tabular}
+                            \hline
+                            Fuse manufacturer and type: & \hlr{Littledfuse, MINI Series (MIN2BP)} \\ \hline
+                            Continuous current rating & 4A \\ \hline
+                            Maximum operating voltage & \hlr{32V} \\ \hline
+                            Type of fuse & Fast acting \\ \hline
+                            I2t rating & \hlr{2.8 A2s} \\ \hline
+                            \begin{tabular}[c]{@{}l@{}}
+                                Interrupt Current (max. current\\ at which the fuse can interrupt\\ the circuit)
+                            \end{tabular} & \hlr{$1000$A at $32$ VDC}\\ \hline
+                        \end{tabular}
+                        \caption{\hlr{GLV battery and GLV DC-DC fuses, MIN type}}
+                        \label{glvfusetable}
+                    \end{table}
 
-            \begin{table}[H]
-            \centering
-            \begin{tabular}{|l|l|}
-            \hline
-            Fuse manufacturer and type: & \hlr{Littledfuse, MINI Series (MIN2BP)} \\ \hline
-            Continuous current rating & \hlr{2}A \\ \hline
-            Maximum operating voltage & \hlr{32} V \\ \hline
-            Type of fuse & Fast acting \\ \hline
-            I2t rating & \hlr{2.8 A2s} \\ \hline
-            \begin{tabular}[c]{@{}l@{}}Interrupt Current (max. current\\ at which the fuse can interrupt\\ the circuit)\end{tabular} & \hlr{$1000$A at $32$ VDC}\\ \hline
-            \end{tabular}
-            \caption{\hlr{GLV 12V and Shutdown circuit fuses, MIN type}}
-            \label{glv12vfusetable}
-            \end{table}
+                    \begin{table}[H]
+                        \centering
+                        \begin{tabular}{|l|l|}
+                            \hline
+                            Fuse manufacturer and type: & \hlr{Littledfuse, MINI Series (MIN2BP)} \\ \hline
+                            Continuous current rating & \hlr{2}A \\ \hline
+                            Maximum operating voltage & \hlr{32} V \\ \hline
+                            Type of fuse & Fast acting \\ \hline
+                            I2t rating & \hlr{2.8 A2s} \\ \hline
+                            \begin{tabular}[c]{@{}l@{}}
+                                Interrupt Current (max. current\\ at which the fuse can interrupt\\ the circuit)
+                            \end{tabular} & \hlr{$1000$A at $32$ VDC}\\ \hline
+                        \end{tabular}
+                        \caption{\hlr{GLV 12V and Shutdown circuit fuses, MIN type}}
+                        \label{glv12vfusetable}
+                    \end{table}
 
-            \begin{table}[H]
-            \centering
-            \begin{tabular}{|l|l|}
-            \hline
-            Fuse manufacturer and type & \hlr{Littelfuse, 251/253 Series} \\ \hline
-            Continuous current rating & 1 A \\ \hline
-            Maximum operating voltage & 125V \\ \hline
-            Type of fuse & Fast acting \\ \hline
-            I2T rating &  \hlr{0.405 A2s} \\ \hline
-            \begin{tabular}[c]{@{}l@{}}Interrupt Current (max.,current\\ at which the fuse can interrupt\\ the circuit)\end{tabular} & \hlr{$300$A at $125$VDC} \\ \hline
-            \end{tabular}
-            \caption{\hlr{Fuse to the IMD, TSMPs and light DC-DC converter, 251/253 Series}}
-            \label{smallTSfusetable}
+                    \begin{table}[H]
+                        \centering
+                        \begin{tabular}{|l|l|}
+                            \hline
+                            Fuse manufacturer and type & \hlr{Littelfuse, 251/253 Series} \\ \hline
+                            Continuous current rating & 1 A \\ \hline
+                            Maximum operating voltage & 125V \\ \hline
+                            Type of fuse & Fast acting \\ \hline
+                            I2T rating &  \hlr{0.405 A2s} \\ \hline
+                            \begin{tabular}[c]{@{}l@{}}
+                                Interrupt Current (max.,current\\ at which the fuse can interrupt\\ the circuit)
+                            \end{tabular} & \hlr{$300$A at $125$VDC} \\ \hline
+                        \end{tabular}
+                    \end{table}
+
+                \end{tabular}
+                \caption{\hlr{Fuse to the IMD, TSMPs and light DC-DC converter, 251/253 Series}}
+                \label{smallTSfusetable}
             \end{table}
 
             \begin{table}[H]
