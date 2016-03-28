@@ -1695,7 +1695,7 @@ A Hall effect current sensor, wired before the current splits to the motor contr
 
         \hlr{The Hall Effect current sensors are given 12V, Ground and a reference 6V. The output of the Hall Effect current sensors goes to an analog input pin of the ATmega as well as to the BSPD.}\\
 
-        \hlr{The motor controllers are wired into the system with 4 connections. Motor controller 5V and motor controller ground are used to power the receiving side of the opto-coupler. There is a Forward Switch line which is necessary for our motor controllers and is either 5V or 0V. The last wire is the analog control for the motor controllers. All connections are isolated from GLV.}\\
+        \hlr{The motor controllers are wired into the system with 4 connections. Motor controller 5V and motor controller ground are used to power the receiving side of the opto-coupler. There is a Forward Switch line, which is necessary for our motor controllers, and is either 5V or 0V. The last wire is the analog control for the motor controllers. All connections are isolated from GLV.}\\
 
         \hlr{The ATmega microcontroller on the board is able to reset the BSPD as well as allow for testing of the BSPD. In order to reset, the microcontroller gives a high pulse to the "set" pin of an RS-latch which will reset the BSPD if it has tripped. In order to test the BSPD, the microcontroller has an output that goes into the BSPD and simulates high current to the motor controllers.}\\
 
