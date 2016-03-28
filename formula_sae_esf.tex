@@ -1590,11 +1590,11 @@ A Hall effect current sensor, wired before the current splits to the motor contr
             \end{figure}
 
             %need wire gauges
-            \hlr{Its output will be fused to 4A, and then used for the GLV system as 13.5V. After the two emergency shutdown buttons, the system is fused in parallel with two 2A fuses (the system voltage will be fused to 2A and the shutdown system will be fused to 2A). The GLV system voltage will be split in parallel again and then regulated to 5V for the sake of the CAN ATmega. All of these wires, past the DC-DC converter, will be 20 AWG. The wire going to the DC-DC from the accumulator is tractive system voltage and fused to 1A.}
+            \hlr{Its output will be fused to 5A, and then used for the GLV system as 13.5V. After the two emergency shutdown buttons, the system is fused in parallel with two 2A fuses (the system voltage will be fused to 2A and the shutdown system will be fused to 2A). The GLV system voltage will be split in parallel again and then regulated to 5V for the sake of the CAN ATmega. All of these wires, past the DC-DC converter, will be 20 AWG. The wire going to the DC-DC from the accumulator is tractive system voltage and fused to 1A.}
 
         \subsubsection{Position in Car}
 
-            Figure \ref{dcdc_cad} shows the CAD model of the DC-DC converter, \hlr{which will be located in the side panel housing described in figure} \ref{cpanel1} along with the glv battery.
+            Figure \ref{dcdc_cad} shows the CAD model of the DC-DC converter, \hlr{which will be located in the side panel housing described in figure} \ref{cpanel2} along with the glv battery.
 
             \begin{figure}[H]
                 \centering
@@ -1642,14 +1642,14 @@ A Hall effect current sensor, wired before the current splits to the motor contr
         \subsubsection{Wiring, Cables}
 
             \begin{sidewaysfigure}[p]
-                \includegraphics[width=\textheight]{Panel-Board}
+                \includegraphics[height= 0.7 \textheight]{Panel-Board}
                 \caption{\hlr{Schematic for the side panel node, including TS wiring for TSMPs, IMD, and R2D sound}}
                 \label{panelnode}
             \end{sidewaysfigure}
 
             \hlr{Please see figure} \ref{panelnode} \hlr{for the PCB schematic (which includes TS wiring for the TSMPs, IMD and R2D sound)}.
 
-            The CAN node is wired to the \hlr{third} pole of the IMD relay, \hlr{and the node will always read low until the pole is no longer pulled because the IMD's output is low and the IMD has found a ground fault.There is a pull up resistor and the pole, in its disconnected state the can input will read 5V instead.}\\
+            The CAN node is wired to the \hlr{third} pole of the IMD relay, \hlr{and the node will always read low until the pole is no longer pulled because the IMD's output is low and the IMD has found a ground fault. There is a pull up resistor and the pole, in its disconnected state the can input will read 5V instead.}\\
 
             As an output, the CAN node is also wired to a relay's coil controlling a switch in the tractive system parallel to the motors. When the CAN system knows it's in ready to drive mode, it'll send the message to send 5V to this coil, therefore closing the switch that will give the ready to drive sound buzzer power to make noise.\\
 
