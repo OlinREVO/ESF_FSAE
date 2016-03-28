@@ -790,11 +790,13 @@ A Hall effect current sensor, wired before the current splits to the motor contr
 
             The accumulator comprises 12 Nissan Leaf battery modules, wired in series. Each module comprises four LiMnO2 pouch cells, in a 2S-2P configuration as shown in Figure \ref{module}. \hlr{Each cell has a shutdown separator and a nominal voltage of 3.75V}, resulting in 7.5V per module and 90V total. The modules have alternating positive and negative terminal locations to make bus bar routing more efficient.
 
+            \hlr{The Olin REVO team is under NDA with Nissan surrounding the information of the Nissan Leaf cells. The information of the cell capacity and nominal voltage are shareable without NDA.}
+
             \begin{table}[H]
                 \centering
                 \begin{tabular}{|l|l|}
                     \hline
-                    Maximum Voltage & \hlr{NDA} \\ \hline
+                    Maximum Voltage & \\hlr{99.6} \\ \hline
                     Nominal Voltage & 90 VDC \\ \hline
                     Minimum Voltage & 60 VDC \\ \hline
                     Maximum output current & Unknown \\ \hline
@@ -832,7 +834,7 @@ A Hall effect current sensor, wired before the current splits to the motor contr
                             Automotive Energy Supply Corporation\\ Model E5
                         \end{tabular} \\ \hline
                     Cell nominal capacity & \hlr{32.5} Ah \\ \hline
-                    Maximum Voltage & \hlr{4.15V} \\ \hline
+                    Maximum Voltage & \hlr{NDA} \\ \hline
                     Nominal Voltage & 3.75V \\ \hline
                     Minimum Voltage & \hlr{NDA} \\ \hline
                     Maximum output current & Unknown \\ \hline
@@ -864,7 +866,7 @@ A Hall effect current sensor, wired before the current splits to the motor contr
             \label{module}
             \end{figure}
 
-            As stated in Section \ref{batteryoverview}, there are 12 modules in series. Each module holds 4 cells which are in a 2s-2p configuration. There is a shutdown separator between parallel cells, which acts as a fuse in over-current conditions. The terminal marked in white in Figure \ref{canopener} references the point between the two parallel cell strings. \hlr{The white terminal is the cell interconnection point, as shown in figure} \ref{module}.
+            As stated in Section \ref{batteryoverview}, there are 12 modules in series. Each module holds 4 cells which are in a 2s-2p configuration. The terminal marked in white in Figure \ref{canopener} references the point between the two parallel cell strings. \hlr{The white terminal is the cell interconnection point, as shown in figure} \ref{module}.
 
             \begin{figure}[H]
                 \centering
@@ -877,7 +879,7 @@ A Hall effect current sensor, wired before the current splits to the motor contr
 
             \begin{figure}[H]
                 \centering
-                \includegraphics[width = 0.6 \textwidth]{nothermistors_frontview}
+                \includegraphics[width = 0.6 \textwidth]{bus-bar_configuration}
                 \caption{\hlr{Front view of the accumulator, showing the busbars and thermistors. }}
                 \label{busbar}
             \end{figure}
@@ -900,6 +902,15 @@ A Hall effect current sensor, wired before the current splits to the motor contr
                 \caption{Schematic, (1) Module Cell Temperature Monitoring}
                 \label{celltemp}
             \end{figure}
+
+            \begin{figure}[H]
+                \centering
+                \includegraphics[width = 0.5 \textwidth]{busbarstack}
+                \caption{\hlr{Section view of the thermistor mounted on the busbars}}
+                \label{busbarstack}
+            \end{figure}
+
+            \hlr{The distance between the bottom of the PCB and the top of the busbar is 0.094 in, while the distance from thermistor to terminal is 0.32 in. Because the cells are arranged within the module by the manufacturer, the distance from the busbar to the actual cell terminals (instead of the module terminals) is unknown.}
 
         \subsubsection{Battery Management System} \label{bms}
 
