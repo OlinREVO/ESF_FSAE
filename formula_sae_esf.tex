@@ -1592,6 +1592,42 @@ A Hall effect current sensor, wired before the current splits to the motor contr
             %need wire gauges
             \hlr{Its output will be fused to 5A, and then used for the GLV system as 13.5V. After the two emergency shutdown buttons, the system is fused in parallel with two 2A fuses (the system voltage will be fused to 2A and the shutdown system will be fused to 2A). The GLV system voltage will be split in parallel again and then regulated to 5V for the sake of the CAN ATmega. All of these wires, past the DC-DC converter, will be 20 AWG. The wire going to the DC-DC from the accumulator is tractive system voltage and fused to 1A.}
 
+            \hlr{The fuses used for the GLV system is described in the tables below.}
+
+        \begin{table}[H]
+            \centering
+            \begin{tabular}{|l|l|}
+            \hline
+            Fuse manufacturer and type: & \hlr{Littledfuse, MINI Series (MIN2BP)} \\ \hline
+            Continuous current rating & 5A \\ \hline
+            Maximum operating voltage & \hlr{32V} \\ \hline
+            Type of fuse & Fast acting \\ \hline
+            I2t rating & \hlr{2.8 A2s} \\ \hline
+            \begin{tabular}[c]{@{}l@{}}
+            Interrupt Current (max. current\\ at which the fuse can interrupt\\ the circuit)
+                \end{tabular} & \hlr{$1000$A at $32$ VDC}\\ \hline
+            \end{tabular}
+            \caption{\hlr{GLV battery and GLV DC-DC fuses, MIN type}}
+            \label{glvfusetable}
+        \end{table}
+
+    \begin{table}[H]
+        \centering
+        \begin{tabular}{|l|l|}
+            \hline
+            Fuse manufacturer and type: & \hlr{Littledfuse, MINI Series (MIN2BP)} \\ \hline
+            Continuous current rating & \hlr{2}A \\ \hline
+            Maximum operating voltage & \hlr{32} V \\ \hline
+            Type of fuse & Fast acting \\ \hline
+            I2t rating & \hlr{2.8 A2s} \\ \hline
+            \begin{tabular}[c]{@{}l@{}}
+                Interrupt Current (max. current\\ at which the fuse can interrupt\\ the circuit)
+            \end{tabular} & \hlr{$1000$A at $32$ VDC}\\ \hline
+        \end{tabular}
+        \caption{\hlr{GLV 12V and Shutdown circuit fuses, MIN type}}
+        \label{glv12vfusetable}
+    \end{table}
+
         \subsubsection{Position in Car}
 
             Figure \ref{dcdc_cad} shows the CAD model of the DC-DC converter, \hlr{which will be located in the side panel housing described in figure} \ref{cpanel2} along with the glv battery.
@@ -1621,6 +1657,22 @@ A Hall effect current sensor, wired before the current splits to the motor contr
             %\end{figure}
 
             \hlr{The dashboard PCB includes a CAN node (ATmega16M1), start button, IMD light, AMS light, BSPD reset button, inertia switch, a linear potentiometer,LCD screen and the cockpit e-stop. The LCD screen is there for the driver to read the cause of vehicle shutdown in the event that a sensor with an input to the CAN system fails. The other controls are for the driver to be able to reset the vehicle and note any emergency situations. This PCB is still in progress, but it will include only low voltage circuitry.}
+
+            \hlr{The board will have a 1A resettable fuse on the 12V supply line. It is described in the table below.}
+
+            \begin{table}[H]
+                \centering
+                \begin{tabular}{|l|l|}
+                    \hline
+                    Fuse manufacturer and type: & bel Fuses, PTC resettable 0ZCK Series\\ \hline
+                    Continuous current rating & 1A \\ \hline
+                    Maximum operating voltage & 15V \\ \hline
+                    Type of fuse & Fast trip time, Resettable \\ \hline
+                    I2t rating & None listed, see figure \ref{glv1Afusemeltingtime} \\ \hline
+                    \end{tabular}
+                \caption{\hlr{Fuse on 5V line to PCB.}}
+                \label{5V1Afuse}
+            \end{table}
 
         \subsubsection{Position in Car}
 
@@ -1662,6 +1714,8 @@ A Hall effect current sensor, wired before the current splits to the motor contr
             \label{panelPCB}
             \end{figure}
 
+            \hlr{The same resettable fuses will be used as in table} \ref{5V1Afuse}.
+
         \subsubsection{Position in Car}
 
             The \hlr{side panel} node will be contained in the enclosure shown in Figure \ref{cpanel2}.
@@ -1687,6 +1741,8 @@ A Hall effect current sensor, wired before the current splits to the motor contr
         \label{mccPCB}
         \end{figure}
 
+            \hlr{The same resettable fuses will be used as in table} \ref{5V1Afuse}.
+
         \subsubsection{Position in Car}
 
         \hlr{The motor controller controller does not yet have a designated housing, but it will be located near the motor controllers in order to minimize the length of wiring.}
@@ -1711,6 +1767,8 @@ A Hall effect current sensor, wired before the current splits to the motor contr
             \caption{\hlr{PCB for the bulkhead node. There is only low voltage circuitry on this PCB.}}
             \label{throttlePCB}
             \end{figure}
+
+            \hlr{The same resettable fuses will be used as in table} \ref{5V1Afuse}.
 
             \subsubsection{Position in Car}
 
