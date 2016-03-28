@@ -875,7 +875,7 @@ A Hall effect current sensor, wired before the current splits to the motor contr
                 \label{canopener}
             \end{figure}
 
-            Busbars connect the modules in series, as shown in Figure \ref{busbar}. The busbars connecting module to module are copper with a cross-section of $60.5 mm^2$, which exceeds the required wire gauge for tractive system lines (2 gauge). \hlr{The blue squares seen in figure} \ref{busbar} \hlr{are the cell top boards.}
+            Busbars connect the modules in series, as shown in Figure \ref{busbar}. The busbars connecting module to module are copper with a cross-section of $60.5 mm^2$, \hlr{which has a higher ampacity than the} tractive system lines (2 gauge). \hlr{The blue squares seen in figure} \ref{busbar} \hlr{are the cell top boards.}
 
             \begin{figure}[H]
                 \centering
@@ -884,13 +884,13 @@ A Hall effect current sensor, wired before the current splits to the motor contr
                 \label{busbar}
             \end{figure}
 
-            \hlr{There are 3 maintenance plugs, separating the segments to be less than 6 MJ each. Figure }\ref{accumlocations} \hlr{ points out the maintenance plugs, shortened as MSD. The connectors are further described in section} \ref{batteryconnectors}.
+            \hlr{There are 3 maintenance plugs, separating the segments to be less than 6 MJ each. Figure }\ref{tswiringtop} \hlr{ points out the maintenance plugs, shortened as \hlr{SMD or MSD. The connectors are further described in section} \ref{batteryconnectors}.
 
         \subsubsection{Cell Temperature Monitoring} %\label{celltemp}
 
             %Describe how the temperature of the cells is monitored, where the temperature sensors are placed, how many cells are monitored, etc. Show schematics, cover additional parts, etc.
 
-            The temperature of the cells is monitored using 10K\ohm thermistors attached to the \hlr{middle pole}. The middle pole of each module is considered the \hlr{negative terminal} of two cells. Each module’s midpoint is measured and one out of three module grounds is measured per accumulator segment. The thermistors are used to form three voltage dividers. When the temperature of the cells increases, the resistance decreases, resulting in less voltage drop across the thermistor. Three analog to digital converters attached to each of the voltage dividers is then used by the ATmega16M1 used in the CAN system to determine whether the temperature is too high or low. If the temperature is out of range, the shutdown system activates. There is a pull up resistor that pushes the output voltage to 5V if the ADC is a past a certain threshold and 0V otherwise. Because we are monitoring the negative terminals of half of the cells in each module, we are monitoring 50\% of the total cells.
+            The temperature of the cells is monitored using 10K$\ohm$ thermistors attached to the \hlr{middle pole}. The middle pole of each module is considered the \hlr{negative terminal} of two cells. Each module’s midpoint is measured and one out of three module grounds is measured per accumulator segment. The thermistors are used to form three voltage dividers. When the temperature of the cells increases, the resistance decreases, resulting in less voltage drop across the thermistor. Three analog to digital converters attached to each of the voltage dividers is then used by the ATmega16M1 used in the CAN system to determine whether the temperature is too high or low. If the temperature is out of range, the shutdown system activates. There is a pull up resistor that pushes the output voltage to 5V if the ADC is a past a certain threshold and 0V otherwise. Because we are monitoring the negative terminals of half of the cells in each module, we are monitoring 50\% of the total cells.
             \hlr{The mounting of the thermistors can be seen in figure} \ref{busbar}. \hlr{They are on top of the cell top boards, which is bolted directly onto the module terminals through the busbars.}
 
             %need to rewrite the part about the ADC
