@@ -1670,11 +1670,11 @@ A Hall effect current sensor, wired before the current splits to the motor contr
 
         \subsubsection{Description}
             \hlr{The node is located right next to both motor controllers. It receives torque requests from the throttle node and sends torque information to the motor controllers. The motor controllers take in analog input which controls the torque output. The analog input to the motor controllers is opto-isolated from the GLV system using opto-couplers. The motor controllers also require a Forward Switch which is also provided by the MCC node using an opto-coupler.}
-            \hlr{The MCC node will handle all torque vectoring by lowering the torque request to one of the motor controllers. The MCC node will never increase the torque requested by the driver.}
+            \hlr{The MCC node will handle all torque vectoring by lowering the torque request to one of the motor controllers. The MCC node will never increase the torque requested by the driver.}\\
 
-        \hlr{The motor controller controller (MCC) node is a CAN node that listens to the CAN system for throttle information and if the start button has been pressed and the vehicle is in a ready state, the node will pass on the information to the motor controllers via an isolated analog signal out. }
+        \hlr{The motor controller controller (MCC) node is a CAN node that listens to the CAN system for throttle information and if the start button has been pressed and the vehicle is in a ready state, the node will pass on the information to the motor controllers via an isolated analog signal out. }\\
 
-            \hlr{Also on the board are the Brake System Plausibility Device (BSPD) as well as brake light wiring and other components necessary for the BSPD. This includes the hall effect sensors which have their power requirements supplied by the board.}
+            \hlr{Also on the board are the Brake System Plausibility Device (BSPD) as well as brake light wiring and other components necessary for the BSPD. This includes the hall effect sensors which have their power requirements supplied by the board.}\\
 
 
         \subsubsection{Wiring, Cables}
@@ -1685,21 +1685,21 @@ A Hall effect current sensor, wired before the current splits to the motor contr
             \label{mccschem}
         \end{sidewaysfigure}
 
-        \hlr{Please see figure \ref{panelPCB} for the PCB schematic which includes the TS vs. GLV wiring. }
+        \hlr{Please see figure} \ref{mccschem} \hlr{for the PCB schematic which includes the TS vs. GLV wiring. }\\
 
-        \hlr{The CAN node is wired into the CAN bus in order to get information from different nodes about torque information. }
+        \hlr{The CAN node is wired into the CAN bus in order to get information from different nodes about torque information. }\\
 
-        \hlr{The brake pressure switch line is connected to the analog input of the ATmega as well as the input to the BSPD. There is a pull-down resistor in order to ensure that the input is never floating.}
-        \hlr{The BSPD is connected to the shutdown circuit via a relay on the board.}
+        \hlr{The brake pressure switch line is connected to the analog input of the ATmega as well as the input to the BSPD. There is a pull-down resistor in order to ensure that the input is never floating.}\\
 
-        \hlr{The Hall Effect current sensors are given 12V, Ground and a reference 6V. The output of the Hall Effect current sensors goes to an analog input pin of the ATmega as well as to the BSPD.}
+        \hlr{The BSPD is connected to the shutdown circuit via a relay on the board.}\\
 
-        \hlr{The motor controllers are wired into the system with 4 connections. Motor controller 5V and motor controller ground are used to power the receiving side of the opto-coupler. There is a Forward Switch line which is necessary for our motor controllers and is either 5V or 0V. The last wire is the analog control for the motor controllers. All connections are isolated from GLV.}
+        \hlr{The Hall Effect current sensors are given 12V, Ground and a reference 6V. The output of the Hall Effect current sensors goes to an analog input pin of the ATmega as well as to the BSPD.}\\
 
-        \hlr{The ATmega microcontroller on the board is able to reset the BSPD as well as allow for testing of the BSPD. In order to reset, the microcontroller gives a high pulse to the "set" pin of an RS-latch which will reset the BSPD if it has tripped. In order to test the BSPD, the microcontroller has an output that goes into the BSPD and simulates high current to the motor controllers.}
+        \hlr{The motor controllers are wired into the system with 4 connections. Motor controller 5V and motor controller ground are used to power the receiving side of the opto-coupler. There is a Forward Switch line which is necessary for our motor controllers and is either 5V or 0V. The last wire is the analog control for the motor controllers. All connections are isolated from GLV.}\\
 
-        \hlr{The brake light is controlled by this node and is activated by the microcontroller via a low-side drive MOSFET.}
+        \hlr{The ATmega microcontroller on the board is able to reset the BSPD as well as allow for testing of the BSPD. In order to reset, the microcontroller gives a high pulse to the "set" pin of an RS-latch which will reset the BSPD if it has tripped. In order to test the BSPD, the microcontroller has an output that goes into the BSPD and simulates high current to the motor controllers.}\\
 
+        \hlr{The brake light is controlled by this node and is activated by the microcontroller via a low-side drive MOSFET.}\\
 
         \begin{figure}[H]
         \centering
@@ -1709,7 +1709,7 @@ A Hall effect current sensor, wired before the current splits to the motor contr
         \end{figure}
 
         \subsubsection{Position in Car}
-        \hlr{The MCC node will be contained in an enclosure right above the motor controllers.}
+        \hlr{The MCC node will be contained in an enclosure right above the motor controllers.}\\
 
         \hlr{The motor controller controller does not yet have a designated housing, but it will be located near the motor controllers in order to minimize the length of wiring.}
 
