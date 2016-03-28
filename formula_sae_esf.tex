@@ -991,7 +991,7 @@ Two hall effect current sensors, each wired around the power lines of the motor 
 
             \hlr{There are 4 cells (in a 2s2p configuration) in each module, and there are 12 modules in series. The accumulator has them separated into 4 stacks of 3 to comply with the segment energy limit. Between each of the segments, there are MSDs for safely separating the segments while working on the accumulator. After the fourth section, there is an HVD in series with the positive pole, coming out of the accumulator. There will be two main connectors to the accumulator, each having connections of TS+ and TS-. This is so each motor controller can be individually connected to. Before the HVD and main connectors, there is an AIR on both the positive and negative poles of TS. }
 
-            The high current (motor, motor controller) wires used for the tractive system will be as described in table \ref{motorwire}.
+            The high current (motor, motor controller) wires used for the tractive system will be as described in table \ref{accumtomcwire} and \ref{motortomc}.
             The low current (IMD, Lights DC-DC, GLV DC-DC and ready to drive sound) TS connections will be made with the wire described in table \ref{tslowcurrentwire}.
 
             \begin{table}[H]
@@ -1346,7 +1346,7 @@ Two hall effect current sensors, each wired around the power lines of the motor 
             Temperature rating & 125 \degree C \\ \hline
             \end{tabular}
             \caption{\hlr{Wire data of the company: Prestolite, 0.052 in$^{2}$}}
-            \label{motorwire}
+            \label{motortomcwire}
             \end{table}
 
             \begin{table}[H]
@@ -1359,7 +1359,7 @@ Two hall effect current sensors, each wired around the power lines of the motor 
             Temperature rating & 150 \degree C \\ \hline
             \end{tabular}
             \caption{\hlr{Wire data of the company: Delphi, 35 mm$^{2}$}}
-            \label{motorwire}
+            \label{accumtomcwire}
             \end{table}
 
             \hlr{The Prestolite is used in the 3 connections between the motor controllers and motors (each). The Delphi wire is used for the connections between the accumulator and motor controllers. }
