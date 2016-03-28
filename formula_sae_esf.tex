@@ -1087,7 +1087,7 @@ A Hall effect current sensor, wired before the current splits to the motor contr
                 \begin{tabular}{|l|l|}
                     \hline
                     Fuse manufacturer and type: & \hlr{Littledfuse, MINI Series (MIN2BP)} \\ \hline
-                    Continuous current rating & 4A \\ \hline
+                    Continuous current rating & 5A \\ \hline
                     Maximum operating voltage & \hlr{32V} \\ \hline
                     Type of fuse & Fast acting \\ \hline
                     I2t rating & \hlr{2.8 A2s} \\ \hline
@@ -1194,7 +1194,7 @@ A Hall effect current sensor, wired before the current splits to the motor contr
                     \hline
                     Location & Wire Size & Wire Ampacity & Fuse type & Fuse rating \\ \hline
                     \begin{tabular}[c]{@{}l@{}}TS Main fuse (before HVD,\\ on pos pole)\end{tabular} & 2 AWG & 181A & LPJ type & 175A \\ \hline
-                    TS+ to GLV DC-DC converter & \hlr{20 AWG} & 7A & \hlr{MIN fuse} & 4A \\ \hline
+                    TS+ to GLV DC-DC converter & \hlr{20 AWG} & 7A & \hlr{MIN fuse} & 5A \\ \hline
                     GLV 12V+ & \hlr{20 AWG} & 7A & MIN fuse & 2A \\ \hline
                     \hlr{GLV 12V+ to PCBs} & hlr{trace width 12mil} & \hlr{1A} & \hlr{0zck series} & \hlr{1A} \\ \hline
                     Shutdown pos pole & 22 AWG & 7A & MIN fuse & 2A \\ \hline
@@ -1598,7 +1598,7 @@ A Hall effect current sensor, wired before the current splits to the motor contr
 
         \subsubsection{Description}
 
-            \hlr{The GLV system will be powered via a DC/DC converter which will convert the 100V system to a 13.5V low voltage system. Before the DC-DC converter, there is a fuse for the GLV system as a whole, with a rating of 4A.}
+            \hlr{The GLV system will be powered via a DC/DC converter which will convert the 100V system to a 13.5V low voltage system. Before the DC-DC converter, there is a fuse for the GLV system as a whole, with a rating of 5A.}
 
         \subsubsection{Wiring, Cables}
 
@@ -1610,7 +1610,7 @@ A Hall effect current sensor, wired before the current splits to the motor contr
             \end{figure}
 
             %need wire gauges
-            \hlr{Its output will be fused to 4A, and then used for the GLV system as 13.5V. After the two emergency shutdown buttons, the system is fused in parallel with two 2A fuses (the system voltage will be fused to 2A and the shutdown system will be fused to 2A). The GLV system voltage will be split in parallel again and then regulated to 5V for the sake of the CAN ATmega. All of these wires, past the DC-DC converter, will be 20 AWG.}
+            \hlr{Its output will be fused to 5A, and then used for the GLV system as 13.5V. After the two emergency shutdown buttons, the system is fused in parallel with two 2A fuses (the system voltage will be fused to 2A and the shutdown system will be fused to 2A). The GLV system voltage will be split in parallel again and then regulated to 5V for the sake of the CAN ATmega. All of these wires, past the DC-DC converter, will be 20 AWG.}
 
         \subsubsection{Position in Car}
 
