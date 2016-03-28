@@ -1498,7 +1498,7 @@ A Hall effect current sensor, wired before the current splits to the motor contr
 
     \subsection{Description/Additional Circuitry}
 
-        Two rotary potentiometers are mechanically housed in one unit from Active Sensors (P/N MHR5621) and mounted to the rotating shaft of the throttle pedal assembly. The use of a single housing eliminates concerns regarding mechanical backlash and misalignment. Each output from the potentiometers will go to a CAN connected ATmega16M1, which will compare the two outputs and send a message via CAN bus to the motor controllers with the requested torque.
+        Two rotary potentiometers are mechanically housed in one unit from Active Sensors (P/N MHR5621) and mounted to the rotating shaft of the throttle pedal assembly. The use of a single housing eliminates concerns regarding mechanical backlash and misalignment. \hlr{ The output of the potentiometers are read by a CAN bus connected ATmega16M1. Software will compare the outputs to ensure that they are within 10\% of each other and will then send a torque request to the CAN node that controls the motor controllers.}
 
         \begin{table}[H]
         \centering
@@ -1526,9 +1526,9 @@ A Hall effect current sensor, wired before the current splits to the motor contr
 
         %This is describing the BSPD, I think they are asking about comparing the two potentiometer values. The Active Sensors encoder is ONE PHYSICAL UNIT with two potentiometers built-in.
 
-        Two potentiometers are mounted on the torque pedal. A CAN node probes the voltage dividers. The ATmega will compare the two independent voltages and will only send non-zero torque commands if the sensors read a voltage within 10\% of each other. If a short circuit or wiring failure with either potentiometer occurs, the input will be outside the normal operating range, and the motor controllers will not be sent torque requests. The node will log the error in the CAN bus.\\
+        Two potentiometers are mounted on the torque pedal. A CAN node probes the voltage dividers. The ATmega will compare the two independent voltages and will only send non-zero torque commands if the sensors read a voltage within 10\% of each other. If a short circuit or wiring failure with either potentiometer occurs, the input will be outside the normal operating range \hlr{due to an internal pull-up resistor in the ATmega read pin}, and the motor controllers will not be sent torque requests. The node will log the error in the CAN bus.\\
 
-        There will also be a Pegasus Brake light pressure switch (part number 3601, recommended by Formula Hybrid) on the brakes, wired to a CAN node with 22 gauge wire. If the pressure switch indicates actuation of the brake and the potentiometers measure more than 25\% pedal travel, the power to the motors will be completely stopped until the torque pedal indicates less than 5\% pedal travel.
+        There will also be a Pegasus Brake light pressure switch (part number 3601, recommended by Formula Hybrid) on the brakes, wired to a CAN node with 22 gauge wire. If the pressure switch indicates actuation of the brake and the potentiometers measure more than 25\% pedal travel \hlr{the CAN node will not send any torque requests to the motor controller until the torque pedal goes to less than 5\% travel.}
 
     \subsection{Wiring}
 
@@ -1541,7 +1541,7 @@ A Hall effect current sensor, wired before the current splits to the motor contr
             \label{braketorque}
         \end{figure}
 
-        Two potentiometers are wired with their output to the CAN analog input pins. The potentiometers are given separate power lines of 5V, parallel, to the supply power of the CAN node itself. The brake switch is positioned to trip at a level of hard braking, and when triggered will deliver 5V to a CAN input pin. The CAN node is wired to send and receive messages to the other nodes.
+        Two potentiometers are wired with their output to the \hlr{microcontroller} analog input pins \hlr{which have internal pull-up resistors}. The potentiometers are given separate power lines of 5V, parallel, to the supply power of the CAN node itself. The brake switch is positioned to trip at a level of hard braking and when triggered will deliver 5V \hlr{to the microcontroller input pin.}
 
     \subsection{Position in Car/Mechanical Fastening/Mechanical Connection}
 
