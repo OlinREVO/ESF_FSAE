@@ -544,7 +544,7 @@ Two hall effect current sensors, each wired around the power lines of the motor 
 
             Another worst case scenario that could occur at the measuring points is a short between the TS and GLV systems over the banana jacks, again by operator error. In this scenario, the IMD will open the shutdown circuit.
 
-            \hlr{The TSMP banana jacks are 72930-2 and 72930-0 Pomona Electronics 4 mm banana jacks (red and black, respectively). The TSMP resistors are Vishay Dale, ALSR035K000FE12 (manufacturer's part number), rated for V and part of the ALSR/ALVR series. The datasheets for both the banana jacks and the resistors can be found in section} \ref{tsmpappendix}.
+            \hlr{The TSMP banana jacks are 72930-2 and 72930-0 Pomona Electronics 4 mm banana jacks (red and black, respectively). The TSMP resistors are Vishay Dale, CMF655K0000FKEB  (manufacturer's part number), rated for 500V and part of the CMF Industrial series. The datasheets for both the banana jacks and the resistors can be found in section} \ref{tsmpappendix}.
 
             %Describe wiring, show schematics, and describe connectors and cables used and show useful data regarding the wiring.  Include details on the protection resistor including resistance, voltage and power rating.
 
@@ -1570,7 +1570,7 @@ Two hall effect current sensors, each wired around the power lines of the motor 
             \end{figure}
 
             %need wire gauges
-            
+
             \hlr{Its output will be fused to 5A, and then used for the GLV system as 13.5V. After the two emergency shutdown buttons, the system is fused in parallel with two 2A fuses (the system voltage will be fused to 2A and the shutdown system will be fused to 2A). The GLV system voltage will be split in parallel again and then regulated to 5V for the sake of the CAN ATmega. All of these wires, past the DC-DC converter, will be 20 AWG. The wire going to the DC-DC from the accumulator is tractive system voltage and fused to 1A.}
 
             \hlr{The fuses used for the GLV system is described in the tables below.}
