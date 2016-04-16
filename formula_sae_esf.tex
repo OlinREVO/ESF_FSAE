@@ -1301,7 +1301,14 @@ Two hall effect current sensors, each wired around the power lines of the motor 
                 \label{mcoffcar}
             \end{figure}
 
-            \hlr{The two motor controllers used are both model Sevcon Gen 4 Size 4 motor controllers. These motor controllers are used commercially in} the motorcycles of Zero Motorcycles,\hlr{and they delegate power to the motors in response to the input of an analog signal}. The motor controller comes with extra capabilities that will be used for other systems, like the precharge system. \hlr{The motor controller does not provide isolation between its low and high voltage components, so all low voltage signals to the motor controller will be individually isolated. The motor controller controller (MCC) PCB will contain a CAN node that outputs the throttle information relayed from the Bulkhead (Throttle/Brake) CAN node. The analog output will be isolated through an optoisolator.}
+            \hlr{The two motor controllers used are both model Sevcon Gen 4 Size 4 motor controllers. These motor controllers are used commercially in} the motorcycles of Zero Motorcycles,\hlr{and they delegate power to the motors in response to the input of an analog signal}. The motor controller comes with extra capabilities that will be used for other systems, like the precharge system. \hlr{The motor controller does not provide isolation between its low and high voltage components, so all low voltage signals to the motor controller will be individually isolated. The motor controller controller (MCC) PCB will contain a CAN node that outputs the throttle information relayed from the Bulkhead (Throttle/Brake) CAN node. The analog output will be isolated through an optoisolator, as shown in figure} \ref{mccschem}.
+
+            \begin{figure}[H]
+             \centering
+             \includegraphics[width = 0.7 \textwidth]{MCCschem}
+             \caption{Motor controller schematic}
+             \label{mccschem}
+            \end{figure}
 
             \begin{table}[H]
             \centering
