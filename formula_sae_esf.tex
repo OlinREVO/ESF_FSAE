@@ -122,7 +122,7 @@
 
 \section{System Overview} %Short description of system's concept
 
-    The system will support all requirements for vehicular movement while guaranteeing driver and maintenance safety. There will be two primary electrical systems, galvanically isolated from each other: a 100V high power tractive system and a 12V low power sense and communication system.\\
+    The system will support all requirements for vehicular movement while guaranteeing driver and maintenance safety. There will be two primary electrical systems, galvanically isolated from each other: a \hlr{98.4V} high power tractive system (maximum) and a 12V low power sense and communication system.\\
 
     The low power system will include a shutdown circuit, a series of sensors and switches that ensures the vehicle is safe to drive before engaging the tractive system. \hlr{There is a low voltage battery and DC-DC converter, because the 12V battery will start up the car and the DC-DC converter will take over and continue powering the system (the DC-DC converter being before the AIRs).} The shutdown circuit will monitor the vehicle for dangerous conditions, such as a collision or ground fault in the tractive system, and will disengage the tractive system in case of emergency. Finally, the low power system will power a CAN communication network using ATmega16M1 microcontrollers that will be used to operate several rules required functions, such as the ready to drive sound, but will also serve as a debugging tool for both electrical systems.\\
 
@@ -140,7 +140,7 @@
             \centering
             \begin{tabular}{|l|l|}
             \hline
-                Maximum Tractive system voltage & 99.6V VDC \\ \hline
+                Maximum Tractive system voltage & \hlr{98.4V} VDC \\ \hline
                 Nominal Tractive system voltage & 90 VDC \\ \hline
                 Control-system voltage & 13.5VDC \hlr{\& 12VDC}\\ \hline
                 Accumulator configuration & 2s2p in 12s \\ \hline
