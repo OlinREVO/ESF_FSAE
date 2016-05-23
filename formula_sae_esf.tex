@@ -1177,6 +1177,13 @@ Two hall effect current sensors, each wired around the power lines of the motor 
 
             %Describe how the accumulator will be charged. How will the charger be connected? How will the accumulator be supervised during charging? Show schematics, CAD-Renderings, etc., if needed
 
+            \begin{figure}[H]
+                \centering
+                \includegraphics[width = 0.7 \textwidth]{charging}
+                \caption{\hlr{Schematic of the PCB controlling charging, while interfacing with the AMS relays and the AIRs, located on the AIR control board}}
+                \label{chargeschem}
+            \end{figure}
+
             \begin{table}[H]
                 \centering
                 \begin{tabular}{|l|l|}
@@ -1193,13 +1200,15 @@ Two hall effect current sensors, each wired around the power lines of the motor 
                 \label{charger}
             \end{table}
 
-            This UL-listed charger supplies constant current at 17.0A until cell voltages reach 4.15V. Then, constant voltage is supplied at 4.15 V per cell, summing to 99.6V, until the current tapers to 2.0 A.\\
+
+            This UL-listed charger supplies constant current at 17.0A until cell voltages reach 4.15V. Then, constant voltage is supplied at 4.15 V \hlr{per cell, summing to 99.6V,} until the current tapers to 2.0 A. The charging power lines will be fused to 20A to protect the  12 AWG wiring.\\
 
             The charger will indicate complete on its LED display when the battery voltage reaches 4.15V per cell, however it will continue charging until it finishes both stages.\\
 
-            The accumulator will only be charged on the charging cart. This cart has not yet been specified or designed. It will be able to support the full weight of the accumulator and only move when a dead man's switch is activated.\\
+            The accumulator will only be charged on the charging cart, \hlr{shown in figure} \ref{cart}. It will be able to support the full weight of the accumulator and only move when a dead man's switch is activated.\\
 
-            The accumulator cart will contain a specialized shutdown circuit that allows the accumulator to be charged through the main pack connector. The AMS will be active during charging and have the ability to open the AIRs and stop charging in the event of dangerous battery conditions. This shut down circuit will contain a separate IMD, an emergency stop, and an interlocking connection between the charger and accumulator. The separate IMD used is also the IR155-3204 from Bender, the same model of IMD used on the car.
+            The accumulator cart will contain a specialized shutdown circuit that allows the accumulator to be charged through the main pack connector. The AMS will be active during charging and have the ability to open the AIRs and stop charging in the event of dangerous battery conditions. This shutdown circuit will contain a separate IMD, an emergency stop, and an interlocking connection between the charger and accumulator. The interlock will be in the two smaller pins found in the Deutsch connector (6 pin). The separate IMD used is also the IR155-3204 from Bender, the same model of IMD used on the car. The IMD will be mounted to the cart along with the PCB holding the shutdown circuitry that controls circuitry and the TSEL.
+
 
 
             \begin{figure}[H]
@@ -1210,6 +1219,13 @@ Two hall effect current sensors, each wired around the power lines of the motor 
             \end{figure}
 
             The charging system's shutdown circuitry is being developed into a PCB. The PCB will find 12V power from a wall wart (12VDC, 4A out) and include the components listed above. There will be a CAN node located on the PCB, which will be able to communicate with the AMS CAN nodes.
+
+            \begin{figure}[H]
+                \centering
+                \includegraphics[width = 0.7 \textwidth]{Cart}
+                \caption{\hlr{Cart with a deadman's lock for carrying the accumulator}}
+                \label{cart}
+            \end{figure}
 
         \subsubsection{Mechanical Configuration/Materials}
 
@@ -1295,7 +1311,14 @@ Two hall effect current sensors, each wired around the power lines of the motor 
                 \label{mcoffcar}
             \end{figure}
 
-            The two motor controllers used are both model Sevcon Gen 4 Size 4 motor controllers. These motor controllers are used commercially in the motorcycles of Zero Motorcycles, and they delegate power to the motors in response to the input of an analog signal. The motor controller comes with extra capabilities that will be used for other systems, like the precharge system. The motor controller does not provide isolation between its low and high voltage components, so all low voltage signals to the motor controller will be individually isolated. The motor controller controller (MCC) PCB will contain a CAN node that outputs the throttle information relayed from the Bulkhead (Throttle/Brake) CAN node. The analog output will be isolated through an optoisolator.
+            The two motor controllers used are both model Sevcon Gen 4 Size 4 motor controllers. These motor controllers are used commercially in the motorcycles of Zero Motorcycles, and they delegate power to the motors in response to the input of an analog signal. The motor controller comes with extra capabilities that will be used for other systems, like the precharge system. The motor controller does not provide isolation between its low and high voltage components, so all low voltage signals to the motor controller will be individually isolated. The motor controller controller (MCC) PCB will contain a CAN node that outputs the throttle information relayed from the Bulkhead (Throttle/Brake) CAN node. The analog output will be isolated through an optoisolator, as shown in figure \ref{mccschem}.
+
+            \begin{figure}[H]
+             \centering
+             \includegraphics[width = 0.7 \textwidth]{MCCschem}
+             \caption{\hlr{Motor controller schematic}}
+             \label{mccschem}
+            \end{figure}
 
             \begin{table}[H]
             \centering
