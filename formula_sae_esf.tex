@@ -124,7 +124,7 @@
 
     The system will support all requirements for vehicular movement while guaranteeing driver and maintenance safety. There will be two primary electrical systems, galvanically isolated from each other: a \hlr{98.4V} high power tractive system (maximum) and a 12V low power sense and communication system.\\
 
-    The low power system will include a shutdown circuit, a series of sensors and switches that ensures the vehicle is safe to drive before engaging the tractive system. There is a low voltage battery and DC-DC converter, because the 12V battery will start up the car and the DC-DC converter will take over and continue powering the system (the DC-DC converter being before the AIRs). The shutdown circuit will monitor the vehicle for dangerous conditions, such as a collision or ground fault in the tractive system, and will disengage the tractive system in case of emergency. Finally, the low power system will power a CAN communication network using ATmega16M1 microcontrollers that will be used to operate several rules required functions, such as the ready to drive sound, but will also serve as a debugging tool for both electrical systems.\\
+    The low power system will include a shutdown circuit, a series of sensors and switches that ensures the vehicle is safe to drive before engaging the tractive system. There is a low voltage battery and DC-DC converter, because the 12V battery will start up the car and the DC-DC converter will take over and continue powering the system (the DC-DC converter being before the AIRs). The shutdown circuit will monitor the vehicle for dangerous conditions, such as a collision or ground fault in the tractive system, and will disengage the tractive system in case of emergency. Finally, the low power system will power a CAN communication network using ATmega16M1 microcontrollers that will be used to operate several rules required functions, such as the ready to drive sound, and will also serve as a debugging tool for both electrical systems.\\
 
     The tractive system consists of a custom accumulator container, two Sevcon motor controllers, and two Zero Motorcycles brushless DC motors. The accumulator comprises 12 Nissan Leaf battery modules. The motors are configured for rear wheel drive with independent control over the left and right wheels. Communication to the motor controllers is completed using an analog signal from the isolated CAN system.\\
 
@@ -220,7 +220,7 @@
                 \hline
                     Total Number of AIRs: & 2 \\ \hline
                     Current per AIR & 3.8A until 150 ms passes, then 0.4 A \\ \hline
-                    Additional parts consumption within the shutdown circuit: & 0.1 A\\ \hline
+                    Additional parts consumption within the shutdown circuit: & 0.2 A\\ \hline
                     Total current: & 4.3 A until 150 ms passes, then ~1A \\ \hline
                     Cross sectional area of the wiring used: & 0.00080384 in$^{2}$ (20 AWG) \\ \hline
                 \end{tabular}
@@ -232,18 +232,18 @@
 
         \subsubsection{Position in Car}
 
-        There are many shutdown components are in or mouonted to a housing called side panel housing, which is a waterproof enclosure located at the rear of the chassis, behind the main hoop, on the driver's right.  This enclosure is bolted onto steel brackets which are welded to the main hoop.  This enclosure consists of an ABS panel where the TSMS, GLVMS, TSMPs, GLVMPs, AMS reset button, and IMD reset button will be mounted, and a 3D printed rear housing with integrated 23-pin TE connectivity Ampseal connector, as seen in figure \ref{cpanel1}. In addition to the buttons and measuring points, the housing also contains the IMD, IMD relay, a PCB (Side panel node, which includes the watchdog relay), the GLV DC-DC converter, and the GLV battery, as seen in figure \ref{cpanel2}.  Mounted to the outside of the box includes the GLVMS and TSMS. The tractive system and low voltage systems are separated by at least two centimeters at all times.
+        There are many shutdown components are in or mouonted to a housing called \hlr{motor controller} housing, which is a waterproof enclosure located at the rear of the chassis, behind the main hoop, \hlr{underneath the motor controllers}.  This enclosure is bolted onto steel brackets which are welded to the main hoop.  This enclosure consists of an \hlr{Nylon} panel where the TSMS, GLVMS, TSMPs, GLVMPs, AMS reset button, and IMD reset button will be mounted, and a 3D printed rear housing with integrated 23-pin TE connectivity Ampseal connector, as seen in figure \ref{cpanel1}. In addition to the buttons and measuring points, the housing also contains the IMD, IMD relay, a PCB (Side panel node, which includes the watchdog relay), the GLV DC-DC converter, and the GLV battery, as seen in figure \ref{cpanel2}.  Mounted to the outside of the box includes the GLVMS and TSMS. The tractive system and low voltage systems are separated by at least two centimeters at all times, with certain wires wrapped in nomex tubing.
 
             \begin{figure}[H]
                 \centering
-                \includegraphics[width = 0.6 \textwidth]{CONTROLPANEL_1}
-                \caption{Outside view of the side panel housing}
+                \includegraphics[width = 0.6 \textwidth]{MCHousingdiagram}
+                \caption{Outside view of the side panel housing, labelled}
                 \label{cpanel1}
             \end{figure}
 
             \begin{figure}[H]
                 \centering
-                \includegraphics[width = 0.6 \textwidth]{CONTROLPANEL_2}
+                \includegraphics[width = 0.6 \textwidth]{MCHousinginside}
                 \caption{Inside view of the side panel housing}
                 \label{cpanel2}
             \end{figure}
@@ -938,18 +938,18 @@ Two hall effect current sensors, each wired around the power lines of the motor 
 
             \begin{figure}[H]
                 \centering
-                \includegraphics[width = 0.7 \textwidth]{bms_final1_PCBCAD}
-                \caption{CAD of 1 AMS board (all identical). Cyan polygon indicates GLV voltage, and the $\Delta x$ measurement is the distance between TS and GLV.}
+                \includegraphics[width = 0.7 \textwidth]{bmsfullgerber}
+                \caption{CAD of 1 AMS board (all identical). Spacing in the lower left was to separate TS and GLV.}
                 \label{bmspcb}
             \end{figure}
 
 
-            \begin{figure}[H]
-                \centering
-                \includegraphics[width=0.4 \textwidth]{bms_separation_detail}
-                \caption{Detail of BMS PCB where the minimum over surface distance (6.4 mm) are met. Distance between TS and GLV is shown to be $6.57$ mm (over surface)}
-                \label{creepage}
-            \end{figure}
+            % \begin{figure}[H]
+            %     \centering
+            %     \includegraphics[width=0.4 \textwidth]{bms_separation_detail}
+            %     \caption{Detail of BMS PCB where the minimum over surface distance (6.4 mm) are met. Distance between TS and GLV is shown to be $6.57$ mm (over surface)}
+            %     \label{creepage}
+            % \end{figure}
 
             Voltage and temperature data is relayed to the AMS by the cell breakout boards discussed earlier in this section. The cell top boards are electrically identical, but have mirrored layouts to accomodate which side of the accumulator they are on. There is a left hand side, figure \ref{celltopLH} and right hand side, figure \ref{celltopRH}. The cell breakout board contains fuses on all sensing lines, detailed in Figures \ref{celltopschem} - \ref{celltopLH}.
 
