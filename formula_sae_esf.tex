@@ -274,7 +274,7 @@
 
         \subsubsection{Wiring/Cables/Connectors}
 
-            To fit the connectors and the low current draw of the IMD, the wires used for the IMD will be 22 AWG and 18 AWG. There is a fuse protecting the low current, high voltage wiring of the IMD and other components, and it is rated to 1A (details of the fuse are in the appendix, section \ref{imdappendix}).
+            To fit the connectors and the low current draw of the IMD, the wires used for the IMD will be 22 AWG and 18 AWG. There is a fuse protecting the low current, high voltage wiring of the IMD and other components, and it is rated to 1A (details of the fuse are in the appendix, section \ref{imdappendix}). \hlr{It is the same fuses (1A on both poles) that protect the other high voltage, low current devices.}
 
             \begin{figure}[H]
                 \centering
@@ -336,13 +336,13 @@
 
         \subsubsection{Position in Car}
 
-        The inertia switch will be located on the dashboard, in reach of the driver as to fit EV5.7.4.
+        The inertia switch will be located on the dashboard, in reach of the driver as to fit EV5.7.4. \hlr{It is mounted properly (upwards), so it can be triggered and reset.}
 
     \subsection{Brake Plausibility Device (BSPD)} \label{BSPD}
 
         \subsubsection{Description/Additional Circuitry}
 
-The BSPD will constantly check if there is a substantial amount of current across the motor controllers and if the brakes are being pressed hard. If both are true, after 0.5 second of continuity, the relay will open the switch in the shutdown circuit. The circuitry consists of a series of OpAmps and logic gates which detect when the combined current going to both motors is greater than 50A and the brake sensor is being activated. The output of this result then powers a 555 timer which will output a high pulse to the reset pin of a SR-latch which allows for the circuit to be latching. The driver is able to reset the BSPD through the CAN bus.
+The BSPD will constantly check if there is a substantial amount of current across the motor controllers and if the brakes are being pressed hard. If both are true, after 0.5 second of continuity, the relay will open the switch in the shutdown circuit. The circuitry consists of a series of op amps and logic gates which detect when the combined current going to both motors is greater than 50A and the brake sensor is being activated. The output of this result then powers a 555 timer which will output a high pulse to the reset pin of a SR-latch which allows for the circuit to be latching.
 
 There are two Hall Effect current sensors monitoring the current draw of the two individual motor controllers. The measured current draw of both sensors is then summed in order to get the total current.
 
@@ -384,14 +384,14 @@ Two hall effect current sensors, each wired around the power lines of the motor 
 
             \begin{figure}[H]
                 \centering
-                \includegraphics[width = 0.9 \textwidth]{brakeincar}
+                \includegraphics[width = 0.8 \textwidth]{brakeincar}
                 \caption{View of BSPD Pressure Switch and T-Fitting}
                 \label{BSPDmech1}
             \end{figure}
 
             \begin{figure}[H]
                 \centering
-                \includegraphics[width = 0.9 \textwidth]{brakesensor}
+                \includegraphics[width = 0.7 \textwidth]{brakesensor}
                 \caption{Approximate Location of BSPD Pressure Switch in Vehicle}
                 \label{BSPDmech2}
             \end{figure}
@@ -409,10 +409,10 @@ Two hall effect current sensors, each wired around the power lines of the motor 
         \subsubsection{Wiring/Cables/Connectors}
 
             %Calcs for connectors and cables used and how they open the shutdown circuit
-            The IMD's output, as seen in figure \ref{IMD}, continuously closes the shutdown circuit as long as its output is high. The reset button closes the circuit to the coil to then allow the coil to power itself for as long as the output is high. Once low, the coil will open its four poles, thereby allowing power to the CAN node input, thereby activating the IMD light or the switch in the shutdown circuit. The 4PDT relay is specified for 15A, while the GLV system it controls is fused for 4A. The wire gauge to the IMD relay is 20AWG.\\
+            The IMD's output, as seen in figure \ref{IMD}, continuously closes the shutdown circuit as long as its output is high. The reset button closes the circuit to the coil to then allow the coil to power itself for as long as the output is high. Once low, the coil will open its four poles, thereby allowing power to the CAN node input, thereby activating the IMD light or the switch in the shutdown circuit. The 4PDT relay is specified for 15A, while the GLV system it controls is fused for \hlr{5}A. The wire gauge to the IMD relay is 20AWG.\\
 
             % BMS reset wiring
-            The BMS reset button is a button that connects 5V to a CAN input pin on the side panel node later mentioned in section \ref{imdnode}. When the CAN node receives a high signal it sends a message to the rest of the system, including the AMS nodes, and if the AMS detects the accumulator is safe, the AMS relay will close the shutdown circuit and allow normal operation. All wire gauges will be 20 AWG except for PCB traces. Because CAN communication requires very little current, the lines will not be fused.\\
+            The BMS reset button is a button that connects 5V to a CAN input pin on the side panel node later mentioned in section \ref{imdnode}. When the CAN node receives a high signal it sends a message to the rest of the system, including the AMS nodes, and if the AMS detects the accumulator is safe, the AMS relay will close the shutdown circuit and allow normal operation. All wire gauges will be 20 AWG except for PCB traces. \\
 
         \subsubsection{Position in Car}
 
@@ -463,6 +463,8 @@ Two hall effect current sensors, each wired around the power lines of the motor 
 
             The TSAL illuminates when the tractive system is active, which is defined as the tractive system voltage being over 60V or the AIRs being closed.
 
+            %% tsal light has changed
+
             \begin{table}[H]
                 \centering
                 \begin{tabular}{|l|l|}
@@ -472,7 +474,7 @@ Two hall effect current sensors, each wired around the power lines of the motor 
                 Lamp type & LEDs \\ \hline
                 Power consumption: & 0.48 W\\ \hline
                 Brightness & Unknown \\ \hline
-                Frequency: & Manual with 555 timer, 2.4 Hz \\ \hline
+                Frequency: & Manual with 555 timer, \hlr{3.1} \\ \hline
                 Size (length x height x width): & 103x27x51 mm \\ \hline
                 \end{tabular}
                 \caption{Parameters of the TSAL}
@@ -483,7 +485,7 @@ Two hall effect current sensors, each wired around the power lines of the motor 
 
             %Describe wiring, show schematics, describe connectors and cables used and show useful data regarding the wiring.  Include gauge, voltage and temperature rating of wiring used and any fuses or other overcurrent protection used.
 
-             The circuitry designed has two optocouplers with the mosfet sides in parallel. If either optocoupler is powered, the TSAL will be powered. On the TS-controlled optocoupler, when the TS is over 60V, zener diodes with a breakdown voltage of 56V and 3.6V respectably power one side of an optocoupler when the TS voltage is over 60V. On the GLV-controlled optocoupler, the optocoupler is powered when there is shutdown voltage before the AIRs. In this way, the light will be powered when the tractive system is over 60V or the AIRs are closed. The power line for the TSAL is also interrupted by a mosfet that has its gate controlled by a 555 timer to allow it to blink at a rate of 2.4 Hz.
+             The circuitry designed has two optocouplers with the mosfet sides in parallel. If either optocoupler is powered, the TSAL will be powered. On the TS-controlled optocoupler, when the TS is over 60V, zener diodes with a breakdown voltage of 56V and 3.6V respectably power one side of an optocoupler when the TS voltage is over 60V. On the GLV-controlled optocoupler, the optocoupler is powered when there is shutdown voltage before the AIRs. In this way, the light will be powered when the tractive system is over 60V or the AIRs are closed. The power line for the TSAL is also interrupted by a mosfet that has its gate controlled by a 555 timer to allow it to blink at a rate of \hlr{3.1} Hz.
 
             \begin{figure}[H]
             \centering
@@ -492,7 +494,7 @@ Two hall effect current sensors, each wired around the power lines of the motor 
             \label{TSALschem}
             \end{figure}
 
-            All connections made by wires will be 20 AWG rated for 600V, 125 \degree C and 7A, while all PCB traces will be a minimum of 12 mil, but nominally 20 mil in width. The TS voltage will have been fused to 1A on both power lines.
+            All connections made by wires will be 20 AWG rated for 600V, 125 \degree C and 7A, while all PCB traces will be a minimum of 12 mil, but nominally 20 mil in width. The TS voltage will have been fused to 1A on both \hlr{the positive and negative poles, with the same fuses that protects the TSMPs, IMD, GLV DC-DC and R2D sound}.
 
             %highlight the caption of the replacement picture.
             % \begin{figure}[H]
@@ -504,9 +506,9 @@ Two hall effect current sensors, each wired around the power lines of the motor 
 
         \subsubsection{Position in Car}
 
-            The TSAL will be mounted to the underside of the highest point of the main roll hoop, per EV 4.12.4 using a robust 3D printed (Kevlar reinforced Nylon) bracket integrating the light and necessary wiring. This enclosure has not been designed yet.
+            The TSAL will be mounted to the underside of the highest point of the main roll hoop, per EV 4.12.4, \hlr{using a mounting point of a small metal tab on the frame. }
 
-            The PCB will be located in the side panel enclosure, also known as the side panel housing.
+            The PCB will be located in the side panel enclosure, also known as the \hlr{motor controller} housing.
 
     \subsection{Measurement Points}
 
@@ -514,20 +516,20 @@ Two hall effect current sensors, each wired around the power lines of the motor 
 
             %Describe the housing used and how it can be accessed, etc.  Describe how the measurement points protected/covered when not in use and how the electrical connections on the back of the measurement points are protected when the measurement points are being used.
 
-            The TSMPs and GLVS ground measuring points are housed in a non-conductive, well-marked housing that can be opened without tools. It will be protected from people touching it by shrouded banana jack connectors. The measuring points allow for safe measurement of the tractive system voltage and for manual detection of ground faults. The TSMPs will be in the same housing as the side panel CAN node and PCB.
+            The TSMPs and GLVS ground measuring points are housed in a non-conductive, well-marked housing that can be opened without tools. It will be protected from people touching it by shrouded banana jack connectors \hlr{and multimeter probe covers}. The measuring points allow for safe measurement of the tractive system voltage and for manual detection of ground faults. The TSMPs will be in the same housing as the side panel CAN node and PCB.
 
         \subsubsection{Wiring, Connectors, Cables}
 
             \begin{figure}[H]
                 \centering
                 \includegraphics{TSMP}
-                \caption{Tractive System Measuring Points}
+                \caption{\hlr{Tractive System Measuring Points}}
                 \label{fig:TSMPschematic}
             \end{figure}
 
             Figure \ref{fig:TSMPschematic} shows the TSMP schematic. Left shows the schematic including the banana jacks. Right shows the multimeter measuring the tractive system, with the multimeter's expected resistance and the same resistors as before the TSMP's on the left side.\\
 
-            There will be four measuring points: TS+, TS-, GLV+, and GLV-. The TSMP connections will be secured with 5 k\ohm current limiting resistors. There is a 1A fuse at the beginning of the low current TS power lines, in the accumulator, only to protect the wiring. The worst case scenario for the TSMPs occurs when there is a short between the TS+ and TS- banana jacks. This could occur as a result of operator error when measuring the TS  voltage and create a voltage over a human operator's hands. The current limiting resistors ensure that the current draw in this scenario will not harm a human.
+            There will be four measuring points: TS+, TS-, GLV+, and GLV-. The TSMP connections will be secured with 5 k\ohm current limiting resistors. The worst case scenario for the TSMPs occurs when there is a short between the TS+ and TS- banana jacks. This could occur as a result of operator error when measuring the TS  voltage and create a voltage over a human operator's hands. The current limiting resistors ensure that the current draw in this scenario will not harm a human. \hlr{There is no fuse before the TSMP resistors and probe points.}
 
             \begin{align}
                 V = I * R \\
@@ -541,7 +543,7 @@ Two hall effect current sensors, each wired around the power lines of the motor 
                 P = 1 W
             \end{align}
 
-            Therefore, a 1W, 5k\ohm resistor will be placed before each TSMP banana jack. The resistor will be on the side panel PCB, which contains all of the low current TS circuitry and certain shutdown components. The TS line going to the side panel is fused, with a rating of 1A, within the accumulator, and then the 20 AWG wire is connected to the side panel PCB for the TSMP resistors. This PCB does not have a finished design yet, but will be housed such that it is insulated from all adjacent conductive materials.\\
+            Therefore, a 1W, 5k\ohm resistor will be placed before each TSMP banana jack. The resistor will be on the side panel PCB, which contains all of the low current TS circuitry and certain shutdown components. \\
 
             Another worst case scenario that could occur at the measuring points is a short between the TS and GLV systems over the banana jacks, again by operator error. In this scenario, the IMD will open the shutdown circuit.
 
@@ -551,8 +553,7 @@ Two hall effect current sensors, each wired around the power lines of the motor 
 
         \subsubsection{Position in Car}
 
-            The TSMP's will be located in the enclosure shown in Figures \ref{cpanel1} and \ref{cpanel2} along with the side panel circuitry. Body panel removal will not be required for access, and any protective covers for the TSMP's will be removable without the use of tools. The enclosure itself is bolted together using 1/4" hardware. %, but we intend to provide additional banana jack measuring points to measure the TSMP resistors without removal of any vehicle components.
-            %I wish we'd have that.
+            The TSMP's will be located in the enclosure shown in Figures \ref{cpanel1} and \ref{cpanel2} along with the side panel circuitry. Body panel removal will not be required for access. The enclosure itself is bolted together using 1/4" hardware.
 
     \subsection{Pre-Charge Circuitry}
 
@@ -724,13 +725,20 @@ Two hall effect current sensors, each wired around the power lines of the motor 
 
             %Describe wiring, show schematics, describe connectors and cabs and show useful data regarding the wiring.  Include information on the working voltage and current rating of the HVD.
 
-            The connector is rated for 600V and 230.0A on the primary contacts. Because the HVD has an interlock connection with the shutdown circuit, when it is opened it shuts down the TS system by opening the shutdown circuit.
+            The connector is rated for 600V and 230.0A on the primary contacts. Because the HVD has an interlock connection with the shutdown circuit, when it is opened it shuts down the TS system by opening the shutdown circuit. ]\hlr{The HVD has a cover to seal off the lead connections from any possible water, etc, which can be seen in figures} \ref{HVDwcover} \hlr{and} \ref{HVDclearcover}.
 
             \begin{figure}[H]
                 \centering
-                \includegraphics[width = 0.75 \textwidth]{HVD}
-                \caption{Schematic of primary tractive system connections}
-                \label{HVDschem}
+                \includegraphics[width = 0.75 \textwidth]{HVD_Cover}
+                \caption{\hlr{The connector with its cover as seen in CAD}}
+                \label{HVDwcover}
+            \end{figure}
+
+            \begin{figure}[H]
+                \centering
+                \includegraphics[width = 0.75 \textwidth]{HVD_Cover_t}
+                \caption{\hlr{The connector with the cover set as transparent as to see the other side of the connector}}
+                \label{HVDclearcover}
             \end{figure}
 
         \subsubsection{Position in Car}
@@ -757,7 +765,7 @@ Two hall effect current sensors, each wired around the power lines of the motor 
 
                 \begin{figure}[H]
                     \centering
-                    \includegraphics[width = 0.9 \textwidth]{R2Dsoundbuzzerschem}
+                    \includegraphics[width = 0.7 \textwidth]{R2Dsoundbuzzerschem}
                     \caption{Schematic for the Ready to Drive Sound Buzzer}
                     \label{R2D}
                 \end{figure}
@@ -792,15 +800,15 @@ Two hall effect current sensors, each wired around the power lines of the motor 
 
             The accumulator comprises 12 Nissan Leaf battery modules, wired in series. Each module comprises four LiMnO2 pouch cells, in a 2S-2P configuration as shown in Figure \ref{module}. Each cell has a shutdown separator and a nominal voltage of 3.75V, resulting in 7.5V per module and 90V total. The modules have alternating positive and negative terminal locations to make bus bar routing more efficient.
 
-            The Olin REVO team is under NDA with Nissan surrounding the information of the Nissan Leaf cells. The information of the cell capacity and nominal voltage are shareable without NDA.
+            The Olin REVO team is under NDA with Nissan surrounding the information of the Nissan Leaf cells. \hlr{ We are allowed to share module capacity (at 2C), nominal voltage, size, weight and energy density. The rest of the numbers given in the following sections will either come from measurements or limits that the team imposes on the batteries, and we have the knowledge that they are safe for our cells.}
 
             \begin{table}[H]
                 \centering
                 \begin{tabular}{|l|l|}
                     \hline
-                    Maximum Voltage & 99.6 \\ \hline
+                    Maximum Voltage & \hlr{97.34} \\ \hline
                     Nominal Voltage & 90 VDC \\ \hline
-                    Minimum Voltage & 60 VDC \\ \hline
+                    Minimum Voltage & 72 VDC \\ \hline
                     Maximum output current & Unknown \\ \hline
                     Maximum nominal current & NDA \\ \hline
                     Maximum charging current & NDA \\ \hline
@@ -813,7 +821,7 @@ Two hall effect current sensors, each wired around the power lines of the motor 
                 \label{batterytable}
             \end{table}
 
-            The maximum voltage is calculated from the maximum charging voltage, (4.15V per cell), and the maximum charging current is the maximum of the charger. Both are safe parameters for our cells.
+            The maximum voltage for our cells has been limited to 4.056 V per cell by our charger, which creates a 97V maximum of the battery pack.
 
             \begin{figure}[H]
                 \centering
@@ -825,25 +833,25 @@ Two hall effect current sensors, each wired around the power lines of the motor 
         \subsubsection{Cell Description} \label{celldescription}
 
             %describe cell type and chemistry
-            The cells are laminate type lithium ion cells (LiMnO2), packaged in modules for Nissan Leaf vehicles.
+        \hlr{The cells used are Automotive Energy E5 lithium ion (pouch type) cells, and they were fabricated into modules by Nissan for their Nissan Leaf electric vehicle. Their datasheets are not included because of our team's NDA with Nissan. We are working to be able to share the necessary information, but the cell values noted are from our testing of the cells and other sources like the US Department of Energy} (\href{http://energy.gov/sites/prod/files/2014/02/f8/battery_leaf_0356.pdf}{Link to source} \hlr{and located in the appendix.) Through their advanced testing, they note the maximum cell voltage at 4.2V and the minimum cell voltage at 2.5V, which aligns with our own research on other cells with lithium-manganese chemistry} (\href{http://batteryuniversity.com/learn/article/discharge_methods}{Link to source}), \hlr{which says that they should stay over 3V for battery safety and the safety of the drivers and/or operators.}
 
             \begin{table}[H]
                 \centering
                 \begin{tabular}{|l|l|}
                     \hline
                     Cell Manufacturer and Type &
-                        \begin{tabular}[c]{@{}l@{}}
-                            Automotive Energy Supply Corporation\\ Model E5
-                        \end{tabular} \\ \hline
+                    \begin{tabular}[c]{@{}l@{}}
+                        Automotive Energy Supply Corporation\\ Model E5
+                    \end{tabular} \\ \hline
                     Cell nominal capacity & 32.5 Ah \\ \hline
-                    Maximum Voltage & NDA \\ \hline
+                    Maximum Voltage & \hlr{4.056V} \\ \hline
                     Nominal Voltage & 3.75V \\ \hline
-                    Minimum Voltage & NDA \\ \hline
+                    Minimum Voltage & \hlr{3V} \\ \hline
                     Maximum output current & Unknown \\ \hline
                     Maximum nominal output current & NDA \\ \hline
                     Maximum charging current & NDA \\ \hline
-                    Maximum Cell Temperature (discharging) & NDA, see below \\ \hline
-                    Maximum Cell Temperature (charging) & NDA, see below\\ \hline
+                    Maximum Cell Temperature (discharging) & \hlr{58 \degree C} \\ \hline
+                    Maximum Cell Temperature (charging) & \hlr{50 \degree C}\\ \hline
                     Cell Chemistry &
                         \begin{tabular}[c]{@{}l@{}}
                             Lithium-ion - Laminate type\\
@@ -854,8 +862,6 @@ Two hall effect current sensors, each wired around the power lines of the motor 
                 \caption{Main cell specification}
                 \label{cells}
             \end{table}
-
-   In software, we are restricting the maximum cell temperature (charging) to 50 \degree C, and the maximum cell temperature (discharging) to 60 \degree C.
 
         \subsubsection{Cell Configuration} \label{cellconfiguration}
 
@@ -868,7 +874,9 @@ Two hall effect current sensors, each wired around the power lines of the motor 
             \label{module}
             \end{figure}
 
-            As stated in Section \ref{batteryoverview}, there are 12 modules in series. Each module holds 4 cells which are in a 2s-2p configuration. The terminal marked in white in Figure \ref{canopener} references the point between the two parallel cell strings. The white terminal is the cell interconnection point, as shown in figure \ref{module}.
+            As stated in Section \ref{batteryoverview}, there are 12 modules in series. Each module holds 4 cells which are in a 2s-2p configuration. \hlr{The white terminal marked in white in Figure} \ref{canopener} \hlr{references the point between the two parallel cell strings, as shown in figure} \ref{module} \hlr{and labeled as MIDV}.
+
+            The modules, each have a string of 2 cells in parallel, as seen in Figure \ref{moduleschem}. In the middle of each cell there is a shutdown separator, which acts as a fuse in over-current conditions. These modules are commercially sold in Nissan Leaf vehicles without issue, so we are referencing their safety to prove ours.
 
             \begin{figure}[H]
                 \centering
@@ -886,7 +894,14 @@ Two hall effect current sensors, each wired around the power lines of the motor 
                 \label{busbar}
             \end{figure}
 
-            There are 3 maintenance plugs, separating the segments to be less than 6 MJ each. Figure \ref{tswiring_top}  points out the maintenance plugs, shortened as SMD or MSD. The connectors are further described in section \ref{batteryconnectors}.
+            There are 3 maintenance plugs, separating the segments to be less than 6 MJ each. Figure \ref{tswiring_top}  points out the maintenance plugs, shortened as SMD or MSD. The connectors are further described in section \ref{batteryconnectors}. \hlr{The calculation verifying the segment energy is seen below}
+
+            \begin{align}
+              \text{Seg Energy} &= V_{nom}  * \text{Number of Cells} * \text{Cell Ah (2C rate)} *  3.6 \text{kJ}\\
+              \text{Seg Energy} &= (7.5*3 ) * 65 * 3.6 \\
+              \text{Seg Energy} &= 5265 \text{kJ}\\
+              \text{Seg Energy} &= 5.265 \text{MJ}
+            \end{align}
 
         \subsubsection{Cell Temperature Monitoring} %\label{celltemp}
 
@@ -912,7 +927,23 @@ Two hall effect current sensors, each wired around the power lines of the motor 
                 \label{busbarstack}
             \end{figure}
 
-            The distance between the bottom of the PCB and the top of the busbar is 0.094 in, while the distance from thermistor to terminal is 0.32 in. Because the cells are arranged within the module by the manufacturer, the distance from the busbar to the actual cell terminals (instead of the module terminals) is unknown.
+            The distance between the bottom of the PCB and the top of the busbar is \hlr{3.2 mm (0.126 in.)}, while the distance from thermistor to terminal is 0.32 in. Because the cells are arranged within the module by the manufacturer, the distance from the busbar to the actual cell terminals (instead of the module terminals) is unknown.
+
+            \hlr{Figure} \ref{fig:voltageCellvsTemp} \hlr{shows the voltage that will be read by the BMS at different temperature readings. The BMS has an ADC with 10 bit resolution meaning that voltage differences of less than 0.005V can be detected. As seen in Figure }\ref{fig:voltageCellvsTempZOOM} \hlr{the worst case scenario for over-temperature sensing is when the temperature is at 62 \degree C. For this reason we will choose to be safe and raise an error when the temperature is at 58 \degree C which has a worse case reading of 60 \degree C.}
+
+                \begin{figure}[H]
+                \centering
+                \includegraphics[width =0.6 \textwidth]{VoltageVSTemp.png}
+                \caption{\hlr{Voltage measured at BMS vs. temperature the cell is at.}}
+                \label{fig:voltageCellvsTemp}
+                \end{figure}
+
+                \begin{figure}[H]
+                \centering
+                \includegraphics[width =0.6 \textwidth]{VoltageVSTempZOOM.png}
+                \caption{\hlr{Voltage measured at BMS vs. temperature the cell is at. This just shows the voltage difference at different temperatures around 60 \degree C}}
+                \label{fig:voltageCellvsTempZOOM}
+                \end{figure}
 
         \subsubsection{Battery Management System} \label{bms}
 
@@ -928,7 +959,7 @@ Two hall effect current sensors, each wired around the power lines of the motor 
 
            There are 4 AMS modules, and each AMS monitors 6 groups of cells in series. Each module contains 4 cells, 2 series x 2 parallel, so each AMS monitors 3 modules, or 12 cells (6 series x 2 parallel). There are 4 AMS boards. Each AMS board is coupled to a cell breakout board, which includes 3 thermistors and bolts to the power terminals of three modules, as shown in Figure \ref{busbar} (blue circuit boards). The purpose of the cell breakout boards is to help manage wiring inside the accumulator. The cell breakout boards will have compression limiting copper pads at the terminal bolts and will be spaced above the bus bars using copper washers.\\
 
-            The AMS is able to shunt 3A when the cell voltage gets above 4.15 V. The AMS opens a relay in line with the shutdown circuit if any cell drops below 2.5 V or above 4.15V. The AMS opens a relay in line with the shutdown circuit if any cell gets above 60 \degree C. The power to each of the AMS relays is through a CAN output, and the CAN system does monitor all of the voltage and temperature.\\
+            The AMS is able to shunt 3A when the cell voltage gets above \hlr{4.1} V. The AMS opens a relay in line with the shutdown circuit if any cell drops below 2.5 V or above 4.15V. The AMS opens a relay in line with the shutdown circuit if any cell gets above 60 \degree C. The power to each of the AMS relays is through a CAN output, and the CAN system does monitor all of the voltage and temperature.\\
 
             CAN communication from the board is isolated via a TI ISO1050DUBR (isolated CAN transceiver). Only CAN communication is used to have the information from each AMS relayed to the rest of the system, and the boards are otherwise independent of each other. Each board has an electrical connection with a normally-open relay on the AIR control board (i.e. there are four AMS relays), and the ATmega16M1 of each CAN node can open its own relay. On each cell-top board, there are 7 surface mount Bel C1Q 3A fuses. (Lowest voltage reference and top voltage of each of 6 cells.) The relays which allow the AMS to control the shutdown circuit provide isolation between the AMS and the GLV system, as well as the isolated CAN transceivers. Please see Figure \ref{amsschem} for the schematic of one of the battery management system boards (AMS).\\
 
@@ -1034,7 +1065,7 @@ Two hall effect current sensors, each wired around the power lines of the motor 
             %ADD 18 AWG wire for IMD's connectors
 
             % Describe your maintenance plugs, provide pictures
-            We will use OEM maintenance plugs provided by General Motors. As shown in Figure \ref{msd03}, these maintenance plugs, known internally as Manual Service Disconnects (MSD's), comprise a panel-mounted plastic housing (black) and a plastic plug (orange). The plug must be twisted and then pulled in two distinct steps, which disengages the copper bus-bar, contained in the orange plug, from spring-loaded contacts contained in the black housing. There will not be any fuses in the MSDs. General Motors will also be crimping custom length leads onto these MSD's for our vehicle. The leads are 40 mm$^2$ in cross-section, not including insulation. Each MSD also contains a two-pin interlock, as described in Section \ref{interlocks}. To the best of our knowledge, these MSD's comply with EV 3.3.3. Additionally, the spring-loaded contacts located in the black housing are encapsulated in plastic, providing protection from shorting and accidental contact.
+            We will use OEM maintenance plugs provided by General Motors. As shown in Figure \ref{msd03}, these maintenance plugs, known internally as Manual Service Disconnects (MSD's), comprise a panel-mounted plastic housing (black) and a plastic plug (orange). The plug must be twisted and then pulled in two distinct steps, which disengages the copper bus-bar, contained in the orange plug, from spring-loaded contacts contained in the black housing. There is a fuse located in . General Motors will also be crimping custom length leads onto these MSD's for our vehicle. The leads are 40 mm$^2$ in cross-section, not including insulation. Each MSD also contains a two-pin interlock, as described in Section \ref{interlocks}. To the best of our knowledge, these MSD's comply with EV 3.3.3. Additionally, the spring-loaded contacts located in the black housing are encapsulated in plastic, providing protection from shorting and accidental contact.
 
             \begin{figure}[H]
                 \centering
@@ -1951,7 +1982,11 @@ Referred from section \ref{dischargesection}
 Please refer to section \ref{bspdappendix} for the relay of the ready to drive sound.
 
 \section*{11.3.1.2 Cell Description}
-We are working with Nissan to allow us to use their datasheet for the modules.
+\href{http://batteryuniversity.com/learn/article/discharge_methods}{\hlr{Battery health research that confirms our general cell safety.}}
+
+We are working with Nissan to allow us to use their datasheet for the modules. Please see the following pages for the US Department of Energy's information on Nissan Leaf cells.
+
+\includepdf[pages=-]{BatteryEgov.pdf}
 
 \section*{11.3.1.4 Cell Temperature Monitoring}
 
