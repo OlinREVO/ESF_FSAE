@@ -959,7 +959,7 @@ Two hall effect current sensors, each wired around the power lines of the motor 
 
            There are 4 AMS modules, and each AMS monitors 6 groups of cells in series. Each module contains 4 cells, 2 series x 2 parallel, so each AMS monitors 3 modules, or 12 cells (6 series x 2 parallel). There are 4 AMS boards. Each AMS board is coupled to a cell breakout board, which includes 3 thermistors and bolts to the power terminals of three modules, as shown in Figure \ref{busbar} (blue circuit boards). The purpose of the cell breakout boards is to help manage wiring inside the accumulator. The cell breakout boards will have compression limiting copper pads at the terminal bolts and will be spaced above the bus bars using copper washers.\\
 
-            The AMS is able to shunt 3A when the cell voltage gets above \hlr{4.1} V. The AMS opens a relay in line with the shutdown circuit if any cell drops below 2.5 V or above 4.15V. The AMS opens a relay in line with the shutdown circuit if any cell gets above 60 \degree C. The power to each of the AMS relays is through a CAN output, and the CAN system does monitor all of the voltage and temperature.\\
+            The AMS is able to shunt 3A when the cell voltage gets above \hlr{4.1} V. The AMS opens a relay in line with the shutdown circuit if any cell drops below \hlr{3V or 4.1V}. The AMS opens a relay in line with the shutdown circuit if any cell gets above \hlr{58} \degree C. The power to each of the AMS relays is through a CAN output, and the CAN system does monitor all of the voltage and temperature.\\
 
             CAN communication from the board is isolated via a TI ISO1050DUBR (isolated CAN transceiver). Only CAN communication is used to have the information from each AMS relayed to the rest of the system, and the boards are otherwise independent of each other. Each board has an electrical connection with a normally-open relay on the AIR control board (i.e. there are four AMS relays), and the ATmega16M1 of each CAN node can open its own relay. On each cell-top board, there are 7 surface mount Bel C1Q 3A fuses. (Lowest voltage reference and top voltage of each of 6 cells.) The relays which allow the AMS to control the shutdown circuit provide isolation between the AMS and the GLV system, as well as the isolated CAN transceivers. Please see Figure \ref{amsschem} for the schematic of one of the battery management system boards (AMS).\\
 
@@ -970,10 +970,11 @@ Two hall effect current sensors, each wired around the power lines of the motor 
             \begin{figure}[H]
                 \centering
                 \includegraphics[width = 0.7 \textwidth]{bmsfullgerber}
-                \caption{CAD of 1 AMS board (all identical). Spacing in the lower left was to separate TS and GLV.}
+                \caption{\hlr{CAD of 1 AMS board (all identical). Spacing in the lower left was to separate TS and GLV.}}
                 \label{bmspcb}
             \end{figure}
 
+            \hlr{Captures of the BMS separation are located in the appendix, to prove the compliance with a minimum over surface spacing (6.4 mm or 1/4" spacing) requirement.}
 
             % \begin{figure}[H]
             %     \centering
@@ -2005,6 +2006,50 @@ We are working with Nissan to allow us to use their datasheet for the modules. P
 Please see figure \ref{amsschem} for the schematic of the AMS boards. Referred from section \ref{bms}. The AMS looks at the voltage of each cell by having differential amplifiers between two cells and get a relative voltage. This relative voltage for each cell is then put through an optocoupler, which then connects a power resistor and transistor to shunt the cell when necessary. There is an isolated CAN node attached to the board so it can communicate to the rest of the shutdown system and activate a relay to open the shutdown circuit when necessary. The BMS connects to the cell-top boards, shown in figure \ref{celltopschem}.
 
 Please see section \ref{bspdappendix} for the AMS relay.
+
+\hlr{The following figures show the compliance of spacing of the BMS board.}
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[width = 0.45 \textwidth]{bmsspace1}
+ \caption{\hlr{Capture of the separation on each AMS board between TS and GLV power on the top copper (262 mil)}}
+ \label{amsseparation1}
+\end{figure}
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[width = 0..45 \textwidth]{bmsspace2}
+ \caption{\hlr{Capture of the separation on each AMS board between TS and GLV power on the top copper (264 mil)}}
+ \label{amsseparation2}
+\end{figure}
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[width = 0.45 \textwidth]{bmsspace6}
+ \caption{\hlr{Capture of the separation on each AMS board between TS and GLV power on the top copper (300 mil)}}
+ \label{amsseparation6}
+\end{figure}
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[width = 0.45 \textwidth]{bmsspace3}
+ \caption{\hlr{Capture of the separation on each AMS board between TS and GLV power on the bottom copper(291 mil)}}
+ \label{amsseparation3}
+\end{figure}
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[width = 0.45 \textwidth]{bmsspace4}
+ \caption{\hlr{Capture of the separation on each AMS board between TS and GLV power on the bottom copper (349 mil)}}
+ \label{amsseparation4}
+\end{figure}
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[width = 0.45 \textwidth]{bmsspace5}
+ \caption{\hlr{Capture of the separation on each AMS board between TS and GLV power on the bottom copper (253 mil)}}
+ \label{amsseparation5}
+\end{figure}
 
 \section*{11.3.1.8 Accumulator Insulation Relays}
 
