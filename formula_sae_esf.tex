@@ -1496,7 +1496,7 @@ Two hall effect current sensors, each wired around the power lines of the motor 
             %wiring, schematics, calcs for currents and voltages and show data regarding the cables and connectors
 
             The wiring from the motor controllers will simply connect the M1, M2 and M3 outputs of the motor controllers to the motors' inputs. Refer to Figure \ref{mcschem} for the schematic of motor 1 and motor 2. All power wires will be 2 AWG, described in Section \ref{mcwire}.
-            Connections from the motors to motor controllers will be encased in UL-listed conduit, which will be properly terminated at each end to provide proper strain relief. The shielding will be properly grounded at the motor controller side using industry standard practices.
+            Connections from the motors to motor controllers will be encased in UL-listed conduit, which will be properly terminated at each end to provide proper strain relief. The shielding will be properly grounded at the motor controller side using industry standard practices. \hlr{The conduit will be tightly wrapped in orange fabric so that the high voltage leads are orange.}
 
         \subsubsection{Position in Car}
 
@@ -1549,13 +1549,13 @@ Two hall effect current sensors, each wired around the power lines of the motor 
         \caption{Torque Encoder data}
         \label{encoder}
         \end{table}
-
-        \begin{figure}[H]
-            \centering
-            \includegraphics{CANtorque}
-            \caption{Schematic for the CAN node on the torque encoders}
-            \label{torqueencoders}
-        \end{figure}
+        %
+        % \begin{figure}[H]
+        %     \centering
+        %     \includegraphics{CANtorque}
+        %     \caption{Schematic for the CAN node on the torque encoders}
+        %     \label{torqueencoders}
+        % \end{figure}
 
     \subsection{Torque Encoder Plausibility Check}
 
@@ -1635,7 +1635,7 @@ Two hall effect current sensors, each wired around the power lines of the motor 
 
             %need wire gauges
 
-            Its output will be fused to 5A, and then used for the GLV system as 13.5V. After the two emergency shutdown buttons, the system is fused in parallel with two 2A fuses (the system voltage will be fused to 2A and the shutdown system will be fused to 2A). The GLV system voltage will be split in parallel again and then regulated to 5V for the sake of the CAN ATmega. All of these wires, past the DC-DC converter, will be 20 AWG. The wire going to the DC-DC from the accumulator is tractive system voltage and fused to 1A.
+            Its output will be fused to 5A, and then used for the GLV system as 13.5V. After the two emergency shutdown buttons, the system is fused in parallel with two 2A fuses (the system voltage will be fused to 2A and the shutdown system will be fused to 2A). The GLV system voltage will be split in parallel again and then regulated to 5V for the sake of the CAN ATmega. All of these wires, past the DC-DC converter, will be 20 \hlr{or 22} AWG. The wire going to the DC-DC from the accumulator is tractive system voltage and fused to 1A.
 
             The fuses used for the GLV system is described in the tables below.
 
@@ -1643,7 +1643,7 @@ Two hall effect current sensors, each wired around the power lines of the motor 
             \centering
             \begin{tabular}{|l|l|}
             \hline
-            Fuse manufacturer and type: & Littledfuse, MINI Series (MIN2BP) \\ \hline
+            Fuse manufacturer and type: & Littlefuse, MINI Series (MIN2BP) \\ \hline
             Continuous current rating & 5A \\ \hline
             Maximum operating voltage & 32V\\ \hline
             Type of fuse & Fast acting \\ \hline
@@ -1660,7 +1660,7 @@ Two hall effect current sensors, each wired around the power lines of the motor 
         \centering
         \begin{tabular}{|l|l|}
             \hline
-            Fuse manufacturer and type: & Littledfuse, MINI Series (MIN2BP) \\ \hline
+            Fuse manufacturer and type: & Littlefuse, MINI Series (MIN2BP) \\ \hline
             Continuous current rating & 2A \\ \hline
             Maximum operating voltage & 32 V \\ \hline
             Type of fuse & Fast acting \\ \hline
@@ -1673,10 +1673,9 @@ Two hall effect current sensors, each wired around the power lines of the motor 
         \label{glv12vfusetable}
     \end{table}
 
-
         \subsubsection{Position in Car}
 
-            Figure \ref{dcdc_cad} shows the CAD model of the DC-DC converter, which will be located in the side panel housing described in figure \ref{cpanel2} along with the glv battery.
+            Figure \ref{dcdc_cad} shows the CAD model of the DC-DC converter, which will be located in the \hlr{motor controller} housing described in figure \ref{cpanel2} along with the glv battery.
 
             \begin{figure}[H]
                 \centering
@@ -1695,12 +1694,12 @@ Two hall effect current sensors, each wired around the power lines of the motor 
 
         \subsubsection{Wiring, cables}
 
-            %\begin{figure}[H]
-            %    \centering
-            %    \includegraphics[width = 0.8 \textwidth]{CANdashboard}
-            %    \caption{Dashboard node schematic}
-            %    \label{dashschem}
-            %\end{figure}
+            \begin{figure}[H]
+                \centering
+                \includegraphics[width = 0.8 \textwidth]{Dashboardschem}
+                \caption{Dashboard node schematic}
+                \label{dashschem}
+            \end{figure}
 
             The dashboard PCB includes a CAN node (ATmega16M1), start button, IMD light, AMS light, BSPD reset button, inertia switch, a linear potentiometer,LCD screen and the cockpit e-stop. The LCD screen is there for the driver to read the cause of vehicle shutdown in the event that a sensor with an input to the CAN system fails. The other controls are for the driver to be able to reset the vehicle and note any emergency situations. This PCB is still in progress, but it will include only low voltage circuitry.
 
@@ -1714,7 +1713,7 @@ Two hall effect current sensors, each wired around the power lines of the motor 
                     Continuous current rating & 1A \\ \hline
                     Maximum operating voltage & 15V \\ \hline
                     Type of fuse & Fast trip time, Resettable \\ \hline
-                    I2t rating & None listed, see figure \ref{5V1Afusecurve} \\ \hline
+                    I2t rating & \hlr{6.4 A2s}\\ \hline
                     \end{tabular}
                 \caption{Fuse on 5V line to PCB.}
                 \label{5V1Afuse}
@@ -1722,20 +1721,20 @@ Two hall effect current sensors, each wired around the power lines of the motor 
 
         \subsubsection{Position in Car}
 
-            The dashboard node will be located behind the dashboard, and connecting to certain switches and lights on the dashboard. The dashboard CAD render can be shown in Figure \ref{dashboard}.
+            The dashboard node will be located behind the dashboard, and connecting to certain switches and lights on the dashboard. The dashboard CAD render can be shown in Figure \ref{dashboardCAD}.
 
             \begin{figure}[H]
             \centering
-            \includegraphics[width = 0.7 \textwidth]{Dashboard}
+            \includegraphics[width = 0.4 \textwidth]{Dashboard}
             \caption{Render of the Dashboard, the location of the dashboard node. }
-            \label{dashboard}
+            \label{dashboardCAD}
             \end{figure}
 
     \subsection{LV Part 3: Side Panel Node} \label{imdnode}
 
         \subsubsection{Description}
 
-            The node located next to the IMD and ready to drive sound monitors the IMD's output and will activate the ready to drive sound when the car is in ready mode. It will also be connected to the rest of the CAN system around the car and listen to CAN messages for anomalies through its watchdog functionality. If the watchdog node receives a CAN error message or doesn't receive a "heartbeat" from other CAN nodes, it will open the watchdog switch in the shutdown circuit. This will be useful for maintaining the health of the motor controllers and debugging software while on the vehicle.
+            The \hlr{side panel} node, located next to the IMD and ready to drive sound, monitors the IMD's output and will activate the ready to drive sound when the car is in ready mode. It will also be connected to the rest of the CAN system around the car and listen to CAN messages for anomalies through its watchdog functionality. If the watchdog node receives a CAN error message or doesn't receive a "heartbeat" from other CAN nodes, it will open the watchdog \hlr{relay} in the shutdown circuit. This will be useful for maintaining the health of the motor controllers and debugging software while on the vehicle.
 
         \subsubsection{Wiring, Cables}
 
@@ -1755,7 +1754,7 @@ Two hall effect current sensors, each wired around the power lines of the motor 
 
             \begin{figure}[H]
             \centering
-            \includegraphics[width = 0.8 \textwidth]{panelPCB}
+            \includegraphics[width = 0.5 \textwidth]{panelPCB}
             \caption{PCB for the side panel node. The separation is located around the cyan line, and the minimum distance is $1/4$ in.}
             \label{panelPCB}
             \end{figure}
@@ -1785,17 +1784,7 @@ Two hall effect current sensors, each wired around the power lines of the motor 
             \label{mccschem}
         \end{sidewaysfigure}
 
-        {Please see figure \ref{mccschem} for the PCB schematic which includes the TS vs. GLV wiring.\\
-
-        The CAN node is wired into the CAN bus in order to get information from different nodes about torque information. \\
-
-        The brake pressure switch line is connected to the analog input of the ATmega as well as the input to the BSPD. There is a pull-down resistor in order to ensure that the input is never floating.\\
-
-        The BSPD is connected to the shutdown circuit via a relay on the board.\\
-
-        The Hall Effect current sensors are given 12V, Ground and a reference 6V. The output of the Hall Effect current sensors goes to an analog input pin of the ATmega as well as to the BSPD.\\
-
-        The motor controllers are wired into the system with 4 connections. Motor controller 5V and motor controller ground are used to power the receiving side of the opto-coupler. There is a Forward Switch line, which is necessary for our motor controllers, and is either 5V or 0V. The last wire is the analog control for the motor controllers. All connections are isolated from GLV.\\
+        Please see figure \ref{mccschem} for the schematic which includes the TS vs. GLV wiring. The CAN node is wired into the CAN bus in order to get information from different nodes about torque information. The brake pressure switch line is connected to the analog input of the ATmega as well as the input to the BSPD. There is a pull-down resistor in order to ensure that the input is never floating. The BSPD is connected to the shutdown circuit via a relay on the board. The hall effect current sensors are given 12V, Ground and a reference 6V. The output of the Hall Effect current sensors goes to an analog input pin of the ATmega as well as to the BSPD. The motor controllers are wired into the system with 4 connections. Motor controller 5V and motor controller ground are used to power the receiving side of the opto-coupler. There is a Forward Switch line, which is necessary for our motor controllers, and is either 5V or 0V. The last wire is the analog control for the motor controllers. All connections are isolated from GLV.\\
 
         The ATmega microcontroller on the board is able to reset the BSPD as well as allow for testing of the BSPD. In order to reset, the microcontroller gives a high pulse to the "set" pin of an RS-latch which will reset the BSPD if it has tripped. In order to test the BSPD, the microcontroller has an output that goes into the BSPD and simulates high current to the motor controllers.\\
 
@@ -1811,9 +1800,8 @@ Two hall effect current sensors, each wired around the power lines of the motor 
         The same resettable fuses will be used as in table \ref{5V1Afuse}.
 
         \subsubsection{Position in Car}
-        The MCC node will be contained in an enclosure right above the motor controllers.\\
 
-        The motor controller controller does not yet have a designated housing, but it will be located near the motor controllers in order to minimize the length of wiring.
+        The MCC node will be contained \hlr{in the motor controller housing, as seen in figure} \ref{cpanel2}.\\
 
         \subsection{LV Part 5: Bulkhead Node}
 
@@ -1823,11 +1811,7 @@ Two hall effect current sensors, each wired around the power lines of the motor 
 
             \subsubsection{Wiring, Cables}
 
-            \begin{sidewaysfigure}[p]
-                \includegraphics[width=\textheight]{throttleschem}
-                \caption{Schematic for the bulkhead node}
-                \label{throttleschem}
-            \end{sidewaysfigure}
+            \hlr{Please see figure} \ref{bulkheadschem} \hlr{for the bulkhead node schematic}.
 
             \begin{figure}[H]
             \centering
@@ -1840,7 +1824,7 @@ Two hall effect current sensors, each wired around the power lines of the motor 
 
             \subsubsection{Position in Car}
 
-            Predictably, the bulkhead node is located at the front of the pedal box. Its housing and mechanical mounting features are still in design.
+            Predictably, the bulkhead node is located at the front of the pedal box. \hlr{It is a 3D printed housing with integrated 23-pin TE connectivity Ampseal connector.}
 
 \newpage
 
@@ -1850,15 +1834,13 @@ Two hall effect current sensors, each wired around the power lines of the motor 
 
         %Describe how you intend to achieve the resistances between components at the required levels as defined in EV 4.3
 
-        The chassis is used as GLV ground. This ground is established at the panel mount holding some of the shutdown components and the TSMPs, GLV DC-DC converter and GLV battery. All mechanical systems in the vehicle, such as the accumulator, drivers seat, and pedal box, achieve low resistance to ground because they are either welded directly to the chassis, or fastened using uncoated, conductive metal fasteners. Electrical systems that are satellite to the main panel mount that need to establish a connection to ground for sense purposes are grounded to the chassis using ring terminals. Ring terminals can be included in the bolt stack up of mechanical systems to ensure a secure connection to ground that is positively retained with a lock nut.
+        The chassis is used as GLV ground. This ground is established at the panel mount holding some of the shutdown components and the TSMPs, GLV DC-DC converter and GLV battery. All mechanical systems in the vehicle, such as the accumulator, drivers seat, and pedal box, achieve low resistance to ground because they are either welded directly to the chassis, or fastened using uncoated, conductive metal fasteners. Electrical systems that are satellite to the main panel mount that need to establish a connection to ground for sense purposes are grounded to the chassis using ring terminals. Ring terminals can be included in the bolt stack up of mechanical systems to ensure a secure connection to ground that is positively retained with a lock nut. \hlr{There are no ground wires provided in the wiring harness, so all of the grounding is directly to the chassis.}
 
 
     \subsection{Grounding Measurements}
 
         %Describe the measurements you'll take to make sure EV4.3 is achieved
-        The conductive components within 100mm of the tractive system or a GLV component will be measured with a multimeter using in a 4pt technique to have less than 300 m\ohm resistance to ground. All fastened mechanical systems will be measured for a ground connection individually and exhaustively. Continuity will be checked during manufacture and assembly before the GLV system is in place.\\
-
-        There will not be any carbon fiber on the vehicle.
+        The conductive components within 100mm of the tractive system or a GLV component will be measured with a multimeter to have less than 300 m\ohm resistance to ground. All fastened mechanical systems will be measured for a ground connection individually and exhaustively. Continuity will be checked during manufacture and assembly before the GLV system is in place. There will not be any carbon fiber on the vehicle.
 
 \newpage
 
