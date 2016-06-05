@@ -1016,18 +1016,11 @@ Two hall effect current sensors, each wired around the power lines of the motor 
             \begin{figure}[H]
                 \centering
                 \includegraphics[width = 0.3 \textwidth]{aischem}
-                \caption{Accumulator Indicator schematic}
+                \caption{\hlr{Accumulator Indicator schematic}}
                 \label{aischem}
             \end{figure}
 
-            \begin{figure}[H]
-                \centering
-                \includegraphics[width = 0.3 \textwidth]{ai}
-                \caption{Detail of the Accumulator Indicator PCB}
-                \label{indicator}
-            \end{figure}
-
-            As shown in Figure \ref{indicator}, J2 connects the accumulator indicator, D14, to a zener diode running of TS voltage. The zener diode allows TS voltage to pass through the accumulator indicator LED and a resistor after TS voltage is over 60 VDC.  R13 is a 220 Ohm resistor to limit current. The calculations are as follows, assuming a forward voltage drop of the LED to be 2V:
+            As shown in Figure \ref{aischem}, the zener diode allows TS voltage to pass through the accumulator indicator LED and a resistor after TS voltage is over 60 VDC.  U148 is a 220 Ohm resistor to limit current. The calculations are as follows, assuming a forward voltage drop of the LED to be 2V:
 
             \begin{align}
                 100-2 V = I * 220 \ohm \\
@@ -1192,16 +1185,13 @@ Two hall effect current sensors, each wired around the power lines of the motor 
                     \hline
                     Location & Wire Size & Wire Ampacity & Fuse type & Fuse rating \\ \hline
                     \begin{tabular}[c]{@{}l@{}}TS Main fuse (before HVD,\\ on pos pole)\end{tabular} & 2 AWG & 181A & LPJ type & 175A \\ \hline
-                    TS+ to GLV DC-DC converter & 20 AWG & 7A & MIN fuse & 5A \\ \hline
-                    GLV 12V+ & 20 AWG & 7A & MIN fuse & 2A \\ \hline
-                    GLV 12V+ to PCBs & trace width 12mil & 1A & 0zck series & 1A \\ \hline
-                    Shutdown pos pole & 22 AWG & 7A & MIN fuse & 2A \\ \hline
-                    \begin{tabular}[c]{@{}l@{}}TS+ to IMD, TSMPs TSAL's DC-DC\\ converter\end{tabular} & 22 AWG & 7A & ABC fuse & 1A \\ \hline
-                    \begin{tabular}[c]{@{}l@{}}GLV 12V to 5V regulator \\ (CAN system)\end{tabular} & 22 AWG & 7A & ABC fuse & 1A \\ \hline
+                    TS+ to GLV DC-DC converter & 20 AWG & 7A & 251/253 series & \hlr{1A} \\ \hline
+                    \begin{tabular}[c]{@{}l@{}}TS+ to IMD, TSMPs TSAL's DC-DC\\ converter\end{tabular} & 22 AWG & 7A & 251/253 series fuse & 1A \\ \hline
+                    \begin{tabular}[c]{@{}l@{}}GLV 12V to 5V regulator \\ (CAN system)\end{tabular} & 22 AWG & 7A & 251/253 series fuse & 1A \\ \hline
                     \begin{tabular}[c]{@{}l@{}}Keyswitch, in parallel with\\ TS voltage\end{tabular} & 18 AWG & 16A & AC fuse & 7A \\ \hline
                     Cell to BMS x28 & \begin{tabular}[c]{@{}l@{}}PCB\\          trace\end{tabular} & \begin{tabular}[c]{@{}l@{}}Trace\\ ampacity: 7.6 A \\ (open air)\end{tabular} & \begin{tabular}[c]{@{}l@{}}CIQ\\           Fuse x28\end{tabular} & 3A \\ \hline
                 \end{tabular}
-                \caption{Fuse Protection Table}
+                \caption{\hlr{Fuse Protection Table}}
                 \label{allfuses}
             \end{table}
 
@@ -1209,21 +1199,14 @@ Two hall effect current sensors, each wired around the power lines of the motor 
 
             %Describe how the accumulator will be charged. How will the charger be connected? How will the accumulator be supervised during charging? Show schematics, CAD-Renderings, etc., if needed
 
-            \begin{figure}[H]
-                \centering
-                \includegraphics[width = 0.7 \textwidth]{charging}
-                \caption{\hlr{Schematic of the PCB controlling charging, while interfacing with the AMS relays and the AIRs, located on the AIR control board}}
-                \label{chargeschem}
-            \end{figure}
-
             \begin{table}[H]
                 \centering
                 \begin{tabular}{|l|l|}
                     \hline
                     Charger Type: & Delta Q Technologies QioQ 1000 Series \\ \hline
-                    Maximum charging power & 70.55 W \\ \hline
-                    Maximum charging voltage & 4.15V \\ \hline
-                    Maximum charging current & 17.0A \\ \hline
+                    Maximum charging power & \hlr{34.476} W \\ \hline
+                    Maximum charging voltage & \hlr{4.056} V (per cell) \\ \hline
+                    Maximum charging current & \hlr{8.5A} \\ \hline
                     Interface with accumulator & CAN-Bus \\ \hline
                     Input voltage & 125VAC or 250VAC \\ \hline
                     Input current & 13A@125VAC or 10A@250VAC \\ \hline
@@ -1232,17 +1215,6 @@ Two hall effect current sensors, each wired around the power lines of the motor 
                 \label{charger}
             \end{table}
 
-
-            This UL-listed charger supplies constant current at 17.0A until cell voltages reach 4.15V. Then, constant voltage is supplied at 4.15 V \hlr{per cell, summing to 99.6V,} until the current tapers to 2.0 A. The charging power lines will be fused to 20A to protect the  12 AWG wiring.\\
-
-            The charger will indicate complete on its LED display when the battery voltage reaches 4.15V per cell, however it will continue charging until it finishes both stages.\\
-
-            The accumulator will only be charged on the charging cart, \hlr{shown in figure} \ref{cart}. It will be able to support the full weight of the accumulator and only move when a dead man's switch is activated.\\
-
-            The accumulator cart will contain a specialized shutdown circuit that allows the accumulator to be charged through the main pack connector. The AMS will be active during charging and have the ability to open the AIRs and stop charging in the event of dangerous battery conditions. This shutdown circuit will contain a separate IMD, an emergency stop, and an interlocking connection between the charger and accumulator. The interlock will be in the two smaller pins found in the Deutsch connector (6 pin). The separate IMD used is also the IR155-3204 from Bender, the same model of IMD used on the car. The IMD will be mounted to the cart along with the PCB holding the shutdown circuitry that controls circuitry and the TSEL.
-
-
-
             \begin{figure}[H]
                 \centering
                 \includegraphics[width = 0.5 \textwidth]{chargepic}
@@ -1250,11 +1222,33 @@ Two hall effect current sensors, each wired around the power lines of the motor 
                 \label{chargepic}
             \end{figure}
 
+            This UL-recognized charger supplies constant current at \hlr{8.5A} until cell voltages reach \hlr{4.056V}. Then, constant voltage is supplied at \hlr{4.056V per cell, summing to 97.34V,} until the current tapers to 2.0 A. The charging power lines will be fused to 20A to protect the  12 AWG wiring.\\
+
+            The charger will indicate complete on its LED display when the battery voltage reaches 4.15V per cell, however it will continue charging until it finishes both stages.\\
+
+            The accumulator will only be charged on the charging cart, \hlr{shown in figure} \ref{cart}. It will be able to support the full weight of the accumulator and only move when a dead man's switch is activated.\\
+
+            The accumulator cart will contain a specialized shutdown circuit that allows the accumulator to be charged through the main pack connector. The AMS will be active during charging and have the ability to open the AIRs and stop charging in the event of dangerous battery conditions. This shutdown circuit will contain a separate IMD, an emergency stop, and an interlocking connection between the charger and accumulator. The interlock will be in the two smaller pins found in the Deutsch connector (6 pin). The separate IMD used is also the IR155-3204 from Bender, the same model of IMD used on the car. The IMD will be mounted to the cart along with the PCB holding the shutdown circuitry that controls circuitry and the TSEL.
+
+            \begin{figure}[H]
+                \centering
+                \includegraphics[width = 0.7 \textwidth]{chargingschem}
+                \caption{\hlr{Schematic of the PCB controlling charging, while interfacing with the AMS relays and the AIRs, located on the AIR control board}}
+                \label{chargeschem}
+            \end{figure}
+
+            \begin{figure}[H]
+                \centering
+                \includegraphics[width = 0.7 \textwidth]{chargerPCB}
+                \caption{\hlr{The charging PCB, which contains the charging system's shutdown circuitry and is all low voltage}}
+                \label{chargeschem}
+            \end{figure}
+
             The charging system's shutdown circuitry is being developed into a PCB. The PCB will find 12V power from a wall wart (12VDC, 4A out) and include the components listed above. There will be a CAN node located on the PCB, which will be able to communicate with the AMS CAN nodes.
 
             \begin{figure}[H]
                 \centering
-                \includegraphics[width = 0.7 \textwidth]{Cart}
+                \includegraphics[width = 0.5\textwidth]{Cart}
                 \caption{\hlr{Cart with a deadman's lock for carrying the accumulator}}
                 \label{cart}
             \end{figure}
@@ -1347,7 +1341,7 @@ Two hall effect current sensors, each wired around the power lines of the motor 
 
             \begin{figure}[H]
              \centering
-             \includegraphics[width = 0.7 \textwidth]{MCCschem}
+             \includegraphics[width = 0.85 \textwidth]{MCCschem}
              \caption{\hlr{Motor controller schematic}}
              \label{mccschem}
             \end{figure}
@@ -1413,7 +1407,7 @@ Two hall effect current sensors, each wired around the power lines of the motor 
 
             %Referred from section \ref{accumwiring} (AMS wiring), \ref{motorswiring}
 
-            Both motors will follow the configuration in Figure \ref{mcschem}, and are in parallel to the TS system. There is a 175A fuse located before the AIRs, which is smaller than the ampacity of 2 AWG wire according to appendix section \ref{AWGchart} The connections from the accumulator to the motor controllers are shielded dual-insulated 35mm$^2$ stranded wire pigtails from a Delphi Shield-Pack HV2000 connector, which will be strain relieved at the motor controller using wire glands.
+            Both motors will follow the configuration in Figure \ref{mcschem}, and are in parallel to the TS system. There is a 175A fuse located before the AIRs, which is smaller than the ampacity of 2 AWG wire according to appendix section \ref{AWGchart} The connections from the accumulator to the motor controllers are shielded dual-insulated 35mm$^2$ stranded wire pigtails from a Delphi Shield-Pack HV2000 connector, which will be strain relieved at the motor controller using wire glands. \hlr{There is also nomex tubing around the 2 AWG wiring to isolate it from the low voltage system. }
             %should i go into what we expect the motors to pull?
 
         \subsubsection{Position in Car}
@@ -1577,9 +1571,16 @@ Two hall effect current sensors, each wired around the power lines of the motor 
 
         \begin{figure}[H]
             \centering
-            \includegraphics{torquebrakecheck}
-            \caption{Schematic of the torque encoder plausibility check}
-            \label{braketorque}
+            \includegraphics[width = 0.7 \textwidth]{Bulkheadschem}
+            \caption{Schematic of the bulkhead, which has inputs for both linear potentiometer torque encoders}
+            \label{bulkheadschem}
+        \end{figure}
+
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width = 0.7 \textwidth]{bulkhead}
+            \caption{PCB cad of the bulkhead, which has inputs for both linear potentiometer torque encoders}
+            \label{bulkheadPCB}
         \end{figure}
 
         Two potentiometers are wired with their output to the microcontroller analog input pins which have internal pull-up resistors. The potentiometers are given separate power lines of 5V, parallel, to the supply power of the CAN node itself. The brake switch is positioned to trip at a level of hard braking and when triggered will deliver 5V to the microcontroller input pin.
@@ -2018,7 +2019,7 @@ Please see section \ref{bspdappendix} for the AMS relay.
 
 \begin{figure}[H]
  \centering
- \includegraphics[width = 0..45 \textwidth]{bmsspace2}
+ \includegraphics[width = 0.45 \textwidth]{bmsspace2}
  \caption{\hlr{Capture of the separation on each AMS board between TS and GLV power on the top copper (264 mil)}}
  \label{amsseparation2}
 \end{figure}
@@ -2076,8 +2077,23 @@ Referred from section \ref{fusing}.
 All information found from the datasheet of:
 \href{http://www.allfuses.com/media/documents/Bussmann\%20LPJ\%20(70-600A).pdf}{Full Bussman Fuse LPJ 175A datasheet here}.
 
-%no longer have msd fuses
-% \href{http://www.stormcopper.com/design/Ampacity-Quick-Chart.htm}{StormCopper Busbar Ampacity Chart}.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width = 0.5 \textwidth]{mini_timecurve}
+    \caption{Time-current curve for the MINI series (2A and 5A) fuses}
+    \label{MINItimecurve}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width = 0.5 \textwidth]{mini_ratings}
+    \caption{Ratings for the MINI series (2A and 5A) fuses}
+    \label{MINIratings}
+\end{figure}
+
+All information found from the datasheet of:
+\href{http://www.littelfuse.com/~/media/automotive/datasheets/fuses/automotive-fuses/littelfuse_automotive_blade_fuse_mini_32v.pdf}{Full MINI series 2A and 5A fuse datasheet here}.
+
 \begin{figure}[H]
     \centering
     \includegraphics[width = 0.6 \textwidth]{Keyswitchratings}
