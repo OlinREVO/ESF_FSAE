@@ -228,6 +228,8 @@
                 \label{ShutdownCircuitTable}
             \end{table}
 
+            \hlr{The GLV system also has 12V and 5V supply lines in parallel to the shutdown circuit. It supplies the 555 timers, CAN nodes, coils and lights, which are all in parallel with the AIRs.}
+
         \subsubsection{Position in Car}
 
         There are many shutdown components are in or mouonted to a housing called \hlr{motor controller} housing, which is a waterproof enclosure located at the rear of the chassis, behind the main hoop, \hlr{underneath the motor controllers}.  This enclosure is bolted onto steel brackets which are welded to the main hoop.  This enclosure consists of an \hlr{Nylon} panel where the TSMS, GLVMS, TSMPs, GLVMPs, AMS reset button, and IMD reset button will be mounted, and a 3D printed rear housing with integrated 23-pin TE connectivity Ampseal connector, as seen in figure \ref{cpanel1}. In addition to the buttons and measuring points, the housing also contains the IMD, IMD relay, a PCB (Side panel node, which includes the watchdog relay), and the GLV battery, as seen in figure \ref{cpanel2}.  Mounted to the outside of the box includes the GLVMS and TSMS. The tractive system and low voltage systems are separated by at least two centimeters at all times, with certain wires wrapped in nomex tubing.
@@ -1055,7 +1057,7 @@ Two hall effect current sensors, each wired around the power lines of the motor 
             %ADD 18 AWG wire for IMD's connectors
 
             % Describe your maintenance plugs, provide pictures
-            We will use OEM maintenance plugs provided by General Motors. As shown in Figure \ref{msd03}, these maintenance plugs, known internally as Manual Service Disconnects (MSD's), comprise a panel-mounted plastic housing (black) and a plastic plug (orange). The plug must be twisted and then pulled in two distinct steps, which disengages the copper bus-bar, contained in the orange plug, from spring-loaded contacts contained in the black housing. There is a fuse located in . General Motors will also be crimping custom length leads onto these MSD's for our vehicle. The leads are 40 mm$^2$ in cross-section, not including insulation. Each MSD also contains a two-pin interlock, as described in Section \ref{interlocks}. To the best of our knowledge, these MSD's comply with EV 3.3.3. Additionally, the spring-loaded contacts located in the black housing are encapsulated in plastic, providing protection from shorting and accidental contact.
+            We will use OEM maintenance plugs provided by General Motors. As shown in Figure \ref{msd03}, these maintenance plugs, known internally as Manual Service Disconnects (MSD's), comprise a panel-mounted plastic housing (black) and a plastic plug (orange). The plug must be twisted and then pulled in two distinct steps, which disengages the copper bus-bar, contained in the orange plug, from spring-loaded contacts contained in the black housing. There is a fuse located in . General Motors will also be crimping custom length leads onto these MSD's for our vehicle. The leads are 40 mm$^2$ in cross-section, not including insulation. Each MSD also contains a two-pin interlock, as described in Section \ref{interlocks}. To the best of our knowledge, these MSD's comply with EV 3.3.3. Additionally, the spring-loaded contacts located in the black housing are encapsulated in plastic, providing protection from shorting and accidental contact.  \hlr{The information for this connector can be found in the appendix, section} \ref{cellconfigurationappendix}.
 
             \begin{figure}[H]
                 \centering
@@ -1954,7 +1956,7 @@ We are working with Nissan to allow us to use their datasheet for the modules. P
 
 \includepdf[pages=-]{BatteryEgov.pdf}
 
-\section*{11.3.1.3 Cell Configuration}
+\section*{11.3.1.3 Cell Configuration} \label{cellconfigurationappendix}
 \href{http://www.delphi.com/docs/default-source/old-delphi-files/4ab0ce96-6ae1-4ad1-aabb-cdcfa9103cbd-pdf.pdf?sfvrsn=0}{Description of Delphi connectors. Delphi Shieldpack HV2000 is the product used for our main connectors (Described on page 32)}
 
 \section*{11.3.1.4 Cell Temperature Monitoring}
