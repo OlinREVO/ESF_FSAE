@@ -132,8 +132,7 @@
 
         \begin{sidewaysfigure}[p]
             \includegraphics[width=\textheight]{tractiveblock}
-            \caption{\hlr{Tractive system block diagram. Please note that there is additional circuitry around the precharge relay, which is clarified in figure} \ref{prechargeschem
-            }}
+            \caption{\hlr{Tractive system block diagram. Please note that there is additional circuitry around the precharge relay, which is clarified in figure} \ref{prechargeschem}}
             \label{tractive}
         \end{sidewaysfigure}
 
@@ -485,7 +484,7 @@ Two hall effect current sensors, each wired around the power lines of the motor 
 
             %Describe wiring, show schematics, describe connectors and cables used and show useful data regarding the wiring.  Include gauge, voltage and temperature rating of wiring used and any fuses or other overcurrent protection used.
 
-             The circuitry designed has two optocouplers with the mosfet sides in parallel. If either optocoupler is powered, the TSAL will be powered. On the TS-controlled optocoupler, when the TS is over 60V, zener diodes with a breakdown voltage of 56V and 3.6V respectably power one side of an optocoupler when the TS voltage is over 60V. On the GLV-controlled optocoupler, the optocoupler is powered when there is shutdown voltage before the AIRs. In this way, the light will be powered when the tractive system is over 60V or the AIRs are closed. The power line for the TSAL is also interrupted by a mosfet that has its gate controlled by a 555 timer to allow it to blink at a rate of \hlr{3.1} Hz.
+             The circuitry designed has two optocouplers with the mosfet sides in parallel. If either optocoupler is powered, the TSAL will be powered. On the TS-controlled optocoupler, when the TS is over 60V, zener diodes with a breakdown voltage of 56V and 3.6V respectably power one side of an optocoupler when the TS voltage is over 60V. On the GLV-controlled optocoupler, the optocoupler is powered when there is shutdown voltage before the AIRs. In this way, the light will be powered when the tractive system is over 60V or the AIRs are closed. \hlr{The TS input to the zener diode circuitry is after the same 1A fuses as previously mentioned for the IMD and R2D. } The power line for the TSAL is also interrupted by a mosfet that has its gate controlled by a 555 timer to allow it to blink at a rate of \hlr{3.1} Hz.
 
             \begin{figure}[H]
             \centering
@@ -831,7 +830,7 @@ Two hall effect current sensors, each wired around the power lines of the motor 
         \subsubsection{Cell Description} \label{celldescription}
 
             %describe cell type and chemistry
-        \hlr{The cells used are Automotive Energy E5 lithium ion (pouch type) cells, and they were fabricated into modules by Nissan for their Nissan Leaf electric vehicle. Their datasheets are not included because of our team's NDA with Nissan. We are working to be able to share the necessary information, but the cell values noted are from our testing of the cells and other sources like the US Department of Energy} (\href{http://energy.gov/sites/prod/files/2014/02/f8/battery_leaf_0356.pdf}{Link to source} \hlr{and located in the appendix.) Through their advanced testing, they note the maximum cell voltage at 4.2V and the minimum cell voltage at 2.5V, which aligns with our own research on other cells with lithium-manganese chemistry} (\href{http://batteryuniversity.com/learn/article/discharge_methods}{Link to source}), \hlr{which says that they should stay over 3V for battery safety and the safety of the drivers and/or operators.}
+        \hlr{The cells used are Automotive Energy E5 lithium ion (pouch type) cells, and they were fabricated into modules by Nissan for their Nissan Leaf electric vehicle. Their datasheets are not included because of our team's NDA with Nissan. We are working to be able to share the necessary information, but the cell values noted are from our testing of the cells and other sources like the US Department of Energy} (\href{http://energy.gov/sites/prod/files/2014/02/f8/battery_leaf_0356.pdf}{Link to source} \hlr{and located in the appendix.) Through their advanced testing, they note the maximum cell voltage at 4.2V and the minimum cell voltage at 2.5V, which aligns with our own research on other cells with lithium-manganese chemistry} (\href{http://batteryuniversity.com/learn/article/discharge_methods}{Link to source}), \hlr{which says that they should stay over 3V for battery safety and the safety of the drivers and/or operators. Experimentally, an error of 100 mV was found in the battery management system reading the voltage, so precautions were set and the maximum voltage is conservatively set to 4V.}
 
             \begin{table}[H]
                 \centering
@@ -874,7 +873,7 @@ Two hall effect current sensors, each wired around the power lines of the motor 
 
             As stated in Section \ref{batteryoverview}, there are 12 modules in series. Each module holds 4 cells which are in a 2s-2p configuration. \hlr{The white terminal marked in white in Figure} \ref{canopener} \hlr{references the point between the two parallel cell strings, as shown in figure} \ref{module} \hlr{and labeled as MIDV}.
 
-            The modules, each have a string of 2 cells in parallel, as seen in Figure \ref{moduleschem}. In the middle of each cell there is a shutdown separator, which acts as a fuse in over-current conditions. These modules are commercially sold in Nissan Leaf vehicles without issue, so we are referencing their safety to prove ours.
+            The modules, each have a string of 2 cells in parallel, as seen in Figure \ref{module}. In the middle of each cell there is a shutdown separator, which acts as a fuse in over-current conditions. These modules are commercially sold in Nissan Leaf vehicles without issue, so we are referencing their safety to prove ours.
 
             \begin{figure}[H]
                 \centering
@@ -892,7 +891,7 @@ Two hall effect current sensors, each wired around the power lines of the motor 
                 \label{busbar}
             \end{figure}
 
-            There are 3 maintenance plugs, separating the segments to be less than 6 MJ each. Figure \ref{tswiring_top} points out the maintenance plugs, shortened as SMD or MSD. The connectors are described in full detail in section \ref{batteryconnectors} as OEM maintenance plugs donated by GM. \hlr{The calculation verifying the segment energy is seen below}.
+            There are 3 maintenance plugs, separating the segments to be less than 6 MJ each. Figure \ref{tswiring_top} points out the maintenance plugs, shortened as SMD or MSD. \hlr{ The maintenance plugs were donated by GM and used (OEM) in the Gen2 Volt as its MSD. The calculation verifying the segment energy is seen below}.
 
             \begin{align}
               \text{Seg Energy} &= V_{nom}  * \text{Number of Cells} * \text{Cell Ah (2C rate)} *  3.6 \text{kJ}\\
@@ -963,7 +962,7 @@ Two hall effect current sensors, each wired around the power lines of the motor 
 
             %table of operation parameters
 
-            Figure \ref{bmspcb} shows the CAD of one AMS PCB. The AMS boards only communicate through the CAN system. Close ups of this PCB in figure \ref{creepage} show the protective distances between the components of the tractive system and low voltage.
+            Figure \ref{bmspcb} shows the CAD of one AMS PCB. The AMS boards only communicate through the CAN system. Close ups of this PCB in \hlr{the appendix} (section \ref{amsappendix}) \hlr{ show measurements of all spacings.}
 
             \begin{figure}[H]
                 \centering
@@ -1018,14 +1017,14 @@ Two hall effect current sensors, each wired around the power lines of the motor 
                 \label{aischem}
             \end{figure}
 
-            As shown in Figure \ref{aischem}, the zener diode allows TS voltage to pass through the accumulator indicator LED and a resistor after TS voltage is over 60 VDC.  U148 is a 220 Ohm resistor to limit current. The calculations are as follows, assuming a forward voltage drop of the LED to be 2V:
+            As shown in Figure \ref{aischem}, the zener diode allows TS voltage to pass through the accumulator indicator LED and a resistor after TS voltage is over 60 VDC. \hlr{The high voltage line }  U148 is a 220 Ohm resistor to limit current. The calculations are as follows, assuming a forward voltage drop of the LED to be 2V:
 
             \begin{align}
                 100-2 V = I * 220 \ohm \\
                 I = 45 mA
             \end{align}
 
-            The accumulator indicator is located on the AIR control board PCB, and has traces of 20 mil, which are rated for 1.4A.
+            The accumulator indicator is located on the AIR control board PCB, and has traces of 20 mil, which are rated for 1.4A. \hlr{The accumulator indicator is behind the 1A fuses protecting the high voltage low current harness - the same as the TSAL and IMD.}
 
         \subsubsection{Wiring, Cables, Current Calculations, Connectors} \label{batteryconnectors}
 
@@ -1057,7 +1056,7 @@ Two hall effect current sensors, each wired around the power lines of the motor 
             %ADD 18 AWG wire for IMD's connectors
 
             % Describe your maintenance plugs, provide pictures
-            We will use OEM maintenance plugs provided by General Motors. As shown in Figure \ref{msd03}, these maintenance plugs, known internally as Manual Service Disconnects (MSD's), comprise a panel-mounted plastic housing (black) and a plastic plug (orange). The plug must be twisted and then pulled in two distinct steps, which disengages the copper bus-bar, contained in the orange plug, from spring-loaded contacts contained in the black housing. There is a fuse located in . General Motors will also be crimping custom length leads onto these MSD's for our vehicle. The leads are 40 mm$^2$ in cross-section, not including insulation. Each MSD also contains a two-pin interlock, as described in Section \ref{interlocks}. To the best of our knowledge, these MSD's comply with EV 3.3.3. Additionally, the spring-loaded contacts located in the black housing are encapsulated in plastic, providing protection from shorting and accidental contact.  \hlr{The information for this connector can be found in the appendix, section} \ref{cellconfigurationappendix}.
+            We will use OEM maintenance plugs provided by General Motors. As shown in Figure \ref{msd03}, these maintenance plugs, known internally as Manual Service Disconnects (MSD's), comprise a panel-mounted plastic housing (black) and a plastic plug (orange). The plug must be twisted and then pulled in two distinct steps, which disengages the copper bus-bar, contained in the orange plug, from spring-loaded contacts contained in the black housing. There is a fuse located in . General Motors will also be crimping custom length leads onto these MSD's for our vehicle. The leads are 40 mm$^2$ in cross-section, not including insulation. Each MSD also contains a two-pin interlock, as described in Section \ref{interlocks}. To the best of our knowledge, these MSD's comply with EV 3.3.3. Additionally, the spring-loaded contacts located in the black housing are encapsulated in plastic, providing protection from shorting and accidental contact.
 
             \begin{figure}[H]
                 \centering
@@ -1242,14 +1241,33 @@ Two hall effect current sensors, each wired around the power lines of the motor 
                 \label{chargeschem}
             \end{figure}
 
-            The charging system's shutdown circuitry is being developed into a PCB. The PCB will find 12V power from a wall wart (12VDC, 4A out) and include the components listed above. There will be a CAN node located on the PCB, which will be able to communicate with the AMS CAN nodes.
+            \hlr{The charging shutdown }PCB will find 12V power from a wall wart (12VDC, 4A out) and include the components listed above. There will be a CAN node located on the PCB, which will be able to communicate with the AMS CAN nodes. \hlr{Between the charging shutdown circuit, the AIR control board and the AMS boards (the later two being installed permanently in the accumulator), the charging sequence will be monitored for safety.}
 
             \begin{figure}[H]
                 \centering
                 \includegraphics[width = 0.5\textwidth]{Cart}
-                \caption{\hlr{Cart with a deadman's lock for carrying the accumulator}}
+                \caption{\hlr{Charging cart. The wheels on the handleside have been replaced with wooden blocks. As the operator moving the cart stops actively picking up the side of the cart, the cart will stop, acting like a dead man's brake}}
                 \label{cart}
             \end{figure}
+
+            \hlr{The high voltage charger will be connected to the accumulator with 12 AWG wire and protected by a 20A fuse. The fuse and charger are both bolted to the charging cart. }
+
+            \begin{table}[H]
+                \centering
+                \begin{tabular}{|l|l|}
+                \hline
+                Fuse manufacturer and type: & \hlr{Bussman, SC type, Class G} \\ \hline
+                Continuous current rating & \hlr{20A} \\ \hline
+                Maximum operating voltage & \hlr{170 VDC} \\ \hline
+                Type of fuse & Fast acting \\ \hline
+                I2t rating & \hlr{None listed}\\ \hline
+                \begin{tabular}[c]{@{}l@{}}
+                Interrupt Current (max. current\\ at which the fuse can interrupt\\ the circuit)
+                    \end{tabular} & \hlr{10kA Vdc} \\ \hline
+                \end{tabular}
+                \caption{\hlr{Charging fuse, Bussman SC Class G}}
+                \label{chargingfusetable}
+            \end{table}
 
         \subsubsection{Mechanical Configuration/Materials}
 
@@ -1299,6 +1317,13 @@ Two hall effect current sensors, each wired around the power lines of the motor 
 
         %The Energy Meter will be supplied and it will be mounted during E-Scrutineering. It is intended to use the Energy Meter of Formula Student Germany. The current version of the 2012 EM specification can be found here: https://www.formulastudent.de/uploads/media/FSE2012_Energy_Meter_Specification_v1.0.pdf Please note that the connectors might change slightly for 2013.
 
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width = 0.5 \textwidth]{EnergyMeter}
+            \caption{Electrical connections of the energy meter}
+            \label{EMschem}
+        \end{figure}
+
         The energy meter is a tool made by FSAE to calculate energy use during competition. The meter checks that the voltage is within the rule's ranges, the total power used is not over the maximum limit of 80 kW, and calculates the amount of energy used. The energy is calculated as the time integrated value of the measured voltage multiplied by the measured current logged by the Energy Meter, as per rule EV 4.9.
 
     \subsection{Wiring, Cables, Current Calculations, Connectors}
@@ -1309,7 +1334,7 @@ Two hall effect current sensors, each wired around the power lines of the motor 
 
     \subsection{Position in Car}
 
-        The energy meter is mounted to the accumulator using a plastic, waterproof enclosure that has not yet been designed. It is shown in Figure \ref{accumiso}, without its enclosure.
+        The energy meter is mounted to the accumulator using a plastic, waterproof enclosure that can be seen in figure \ref{accumiso}. \hlr{Its connections inside the accumulator can be seen in} \ref{tswiring_top}.
 
         \begin{figure}[H]
             \centering
@@ -1405,7 +1430,7 @@ Two hall effect current sensors, each wired around the power lines of the motor 
 
             %Referred from section \ref{accumwiring} (AMS wiring), \ref{motorswiring}
 
-            Both motors will follow the configuration in Figure \ref{mcschem}, and are in parallel to the TS system. There is a 175A fuse located before the AIRs, which is smaller than the ampacity of 2 AWG wire according to appendix section \ref{AWGchart} The connections from the accumulator to the motor controllers are shielded dual-insulated 35mm$^2$ stranded wire pigtails from a Delphi Shield-Pack HV2000 connector, which will be strain relieved at the motor controller using wire glands. \hlr{There is also nomex tubing around the 2 AWG wiring to isolate it from the low voltage system. }
+            Both motors will follow the configuration in Figure \ref{mcschem}, and are in parallel to the TS system. There is a 175A fuse located before the AIRs, which is smaller than the ampacity of 2 AWG wire according to appendix section \ref{AWGchart} The connections from the accumulator to the motor controllers are shielded dual-insulated 35mm$^2$ stranded wire pigtails from a Delphi Shield-Pack HV2000 connector, which will be strain relieved at the motor controller using wire glands. \hlr{There is also nomex tubing around the 2 AWG wiring to isolate it from the low voltage system. The information for this Delphi connector can be found in the appendix, section} \ref{mccappendix}.
             %should i go into what we expect the motors to pull?
 
         \subsubsection{Position in Car}
@@ -1582,6 +1607,8 @@ Two hall effect current sensors, each wired around the power lines of the motor 
         \end{figure}
 
         Two potentiometers are wired with their output to the microcontroller analog input pins which have internal pull-up resistors. The potentiometers are given separate power lines of 5V, parallel, to the supply power of the CAN node itself. The brake switch is positioned to trip at a level of hard braking and when triggered will deliver 5V to the microcontroller input pin.
+
+        \hlr{The CAN system is highly resilient and is programmed with error handling as the highest priority. The CAN protocol itself specifies a cyclic redundancy check which ensures that the messages are not corrupted in transmission. Both the Throttle node and MCC node will check the throttle values to ensure that they are in a valid range. If the MCC node does not receive a throttle CAN message for a tenth of a second it will tell the motor controllers to have 0 throttle.}
 
     \subsection{Position in Car/Mechanical Fastening/Mechanical Connection}
 
@@ -1956,9 +1983,6 @@ We are working with Nissan to allow us to use their datasheet for the modules. P
 
 \includepdf[pages=-]{BatteryEgov.pdf}
 
-\section*{11.3.1.3 Cell Configuration} \label{cellconfigurationappendix}
-\href{http://www.delphi.com/docs/default-source/old-delphi-files/4ab0ce96-6ae1-4ad1-aabb-cdcfa9103cbd-pdf.pdf?sfvrsn=0}{Description of Delphi connectors. Delphi Shieldpack HV2000 is the product used for our main connectors (Described on page 32)}
-
 \section*{11.3.1.4 Cell Temperature Monitoring}
 
 \href{http://media.digikey.com/PDF/Data\%20Sheets/Ametherm\%20PDFs/PANR\%20103395-408.pdf}{Thermistors measuring cell temperature datasheet}.
@@ -2141,11 +2165,32 @@ All information found from the datasheet of:
 
 \hlr{Algorithm: Constant current at 8.5A to 4.056Vpc, then constant voltage at 4.056Vpc until current tapers to 2A}
 
-\section*{11.5.1 Motor Controller}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width = 0.6 \textwidth]{chargingfuseratings}
+    \caption{Approved Ratings of Bussman SC Class G}
+    \label{chargingfuseratings}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width = 0.6 \textwidth]{chargefusetimecurve}
+    \caption{Time-current curve for Bussman SC Class G}
+    \label{chargefusecurve}
+\end{figure}
+
+All information found from the datasheet of:
+\href{http://belfuse.com/pdfs/C1Q.pdf}{Cell to AMS fuse, C1Q type}.
+
+\href{http://www.mouser.com/ds/2/87/Bus_Ele_DS_1024_SC-347391.pdf}{Charger fuse}
+
+\section*{11.5.1 Motor Controller} \label{mccappendix}
 
 \href{http://www.sevcon.com/media/2461/Gen4\%20Aug\%202013\%20web.pdf}{Motor controller Sevcon Gen 4 Size 4 with battery voltage 96-120V datasheet here}.
 
 \href{http://www.thunderstruck-ev.com/Manuals/Gen4_Product_Manual_V3.0.pdf}{Sevcon Gen4 Product Manual}
+
+\href{http://www.delphi.com/docs/default-source/old-delphi-files/4ab0ce96-6ae1-4ad1-aabb-cdcfa9103cbd-pdf.pdf?sfvrsn=0}{Description of Delphi connectors. Delphi Shieldpack HV2000 is the product used for our main connectors (Described on page 32)}
 
 \section*{11.7 Torque Encoder} \label{torqueappendix}
 
