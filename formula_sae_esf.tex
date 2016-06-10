@@ -370,7 +370,7 @@ There are two Hall Effect current sensors monitoring the current draw of the two
                 \label{BSPDschem}
             \end{figure}
 
-Two hall effect current sensors, each wired around the power lines of the motor controllers, will send a proportional signal to a comparator. If the (summed) current is above 50 Amps, the output will be positive, and a positive signal will be sent to the AND gate. If the brakes are actuated, a positive signal will come from the brake pressure switch, causing the AND gate to return positive. This output powers a 555 timer, which if it remains powered for 0.5 seconds will send out a high pulse to the reset pin of an RS-latch. The normally open relay will be opened because of the reset state of the RS-latch, shutting down the current to the AIRs. The BSPD can be reset through CAN which will send a high pulse to the set pin of the RS-latch.
+Two hall effect current sensors, each wired around the power lines of the motor controllers, will send a proportional signal to a comparator. If the (summed) current is above 50 Amps, the output will be positive, and a positive signal will be sent to the AND gate. If the brakes are actuated, a positive signal will come from the brake pressure switch, causing the AND gate to return positive. This output powers a 555 timer, which if it remains powered for 0.5 seconds will send out a high pulse to the reset pin of an RS-latch. The normally open relay will be opened because of the reset state of the RS-latch, shutting down the current to the AIRs. The BSPD can be reset through CAN which will send a high pulse to the set pin of the RS-latch. \hlr{This is a failure mode that is possible, however it is also possible for the AMS reset. In either case, being reset is the safer mode to fail. Microcontroller failure will be caught by watchdog and the shutdown system will open anyway. BSPD reset button has been moved to the back side panel, sharing the same button as the AMS reset. If the AMS system is not having any issues (as seen through CAN), then the BSPD will reset.  }
 
 
 
@@ -493,7 +493,7 @@ Two hall effect current sensors, each wired around the power lines of the motor 
             \label{TSALschem}
             \end{figure}
 
-            All connections made by wires will be 20 AWG rated for 600V, 125 \degree C and 7A, while all PCB traces will be a minimum of 12 mil, but nominally 20 mil in width. The TS voltage will have been fused to 1A on both \hlr{the positive and negative TS poles, with the same fuses that protects the TSMPs, IMD and R2D sound (fuses located on the AIR control board PCB). It is within the low current TS voltage harness, which connects to the 8-pin Ampseal on the side panel PCB.}
+            All connections made by wires will be 20 AWG rated for 600V, 125 \degree C and 7A, while all PCB traces will be a minimum of 12 mil, but nominally 20 mil in width. The TS voltage will have been fused to 1A on both \hlr{the positive and negative TS poles, with the same fuses that protects the TSMPs, IMD and R2D sound (fuses located on the AIR control board PCB). The fuse has a 125V rating and 300 A @ 125VDC interrupt rating. It only protects the DC-DC converter for the TSAL circuitry and TSAL TS input, IMD, accumulator indicator and R2D sound. It used to protect a GLV DC-DC but that has been removed. It is within the low current TS voltage harness, which connects to the 8-pin Ampseal on the side panel PCB. }
 
             %highlight the caption of the replacement picture.
             \begin{figure}[H]
@@ -526,7 +526,7 @@ Two hall effect current sensors, each wired around the power lines of the motor 
 
             Figure \ref{fig:TSMPschematic} shows the TSMP schematic. Left shows the schematic including the banana jacks. Right shows the multimeter measuring the tractive system, with the multimeter's expected resistance and the same resistors as before the TSMP's on the left side.\\
 
-            There will be four measuring points: TS+, TS-, GLV+, and GLV-. The TSMP connections will be secured with 5 k\ohm current limiting resistors. The worst case scenario for the TSMPs occurs when there is a short between the TS+ and TS- banana jacks. This could occur as a result of operator error when measuring the TS  voltage and create a voltage over a human operator's hands. The current limiting resistors ensure that the current draw in this scenario will not harm a human. \hlr{There is no fuse before the TSMP resistors and probe points.}
+            There will be \hlr{three} measuring points: TS+, TS-,and GLV-. The TSMP connections will be secured with 5 k\ohm current limiting resistors. The worst case scenario for the TSMPs occurs when there is a short between the TS+ and TS- banana jacks. This could occur as a result of operator error when measuring the TS  voltage and create a voltage over a human operator's hands. The current limiting resistors ensure that the current draw in this scenario will not harm a human. \hlr{There is no fuse before the TSMP resistors and probe points.}
 
             \begin{align}
                 V = I * R \\
@@ -544,7 +544,7 @@ Two hall effect current sensors, each wired around the power lines of the motor 
 
             Another worst case scenario that could occur at the measuring points is a short between the TS and GLV systems over the banana jacks, again by operator error. In this scenario, the IMD will open the shutdown circuit.
 
-            The TSMP banana jacks are 72930-2 and 72930-0 Pomona Electronics 4 mm banana jacks (red and black, respectively). The TSMP resistors are Vishay Dale, CMF655K0000FKEB  (manufacturer's part number), rated for 500V and part of the CMF Industrial series. The datasheets for both the banana jacks and the resistors can be found in section \ref{tsmpappendix}.
+            The TSMP banana jacks are 72930-2 and 72930-0 Pomona Electronics 4 mm banana jacks (red and black, respectively). The TSMP resistors are Vishay Dale, \hlr{ALSR035K000FE12}  (manufacturer's part number), rated for \hlr{122}V and part of the \hlr{ALSR} series. The datasheets for both the banana jacks and the resistors can be found in section \ref{tsmpappendix}.
 
             %Describe wiring, show schematics, and describe connectors and cables used and show useful data regarding the wiring.  Include details on the protection resistor including resistance, voltage and power rating.
 
@@ -891,7 +891,7 @@ Two hall effect current sensors, each wired around the power lines of the motor 
                 \label{busbar}
             \end{figure}
 
-            There are 3 maintenance plugs, separating the segments to be less than 6 MJ each. Figure \ref{tswiring_top} points out the maintenance plugs, shortened as SMD or MSD. \hlr{ The maintenance plugs were donated by GM and used (OEM) in the Gen2 Volt as its MSD. The calculation verifying the segment energy is seen below}.
+            There are 3 maintenance plugs, separating the segments to be less than 6 MJ each. Figure \ref{tswiring_top} points out the maintenance plugs, shortened as SMD or MSD. \hlr{They are from Lear Corporation. Manual Disconnect used in Volt Gen 2 HV battery pack. 350Vdc bladed fuse, with integrated interlock and 2 step removal. The calculation verifying the segment energy is seen below}.
 
             \begin{align}
               \text{Seg Energy} &= V_{nom}  * \text{Number of Cells} * \text{Cell Ah (2C rate)} *  3.6 \text{kJ}\\
@@ -962,76 +962,76 @@ Two hall effect current sensors, each wired around the power lines of the motor 
 
             %table of operation parameters
 
-            Figure \ref{bmspcb} shows the CAD of one AMS PCB. The AMS boards only communicate through the CAN system. Close ups of this PCB in \hlr{the appendix} (section \ref{amsappendix}) \hlr{ show measurements of all spacings.}
+             Figure \ref{bmspcb} shows the CAD of one AMS PCB. The AMS boards only communicate through the CAN system. Close ups of this PCB in \hlr{the appendix} (section \ref{amsappendix}) \hlr{ show measurements of all spacings.}
+        %
+             \begin{figure}[H]
+                 \centering
+                 \includegraphics[width = 0.7 \textwidth]{bmsfullgerber}
+                 \caption{\hlr{CAD of 1 AMS board (all identical). Spacing in the lower left was to separate TS and GLV.}}
+                 \label{bmspcb}
+             \end{figure}
+        %
+             \hlr{Captures of the BMS separation are located in the appendix, to prove the compliance with a minimum over surface spacing (6.4 mm or 1/4" spacing) requirement.}
+        %
+        %     % \begin{figure}[H]
+        %     %     \centering
+        %     %     \includegraphics[width=0.4 \textwidth]{bms_separation_detail}
+        %     %     \caption{Detail of BMS PCB where the minimum over surface distance (6.4 mm) are met. Distance between TS and GLV is shown to be $6.57$ mm (over surface)}
+             %     \label{creepage}
+             % \end{figure}
 
-            \begin{figure}[H]
-                \centering
-                \includegraphics[width = 0.7 \textwidth]{bmsfullgerber}
-                \caption{\hlr{CAD of 1 AMS board (all identical). Spacing in the lower left was to separate TS and GLV.}}
-                \label{bmspcb}
-            \end{figure}
+             Voltage and temperature data is relayed to the AMS by the cell breakout boards discussed earlier in this section. The cell top boards are electrically identical, but have mirrored layouts to accomodate which side of the accumulator they are on. There is a left hand side, figure \ref{celltopLH} and right hand side, figure \ref{celltopRH}. The cell breakout board contains fuses on all sensing lines, detailed in Figures \ref{celltopschem} - \ref{celltopLH}.
+        %
+              \begin{figure}[H]
+                  \centering
+                  \includegraphics[width = 0.8 \textwidth]{CellTopSchem}
+                  \caption{Schematic of Cell Breakout Board Connecting to the AMS}
+                  \label{celltopschem}
+              \end{figure}
+        % %
+        % %     %%replace that schematic if you have time, that logo sucks.
+        %
+              \begin{figure}[H]
+                  \centering
+                  \includegraphics[width = 0.4 \textwidth]{CellTopLH}
+                  \caption{Cell Breakout Board PCB Layout for the left hand side Note the fuses labeled with F and then a number. There is only TS voltage on this PCB.}
+                  \label{celltopLH}
+              \end{figure}
 
-            \hlr{Captures of the BMS separation are located in the appendix, to prove the compliance with a minimum over surface spacing (6.4 mm or 1/4" spacing) requirement.}
+              \begin{figure}[H]
+                  \centering
+                  \includegraphics[width = 0.4 \textwidth]{CellTopRH}
+                  \caption{Cell Breakout Board PCB Layout for the right hand side Note the fuses labeled with F and then a number. There is only TS voltage on this PCB.}
+                  \label{celltopRH}
+              \end{figure}
 
-            % \begin{figure}[H]
-            %     \centering
-            %     \includegraphics[width=0.4 \textwidth]{bms_separation_detail}
-            %     \caption{Detail of BMS PCB where the minimum over surface distance (6.4 mm) are met. Distance between TS and GLV is shown to be $6.57$ mm (over surface)}
-            %     \label{creepage}
-            % \end{figure}
+         \subsubsection{Accumulator Indicator} \label{aindicator}
+          %doesn't the accumulator indicator need to be run off of AIR control voltage? The pertinent rule is EV 3.3.9. The DC-DC can be powered without the AIR's being %closed.
 
-            Voltage and temperature data is relayed to the AMS by the cell breakout boards discussed earlier in this section. The cell top boards are electrically identical, but have mirrored layouts to accomodate which side of the accumulator they are on. There is a left hand side, figure \ref{celltopLH} and right hand side, figure \ref{celltopRH}. The cell breakout board contains fuses on all sensing lines, detailed in Figures \ref{celltopschem} - \ref{celltopLH}.
+              %describe the indicator %need table of operation, pcb design, etc.
 
-            \begin{figure}[H]
-                \centering
-                \includegraphics[width = 0.8 \textwidth]{CellTopSchem}
-                \caption{Schematic of Cell Breakout Board Connecting to the AMS}
-                \label{celltopschem}
-            \end{figure}
+              \begin{figure}[H]
+                  \centering
+                  \includegraphics[width = 0.3 \textwidth]{aischem}
+                  \caption{Accumulator Indicator schematic}
+                  \label{aischem}
+              \end{figure}
 
-            %%replace that schematic if you have time, that logo sucks.
+              As shown in the figure above, the zener diode allows TS voltage to pass through the accumulator indicator LED and a resistor after TS voltage is over 60 VDC. U148 is a 220 Ohm resistor to limit current. The calculations are as follows, assuming a forward voltage drop of the LED to be 2V:
 
-            \begin{figure}[H]
-                \centering
-                \includegraphics[width = 0.4 \textwidth]{CellTopLH}
-                \caption{Cell Breakout Board PCB Layout for the left hand side Note the fuses labeled with "F" and then a number. There is only TS voltage on this PCB.}
-                \label{celltopLH}
-            \end{figure}
+             \begin{align}
+                 100-2 V = I * 220 \ohm \\
+                 I = 45 mA
+             \end{align}
 
-            \begin{figure}[H]
-                \centering
-                \includegraphics[width = 0.4 \textwidth]{CellTopRH}
-                \caption{Cell Breakout Board PCB Layout for the right hand side Note the fuses labeled with "F" and then a number. There is only TS voltage on this PCB.}
-                \label{celltopRH}
-            \end{figure}
+             The accumulator indicator is located on the AIR control board PCB, and has traces of 20 mil, which are rated for 1.4A. The accumulator indicator is behind the 1A fuses protecting the high voltage low current harness - the same as the TSAL and IMD.
 
-        \subsubsection{Accumulator Indicator} \label{aindicator}
-        %doesn't the accumulator indicator need to be run off of AIR control voltage? The pertinent rule is EV 3.3.9. The DC-DC can be powered without the AIR's being %closed.
+         \subsubsection{Wiring, Cables, Current Calculations, Connectors} \label{batteryconnectors}
 
-            %describe the indicator %need table of operation, pcb design, etc.
+                 There are 4 cells (in a 2s2p configuration) in each module, and there are 12 modules in series. Nissan Leaf cells are arranged within the their factory enclosures to be in modules. Within the modules, there is an internal shutdown separator, reacts to excessive thermal or overpressure events. Addition of inter-cell fusing may compromise this safety system’s design, so our team considers to submit design lacking fuse inclusion as an error on cautious side. The accumulator has them separated into 4 stacks of 3 to comply with the segment energy limit. Between 3 out of 4 segments, there are MSDs for safely separating the segments while working on the accumulator. After the fourth section, there is an HVD in series with the positive pole, coming out of the accumulator. There will be two main connectors to the accumulator, each having connections of TS+ and TS-. This is so each motor controller can be individually connected to. Before the HVD and main connectors, there is an AIR on both the positive and negative poles of TS.
 
-            \begin{figure}[H]
-                \centering
-                \includegraphics[width = 0.3 \textwidth]{aischem}
-                \caption{\hlr{Accumulator Indicator schematic}}
-                \label{aischem}
-            \end{figure}
-
-            As shown in Figure \ref{aischem}, the zener diode allows TS voltage to pass through the accumulator indicator LED and a resistor after TS voltage is over 60 VDC. \hlr{The high voltage line }  U148 is a 220 Ohm resistor to limit current. The calculations are as follows, assuming a forward voltage drop of the LED to be 2V:
-
-            \begin{align}
-                100-2 V = I * 220 \ohm \\
-                I = 45 mA
-            \end{align}
-
-            The accumulator indicator is located on the AIR control board PCB, and has traces of 20 mil, which are rated for 1.4A. \hlr{The accumulator indicator is behind the 1A fuses protecting the high voltage low current harness - the same as the TSAL and IMD.}
-
-        \subsubsection{Wiring, Cables, Current Calculations, Connectors} \label{batteryconnectors}
-
-            There are 4 cells (in a 2s2p configuration) in each module, and there are 12 modules in series. The accumulator has them separated into 4 stacks of 3 to comply with the segment energy limit. Between 3 out of 4 segments, there are MSDs for safely separating the segments while working on the accumulator. After the fourth section, there is an HVD in series with the positive pole, coming out of the accumulator. There will be two main connectors to the accumulator, each having connections of TS+ and TS-. This is so each motor controller can be individually connected to. Before the HVD and main connectors, there is an AIR on both the positive and negative poles of TS.
-
-            The high current (motor, motor controller) wires used for the tractive system will be as described in table \ref{accumtomcwire} and \ref{motortomcwire}.
-            The low current (IMD, Lights DC-DC,\hlr{and ready to drive sound}) TS connections will be made with the wire described in table \ref{tslowcurrentwire}.
+             The high current (motor, motor controller) wires used for the tractive system will be as described in table \ref{accumtomcwire} and \ref{motortomcwire}.
+             The low current (IMD, Lights DC-DC,\hlr{and ready to drive sound}) TS connections will be made with the wire described in table \ref{tslowcurrentwire}.
 
             \begin{table}[H]
                 \centering
@@ -1129,7 +1129,7 @@ Two hall effect current sensors, each wired around the power lines of the motor 
                         I2T rating &  0.405 A2s \\ \hline
                         \begin{tabular}[c]{@{}l@{}}
                             Interrupt Current (max.,current\\ at which the fuse can interrupt\\ the circuit)
-                        \end{tabular} & $300$A at $125$VDC \\ \hline
+                        \end{tabular} & $30$A at $125$VDC \\ \hline
                     \end{tabular}
                 \caption{Fuse to the IMD, TSMPs and light DC-DC converter, 251/253 Series}
                 \label{smallTSfusetable}
@@ -1185,6 +1185,7 @@ Two hall effect current sensors, each wired around the power lines of the motor 
                     TS+ to GLV DC-DC converter & 20 AWG & 7A & 251/253 series & \hlr{1A} \\ \hline
                     \begin{tabular}[c]{@{}l@{}}TS+ to IMD, TSMPs, TSAL's DC-DC\\ converter\end{tabular} & 22 AWG & 7A & 251/253 series fuse & 1A \\ \hline
                     \begin{tabular}[c]{@{}l@{}}GLV 12V to 5V regulator \\ (CAN system)\end{tabular} & 22 AWG & 7A & 251/253 series fuse & 1A \\ \hline
+                    \begin{tabular}[c]{@{}l@{}}\hlr{HV+ sense lead}\\\hlr{to Energy Meter} \end{tabular}  & \hlr{22 AWG} & \hlr{7A} & \hlr{251/253 series fuse} & \hlr{3A} \\ \hline
                     \begin{tabular}[c]{@{}l@{}}Keyswitch, in parallel with\\ TS voltage\end{tabular} & 18 AWG & 16A & AC fuse & 7A \\ \hline
                     Cell to BMS x28 & \begin{tabular}[c]{@{}l@{}}PCB\\          trace\end{tabular} & \begin{tabular}[c]{@{}l@{}}Trace\\ ampacity: 7.6 A \\ (open air)\end{tabular} & \begin{tabular}[c]{@{}l@{}}CIQ\\           Fuse x28\end{tabular} & 3A \\ \hline
                 \end{tabular}
@@ -1311,7 +1312,7 @@ Two hall effect current sensors, each wired around the power lines of the motor 
 
 
 
-\section{Energy Meter Mounting}
+\section{Energy Meter Mounting} \label{energy meter}
 
     \subsection{Description}
 
@@ -1320,7 +1321,7 @@ Two hall effect current sensors, each wired around the power lines of the motor 
         \begin{figure}[H]
             \centering
             \includegraphics[width = 0.5 \textwidth]{EnergyMeter}
-            \caption{Electrical connections of the energy meter}
+            \caption{\hlr{Electrical connections of the energy meter}}
             \label{EMschem}
         \end{figure}
 
@@ -1330,7 +1331,24 @@ Two hall effect current sensors, each wired around the power lines of the motor 
 
         %Describe the wiring, show schematics, provide calculations for currents and voltages, and show data regarding the cables and connectors used.
 
-        The energy meter will measure current in the tractive system by being connected in series with the HV- line. It measures voltage in the system with a connection to HV+. The low power data collection systems inside of the Energy Meter are powered using the GLVS.
+        The energy meter will measure current in the tractive system by being connected in series with the HV- line. It measures voltage in the system with a connection to HV+. The low power data collection systems inside of the Energy Meter are powered using the GLVS. \\hlr{A 3A 125V fuse will be on the HV+ sense line to protect the wiring.}
+
+        \begin{table}[H]
+            \centering
+            \begin{tabular}{|l|l|}
+                \hline
+                Fuse manufacturer and type & \hlr{Littelfuse, 251/253 Series} \\ \hline
+                Continuous current rating & \hlr{3A} \\ \hline
+                Maximum operating voltage & \hlr{125V} \\ \hline
+                Type of fuse & \hlr{Fast acting} \\ \hline
+                I2T rating &  \hlr{0.405 A2s} \\ \hline
+                \begin{tabular}[c]{@{}l@{}}
+                    Interrupt Current (max.,current\\ at which the fuse can interrupt\\ the circuit)
+                \end{tabular} & \hlr{$30$A at $125$VDC} \\ \hline
+            \end{tabular}
+        \caption{\hlr{Fuse to the HV+ sense line to the energy meter, 251/253 Series}}
+        \label{energymeterfuse}
+    \end{table}
 
     \subsection{Position in Car}
 
@@ -1364,7 +1382,7 @@ Two hall effect current sensors, each wired around the power lines of the motor 
 
             \begin{figure}[H]
              \centering
-             \includegraphics[width = 0.85 \textwidth]{MCCschem}
+             \includegraphics[width = 0.85 \textwidth]{mccschem}
              \caption{\hlr{Motor controller schematic}}
              \label{mccschem}
             \end{figure}
@@ -1751,7 +1769,8 @@ Two hall effect current sensors, each wired around the power lines of the motor 
 
         \subsubsection{Description}
 
-            The \hlr{side panel} node, located next to the IMD and ready to drive sound, monitors the IMD's output and will activate the ready to drive sound when the car is in ready mode. It will also be connected to the rest of the CAN system around the car and listen to CAN messages for anomalies through its watchdog functionality. If the watchdog node receives a CAN error message or doesn't receive a "heartbeat" from other CAN nodes, it will open the watchdog \hlr{relay} in the shutdown circuit. This will be useful for maintaining the health of the motor controllers and debugging software while on the vehicle.
+            The \hlr{side panel} node, located next to the IMD and ready to drive sound, monitors the IMD's output and will activate the ready to drive sound when the car is in ready mode. It will also be connected to the rest of the CAN system around the car and listen to CAN messages for anomalies through its watchdog functionality. If the watchdog node receives a CAN error message or doesn't receive a "heartbeat" from other CAN nodes, it will open the watchdog \hlr{relay} in the shutdown circuit. This will be useful for maintaining the health of the motor controllers and debugging software while on the vehicle. \hlr{TS wiring to the IMD/TSAL/R2D circuitry leaves the accumulator with an 8-pin Ampseal wrapped in conduit, with the conduit strain relieved against the connector (see rules clarification \#5198), using 22 Awg wire}.
+
 
         \subsubsection{Wiring, Cables}
 
@@ -1824,7 +1843,7 @@ Two hall effect current sensors, each wired around the power lines of the motor 
 
             \subsubsection{Description}
 
-            The bulkhead CAN node collects throttle and brake information. It also connects to the front wheel speed sensors (ABS hall effect style) and the steering sensor (potentiometer) mounted to the steering rack.
+            The bulkhead CAN node collects throttle and brake information. It also connects to the front wheel speed sensors (ABS hall effect style) and the steering sensor (potentiometer) mounted to the steering rack. \hlr{Torque vectoring is no longer in place, and the steering angle/wheel speed sensors are not installed. We expect to use this chassis as a test bed for competition next year. Our torque signal is never increased, meeting EV 2.3.12. }
 
             \subsubsection{Wiring, Cables}
 
@@ -1885,15 +1904,13 @@ Two hall effect current sensors, each wired around the power lines of the motor 
 
             \begin{figure}[H]
                 \centering
-                \includegraphics[width = 0.8 \textwidth]{FirewallFullCarView}
+                \includegraphics[width = 0.6 \textwidth]{FirewallFullCarView}
                 \caption{CAD render of the firewall's position in the car}
                 \label{firewallposition}
             \end{figure}
 
     \subsection{Firewall 2}
         There is only one firewall in the vehicle.
-
-\newpage
 
 \section{Appendix}
 \section*{11.2.1.1 Shutdown Switches} \label{shutdownappendix}
@@ -2005,42 +2022,42 @@ Please see section \ref{bspdappendix} for the AMS relay.
 
 \begin{figure}[H]
  \centering
- \includegraphics[width = 0.45 \textwidth]{bmsspace1}
+ \includegraphics[width = 0.4 \textwidth]{bmsspace1}
  \caption{\hlr{Capture of the separation on each AMS board between TS and GLV power on the top copper (262 mil)}}
  \label{amsseparation1}
 \end{figure}
 
 \begin{figure}[H]
  \centering
- \includegraphics[width = 0.45 \textwidth]{bmsspace2}
+ \includegraphics[width = 0.4 \textwidth]{bmsspace2}
  \caption{\hlr{Capture of the separation on each AMS board between TS and GLV power on the top copper (264 mil)}}
  \label{amsseparation2}
 \end{figure}
 
 \begin{figure}[H]
  \centering
- \includegraphics[width = 0.45 \textwidth]{bmsspace6}
+ \includegraphics[width = 0.4 \textwidth]{bmsspace6}
  \caption{\hlr{Capture of the separation on each AMS board between TS and GLV power on the top copper (300 mil)}}
  \label{amsseparation6}
 \end{figure}
 
 \begin{figure}[H]
  \centering
- \includegraphics[width = 0.45 \textwidth]{bmsspace3}
+ \includegraphics[width = 0.4 \textwidth]{bmsspace3}
  \caption{\hlr{Capture of the separation on each AMS board between TS and GLV power on the bottom copper(291 mil)}}
  \label{amsseparation3}
 \end{figure}
 
 \begin{figure}[H]
  \centering
- \includegraphics[width = 0.45 \textwidth]{bmsspace4}
+ \includegraphics[width = 0.4 \textwidth]{bmsspace4}
  \caption{\hlr{Capture of the separation on each AMS board between TS and GLV power on the bottom copper (349 mil)}}
  \label{amsseparation4}
 \end{figure}
 
 \begin{figure}[H]
  \centering
- \includegraphics[width = 0.45 \textwidth]{bmsspace5}
+ \includegraphics[width = 0.4 \textwidth]{bmsspace5}
  \caption{\hlr{Capture of the separation on each AMS board between TS and GLV power on the bottom copper (253 mil)}}
  \label{amsseparation5}
 \end{figure}
@@ -2107,14 +2124,14 @@ All information found from the datasheet of:
 \begin{figure}[H]
     \centering
     \includegraphics[width = 0.6 \textwidth]{TSsmallratings}
-    \caption{251/253 series, 1A TS low current fuse}
+    \caption{\hlr{251/253 series, 1A TS low current fuse and 3A HV+ sense line Energy meter}}
     \label{tssmallratings}
 \end{figure}
 
 \begin{figure}[H]
     \centering
     \includegraphics[width = 0.6 \textwidth]{TSsmallmeltingtime}
-    \caption{Time-Current curve for 251/253 series 1A TS low current fuse}
+    \caption{\hlr{Time-Current curve for 251/253 series 1A TS low current fuse and 3A HV+ sense line Energy meter}}
     \label{TSsmallcurve}
 \end{figure}
 
@@ -2184,6 +2201,10 @@ All information found from the datasheet of:
 
 \href{http://www.mouser.com/ds/2/87/Bus_Ele_DS_1024_SC-347391.pdf}{Charger fuse}
 
+\section*{11.4.2 Energy Meter Mounting Wiring}
+
+\hlr{Please see section} \ref{fusingappendix} \hlr{for information on the 3A fuse, as it is the same series and datasheet as the 1A TS low current fuse}.
+
 \section*{11.5.1 Motor Controller} \label{mccappendix}
 
 \href{http://www.sevcon.com/media/2461/Gen4\%20Aug\%202013\%20web.pdf}{Motor controller Sevcon Gen 4 Size 4 with battery voltage 96-120V datasheet here}.
@@ -2198,7 +2219,7 @@ All information found from the datasheet of:
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width = 0.6 \textwidth]{activesensorsnip}
+    \includegraphics[width = 0.4 \textwidth]{activesensorsnip}
     \caption{Important parameters of the MHR5621 Active Sensors Torque Encoder}
     \label{torquesnip}
 \end{figure}
@@ -2211,14 +2232,14 @@ All information found from the datasheet of:
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width = 0.6 \textwidth]{shutdownfuseratings}
+    \includegraphics[width = 0.4 \textwidth]{shutdownfuseratings}
     \caption{Ratings for MINI series, 2A Shutdown circuit, GLV 2A 12V fuses and 5A GLV battery fuses}
     \label{shutdownfuseratings}
 \end{figure}
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width = 0.6 \textwidth]{shutdownfusecurve}
+    \includegraphics[width = 0.4 \textwidth]{shutdownfusecurve}
     \caption{Time-current curve for MINI series, 2A Shutdown circuit, GLV 2A 12V fuses and 5A GLV battery fuses}
     \label{shutdownfusecurve}
 \end{figure}
@@ -2232,14 +2253,14 @@ All information found from the datasheet of:
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width = 0.7 \textwidth]{1AGLVlowratings}
+    \includegraphics[width = 0.4 \textwidth]{1AGLVlowratings}
     \caption{Ratings for the bel Fuse 0zck series 1A 5V per-GLV-board fuse}
     \label{5V1Afuserating}
 \end{figure}
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width = 0.7 \textwidth]{TSfuseT-Agraph}
+    \includegraphics[width = 0.4 \textwidth]{TSfuseT-Agraph}
     \caption{Time-current curve for bel Fuse 0zck series 1A 5V per-GLV-board fuse}
     \label{5V1Afusecurve}
 \end{figure}
